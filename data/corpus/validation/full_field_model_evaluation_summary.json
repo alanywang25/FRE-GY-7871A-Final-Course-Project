@@ -2,12 +2,12 @@
   "ready": true,
   "gold_rows": 312,
   "paired_rows": 312,
-  "scored_rows": 252,
+  "scored_rows": 312,
   "held_out_rows": 60,
   "development_rows": 252,
-  "baseline_file": "data/corpus/model_assisted/dictionary_baseline_v1.csv",
-  "baseline_sha256": "20ee6ef9999818b391ccaf1f28d65985a402f8c225f5aed6014e171e0d42128c",
-  "held_out_released": false,
-  "final_performance_claim": "not authorized",
-  "next_step": "Revise only with development IDs, lock the model, then rerun with --release-held-out exactly once for the final held-out claim."
+  "model_file": "data/corpus/model_assisted/naive_bayes_full_field_predictions.csv",
+  "model_prediction_sha256": "b83332399ef85f655b4ec35ddf475b0a68da6b6cb92bfc5bcbd64d88ff4f8a2c",
+  "held_out_released": true,
+  "final_performance_claim": "held-out diagnostic only; retain this run's baseline SHA-256 and do not tune further.",
+  "next_step": "Do not tune the model after releasing held-out results."
 }

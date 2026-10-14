@@ -1,0 +1,56 @@
+{
+  "ready": true,
+  "estimated": true,
+  "claim": "associational_not_causal",
+  "design": "Retrospective, lagged observational association with macro controls, outcome persistence, calendar seasonality, HAC(6) intervals, and a future-media placebo.",
+  "observations": 90,
+  "coverage": {
+    "first_month": "2014-01-31",
+    "last_month": "2021-06-30"
+  },
+  "primary_exposure": "Previous-calendar-month negative-tone share; coefficients are reported per 10 percentage-point increase.",
+  "outcomes": [
+    {
+      "outcome": "headline_sentiment",
+      "n": 89,
+      "coefficient_per_10pp": -8.0913,
+      "hac_se_per_10pp": 1.8588,
+      "ci_low_95_per_10pp": -11.7347,
+      "ci_high_95_per_10pp": -4.448,
+      "p_value_hac": 0.0,
+      "r_squared": 0.8246
+    },
+    {
+      "outcome": "current_conditions",
+      "n": 89,
+      "coefficient_per_10pp": -8.4396,
+      "hac_se_per_10pp": 4.256,
+      "ci_low_95_per_10pp": -16.7814,
+      "ci_high_95_per_10pp": -0.0978,
+      "p_value_hac": 0.0474,
+      "r_squared": 0.8264
+    },
+    {
+      "outcome": "expectations",
+      "n": 89,
+      "coefficient_per_10pp": -7.3123,
+      "hac_se_per_10pp": 0.7747,
+      "ci_low_95_per_10pp": -8.8308,
+      "ci_high_95_per_10pp": -5.7938,
+      "p_value_hac": 0.0,
+      "r_squared": 0.7304
+    }
+  ],
+  "placebo_test": "Future-month negative tone is included as a reverse-timing placebo; a nonzero placebo is evidence against a simple directional media interpretation, not evidence for causality when null.",
+  "subindex_timing": "2010-2025 subindices are annual-report historical backfills. They are valid final-value outcomes for this retrospective association but not a real-time availability claim.",
+  "not_identified": [
+    "Respondent-level exposure, selection into media consumption, and changes in individual beliefs.",
+    "A causal effect of media tone on the national Michigan index.",
+    "Confounding by economic shocks, publisher/audience demand, political events, or unmeasured household conditions."
+  ],
+  "next_identification_step": "Use the documented randomized truthful-framing experiment with consent, pre-registered outcomes, source-blind stimuli, and required instructor/IRB approval before fielding.",
+  "outputs": {
+    "panel": "/Users/alanwang/Downloads/FRE-GY-7871A-Final-Course-Project/data/processed/causal_association_panel.csv",
+    "results": "/Users/alanwang/Downloads/FRE-GY-7871A-Final-Course-Project/data/processed/causal_association_results.csv"
+  }
+}

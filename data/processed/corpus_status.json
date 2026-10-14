@@ -1,7 +1,7 @@
 {
   "available": true,
   "label_ready": true,
-  "message": "Independent label packets are complete. Reconcile disagreements and validate the coding model before estimating media associations.",
+  "message": "Source-blinded all-field independent validation and adjudication are complete; the timestamped aggregate is descriptive, not exposure or causal evidence.",
   "retrieved_at": "2026-10-13T01:48:55+00:00",
   "records_collected": 539,
   "balanced_sample_records": 315,

@@ -28,6 +28,10 @@ SUBINDEX_TEMPLATE = ROOT / "data" / "templates" / "michigan_subindices.csv"
 VINTAGE_TEMPLATE = ROOT / "data" / "templates" / "macro_vintage_observations.csv"
 DICTIONARY_VALIDATION = ROOT / "data" / "corpus" / "validation" / "dictionary_validation_summary.json"
 DICTIONARY_INVARIANCE = ROOT / "data" / "corpus" / "validation" / "dictionary_invariance_summary.json"
+FULL_FIELD_VALIDATION = ROOT / "data" / "corpus" / "validation" / "full_field_label_validation_summary.json"
+FULL_FIELD_ADJUDICATION = ROOT / "data" / "corpus" / "full_field_validation" / "adjudication" / "full_field_adjudication_summary.json"
+FULL_FIELD_MODEL = ROOT / "data" / "corpus" / "validation" / "full_field_model_evaluation_summary.json"
+CAUSAL_ANALYSIS = ROOT / "data" / "processed" / "causal_analysis_status.json"
 PROCESSED = ROOT / "data" / "processed"
 DASHBOARD_DATA = ROOT / "dashboard" / "data"
 CORPUS_MANIFEST = ROOT / "data" / "corpus" / "processed" / "collection_manifest.json"
@@ -186,8 +190,16 @@ def corpus_status() -> dict:
     b_completed, b_machine, b_reviewed, b_size = _completed_labels(ANNOTATION_DIR / "annotator_b.csv")
     packet_size = min(a_size, b_size)
     label_ready = packet_size >= 300 and a_completed >= 300 and b_completed >= 300
-    if label_ready:
-        message = "Independent label packets are complete. Reconcile disagreements and validate the coding model before estimating media associations."
+    all_field_ready = False
+    if FULL_FIELD_VALIDATION.exists() and FULL_FIELD_ADJUDICATION.exists():
+        all_field_ready = bool(
+            json.loads(FULL_FIELD_VALIDATION.read_text(encoding="utf-8")).get("gate_passed")
+            and json.loads(FULL_FIELD_ADJUDICATION.read_text(encoding="utf-8")).get("gate_passed")
+        )
+    if all_field_ready:
+        message = "Source-blinded all-field independent validation and adjudication are complete; the timestamped aggregate is descriptive, not exposure or causal evidence."
+    elif label_ready:
+        message = "Independent tone-label packets are complete. Complete all-field validation before treating the aggregate as validated beyond tone."
     else:
         message = f"Human-reviewed labels are complete ({a_reviewed}/{packet_size} for A, {b_reviewed}/{packet_size} for B), but independent blinded tone labels are pending ({a_completed}/{packet_size} for A, {b_completed}/{packet_size} for B). Media measures remain unavailable until independent agreement/adjudication is documented."
     return {"available": True, "label_ready": label_ready, "message": message, "retrieved_at": manifest.get("retrieved_at"), "records_collected": int(manifest.get("records_collected", 0)), "balanced_sample_records": int(manifest.get("balanced_analysis_sample_records", 0)), "balanced_sample_by_stratum": manifest.get("balanced_sample_by_stratum", {}), "annotation": {"a_completed": a_completed, "b_completed": b_completed, "a_machine": a_machine, "b_machine": b_machine, "a_reviewed": a_reviewed, "b_reviewed": b_reviewed, "packet_size": packet_size}}
@@ -293,6 +305,10 @@ def build_outputs(raw_path: Path | str = DEFAULT_RAW) -> dict:
     media_model = _json_status(MEDIA_MODEL_STATUS, {"ready": False, "estimated": False, "reason": "Run scripts/build_media_model_analysis.py."})
     dictionary_validation = _json_status(DICTIONARY_VALIDATION, {"available": False, "message": "Run classifier validation."})
     dictionary_invariance = _json_status(DICTIONARY_INVARIANCE, {"available": False, "message": "Run the dictionary invariance check."})
+    full_field_validation = _json_status(FULL_FIELD_VALIDATION, {"gate_passed": False, "message": "Run all-field independent-label validation."})
+    full_field_adjudication = _json_status(FULL_FIELD_ADJUDICATION, {"gate_passed": False, "message": "Run all-field adjudication."})
+    full_field_model = _json_status(FULL_FIELD_MODEL, {"ready": False, "message": "Train and evaluate the development-only all-field classifier."})
+    causal_analysis = _json_status(CAUSAL_ANALYSIS, {"ready": False, "estimated": False, "claim": "not_causal", "message": "Run scripts/build_causal_association_analysis.py after historical media and subindices are available."})
     media_has_rows = media is not None and media.dropna(how="all", subset=[c for c in media.columns if c not in {"month", "available_on", "aggregate_status", "notes"}]).shape[0] > 0
     media_independently_adjudicated = bool(
         media_has_rows and "aggregate_status" in media
@@ -300,12 +316,12 @@ def build_outputs(raw_path: Path | str = DEFAULT_RAW) -> dict:
     )
     media_validated = bool(
         media_independently_adjudicated and corpus["label_ready"]
-        and validation.get("gate_passed") and independent_adjudication.get("ready")
+        and full_field_validation.get("gate_passed") and full_field_adjudication.get("gate_passed")
     )
     media_status = {
         "available": media_validated,
         "has_data": media_has_rows,
-        "message": corpus["message"] if not media_has_rows else ("Provisional consensus media measures are loaded, but independent tone adjudication is still pending for " + str(independent_adjudication.get("unresolved", "unknown")) + " items. Media-effect modeling remains locked." if not independent_adjudication.get("ready") else "Provisional consensus media measures are loaded. They remain descriptive until an independently adjudicated, timestamped aggregate is constructed."),
+        "message": corpus["message"] if not media_has_rows else ("Timestamped, independently adjudicated all-field media measures are loaded." if media_validated else "Media measures are present but the all-field independent-label/adjudication gate has not passed."),
     }
     model_comparison = [
         {"name": "Economic-only", "status": "estimated", **model_metrics(baseline)},
@@ -331,6 +347,10 @@ def build_outputs(raw_path: Path | str = DEFAULT_RAW) -> dict:
             "media_model": media_model,
             "dictionary_validation": dictionary_validation,
             "dictionary_invariance": dictionary_invariance,
+            "full_field_validation": full_field_validation,
+            "full_field_adjudication": full_field_adjudication,
+            "full_field_model": full_field_model,
+            "causal_analysis": causal_analysis,
             "macro_refresh": refresh,
             "input_contracts": {"michigan_subindices": template_status(SUBINDEX_TEMPLATE, ["current_conditions", "expectations", "release_timestamp", "vintage_id"]), "macro_vintages": template_status(VINTAGE_TEMPLATE, ["value", "release_timestamp", "vintage_id"]), "survey_subgroups": template_status(SUBGROUP_TEMPLATE, ["index_value", "sample_size", "release_timestamp", "vintage_id"])},
         },

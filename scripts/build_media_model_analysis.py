@@ -24,7 +24,10 @@ STATUS = OUT / "media_model_status.json"
 PANEL_OUT = OUT / "historical_media_model_panel.csv"
 RESULTS_OUT = OUT / "historical_media_model_oos.csv"
 MIN_ALIGNED_MONTHS = 84  # 48-month initial training window plus 36 OOS forecasts.
-MEDIA_FEATURES = ["tone_negative_share", "price_level_frame_share", "recession_salience_share"]
+# The historical archive's independent validation/adjudication establishes
+# tone only. Keep other archived coding dimensions descriptive until they
+# receive their own all-field validation.
+MEDIA_FEATURES = ["tone_negative_share"]
 LAGGED_MEDIA_FEATURES = [f"media_{feature}" for feature in MEDIA_FEATURES]
 BASELINE_FEATURES = ["unemployment", "pce_yoy", "gdp_qoq_annualized"]
 
@@ -85,7 +88,7 @@ def main() -> None:
             "aligned_months": int(len(aligned)), "minimum_aligned_months": MIN_ALIGNED_MONTHS,
             "coverage": {"first_month": None if aligned.empty else str(aligned.month.min().date()), "last_month": None if aligned.empty else str(aligned.month.max().date())},
             "required_next_step": "Extend the coded historical archive while preserving availability timestamps; at least 84 aligned months are required for the configured 48-month initial training window and 36 OOS forecasts.",
-            "measurement_scope": "Historical independent validation adjudicates tone. Additional coded dimensions remain descriptive until separately validated.",
+            "measurement_scope": "Historical independent validation adjudicates tone. The fitted historical specification therefore uses tone only.",
         })
         return
 
@@ -120,7 +123,8 @@ def main() -> None:
         "coverage": {"first_month": str(primary.month.min().date()), "last_month": str(primary.month.max().date())},
         "models": {name: {**model_metrics(result), "diagnostics": diagnostics(result), "coefficient_stability": coefficient_summary(result, specs[name])} for name, result in fitted.items()},
         "lag_sensitivity": sensitivity,
-        "caveats": ["Forecast improvement is associational, not causal.", "Seasonal sine/cosine terms are included; residual autocorrelation is reported.", "Do not report media-dimension effects beyond the validated measurement scope."],
+        "measurement_scope": "Historical specification uses independently validated tone only; framing, salience, and factual calibration remain descriptive in the archive.",
+        "caveats": ["Forecast improvement is associational, not causal.", "Seasonal sine/cosine terms are included; residual autocorrelation is reported.", "Do not report media-dimension effects beyond independently validated tone."],
     })
 
 

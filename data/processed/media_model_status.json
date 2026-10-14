@@ -58,69 +58,55 @@
     },
     "economic_plus_media": {
       "n_oos": 41,
-      "mae": 6.057,
-      "rmse": 9.948,
-      "interval_coverage": 0.659,
+      "mae": 6.04,
+      "rmse": 9.836,
+      "interval_coverage": 0.707,
       "diagnostics": {
-        "residual_lag1_autocorrelation": -0.168,
-        "durbin_watson": 2.201
+        "residual_lag1_autocorrelation": -0.11,
+        "durbin_watson": 2.097
       },
       "coefficient_stability": {
         "unemployment": {
           "n": 41,
-          "mean": -2.7686,
-          "std": 1.4476,
-          "min": -6.1097,
-          "max": -0.0056
+          "mean": -2.9346,
+          "std": 1.4676,
+          "min": -6.2063,
+          "max": -0.08
         },
         "pce_yoy": {
           "n": 41,
-          "mean": 1.9047,
-          "std": 2.165,
-          "min": -2.3033,
-          "max": 6.2712
+          "mean": 1.7299,
+          "std": 2.0678,
+          "min": -2.5298,
+          "max": 5.3376
         },
         "gdp_qoq_annualized": {
           "n": 41,
-          "mean": 0.7422,
-          "std": 0.5554,
-          "min": -0.0322,
-          "max": 1.6137
+          "mean": 0.7116,
+          "std": 0.5342,
+          "min": -0.0399,
+          "max": 1.6056
         },
         "media_tone_negative_share": {
           "n": 41,
-          "mean": -33.9627,
-          "std": 48.5371,
-          "min": -143.9981,
+          "mean": -34.2076,
+          "std": 48.5703,
+          "min": -140.5327,
           "max": 0.0
-        },
-        "media_price_level_frame_share": {
-          "n": 41,
-          "mean": 2.3796,
-          "std": 0.9271,
-          "min": 0.4779,
-          "max": 4.2528
-        },
-        "media_recession_salience_share": {
-          "n": 41,
-          "mean": -1.139,
-          "std": 2.1818,
-          "min": -7.496,
-          "max": 1.3667
         },
         "month_sin": {
           "n": 41,
-          "mean": 1.2021,
-          "std": 0.5907,
-          "min": 0.0331,
-          "max": 2.2752
+          "mean": 1.1144,
+          "std": 0.684,
+          "min": -0.6325,
+          "max": 2.1989
         },
         "month_cos": {
           "n": 41,
-          "mean": 0.2087,
-          "std": 0.5043,
-          "min": -1.1759,
-          "max": 0.8818
+          "mean": 0.1765,
+          "std": 0.5223,
+          "min": -1.1667,
+          "max": 0.954
         }
       }
     }
@@ -128,20 +114,21 @@
   "lag_sensitivity": {
     "media_lag_0": {
       "n_oos": 42,
-      "mae": 5.584,
-      "rmse": 8.561,
+      "mae": 5.82,
+      "rmse": 8.825,
       "interval_coverage": 0.714
     },
     "media_lag_1": {
       "n_oos": 41,
-      "mae": 6.057,
-      "rmse": 9.948,
-      "interval_coverage": 0.659
+      "mae": 6.04,
+      "rmse": 9.836,
+      "interval_coverage": 0.707
     }
   },
+  "measurement_scope": "Historical specification uses independently validated tone only; framing, salience, and factual calibration remain descriptive in the archive.",
   "caveats": [
     "Forecast improvement is associational, not causal.",
     "Seasonal sine/cosine terms are included; residual autocorrelation is reported.",
-    "Do not report media-dimension effects beyond the validated measurement scope."
+    "Do not report media-dimension effects beyond independently validated tone."
   ]
 }

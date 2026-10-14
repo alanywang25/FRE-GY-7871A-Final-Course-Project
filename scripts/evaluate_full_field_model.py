@@ -13,9 +13,9 @@ from build_full_field_validation_packets import CODE_FIELDS
 
 ROOT = Path(__file__).resolve().parents[1]
 GOLD = ROOT / "data/corpus/full_field_validation/adjudication/full_field_adjudicated_labels.csv"
-# v1 is the transparent multi-field dictionary. v3 predicts tone only and is
-# retained for the separate tone-model workflow.
-BASELINE = ROOT / "data/corpus/model_assisted/dictionary_baseline_v1.csv"
+# A conventional development-only model is compared with the retained
+# dictionary baseline; the protected holdout is never scored by default.
+BASELINE = ROOT / "data/corpus/model_assisted/naive_bayes_full_field_predictions.csv"
 OUT = ROOT / "data/corpus/validation"
 DETAIL = OUT / "full_field_model_performance_by_field_class_source.csv"
 SUMMARY = OUT / "full_field_model_evaluation_summary.json"
@@ -45,19 +45,24 @@ def metrics(gold: pd.Series, predicted: pd.Series, label: str) -> tuple[int, flo
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--release-held-out", action="store_true", help="Score the 60 held-out items after the model is locked.")
+    parser.add_argument("--predictions", type=Path, default=BASELINE, help="Item-level model predictions to score.")
+    parser.add_argument("--output-prefix", default="full_field_model", help="Output prefix under data/corpus/validation.")
     args = parser.parse_args()
+    predictions_path = args.predictions.resolve()
+    detail = OUT / f"{args.output_prefix}_performance_by_field_class_source.csv"
+    summary_path = OUT / f"{args.output_prefix}_evaluation_summary.json"
     OUT.mkdir(parents=True, exist_ok=True)
     empty_columns = ["evaluation_split", "source_stratum", "field", "class", "n", "support", "accuracy", "precision", "recall", "f1"]
-    if not GOLD.exists() or not BASELINE.exists():
-        pd.DataFrame(columns=empty_columns).to_csv(DETAIL, index=False)
-        SUMMARY.write_text(json.dumps({"ready": False, "message": "Missing finalized human labels or dictionary baseline."}, indent=2), encoding="utf-8")
+    if not GOLD.exists() or not predictions_path.exists():
+        pd.DataFrame(columns=empty_columns).to_csv(detail, index=False)
+        summary_path.write_text(json.dumps({"ready": False, "message": "Missing finalized human labels or model predictions."}, indent=2), encoding="utf-8")
         return
-    gold, baseline = read(GOLD), read(BASELINE)
+    gold, baseline = read(GOLD), read(predictions_path)
     required = set(CODE_FIELDS + ["item_id", "source_stratum", "evaluation_split"])
     ready = len(gold) >= 300 and required.issubset(gold.columns) and set(CODE_FIELDS + ["item_id"]).issubset(baseline.columns)
     if not ready:
-        pd.DataFrame(columns=empty_columns).to_csv(DETAIL, index=False)
-        SUMMARY.write_text(json.dumps({"ready": False, "adjudicated_rows": len(gold), "message": "Await at least 300 finalized all-field human labels."}, indent=2), encoding="utf-8")
+        pd.DataFrame(columns=empty_columns).to_csv(detail, index=False)
+        summary_path.write_text(json.dumps({"ready": False, "adjudicated_rows": len(gold), "message": "Await at least 300 finalized all-field human labels or compatible predictions."}, indent=2), encoding="utf-8")
         return
     # The source corpus retains three duplicate observations; score one fixed
     # dictionary output per adjudicated item rather than multiplying a gold row.
@@ -73,8 +78,8 @@ def main() -> None:
             for label in sorted(set(truth) | set(predicted)):
                 support, accuracy, precision, recall, f1 = metrics(truth, predicted, label)
                 rows.append({"evaluation_split": split, "source_stratum": stratum, "field": field, "class": label, "n": len(group), "support": support, "accuracy": accuracy, "precision": precision, "recall": recall, "f1": f1})
-    pd.DataFrame(rows, columns=empty_columns).to_csv(DETAIL, index=False)
-    file_hash = hashlib.sha256(BASELINE.read_bytes()).hexdigest()
+    pd.DataFrame(rows, columns=empty_columns).to_csv(detail, index=False)
+    file_hash = hashlib.sha256(predictions_path.read_bytes()).hexdigest()
     held_out = paired.loc[paired.evaluation_split.eq("held_out")]
     summary = {
         "ready": True,
@@ -83,13 +88,13 @@ def main() -> None:
         "scored_rows": len(scored),
         "held_out_rows": len(held_out),
         "development_rows": int(paired.evaluation_split.eq("development").sum()),
-        "baseline_file": str(BASELINE.relative_to(ROOT)),
-        "baseline_sha256": file_hash,
+        "model_file": str(predictions_path.relative_to(ROOT)),
+        "model_prediction_sha256": file_hash,
         "held_out_released": args.release_held_out,
         "final_performance_claim": "not authorized" if not args.release_held_out else "held-out diagnostic only; retain this run's baseline SHA-256 and do not tune further.",
         "next_step": "Revise only with development IDs, lock the model, then rerun with --release-held-out exactly once for the final held-out claim." if not args.release_held_out else "Do not tune the model after releasing held-out results.",
     }
-    SUMMARY.write_text(json.dumps(summary, indent=2), encoding="utf-8")
+    summary_path.write_text(json.dumps(summary, indent=2), encoding="utf-8")
     print(json.dumps(summary, indent=2))
 
 

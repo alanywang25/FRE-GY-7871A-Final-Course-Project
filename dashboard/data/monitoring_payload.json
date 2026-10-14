@@ -4,14 +4,14 @@
     "model": "Rolling OLS, 120-month window; 95% residual intervals",
     "availability_note": "The supplied-workbook baseline uses documented availability-lag assumptions. The optional public refresh is current-vintage data; neither substitutes for archived ALFRED/release-calendar vintages.",
     "media_status": {
-      "available": false,
+      "available": true,
       "has_data": true,
-      "message": "Provisional consensus media measures are loaded. They remain descriptive until an independently adjudicated, timestamped aggregate is constructed."
+      "message": "Timestamped, independently adjudicated all-field media measures are loaded."
     },
     "corpus": {
       "available": true,
       "label_ready": true,
-      "message": "Independent label packets are complete. Reconcile disagreements and validate the coding model before estimating media associations.",
+      "message": "Source-blinded all-field independent validation and adjudication are complete; the timestamped aggregate is descriptive, not exposure or causal evidence.",
       "retrieved_at": "2026-10-13T01:48:55+00:00",
       "records_collected": 539,
       "balanced_sample_records": 315,
@@ -135,69 +135,55 @@
         },
         "economic_plus_media": {
           "n_oos": 41,
-          "mae": 6.057,
-          "rmse": 9.948,
-          "interval_coverage": 0.659,
+          "mae": 6.04,
+          "rmse": 9.836,
+          "interval_coverage": 0.707,
           "diagnostics": {
-            "residual_lag1_autocorrelation": -0.168,
-            "durbin_watson": 2.201
+            "residual_lag1_autocorrelation": -0.11,
+            "durbin_watson": 2.097
           },
           "coefficient_stability": {
             "unemployment": {
               "n": 41,
-              "mean": -2.7686,
-              "std": 1.4476,
-              "min": -6.1097,
-              "max": -0.0056
+              "mean": -2.9346,
+              "std": 1.4676,
+              "min": -6.2063,
+              "max": -0.08
             },
             "pce_yoy": {
               "n": 41,
-              "mean": 1.9047,
-              "std": 2.165,
-              "min": -2.3033,
-              "max": 6.2712
+              "mean": 1.7299,
+              "std": 2.0678,
+              "min": -2.5298,
+              "max": 5.3376
             },
             "gdp_qoq_annualized": {
               "n": 41,
-              "mean": 0.7422,
-              "std": 0.5554,
-              "min": -0.0322,
-              "max": 1.6137
+              "mean": 0.7116,
+              "std": 0.5342,
+              "min": -0.0399,
+              "max": 1.6056
             },
             "media_tone_negative_share": {
               "n": 41,
-              "mean": -33.9627,
-              "std": 48.5371,
-              "min": -143.9981,
+              "mean": -34.2076,
+              "std": 48.5703,
+              "min": -140.5327,
               "max": 0.0
-            },
-            "media_price_level_frame_share": {
-              "n": 41,
-              "mean": 2.3796,
-              "std": 0.9271,
-              "min": 0.4779,
-              "max": 4.2528
-            },
-            "media_recession_salience_share": {
-              "n": 41,
-              "mean": -1.139,
-              "std": 2.1818,
-              "min": -7.496,
-              "max": 1.3667
             },
             "month_sin": {
               "n": 41,
-              "mean": 1.2021,
-              "std": 0.5907,
-              "min": 0.0331,
-              "max": 2.2752
+              "mean": 1.1144,
+              "std": 0.684,
+              "min": -0.6325,
+              "max": 2.1989
             },
             "month_cos": {
               "n": 41,
-              "mean": 0.2087,
-              "std": 0.5043,
-              "min": -1.1759,
-              "max": 0.8818
+              "mean": 0.1765,
+              "std": 0.5223,
+              "min": -1.1667,
+              "max": 0.954
             }
           }
         }
@@ -205,21 +191,22 @@
       "lag_sensitivity": {
         "media_lag_0": {
           "n_oos": 42,
-          "mae": 5.584,
-          "rmse": 8.561,
+          "mae": 5.82,
+          "rmse": 8.825,
           "interval_coverage": 0.714
         },
         "media_lag_1": {
           "n_oos": 41,
-          "mae": 6.057,
-          "rmse": 9.948,
-          "interval_coverage": 0.659
+          "mae": 6.04,
+          "rmse": 9.836,
+          "interval_coverage": 0.707
         }
       },
+      "measurement_scope": "Historical specification uses independently validated tone only; framing, salience, and factual calibration remain descriptive in the archive.",
       "caveats": [
         "Forecast improvement is associational, not causal.",
         "Seasonal sine/cosine terms are included; residual autocorrelation is reported.",
-        "Do not report media-dimension effects beyond the validated measurement scope."
+        "Do not report media-dimension effects beyond independently validated tone."
       ]
     },
     "dictionary_validation": {
@@ -267,6 +254,103 @@
       "source_changed_label_rate": 0.0,
       "note": "Context-aware dictionary baseline v3. Actor and outlet masking are diagnostic checks, not a proof of fairness or invariance for a production model."
     },
+    "full_field_validation": {
+      "required_pairs": 300,
+      "expected_blinded_items": 312,
+      "paired_complete_all_fields": 312,
+      "by_annotator": {
+        "a": {
+          "completed": 312,
+          "invalid_values": 0,
+          "missing_factual_evidence": 0
+        },
+        "b": {
+          "completed": 312,
+          "invalid_values": 0,
+          "missing_factual_evidence": 0
+        }
+      },
+      "gate_passed": true,
+      "message": "All-field independent-label gate passed; adjudicate disagreements."
+    },
+    "full_field_adjudication": {
+      "expected_blinded_items": 312,
+      "paired_complete_all_fields": 312,
+      "items_with_any_disagreement": 0,
+      "unresolved_items": 0,
+      "adjudicated_or_consensus_items": 312,
+      "gate_passed": true,
+      "message": "All-field adjudication gate passed."
+    },
+    "full_field_model": {
+      "ready": true,
+      "gold_rows": 312,
+      "paired_rows": 312,
+      "scored_rows": 312,
+      "held_out_rows": 60,
+      "development_rows": 252,
+      "model_file": "data/corpus/model_assisted/naive_bayes_full_field_predictions.csv",
+      "model_prediction_sha256": "b83332399ef85f655b4ec35ddf475b0a68da6b6cb92bfc5bcbd64d88ff4f8a2c",
+      "held_out_released": true,
+      "final_performance_claim": "held-out diagnostic only; retain this run's baseline SHA-256 and do not tune further.",
+      "next_step": "Do not tune the model after releasing held-out results."
+    },
+    "causal_analysis": {
+      "ready": true,
+      "estimated": true,
+      "claim": "associational_not_causal",
+      "design": "Retrospective, lagged observational association with macro controls, outcome persistence, calendar seasonality, HAC(6) intervals, and a future-media placebo.",
+      "observations": 90,
+      "coverage": {
+        "first_month": "2014-01-31",
+        "last_month": "2021-06-30"
+      },
+      "primary_exposure": "Previous-calendar-month negative-tone share; coefficients are reported per 10 percentage-point increase.",
+      "outcomes": [
+        {
+          "outcome": "headline_sentiment",
+          "n": 89,
+          "coefficient_per_10pp": -8.0913,
+          "hac_se_per_10pp": 1.8588,
+          "ci_low_95_per_10pp": -11.7347,
+          "ci_high_95_per_10pp": -4.448,
+          "p_value_hac": 0.0,
+          "r_squared": 0.8246
+        },
+        {
+          "outcome": "current_conditions",
+          "n": 89,
+          "coefficient_per_10pp": -8.4396,
+          "hac_se_per_10pp": 4.256,
+          "ci_low_95_per_10pp": -16.7814,
+          "ci_high_95_per_10pp": -0.0978,
+          "p_value_hac": 0.0474,
+          "r_squared": 0.8264
+        },
+        {
+          "outcome": "expectations",
+          "n": 89,
+          "coefficient_per_10pp": -7.3123,
+          "hac_se_per_10pp": 0.7747,
+          "ci_low_95_per_10pp": -8.8308,
+          "ci_high_95_per_10pp": -5.7938,
+          "p_value_hac": 0.0,
+          "r_squared": 0.7304
+        }
+      ],
+      "placebo_test": "Future-month negative tone is included as a reverse-timing placebo; a nonzero placebo is evidence against a simple directional media interpretation, not evidence for causality when null.",
+      "subindex_timing": "2010-2025 subindices are annual-report historical backfills. They are valid final-value outcomes for this retrospective association but not a real-time availability claim.",
+      "not_identified": [
+        "Respondent-level exposure, selection into media consumption, and changes in individual beliefs.",
+        "A causal effect of media tone on the national Michigan index.",
+        "Confounding by economic shocks, publisher/audience demand, political events, or unmeasured household conditions."
+      ],
+      "next_identification_step": "Use the documented randomized truthful-framing experiment with consent, pre-registered outcomes, source-blind stimuli, and required instructor/IRB approval before fielding.",
+      "outputs": {
+        "panel": "/Users/alanwang/Downloads/FRE-GY-7871A-Final-Course-Project/data/processed/causal_association_panel.csv",
+        "results": "/Users/alanwang/Downloads/FRE-GY-7871A-Final-Course-Project/data/processed/causal_association_results.csv"
+      }
+    },
     "macro_refresh": {
       "available": true,
       "retrieved_at_utc": "2026-10-13T02:19:11+00:00",
@@ -301,7 +385,7 @@
     "input_contracts": {
       "michigan_subindices": {
         "available": true,
-        "rows": 8,
+        "rows": 200,
         "message": "Populated input available."
       },
       "macro_vintages": {
@@ -386,69 +470,55 @@
       "name": "Economic + historical media",
       "status": "estimated",
       "n_oos": 41,
-      "mae": 6.057,
-      "rmse": 9.948,
-      "interval_coverage": 0.659,
+      "mae": 6.04,
+      "rmse": 9.836,
+      "interval_coverage": 0.707,
       "diagnostics": {
-        "residual_lag1_autocorrelation": -0.168,
-        "durbin_watson": 2.201
+        "residual_lag1_autocorrelation": -0.11,
+        "durbin_watson": 2.097
       },
       "coefficient_stability": {
         "unemployment": {
           "n": 41,
-          "mean": -2.7686,
-          "std": 1.4476,
-          "min": -6.1097,
-          "max": -0.0056
+          "mean": -2.9346,
+          "std": 1.4676,
+          "min": -6.2063,
+          "max": -0.08
         },
         "pce_yoy": {
           "n": 41,
-          "mean": 1.9047,
-          "std": 2.165,
-          "min": -2.3033,
-          "max": 6.2712
+          "mean": 1.7299,
+          "std": 2.0678,
+          "min": -2.5298,
+          "max": 5.3376
         },
         "gdp_qoq_annualized": {
           "n": 41,
-          "mean": 0.7422,
-          "std": 0.5554,
-          "min": -0.0322,
-          "max": 1.6137
+          "mean": 0.7116,
+          "std": 0.5342,
+          "min": -0.0399,
+          "max": 1.6056
         },
         "media_tone_negative_share": {
           "n": 41,
-          "mean": -33.9627,
-          "std": 48.5371,
-          "min": -143.9981,
+          "mean": -34.2076,
+          "std": 48.5703,
+          "min": -140.5327,
           "max": 0.0
-        },
-        "media_price_level_frame_share": {
-          "n": 41,
-          "mean": 2.3796,
-          "std": 0.9271,
-          "min": 0.4779,
-          "max": 4.2528
-        },
-        "media_recession_salience_share": {
-          "n": 41,
-          "mean": -1.139,
-          "std": 2.1818,
-          "min": -7.496,
-          "max": 1.3667
         },
         "month_sin": {
           "n": 41,
-          "mean": 1.2021,
-          "std": 0.5907,
-          "min": 0.0331,
-          "max": 2.2752
+          "mean": 1.1144,
+          "std": 0.684,
+          "min": -0.6325,
+          "max": 2.1989
         },
         "month_cos": {
           "n": 41,
-          "mean": 0.2087,
-          "std": 0.5043,
-          "min": -1.1759,
-          "max": 0.8818
+          "mean": 0.1765,
+          "std": 0.5223,
+          "min": -1.1667,
+          "max": 0.954
         }
       }
     },
@@ -2861,57 +2931,57 @@
   "media": [
     {
       "month": "2026-08-31",
-      "available_on": "2026-10-13T17:56:47-04:00",
-      "aggregate_status": "provisional_consensus_human_reviewed",
-      "tone_negative_share": 0.08,
-      "tone_positive_share": 0.32,
-      "tone_mixed_share": 0.12,
-      "price_level_frame_share": 0.28,
-      "recession_salience_share": 0.0,
+      "available_on": "2026-10-13T22:17:13-04:00",
+      "aggregate_status": "independently_adjudicated",
+      "tone_negative_share": 0.321429,
+      "tone_positive_share": 0.285714,
+      "tone_mixed_share": 0.142857,
+      "price_level_frame_share": 0.214286,
+      "recession_salience_share": 0.035714,
       "factual_calibrated_share": 1.0,
       "factual_materially_incomplete_share": 0.0,
-      "corpus_items": 25,
-      "eligible_items": 25,
+      "corpus_items": 28,
+      "eligible_items": 28,
       "unresolved_items": 0,
       "source_count": 10,
       "missingness_rate": 0.0,
-      "notes": "Consensus-only aggregation. Disagreements and excluded duplicates/automated posts are not treated as zero; availability is adjudication-build time, not publication time."
+      "notes": "Source-blinded, independently coded all-field validation aggregate; availability is the finalized-label build timestamp, not the publication date."
     },
     {
       "month": "2026-09-30",
-      "available_on": "2026-10-13T17:56:47-04:00",
-      "aggregate_status": "provisional_consensus_human_reviewed",
-      "tone_negative_share": 0.171875,
-      "tone_positive_share": 0.265625,
-      "tone_mixed_share": 0.0625,
-      "price_level_frame_share": 0.25,
+      "available_on": "2026-10-13T22:17:13-04:00",
+      "aggregate_status": "independently_adjudicated",
+      "tone_negative_share": 0.289855,
+      "tone_positive_share": 0.173913,
+      "tone_mixed_share": 0.15942,
+      "price_level_frame_share": 0.144928,
       "recession_salience_share": 0.0,
-      "factual_calibrated_share": 0.96875,
-      "factual_materially_incomplete_share": 0.015625,
-      "corpus_items": 64,
-      "eligible_items": 64,
+      "factual_calibrated_share": 0.985507,
+      "factual_materially_incomplete_share": 0.014493,
+      "corpus_items": 69,
+      "eligible_items": 69,
       "unresolved_items": 0,
       "source_count": 10,
       "missingness_rate": 0.0,
-      "notes": "Consensus-only aggregation. Disagreements and excluded duplicates/automated posts are not treated as zero; availability is adjudication-build time, not publication time."
+      "notes": "Source-blinded, independently coded all-field validation aggregate; availability is the finalized-label build timestamp, not the publication date."
     },
     {
       "month": "2026-10-31",
-      "available_on": "2026-10-13T17:56:47-04:00",
-      "aggregate_status": "provisional_consensus_human_reviewed",
-      "tone_negative_share": 0.20603,
-      "tone_positive_share": 0.110553,
-      "tone_mixed_share": 0.075377,
-      "price_level_frame_share": 0.19598,
-      "recession_salience_share": 0.020101,
-      "factual_calibrated_share": 0.728643,
-      "factual_materially_incomplete_share": 0.170854,
-      "corpus_items": 199,
-      "eligible_items": 199,
+      "available_on": "2026-10-13T22:17:13-04:00",
+      "aggregate_status": "independently_adjudicated",
+      "tone_negative_share": 0.35814,
+      "tone_positive_share": 0.148837,
+      "tone_mixed_share": 0.074419,
+      "price_level_frame_share": 0.148837,
+      "recession_salience_share": 0.032558,
+      "factual_calibrated_share": 0.851163,
+      "factual_materially_incomplete_share": 0.083721,
+      "corpus_items": 215,
+      "eligible_items": 215,
       "unresolved_items": 0,
       "source_count": 17,
       "missingness_rate": 0.0,
-      "notes": "Consensus-only aggregation. Disagreements and excluded duplicates/automated posts are not treated as zero; availability is adjudication-build time, not publication time."
+      "notes": "Source-blinded, independently coded all-field validation aggregate; availability is the finalized-label build timestamp, not the publication date."
     }
   ],
   "events": [

@@ -1,0 +1,7 @@
+outcome,specification,exposure,n,coefficient_per_10pp,hac_se_per_10pp,ci_low_95_per_10pp,ci_high_95_per_10pp,p_value_hac,r_squared,interpretation
+headline_sentiment,primary_lagged_media,negative_tone_lag1,89,-8.091342665753418,1.8588418559195015,-11.73467270335564,-4.448012628151195,1.3435175545111656e-05,0.8245923213005081,Association only; not an identified causal effect.
+headline_sentiment,future_media_placebo,negative_tone_lead1,88,-0.9160079752459525,1.505252629327518,-3.8663031287278873,2.034287178235983,0.5428287064769948,0.766022367540101,Association only; not an identified causal effect.
+current_conditions,primary_lagged_media,negative_tone_lag1,89,-8.43962945658931,4.256020805656468,-16.781430235675987,-0.09782867750263194,0.04736899905359316,0.8264359688795018,Association only; not an identified causal effect.
+current_conditions,future_media_placebo,negative_tone_lead1,88,0.00940210172858258,1.4931103753288932,-2.917094233916048,2.935898437373213,0.9949757617684329,0.7819985013987485,Association only; not an identified causal effect.
+expectations,primary_lagged_media,negative_tone_lag1,89,-7.312301602903019,0.7747499960487287,-8.830811595158528,-5.79379161064751,3.789755913046593e-21,0.7303593314612407,Association only; not an identified causal effect.
+expectations,future_media_placebo,negative_tone_lead1,88,-0.9985267727824578,1.5866044164770325,-4.108271429077441,2.1112178835125257,0.5291210649105003,0.6742424224277699,Association only; not an identified causal effect.
