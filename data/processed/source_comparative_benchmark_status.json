@@ -1,0 +1,10 @@
+{
+  "ready": true,
+  "items": 312,
+  "matched_items": 171,
+  "matched_day_topic_cells": 25,
+  "comparisons": 21,
+  "method": "Pairs source strata within publication-day and pre-specified salience-topic cells; reports unweighted matched-cell contrasts.",
+  "scope": "Content supply only. This benchmark does not establish bias, represent audience exposure, or identify causal effects.",
+  "output": "data/processed/source_comparative_benchmark.csv"
+}

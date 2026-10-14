@@ -1,0 +1,22 @@
+measure,source_a,source_b,matched_day_topic_cells,source_a_mean,source_b_mean,difference_b_minus_a,difference_pp_b_minus_a,normal_approx_ci_low_pp,normal_approx_ci_high_pp,interpretation
+negative_tone,local,national,18,0.305556,0.518519,0.212963,21.3,-1.24,43.83,Matched publication-day/topic content-supply contrast; not an exposure or causal estimate.
+negative_tone,local,social,3,0.0,0.053333,0.053333,5.33,-5.12,15.79,Matched publication-day/topic content-supply contrast; not an exposure or causal estimate.
+negative_tone,national,social,10,0.354444,0.436476,0.082032,8.2,-16.73,33.14,Matched publication-day/topic content-supply contrast; not an exposure or causal estimate.
+positive_tone,local,national,18,0.375,0.240741,-0.134259,-13.43,-46.23,19.38,Matched publication-day/topic content-supply contrast; not an exposure or causal estimate.
+positive_tone,local,social,3,0.333333,0.04,-0.293333,-29.33,-98.92,40.25,Matched publication-day/topic content-supply contrast; not an exposure or causal estimate.
+positive_tone,national,social,10,0.1,0.070333,-0.029667,-2.97,-11.79,5.86,Matched publication-day/topic content-supply contrast; not an exposure or causal estimate.
+price_level_frame,local,national,18,0.166667,0.111111,-0.055556,-5.56,-16.44,5.33,Matched publication-day/topic content-supply contrast; not an exposure or causal estimate.
+price_level_frame,local,social,3,0.0,0.0,0.0,0.0,0.0,0.0,Matched publication-day/topic content-supply contrast; not an exposure or causal estimate.
+price_level_frame,national,social,10,0.146667,0.088571,-0.058095,-5.81,-15.83,4.21,Matched publication-day/topic content-supply contrast; not an exposure or causal estimate.
+household_experience_frame,local,national,18,0.166667,0.152778,-0.013889,-1.39,-20.17,17.39,Matched publication-day/topic content-supply contrast; not an exposure or causal estimate.
+household_experience_frame,local,social,3,0.0,0.013333,0.013333,1.33,-1.28,3.95,Matched publication-day/topic content-supply contrast; not an exposure or causal estimate.
+household_experience_frame,national,social,10,0.188889,0.234952,0.046063,4.61,-17.39,26.6,Matched publication-day/topic content-supply contrast; not an exposure or causal estimate.
+recession_risk_salience,local,national,18,0.0,0.0,0.0,0.0,0.0,0.0,Matched publication-day/topic content-supply contrast; not an exposure or causal estimate.
+recession_risk_salience,local,social,3,0.0,0.0,0.0,0.0,0.0,0.0,Matched publication-day/topic content-supply contrast; not an exposure or causal estimate.
+recession_risk_salience,national,social,10,0.1,0.1,0.0,0.0,0.0,0.0,Matched publication-day/topic content-supply contrast; not an exposure or causal estimate.
+materially_incomplete_calibration,local,national,18,0.0,0.0,0.0,0.0,0.0,0.0,Matched publication-day/topic content-supply contrast; not an exposure or causal estimate.
+materially_incomplete_calibration,local,social,3,0.0,0.148889,0.148889,14.89,-1.05,30.83,Matched publication-day/topic content-supply contrast; not an exposure or causal estimate.
+materially_incomplete_calibration,national,social,10,0.0,0.196333,0.196333,19.63,0.6,38.67,Matched publication-day/topic content-supply contrast; not an exposure or causal estimate.
+political_attribution,local,national,18,0.055556,0.166667,0.111111,11.11,-9.17,31.4,Matched publication-day/topic content-supply contrast; not an exposure or causal estimate.
+political_attribution,local,social,3,0.0,0.026667,0.026667,2.67,-2.56,7.89,Matched publication-day/topic content-supply contrast; not an exposure or causal estimate.
+political_attribution,national,social,10,0.11,0.113476,0.003476,0.35,-13.11,13.8,Matched publication-day/topic content-supply contrast; not an exposure or causal estimate.

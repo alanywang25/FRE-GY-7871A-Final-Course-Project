@@ -15,10 +15,11 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from src.pipeline import diagnostics, load_macro_data, model_metrics, rolling_ols_forecast
+from src.pipeline import diagnostics, load_macro_data, load_public_controls, model_metrics, rolling_ols_forecast
 
 HISTORICAL_MEDIA = ROOT / "data/corpus/historical/processed/historical_media_monthly.csv"
 HISTORICAL_STATUS = ROOT / "data/corpus/historical/processed/historical_series_status.json"
+VINTAGE_CONTROLS = ROOT / "data/external/vintages/processed/control_vintage_snapshot_panel.csv"
 OUT = ROOT / "data/processed"
 STATUS = OUT / "media_model_status.json"
 PANEL_OUT = OUT / "historical_media_model_panel.csv"
@@ -30,6 +31,12 @@ MIN_ALIGNED_MONTHS = 84  # 48-month initial training window plus 36 OOS forecast
 MEDIA_FEATURES = ["tone_negative_share"]
 LAGGED_MEDIA_FEATURES = [f"media_{feature}" for feature in MEDIA_FEATURES]
 BASELINE_FEATURES = ["unemployment", "pce_yoy", "gdp_qoq_annualized"]
+# These controls are read from the release-vintage snapshot panel when it is
+# available. The public-current panel is only a fallback and is labeled as such.
+HOUSEHOLD_CONTROL_FEATURES = [
+    "underemployment_u6", "real_disposable_income_yoy", "pce_cumulative_since_2010",
+    "debt_service_ratio", "policy_uncertainty",
+]
 
 
 def write_status(status: dict) -> None:
@@ -58,6 +65,21 @@ def coefficient_summary(results: pd.DataFrame, features: list[str]) -> dict:
         if len(values):
             summary[feature] = {"n": int(len(values)), "mean": round(float(values.mean()), 4), "std": round(float(values.std(ddof=0)), 4), "min": round(float(values.min()), 4), "max": round(float(values.max()), 4)}
     return summary
+
+
+def load_extended_controls() -> tuple[pd.DataFrame | None, str]:
+    """Prefer point-in-time archived controls over the current revised panel."""
+    if VINTAGE_CONTROLS.exists():
+        vintage = pd.read_csv(VINTAGE_CONTROLS, parse_dates=["information_cutoff"])
+        vintage = vintage.rename(columns={"information_cutoff": "month"})
+        columns = ["month", *[column for column in HOUSEHOLD_CONTROL_FEATURES if column in vintage]]
+        vintage = vintage[columns].copy()
+        if set(HOUSEHOLD_CONTROL_FEATURES).issubset(vintage.columns):
+            return vintage, "archived_point_in_time_controls"
+    controls = load_public_controls()
+    if controls is None:
+        return None, "unavailable"
+    return controls[["month", *[column for column in HOUSEHOLD_CONTROL_FEATURES if column in controls]]].copy(), "retrospective_current_vintage_controls"
 
 
 def main() -> None:
@@ -94,6 +116,9 @@ def main() -> None:
 
     # Pre-specified one-month lag is primary; contemporaneous media is sensitivity only.
     primary = aligned.copy()
+    controls, controls_timing = load_extended_controls()
+    if controls is not None:
+        primary = primary.merge(controls, on="month", how="left")
     primary["month_sin"] = np.sin(2 * np.pi * primary.month.dt.month / 12)
     primary["month_cos"] = np.cos(2 * np.pi * primary.month.dt.month / 12)
     seasonal = ["month_sin", "month_cos"]
@@ -101,6 +126,14 @@ def main() -> None:
         "economic_only": BASELINE_FEATURES + seasonal,
         "economic_plus_media": BASELINE_FEATURES + LAGGED_MEDIA_FEATURES + seasonal,
     }
+    control_features = [c for c in HOUSEHOLD_CONTROL_FEATURES if c in primary and primary[c].notna().all()]
+    if control_features:
+        third_name = "economic_media_archived_controls" if controls_timing == "archived_point_in_time_controls" else "economic_media_household_controls_retrospective"
+        specs[third_name] = (
+            BASELINE_FEATURES + LAGGED_MEDIA_FEATURES + control_features + seasonal
+        )
+    else:
+        third_name = None
     fitted = {name: rolling_ols_forecast(primary, features, training_window=48, min_train=48) for name, features in specs.items()}
     sensitivity = {}
     for lag, candidate in panels.items():
@@ -123,8 +156,14 @@ def main() -> None:
         "coverage": {"first_month": str(primary.month.min().date()), "last_month": str(primary.month.max().date())},
         "models": {name: {**model_metrics(result), "diagnostics": diagnostics(result), "coefficient_stability": coefficient_summary(result, specs[name])} for name, result in fitted.items()},
         "lag_sensitivity": sensitivity,
+        "third_model": {
+            "estimated": third_name in fitted if third_name else False,
+            "controls": control_features,
+            "timing_status": controls_timing,
+            "message": "The third required specification uses monthly point-in-time ALFRED snapshots for U-6, real disposable income, PCE prices, debt service, and the legacy three-component EPU index." if controls_timing == "archived_point_in_time_controls" else "The third required specification uses current revised public-control history and is only a retrospective sensitivity.",
+        },
         "measurement_scope": "Historical specification uses independently validated tone only; framing, salience, and factual calibration remain descriptive in the archive.",
-        "caveats": ["Forecast improvement is associational, not causal.", "Seasonal sine/cosine terms are included; residual autocorrelation is reported.", "Do not report media-dimension effects beyond independently validated tone."],
+        "caveats": ["Forecast improvement is associational, not causal.", "Seasonal sine/cosine terms are included; residual autocorrelation is reported.", "Do not report media-dimension effects beyond independently validated tone.", "The added controls use monthly date-only ALFRED snapshots; their release times are not intraday timestamps."] if controls_timing == "archived_point_in_time_controls" else ["Forecast improvement is associational, not causal.", "Seasonal sine/cosine terms are included; residual autocorrelation is reported.", "Do not report media-dimension effects beyond independently validated tone.", "The third model uses current revised public-control history and is reported only as a retrospective sensitivity until archived control vintages are added."],
     })
 
 

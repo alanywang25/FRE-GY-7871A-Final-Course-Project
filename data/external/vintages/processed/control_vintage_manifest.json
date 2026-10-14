@@ -1,0 +1,572 @@
+{
+  "built_at_utc": "2026-10-14T15:32:46+00:00",
+  "method": "ALFRED series/observations output_type=2, except USEPUINDXM which uses one point-in-time request per information cutoff; all reported values retain their observation and vintage date.",
+  "coverage": {
+    "start": "2010-01-01",
+    "end": "2026-10-14"
+  },
+  "api_key_written": false,
+  "series": {
+    "U6RATE": {
+      "status": "archived_from_alfred",
+      "records": 20377,
+      "raw_files": [
+        "data/external/vintages/raw/U6RATE_2010-01-01_2026-10-14_output_type_2.json"
+      ],
+      "sha256": [
+        "7bf983d505d91b045bf2d4865c2639ac944842da1a3f30436f0466fa063a718f"
+      ],
+      "source_url": "https://fred.stlouisfed.org/series/U6RATE",
+      "timestamp_precision": "date_only_from_alfred"
+    },
+    "DSPIC96": {
+      "status": "archived_from_alfred",
+      "records": 20189,
+      "raw_files": [
+        "data/external/vintages/raw/DSPIC96_2010-01-01_2026-10-14_output_type_2.json"
+      ],
+      "sha256": [
+        "9fb9b49a0e941067200f5958dd7ddd6780f7c14b9c686ca5e4e569a496e4f170"
+      ],
+      "source_url": "https://fred.stlouisfed.org/series/DSPIC96",
+      "timestamp_precision": "date_only_from_alfred"
+    },
+    "PCEPI": {
+      "status": "archived_from_alfred",
+      "records": 20189,
+      "raw_files": [
+        "data/external/vintages/raw/PCEPI_2010-01-01_2026-10-14_output_type_2.json"
+      ],
+      "sha256": [
+        "9ecdc1a1a45cf0f220c7b5700c0479b6a2c2e25f4468cf8b45b35d1eadccc624"
+      ],
+      "source_url": "https://fred.stlouisfed.org/series/PCEPI",
+      "timestamp_precision": "date_only_from_alfred"
+    },
+    "TDSP": {
+      "status": "archived_from_alfred",
+      "records": 2277,
+      "raw_files": [
+        "data/external/vintages/raw/TDSP_2010-01-01_2026-10-14_output_type_2.json"
+      ],
+      "sha256": [
+        "56d4f09e1dad32ce7a8bbb292c424197da5f3cf558511e078ecee99ea9a74c84"
+      ],
+      "source_url": "https://fred.stlouisfed.org/series/TDSP",
+      "timestamp_precision": "date_only_from_alfred"
+    },
+    "FIXHAI": {
+      "status": "primary_release_archive_required",
+      "http_status": 400,
+      "message": "ALFRED does not expose this series' vintage history; collect dated primary releases rather than current revised FRED values.",
+      "api_message": "{\"error_code\":400,\"error_message\":\"Bad Request.  The series does not exist in ALFRED but may exist in FRED.  Try setting realtime_start and realtime_end to today's date or removing the realtime_start and realtime_end variables.\"}",
+      "primary_source": "Publisher release archive or licensed source"
+    },
+    "USEPUINDXM": {
+      "status": "archived_from_alfred_point_in_time",
+      "records": 19498,
+      "raw_files": [
+        "data/external/vintages/raw/USEPUINDXM_as_of_2013-06-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2013-07-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2013-08-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2013-09-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2013-10-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2013-11-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2013-12-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2014-01-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2014-02-28.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2014-03-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2014-04-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2014-05-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2014-06-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2014-07-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2014-08-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2014-09-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2014-10-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2014-11-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2014-12-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2015-01-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2015-02-28.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2015-03-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2015-04-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2015-05-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2015-06-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2015-07-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2015-08-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2015-09-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2015-10-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2015-11-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2015-12-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2016-01-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2016-02-29.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2016-03-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2016-04-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2016-05-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2016-06-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2016-07-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2016-08-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2016-09-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2016-10-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2016-11-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2016-12-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2017-01-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2017-02-28.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2017-03-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2017-04-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2017-05-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2017-06-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2017-07-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2017-08-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2017-09-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2017-10-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2017-11-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2017-12-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2018-01-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2018-02-28.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2018-03-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2018-04-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2018-05-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2018-06-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2018-07-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2018-08-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2018-09-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2018-10-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2018-11-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2018-12-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2019-01-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2019-02-28.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2019-03-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2019-04-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2019-05-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2019-06-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2019-07-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2019-08-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2019-09-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2019-10-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2019-11-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2019-12-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2020-01-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2020-02-29.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2020-03-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2020-04-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2020-05-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2020-06-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2020-07-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2020-08-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2020-09-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2020-10-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2020-11-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2020-12-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2021-01-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2021-02-28.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2021-03-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2021-04-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2021-05-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2021-06-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2021-07-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2021-08-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2021-09-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2021-10-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2021-11-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2021-12-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2022-01-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2022-02-28.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2022-03-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2022-04-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2022-05-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2022-06-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2022-07-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2022-08-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2022-09-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2022-10-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2022-11-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2022-12-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2023-01-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2023-02-28.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2023-03-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2023-04-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2023-05-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2023-06-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2023-07-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2023-08-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2023-09-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2023-10-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2023-11-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2023-12-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2024-01-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2024-02-29.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2024-03-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2024-04-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2024-05-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2024-06-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2024-07-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2024-08-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2024-09-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2024-10-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2024-11-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2024-12-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2025-01-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2025-02-28.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2025-03-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2025-04-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2025-05-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2025-06-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2025-07-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2025-08-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2025-09-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2025-10-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2025-11-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2025-12-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2026-01-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2026-02-28.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2026-03-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2026-04-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2026-05-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2026-06-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2026-07-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2026-08-31.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2026-09-30.json",
+        "data/external/vintages/raw/USEPUINDXM_as_of_2026-10-14.json"
+      ],
+      "sha256": [
+        "696039330d4efabfee36963d339c30126fdde21d6e68157d983ac2a430cfa7e4",
+        "00375cedd7e3e5fc268c3165babb4237ef6b2296393bed1a8b87c7ba5920ff95",
+        "ea1c843abd94ae11a0629119406c8647786aee97cd443995750656a1c79e6dbb",
+        "bc1eeeeca3dfbc0ae606bb0ed12714bf59b4ea73fefa0895cd6f02b34e9ae59b",
+        "7c48c245b2644cd3b3779861758dae03225400e41da6a0ea508e283e130725e4",
+        "4c5ca0d87664337e42af0e732fdfb1c6787800974cfe31f9c418b258148489f2",
+        "1855b91d91a6d4199e5dde99eac97be083e38f9679132f4ed8500662e529bb01",
+        "9fe0f10c3b2d9992548064221d19be06cd348cc37bf6007558f40c08e8ae11d1",
+        "b6706daec0c0b7cb845624cc133e5ba604644e8512499e4c1406184816279652",
+        "4e24b09452cf34a9c9dba7243478b6a9ae358f9e48f16432b2f8f838f646aa2f",
+        "f3a87ad07d4a3d1f94d6b542f3817572133a752ac7d03be84988078b53d043ff",
+        "e800123e5315c4ead5680802f05996c78fd8e4cce8b5fd43e3f855855f889919",
+        "03315a82cd5c97182a15ae7c32858ab84be2e145ee2a5c8945be6657c55b7183",
+        "deb7c66a8331f2c2500bebf609ebe53b2c319911fe76fa3c43efcf01a5342652",
+        "aa55aecbf9333507c991676f79ae1c1dcbfb0863a7c6cfe84732afb946e21440",
+        "7615469422e88bb923fa2c954f0f6e39d879d5012c53c35459ad61b5d4c29e67",
+        "71dddd959d0967c3fa0c16fe042abffb697fbf41766709e9976e2501194fa96e",
+        "1bbc67fd28d90aa6b295bdb47f229df5c8f3425036205dd3db2c7a969d4cb264",
+        "558a555d41a411ae6022ceaae2d0798b1abf5e3e22c9dbb7e00eae7e01ee8a2c",
+        "5430a9e26611dcd8ee29bb1bab72de9f13e9feac48221360b24f02cf1f136245",
+        "bbdbf17462775f550d91b3985d6611950ba890a07c9dd6e08807df19c95a0e9d",
+        "0f6f265bb382067686749a1cf0a23bebb444957a081e0860209f34523f513a25",
+        "30524829c2de8ff523f9e7a1eb636507f5406ee667032a3c824af80872dc8b99",
+        "5d1e1af52abfdb45dcd7725b5562813286c5a13cb2653e433a567e082a1b6130",
+        "a2f6b8a4e7f50d28b141eacfcd19253863a4206f6ca38d16b5d175cdd10c5d1e",
+        "b06748727d890a9ccd6a874c82bda8e37dddd04806329520878b2c71ae484130",
+        "374f51b203351d13031ee376f0a44be7db115154af82278d67b9b88685a81776",
+        "e4eb58d1bd5629b49011b554a4619eed7f6e9658e59a1f5c84b4153cfc02661a",
+        "9468c2d2f72cab8b5dd269263e1707aea10fc3aee1f4faf7c2f02151916517bc",
+        "2be46ced28888c8575b8f009cb3a0ed724fe3396d2ecb2d9b28f67434f3a1f1f",
+        "3c7375b5abbcb52fbe565c606eb8958b501e69b5b0145fa4016279464a09dd50",
+        "9a917ddae898db3fdd676e25f705755432a4a27bfbe876dadc9c43f876b46e33",
+        "d05e438736968163c3a1e497a10cfd9b332ca1ae7bc12509162e3c9603b89fc4",
+        "9233adb9b619563c28b0c0e0b761416b3df39bddaba73a28698a8c622b45f34b",
+        "8a4f59aa104aa7188598b7599e281e2f387db26a775f6a5d4b6def5a7384bdb8",
+        "bb9d3d99559807538e18a82a9994158e53fb9467d1c65b74cd85b5a3c1a94d0f",
+        "f150dbb6af7690b396c726977d590a29b9601c656f432f2b016623fff161bb7d",
+        "034a52415107827a2425d08a6713c3ac3171d90f01cf9b3f2616a27001a6c92a",
+        "3dab632145a0328c9fc4e7efd3c08cfc062c15d176bfbbecd06ff1c30cde83c2",
+        "d8ea48898e38a6651024886c082899b79507cb8c7245388a581592bd1b90ac68",
+        "dce597ecd71911defbabc71cd23d2a7d9a4e641c1c6dc6f4e2ea409bb370c1fc",
+        "cac0a974b4897db5471c0235205ab42c6d0457b873304d0b5e58efe84d6140dc",
+        "ccea452d604b175f2d04375d84b0b587646cafe657345624c01e1f05e20a6bdb",
+        "a5ef77a8989d597be1ad28fcedc290708431d5cb8eb202976baed0063bb50881",
+        "2f30815a6a8318cd9e8350bb1399de926c93190b25842cd54443ecd1c9b77311",
+        "97b05b05763d8614a1c1e29cd63c1063a75e2e3ce055ab96e91560117ebd002c",
+        "dce83f1ee3006ae12a2ae34b534ff5c5e6373af648cdc05c09374554b8decb53",
+        "e8962b8bda910f0e718010e7c85e552eae076fb0f89775173885afffc74f9199",
+        "49cec3482636273d46d699c862ed57e1b8dca954f988b26711bde168da855796",
+        "77cf51e7cd9bef0a8f5785435fd55b3fdefbb6fb88a659884ce55c82f0e58929",
+        "cdbc7b29bd7397a18aae3389d92fad749c5c76b2134b8cd3c1e28b82ffa2254e",
+        "ab41ddb4d699cbd556da3dc706f179ce397b7ec1c9e77098c2d04e79a46e4785",
+        "b7e8ab7efe616dbdd7ea73b4a97b15e3a02ac73a7cd978776bd453567aac71f5",
+        "eaac7cca0d84cacd234a2a0c46b5c91c3e01154fccce1497f340c69c47cec979",
+        "989b44626e4d149ccdcf2cc71ca2ba7ea775e3f56a54703d0522e16f99a710e9",
+        "00e91077ffd09b251ff46527929eb2b0fbe7e4327ef31791e8e458e42feb0af0",
+        "50bba22f39b282e4969a424b0df00fca2085501cf041d9da5c3041469a5105ab",
+        "30fcf73f0afaf5283b4ed5a27e99f7cacd86bb8f4b66149b60593b36489ef2c5",
+        "25968671450877ecd48b019628e20932b4c7853cdacfc74deaa3ed091afb7660",
+        "b74c4b4efb7c3c0ce17ee94956831f163e137e18fcbc058405e72a14efe09163",
+        "f79a365be117755bda5eb4f83ed6eee05726beefb6177c37e1c49e76502c362f",
+        "875bf4c81f7ef598bd175d5e3e2aa6c4a4fdd283c1a1bf5533b6d75e56fb602d",
+        "a54c0c733d17453641b783aec3d6b02375c182f60bf36274bebbdee3ed493f8a",
+        "536f09e4f20c42081e3058fddd15a0e392c5556215dfc05ff2bee5bee23e1831",
+        "b58219fc8c26dc1535ba09ffda95a5fc3f02a6064a664c8232adb6ecb546a7fa",
+        "042ad11806d2b657991294424c0b11f7b354d73ec005bd79eefa224dff73800c",
+        "de6f40dd65c4c3f271bc7951a64fd56bcd86da4821caa2d5e39a8d5ada3a007e",
+        "a8ff7d9d72605c8a09119733d69fbb99baa9cf92669160294d5166974dd4486f",
+        "cae619f79e793a0227a1063f7b9f794cd3018660919bff393f83ff677ccc0e48",
+        "7caff3d4560183accaf72688ddc54729ad8cdc7a9bd9390de8ff41134fedb583",
+        "57729eb7b6760341f473c61cd7c62b64f3cb1dc51d30d3a5994d2ea0d1e02a92",
+        "2ef31428623168a71aad195f11dbe6696a4659ed636c4efb480ed6374a19d55a",
+        "cb7dc971c3877563936a670f73589807b6077b06044ca50e7d330ffa4a506a09",
+        "f1d999b6b72a03bf8a5da8ef9578a5c2e0143bf664cdc9f767cb7b81f4117b8c",
+        "b4dde9952d80656f1f0713055adb99896d5610fd0920ce7bb5abe52ca2616896",
+        "85b9edd2f9fc155d480df77369ca64acafa3c2e5ab16fb89c955d9251702d401",
+        "c37ae8bf3376e0882e0d92826f3075e06d4f09a76359e09a2b8e9d8438dc269d",
+        "a821e24c66349542fd6657ace06b625bcb0ee5ca397318629a801e72b0b42d60",
+        "ec91740e438ba12a2e2ab5a2f5a09d5431ad9819e4b7bffaa57ed509cd38be98",
+        "04508c8452b28705daefa04e1208e740ffd3a99a761f9917bd5956e11253985e",
+        "d082919d91061a44b7e40df7dde08caef93896b8e5a590ae10b0401bb80bd999",
+        "3c3fc4edc5e7fdad233dc6f8d815764e1d3b3477a5682737fca2d97c09ea8888",
+        "a3bf18eeb0950996e06183ea2e0a80e9d0530eba69649c2f92ea3bb69a50b101",
+        "f66bc43dbe8774cb6c34684907bb55e257c30b5860b83770851ba348df02364a",
+        "a9a428d8a1713cc929dc365bd53f759ce0c5cdf52f0691f4e43d4e0cae0ef6aa",
+        "9d94ceda4ae66ab21c2423aa14fe80f6dbcf6dece85fd57132c302aee89fb011",
+        "b35b23e577a4b260edd037e19988ec3e73e22fd036377e0ebbca6d2ee3f4dc63",
+        "8d5fc6305cc09afd41d14cc84cbaf90fcca5bc7bbbe3f26dcac54fa2bcf912ef",
+        "207ad3d958c5c4874047bb1bb5ee7e3cd7e3148817472898bf36d0a811d8588e",
+        "fe15e6436fcfc18fdd2c5e71c500de911d30a3ec91aabee71028299177fda436",
+        "fee22edf98001ecf0eb4ac3af1edf73153291b86f322bdb22e7c761f61342c4b",
+        "33f2444e2a8dea810a5b17648c54cfff6f01783175905cbcdc50d419769b82a3",
+        "2bbf8634b725bb5f614c9f07b39408521ed78618b738537726f567d2747047af",
+        "2ea105bd3f83845d35c447a652692acab95c23ef3150c3bf9c3697177ebb30bf",
+        "242e4556521d01daa856a3b298b4179d6a800c1586a5b2f2ec85b126d545b27c",
+        "24fdcd558fdb646b0b3cca1bb1ad0d9a1a0a15768595769d9212361d9820ae40",
+        "b5e0d19c6a2c9730e8a9da155115018705e86e4a4a6d2eb00ce1a152eefe7cc6",
+        "54fe8c8cc809be3b2cc49eecec23e7aa94d10aace9ee1c5b0a2baa19d08c4941",
+        "559836d713a0feaaed2734e09e4cc98f2674f759393aae47fa9304d5922e6b91",
+        "66c8f24c2f4447f1763dac0b2a5094858980695831261454a2f3ba2aedf55390",
+        "6008b1ceeceaf980fdff0ec14124b59920ed8058b74289b93f2cbb5b1216632a",
+        "2b8e69d71b80d172e607e093895ed0502ec80a81961e5ec83aeb1988e0d42e23",
+        "af3e6677a0908724886f0f4e4888564dbed3fcb850141278d5d4746ade860274",
+        "766204fa92bdaced30a03e1380c3773d1b054a4c849b570adf9c6a9d507a58f7",
+        "c6f83f68df0902d6b17d4973575684c69d17cac64e249784e2eed99510899257",
+        "3d94d5332c3220d347abe97796c171430fae18da9e7f81ff91510cb7ba47eafd",
+        "ff1ecf17cb6745eab6ec063a84447367876067cc2030f1d4d3749fd7b573bdec",
+        "246f8778182dfbc9c69e30d903b3a94c90e112436553d5246f7c742a5a4ace76",
+        "b79d71cc09c9d4f99f93e6345943ce0a8c881119bff08532cee0f91552a75d50",
+        "9955c70ec3cc74764f33631258f88857cff4e6c7f56705166159902ce36720f0",
+        "50bf9607fcd69a4f13f551e1bbe8ff23a75775ce41a2ecb48dcba1de5fd02100",
+        "d67fd5268c6512f20d2a9aee86ccd26da764920ade7c271e59cdc04dbf12678e",
+        "26366d16f3484ef69b4faac5317fe335f408afb8665596c62c4105429f7fc91c",
+        "7027cdc216cbb439ac44e80a4b8e4aacc579a793da1f97cdd2c157844bc09d6c",
+        "6ca769b18790a5632e7b5065364cb7c5890eb30a4786c80ab6014c6ddfff7592",
+        "37132ab75d7c80547aaa899ce68a2f4f3b29e034d31d1266c66cf96bf15d395b",
+        "2b7a3bdc57f07dd12839cfc8565a03ce60ff0404a630ec32b244135b69f43904",
+        "371f825e8ef16705249e88d93ea8c6998414a91e7af0047e819c8899694eb325",
+        "d382c058bbfb31ad75c19e56034e66d9aa24c7df595a00a3bb5b955eb1c0bb0c",
+        "7a04b5370642e4180f24c5d6d40932649edbd8da4380820d992c6ec2c771d51f",
+        "01875aecc666bdb3d6aee35fd99c2f2aae591b60323702deeaa7746bd3a0d29d",
+        "c5ff823a1693c43d00b38c5d13454aba8202e9030807e860a97765a7744cd3a0",
+        "facf65623caf542d37139e66a6b17319aaa92bbea7f8c24d2247a06dd8545487",
+        "8f160ab0d73d825b05b00403aae683f4189587ff21911a7d022c49b4f8960a12",
+        "89dc190edce6d560ebf6d423888a6f8db3d85334efecba10a4139cd3d3d32e9b",
+        "ec7fd8e4ad4055c15fc410ee5fc03f946a30779bfd85fb22f7c575c875d02048",
+        "77f11fa1ce683cd1cb81ea00e4b355746f1f626246b222b136ee0111848e7d0a",
+        "1fa07b183411697f6989373386d07fd54fa48261922d883c9010c6abdd3306c7",
+        "d9ebd6556c37ee20ca94edcdef380f13c92b8ba09f217aa4e9b301589332f25a",
+        "201b3be3d9c8210baf59109a145b36b0163857f9b987246a10dc16ac3a0dd98c",
+        "7b94082e73b9ee6701503fdf25b8a5c780bff9d75e97c258098fb47019e98b0b",
+        "147f629d4a7759ff4b125ec6ec5ba1d5656cf41af47c8618eab5eea5a5002058",
+        "41efd6a3aa257e5dbcdbcf4ee943508f926c29db0dc8d5798fc27bf58fbcad1c",
+        "9769d9b4543e8903b85087808877beea6e3522b8c96a922b33c508dddd8957da",
+        "82ce669b71ad004a8d5e66a4835b762145191120e9a6c2d1c54404d1c86105ff",
+        "2c66ca886e6fb740e52478d6dc4796c2724f124b69dd5655de176af073234224",
+        "fcdc3d5a7ec946ddb5cd895f7bdeb122a4088ffda84fb313f035c82abc510820",
+        "fad0f8d434730794ed4e5145003c1b001b2dd04c9b88a59599a88e4a356fe2ce",
+        "878a37c32fc6fdd3c6b137a4d2fbce7bf8b306f15951ff9b778e21e79a697152",
+        "1d213fe6b5656175dece6c45fc9962f7a748d44393b8bbef849fd8d301a47d9d",
+        "bc668938efd6abd5240195fc011fa667809c73ac752960ea50c2e73fc1ffe581",
+        "5322bba663187137ef7ed3a39fa272a4b56a0df053fc1d1d883e73e903bd74be",
+        "f44273a9a3ff48866b0c34309d1e54d7f453bf1fd996be61865030f1216f5836",
+        "71d361d97657abcb5d1b2d6d28b0c4a5500a8f10bc6ba887978babf60b73d0b7",
+        "b328db72b2bf2935dd81df237641158a9c43899daf3bf2f6bcf3777d2e0a25ac",
+        "2fe5b513c9ea302a4dba2c56b305b49cc243c18521882d4eb1fc2c5356855eeb",
+        "83a2baa58172c2b0185bae298c7e665f5f71367e8955ba9030af43f6d915df37",
+        "9c9c6050364142508fbb037f0c29bf11ac562403823dab98e07425e5732c7d38",
+        "4d4971792f9835d88732809fc5402c01086e119d8fd4903e7dcf063be6602dce",
+        "9cdeab8e4e823b1e0b8e5244580e9041c069b002a3fa32641ae4b06e51d56f4c",
+        "a881c90515b871b0f90e9d8a1dff3279405f63fe8cfb4631799e2488e12b37de",
+        "1b47ae3c4a18ea12acaf18e1dcd51d25bd840eedd4b7f5d99869376e9f025027",
+        "1dc32c5b80914f7c39d4189a7809ea0fcf3436625b8f28d69037aa8e4033cba3",
+        "2dcc90cca95821d873df82d3546268a0b47a144a88d3f668fa80c7dfb58eb056",
+        "16cf061d0fb5db89743022b9881ed4f7d9be4f163257eb11963aecf54b08d1a8",
+        "5d51e7d7fae6f8e4d64fe7faa3b47fdab8bcb87c38242627ba231cf653ff00ad",
+        "de8322573a92b0585b3a8eec4960bbc139e2dba20db4e5d2e9a544b21e4c6c49",
+        "95aae7c27f0f64d9c95bf3c1d8aca4245b922237d9f2a8680a9a42cf6eab10ea",
+        "5aa0c65698b040f3fe4bf42fd0b9c7464b66ce515593b07ea8f2c80b32249ffb",
+        "e7adf983200fb932abd65976e31cd5db2ba8d351affa8d3cfd128696c914cd5d",
+        "a094d94680cd9bdeec98db286b3df2dbe503bf611fcad9611f10da3aa96b534d"
+      ],
+      "source_url": "https://fred.stlouisfed.org/series/USEPUINDXM",
+      "timestamp_precision": "date_only_from_alfred",
+      "method": "One FRED observations API request per configured information cutoff; realtime_start=realtime_end=cutoff.",
+      "requested_cutoffs": 202,
+      "collected_cutoffs": 161,
+      "unavailable_cutoffs": [
+        {
+          "cutoff": "2010-01-31",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2010-02-28",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2010-03-31",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2010-04-30",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2010-05-31",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2010-06-30",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2010-07-31",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2010-08-31",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2010-09-30",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2010-10-31",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2010-11-30",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2010-12-31",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2011-01-31",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2011-02-28",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2011-03-31",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2011-04-30",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2011-05-31",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2011-06-30",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2011-07-31",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2011-08-31",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2011-09-30",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2011-10-31",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2011-11-30",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2011-12-31",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2012-01-31",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2012-02-29",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2012-03-31",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2012-04-30",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2012-05-31",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2012-06-30",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2012-07-31",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2012-08-31",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2012-09-30",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2012-10-31",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2012-11-30",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2012-12-31",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2013-01-31",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2013-02-28",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2013-03-31",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2013-04-30",
+          "reason": "before_first_alfred_release"
+        },
+        {
+          "cutoff": "2013-05-31",
+          "reason": "before_first_alfred_release"
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "long_observations": "data/external/vintages/processed/alfred_control_vintage_observations.csv",
+    "as_of_snapshots": "data/external/vintages/processed/control_vintage_snapshot_panel.csv"
+  },
+  "limitation": "ALFRED vintage dates are dates, not intraday timestamps. Series without ALFRED history are explicitly blocked pending primary-release archives."
+}

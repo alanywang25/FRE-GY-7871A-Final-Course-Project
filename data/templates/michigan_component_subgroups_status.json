@@ -1,0 +1,17 @@
+{
+  "component_status": "cutoff_pending_release",
+  "last_verified_component_month": "2026-02-28",
+  "missing_months": [
+    "2026-03-31",
+    "2026-04-30",
+    "2026-05-31",
+    "2026-06-30",
+    "2026-07-31",
+    "2026-08-31"
+  ],
+  "availability_checked_on": "2026-10-14",
+  "source": "University of Michigan Surveys of Consumers Cross-Section Archive",
+  "attempted_filter": "YYYYMM(202603-202608)",
+  "result": "No records returned.",
+  "message": "Age-group ICS source rows are loaded separately. Verified subgroup ICC/ICE components are frozen at 2026-02: the public archive query YYYYMM(202603-202608) returned no records on 2026-10-14, and the archive production rule has not yet been validated against Table 1B. March–August 2026 are pending archive or producer release."
+}

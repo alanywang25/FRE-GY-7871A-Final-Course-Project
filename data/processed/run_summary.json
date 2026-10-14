@@ -26,9 +26,9 @@
     },
     "expanded_controls": {
       "n_oos": 142,
-      "mae": 4.687,
-      "rmse": 6.915,
-      "interval_coverage": 0.838
+      "mae": 4.467,
+      "rmse": 6.236,
+      "interval_coverage": 0.831
     }
   },
   "diagnostics": {
@@ -49,8 +49,8 @@
       "durbin_watson": 0.567
     },
     "expanded_controls": {
-      "residual_lag1_autocorrelation": 0.501,
-      "durbin_watson": 0.985
+      "residual_lag1_autocorrelation": 0.586,
+      "durbin_watson": 0.817
     }
   },
   "macro_refresh": {

@@ -109,6 +109,95 @@
           "max": 0.954
         }
       }
+    },
+    "economic_media_archived_controls": {
+      "n_oos": 41,
+      "mae": 7.92,
+      "rmse": 18.612,
+      "interval_coverage": 0.683,
+      "diagnostics": {
+        "residual_lag1_autocorrelation": -0.151,
+        "durbin_watson": 2.294
+      },
+      "coefficient_stability": {
+        "unemployment": {
+          "n": 41,
+          "mean": 0.4046,
+          "std": 4.308,
+          "min": -6.295,
+          "max": 7.1506
+        },
+        "pce_yoy": {
+          "n": 41,
+          "mean": -0.2273,
+          "std": 3.1315,
+          "min": -6.2886,
+          "max": 5.1947
+        },
+        "gdp_qoq_annualized": {
+          "n": 41,
+          "mean": 0.5894,
+          "std": 0.5367,
+          "min": -0.1251,
+          "max": 1.7038
+        },
+        "media_tone_negative_share": {
+          "n": 41,
+          "mean": -24.4172,
+          "std": 36.7566,
+          "min": -120.1411,
+          "max": 0.0
+        },
+        "underemployment_u6": {
+          "n": 41,
+          "mean": -1.9578,
+          "std": 1.6134,
+          "min": -5.3166,
+          "max": 0.9995
+        },
+        "real_disposable_income_yoy": {
+          "n": 41,
+          "mean": -0.1862,
+          "std": 0.9515,
+          "min": -2.0029,
+          "max": 1.5607
+        },
+        "pce_cumulative_since_2010": {
+          "n": 41,
+          "mean": 0.2383,
+          "std": 1.6017,
+          "min": -2.1462,
+          "max": 3.976
+        },
+        "debt_service_ratio": {
+          "n": 41,
+          "mean": -3.4924,
+          "std": 8.1246,
+          "min": -24.2747,
+          "max": 10.3299
+        },
+        "policy_uncertainty": {
+          "n": 41,
+          "mean": -0.0091,
+          "std": 0.0284,
+          "min": -0.069,
+          "max": 0.026
+        },
+        "month_sin": {
+          "n": 41,
+          "mean": 1.3978,
+          "std": 0.871,
+          "min": -0.5603,
+          "max": 2.8135
+        },
+        "month_cos": {
+          "n": 41,
+          "mean": 0.242,
+          "std": 0.3699,
+          "min": -0.4079,
+          "max": 1.0076
+        }
+      }
     }
   },
   "lag_sensitivity": {
@@ -125,10 +214,23 @@
       "interval_coverage": 0.707
     }
   },
+  "third_model": {
+    "estimated": true,
+    "controls": [
+      "underemployment_u6",
+      "real_disposable_income_yoy",
+      "pce_cumulative_since_2010",
+      "debt_service_ratio",
+      "policy_uncertainty"
+    ],
+    "timing_status": "archived_point_in_time_controls",
+    "message": "The third required specification uses monthly point-in-time ALFRED snapshots for U-6, real disposable income, PCE prices, debt service, and the legacy three-component EPU index."
+  },
   "measurement_scope": "Historical specification uses independently validated tone only; framing, salience, and factual calibration remain descriptive in the archive.",
   "caveats": [
     "Forecast improvement is associational, not causal.",
     "Seasonal sine/cosine terms are included; residual autocorrelation is reported.",
-    "Do not report media-dimension effects beyond independently validated tone."
+    "Do not report media-dimension effects beyond independently validated tone.",
+    "The added controls use monthly date-only ALFRED snapshots; their release times are not intraday timestamps."
   ]
 }

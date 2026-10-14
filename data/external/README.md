@@ -9,6 +9,19 @@ python scripts/refresh_public_macro.py
 python src/pipeline.py
 ```
 
+When a current publisher file is supplied, use the narrowly scoped importer
+instead of treating a daily FRED mirror as a monthly EPU observation:
+
+```bash
+python scripts/import_current_epu_nar_controls.py --epu-xlsx /path/to/US_Policy_Uncertainty_Data.xlsx
+python src/pipeline.py
+```
+
+It records the publisher's legacy three-component monthly EPU history
+(`USEPUINDXM`) and the dated NAR September 2026 HAI release as current-source
+inputs. It does not change the separate
+historical-vintage requirement.
+
 The registry identifies the primary publisher even though FRED is used as a reproducible public mirror. It includes headline sentiment, U-3/U-6, PCE price level, real disposable income, real GDP, debt service, housing affordability, and policy uncertainty. Current-conditions and expectations subindices are registered as direct/licensed Michigan inputs: they are intentionally not substituted with a wrong FRED series.
 
 ## Timing and vintage guardrail

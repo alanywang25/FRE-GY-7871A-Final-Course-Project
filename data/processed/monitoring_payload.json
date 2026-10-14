@@ -186,6 +186,95 @@
               "max": 0.954
             }
           }
+        },
+        "economic_media_archived_controls": {
+          "n_oos": 41,
+          "mae": 7.92,
+          "rmse": 18.612,
+          "interval_coverage": 0.683,
+          "diagnostics": {
+            "residual_lag1_autocorrelation": -0.151,
+            "durbin_watson": 2.294
+          },
+          "coefficient_stability": {
+            "unemployment": {
+              "n": 41,
+              "mean": 0.4046,
+              "std": 4.308,
+              "min": -6.295,
+              "max": 7.1506
+            },
+            "pce_yoy": {
+              "n": 41,
+              "mean": -0.2273,
+              "std": 3.1315,
+              "min": -6.2886,
+              "max": 5.1947
+            },
+            "gdp_qoq_annualized": {
+              "n": 41,
+              "mean": 0.5894,
+              "std": 0.5367,
+              "min": -0.1251,
+              "max": 1.7038
+            },
+            "media_tone_negative_share": {
+              "n": 41,
+              "mean": -24.4172,
+              "std": 36.7566,
+              "min": -120.1411,
+              "max": 0.0
+            },
+            "underemployment_u6": {
+              "n": 41,
+              "mean": -1.9578,
+              "std": 1.6134,
+              "min": -5.3166,
+              "max": 0.9995
+            },
+            "real_disposable_income_yoy": {
+              "n": 41,
+              "mean": -0.1862,
+              "std": 0.9515,
+              "min": -2.0029,
+              "max": 1.5607
+            },
+            "pce_cumulative_since_2010": {
+              "n": 41,
+              "mean": 0.2383,
+              "std": 1.6017,
+              "min": -2.1462,
+              "max": 3.976
+            },
+            "debt_service_ratio": {
+              "n": 41,
+              "mean": -3.4924,
+              "std": 8.1246,
+              "min": -24.2747,
+              "max": 10.3299
+            },
+            "policy_uncertainty": {
+              "n": 41,
+              "mean": -0.0091,
+              "std": 0.0284,
+              "min": -0.069,
+              "max": 0.026
+            },
+            "month_sin": {
+              "n": 41,
+              "mean": 1.3978,
+              "std": 0.871,
+              "min": -0.5603,
+              "max": 2.8135
+            },
+            "month_cos": {
+              "n": 41,
+              "mean": 0.242,
+              "std": 0.3699,
+              "min": -0.4079,
+              "max": 1.0076
+            }
+          }
         }
       },
       "lag_sensitivity": {
@@ -202,11 +291,24 @@
           "interval_coverage": 0.707
         }
       },
+      "third_model": {
+        "estimated": true,
+        "controls": [
+          "underemployment_u6",
+          "real_disposable_income_yoy",
+          "pce_cumulative_since_2010",
+          "debt_service_ratio",
+          "policy_uncertainty"
+        ],
+        "timing_status": "archived_point_in_time_controls",
+        "message": "The third required specification uses monthly point-in-time ALFRED snapshots for U-6, real disposable income, PCE prices, debt service, and the legacy three-component EPU index."
+      },
       "measurement_scope": "Historical specification uses independently validated tone only; framing, salience, and factual calibration remain descriptive in the archive.",
       "caveats": [
         "Forecast improvement is associational, not causal.",
         "Seasonal sine/cosine terms are included; residual autocorrelation is reported.",
-        "Do not report media-dimension effects beyond independently validated tone."
+        "Do not report media-dimension effects beyond independently validated tone.",
+        "The added controls use monthly date-only ALFRED snapshots; their release times are not intraday timestamps."
       ]
     },
     "dictionary_validation": {
@@ -351,6 +453,16 @@
         "results": "/Users/alanwang/Downloads/FRE-GY-7871A-Final-Course-Project/data/processed/causal_association_results.csv"
       }
     },
+    "source_benchmark": {
+      "ready": true,
+      "items": 312,
+      "matched_items": 171,
+      "matched_day_topic_cells": 25,
+      "comparisons": 21,
+      "method": "Pairs source strata within publication-day and pre-specified salience-topic cells; reports unweighted matched-cell contrasts.",
+      "scope": "Content supply only. This benchmark does not establish bias, represent audience exposure, or identify causal effects.",
+      "output": "data/processed/source_comparative_benchmark.csv"
+    },
     "macro_refresh": {
       "available": true,
       "retrieved_at_utc": "2026-10-13T02:19:11+00:00",
@@ -395,9 +507,19 @@
         "message": "Populated input available."
       },
       "survey_subgroups": {
-        "available": false,
-        "rows": 0,
-        "message": "Template only; supply documented observations before use."
+        "available": true,
+        "rows": 600,
+        "message": "Age-group ICS source rows are loaded separately. Verified subgroup ICC/ICE components are frozen at 2026-02: the public archive query YYYYMM(202603-202608) returned no records on 2026-10-14, and the archive production rule has not yet been validated against Table 1B. March\u2013August 2026 are pending archive or producer release.",
+        "component_status": "cutoff_pending_release",
+        "component_cutoff": "2026-02-28",
+        "component_missing_months": [
+          "2026-03-31",
+          "2026-04-30",
+          "2026-05-31",
+          "2026-06-30",
+          "2026-07-31",
+          "2026-08-31"
+        ]
       }
     }
   },
@@ -435,9 +557,9 @@
     },
     "expanded_controls": {
       "n_oos": 142,
-      "mae": 4.687,
-      "rmse": 6.915,
-      "interval_coverage": 0.838
+      "mae": 4.467,
+      "rmse": 6.236,
+      "interval_coverage": 0.831
     }
   },
   "diagnostics": {
@@ -458,8 +580,8 @@
       "durbin_watson": 0.567
     },
     "expanded_controls": {
-      "residual_lag1_autocorrelation": 0.501,
-      "durbin_watson": 0.985
+      "residual_lag1_autocorrelation": 0.586,
+      "durbin_watson": 0.817
     }
   },
   "model_comparison": [
@@ -499,9 +621,9 @@
       "name": "Economic + expanded public controls",
       "status": "estimated",
       "n_oos": 142,
-      "mae": 4.687,
-      "rmse": 6.915,
-      "interval_coverage": 0.838
+      "mae": 4.467,
+      "rmse": 6.236,
+      "interval_coverage": 0.831
     },
     {
       "name": "Economic + historical media",
@@ -560,9 +682,8 @@
       }
     },
     {
-      "name": "Economic + media + expanded controls",
-      "status": "blocked",
-      "reason": "Requires an aligned historical media panel, expanded controls with common history, and archived-vintage macro data."
+      "name": "Economic + media + household controls (retrospective sensitivity)",
+      "status": "estimated"
     }
   ],
   "macro": [
@@ -2968,62 +3089,4873 @@
   "media": [
     {
       "month": "2026-08-31",
-      "available_on": "2026-10-13T22:17:13-04:00",
+      "available_on": "2026-10-14T10:19:48-04:00",
       "aggregate_status": "independently_adjudicated",
       "tone_negative_share": 0.321429,
       "tone_positive_share": 0.285714,
       "tone_mixed_share": 0.142857,
-      "price_level_frame_share": 0.214286,
-      "recession_salience_share": 0.035714,
       "factual_calibrated_share": 1.0,
       "factual_materially_incomplete_share": 0.0,
+      "factual_unverifiable_share": 0.0,
+      "political_attribution_share": 0.25,
+      "political_blame_share": 0.071429,
+      "political_credit_share": 0.107143,
       "corpus_items": 28,
       "eligible_items": 28,
       "unresolved_items": 0,
       "source_count": 10,
       "missingness_rate": 0.0,
-      "notes": "Source-blinded, independently coded all-field validation aggregate; availability is the finalized-label build timestamp, not the publication date."
+      "notes": "Source-blinded, independently coded all-field validation aggregate; availability is the finalized-label build timestamp, not the publication date.",
+      "salience_layoffs_share": 0.035714,
+      "salience_hiring_share": 0.035714,
+      "salience_price_level_share": 0.214286,
+      "salience_disinflation_share": 0.035714,
+      "salience_growth_share": 0.392857,
+      "salience_recession_risk_share": 0.035714,
+      "frame_price_level_share": 0.214286,
+      "frame_inflation_rate_share": 0.035714,
+      "frame_household_experience_share": 0.285714,
+      "frame_national_aggregate_share": 0.571429,
+      "frame_current_share": 0.642857,
+      "frame_forecast_share": 0.178571,
+      "price_level_frame_share": 0.214286,
+      "recession_salience_share": 0.035714
     },
     {
       "month": "2026-09-30",
-      "available_on": "2026-10-13T22:17:13-04:00",
+      "available_on": "2026-10-14T10:19:48-04:00",
       "aggregate_status": "independently_adjudicated",
       "tone_negative_share": 0.289855,
       "tone_positive_share": 0.173913,
       "tone_mixed_share": 0.15942,
-      "price_level_frame_share": 0.144928,
-      "recession_salience_share": 0.0,
       "factual_calibrated_share": 0.985507,
       "factual_materially_incomplete_share": 0.014493,
+      "factual_unverifiable_share": 0.0,
+      "political_attribution_share": 0.217391,
+      "political_blame_share": 0.086957,
+      "political_credit_share": 0.0,
       "corpus_items": 69,
       "eligible_items": 69,
       "unresolved_items": 0,
       "source_count": 10,
       "missingness_rate": 0.0,
-      "notes": "Source-blinded, independently coded all-field validation aggregate; availability is the finalized-label build timestamp, not the publication date."
+      "notes": "Source-blinded, independently coded all-field validation aggregate; availability is the finalized-label build timestamp, not the publication date.",
+      "salience_layoffs_share": 0.028986,
+      "salience_hiring_share": 0.101449,
+      "salience_price_level_share": 0.333333,
+      "salience_disinflation_share": 0.028986,
+      "salience_growth_share": 0.173913,
+      "salience_recession_risk_share": 0.0,
+      "frame_price_level_share": 0.144928,
+      "frame_inflation_rate_share": 0.15942,
+      "frame_household_experience_share": 0.217391,
+      "frame_national_aggregate_share": 0.42029,
+      "frame_current_share": 0.608696,
+      "frame_forecast_share": 0.130435,
+      "price_level_frame_share": 0.144928,
+      "recession_salience_share": 0.0
     },
     {
       "month": "2026-10-31",
-      "available_on": "2026-10-13T22:17:13-04:00",
+      "available_on": "2026-10-14T10:19:48-04:00",
       "aggregate_status": "independently_adjudicated",
       "tone_negative_share": 0.35814,
       "tone_positive_share": 0.148837,
       "tone_mixed_share": 0.074419,
-      "price_level_frame_share": 0.148837,
-      "recession_salience_share": 0.032558,
       "factual_calibrated_share": 0.851163,
       "factual_materially_incomplete_share": 0.083721,
+      "factual_unverifiable_share": 0.065116,
+      "political_attribution_share": 0.144186,
+      "political_blame_share": 0.088372,
+      "political_credit_share": 0.009302,
       "corpus_items": 215,
       "eligible_items": 215,
       "unresolved_items": 0,
       "source_count": 17,
       "missingness_rate": 0.0,
-      "notes": "Source-blinded, independently coded all-field validation aggregate; availability is the finalized-label build timestamp, not the publication date."
+      "notes": "Source-blinded, independently coded all-field validation aggregate; availability is the finalized-label build timestamp, not the publication date.",
+      "salience_layoffs_share": 0.069767,
+      "salience_hiring_share": 0.097674,
+      "salience_price_level_share": 0.283721,
+      "salience_disinflation_share": 0.013953,
+      "salience_growth_share": 0.102326,
+      "salience_recession_risk_share": 0.032558,
+      "frame_price_level_share": 0.148837,
+      "frame_inflation_rate_share": 0.093023,
+      "frame_household_experience_share": 0.186047,
+      "frame_national_aggregate_share": 0.348837,
+      "frame_current_share": 0.432558,
+      "frame_forecast_share": 0.144186,
+      "price_level_frame_share": 0.148837,
+      "recession_salience_share": 0.032558
+    }
+  ],
+  "media_by_source": [
+    {
+      "month": "2026-08-01",
+      "available_on": "2026-10-14T10:19:48-04:00",
+      "aggregate_status": "independently_adjudicated",
+      "tone_negative_share": 0.380952,
+      "tone_positive_share": 0.285714,
+      "tone_mixed_share": 0.095238,
+      "factual_calibrated_share": 1.0,
+      "factual_materially_incomplete_share": 0.0,
+      "factual_unverifiable_share": 0.0,
+      "political_attribution_share": 0.238095,
+      "political_blame_share": 0.095238,
+      "political_credit_share": 0.095238,
+      "corpus_items": 21,
+      "eligible_items": 21,
+      "unresolved_items": 0,
+      "source_count": 7,
+      "missingness_rate": 0.0,
+      "notes": "Source-blinded, independently coded all-field validation aggregate; availability is the finalized-label build timestamp, not the publication date.",
+      "salience_layoffs_share": 0.047619,
+      "salience_hiring_share": 0.047619,
+      "salience_price_level_share": 0.285714,
+      "salience_disinflation_share": 0.0,
+      "salience_growth_share": 0.238095,
+      "salience_recession_risk_share": 0.047619,
+      "frame_price_level_share": 0.285714,
+      "frame_inflation_rate_share": 0.0,
+      "frame_household_experience_share": 0.380952,
+      "frame_national_aggregate_share": 0.428571,
+      "frame_current_share": 0.619048,
+      "frame_forecast_share": 0.142857,
+      "price_level_frame_share": 0.285714,
+      "recession_salience_share": 0.047619,
+      "source_stratum": "local"
+    },
+    {
+      "month": "2026-08-01",
+      "available_on": "2026-10-14T10:19:48-04:00",
+      "aggregate_status": "independently_adjudicated",
+      "tone_negative_share": 0.142857,
+      "tone_positive_share": 0.285714,
+      "tone_mixed_share": 0.285714,
+      "factual_calibrated_share": 1.0,
+      "factual_materially_incomplete_share": 0.0,
+      "factual_unverifiable_share": 0.0,
+      "political_attribution_share": 0.285714,
+      "political_blame_share": 0.0,
+      "political_credit_share": 0.142857,
+      "corpus_items": 7,
+      "eligible_items": 7,
+      "unresolved_items": 0,
+      "source_count": 3,
+      "missingness_rate": 0.0,
+      "notes": "Source-blinded, independently coded all-field validation aggregate; availability is the finalized-label build timestamp, not the publication date.",
+      "salience_layoffs_share": 0.0,
+      "salience_hiring_share": 0.0,
+      "salience_price_level_share": 0.0,
+      "salience_disinflation_share": 0.142857,
+      "salience_growth_share": 0.857143,
+      "salience_recession_risk_share": 0.0,
+      "frame_price_level_share": 0.0,
+      "frame_inflation_rate_share": 0.142857,
+      "frame_household_experience_share": 0.0,
+      "frame_national_aggregate_share": 1.0,
+      "frame_current_share": 0.714286,
+      "frame_forecast_share": 0.285714,
+      "price_level_frame_share": 0.0,
+      "recession_salience_share": 0.0,
+      "source_stratum": "national"
+    },
+    {
+      "month": "2026-09-01",
+      "available_on": "2026-10-14T10:19:48-04:00",
+      "aggregate_status": "independently_adjudicated",
+      "tone_negative_share": 0.25,
+      "tone_positive_share": 0.173077,
+      "tone_mixed_share": 0.134615,
+      "factual_calibrated_share": 0.980769,
+      "factual_materially_incomplete_share": 0.019231,
+      "factual_unverifiable_share": 0.0,
+      "political_attribution_share": 0.211538,
+      "political_blame_share": 0.076923,
+      "political_credit_share": 0.0,
+      "corpus_items": 52,
+      "eligible_items": 52,
+      "unresolved_items": 0,
+      "source_count": 7,
+      "missingness_rate": 0.0,
+      "notes": "Source-blinded, independently coded all-field validation aggregate; availability is the finalized-label build timestamp, not the publication date.",
+      "salience_layoffs_share": 0.038462,
+      "salience_hiring_share": 0.096154,
+      "salience_price_level_share": 0.288462,
+      "salience_disinflation_share": 0.0,
+      "salience_growth_share": 0.134615,
+      "salience_recession_risk_share": 0.0,
+      "frame_price_level_share": 0.153846,
+      "frame_inflation_rate_share": 0.096154,
+      "frame_household_experience_share": 0.192308,
+      "frame_national_aggregate_share": 0.346154,
+      "frame_current_share": 0.538462,
+      "frame_forecast_share": 0.115385,
+      "price_level_frame_share": 0.153846,
+      "recession_salience_share": 0.0,
+      "source_stratum": "local"
+    },
+    {
+      "month": "2026-09-01",
+      "available_on": "2026-10-14T10:19:48-04:00",
+      "aggregate_status": "independently_adjudicated",
+      "tone_negative_share": 0.411765,
+      "tone_positive_share": 0.176471,
+      "tone_mixed_share": 0.235294,
+      "factual_calibrated_share": 1.0,
+      "factual_materially_incomplete_share": 0.0,
+      "factual_unverifiable_share": 0.0,
+      "political_attribution_share": 0.235294,
+      "political_blame_share": 0.117647,
+      "political_credit_share": 0.0,
+      "corpus_items": 17,
+      "eligible_items": 17,
+      "unresolved_items": 0,
+      "source_count": 3,
+      "missingness_rate": 0.0,
+      "notes": "Source-blinded, independently coded all-field validation aggregate; availability is the finalized-label build timestamp, not the publication date.",
+      "salience_layoffs_share": 0.0,
+      "salience_hiring_share": 0.117647,
+      "salience_price_level_share": 0.470588,
+      "salience_disinflation_share": 0.117647,
+      "salience_growth_share": 0.294118,
+      "salience_recession_risk_share": 0.0,
+      "frame_price_level_share": 0.117647,
+      "frame_inflation_rate_share": 0.352941,
+      "frame_household_experience_share": 0.294118,
+      "frame_national_aggregate_share": 0.647059,
+      "frame_current_share": 0.823529,
+      "frame_forecast_share": 0.176471,
+      "price_level_frame_share": 0.117647,
+      "recession_salience_share": 0.0,
+      "source_stratum": "national"
+    },
+    {
+      "month": "2026-10-01",
+      "available_on": "2026-10-14T10:19:48-04:00",
+      "aggregate_status": "independently_adjudicated",
+      "tone_negative_share": 0.25,
+      "tone_positive_share": 0.375,
+      "tone_mixed_share": 0.0625,
+      "factual_calibrated_share": 1.0,
+      "factual_materially_incomplete_share": 0.0,
+      "factual_unverifiable_share": 0.0,
+      "political_attribution_share": 0.09375,
+      "political_blame_share": 0.0625,
+      "political_credit_share": 0.03125,
+      "corpus_items": 32,
+      "eligible_items": 32,
+      "unresolved_items": 0,
+      "source_count": 8,
+      "missingness_rate": 0.0,
+      "notes": "Source-blinded, independently coded all-field validation aggregate; availability is the finalized-label build timestamp, not the publication date.",
+      "salience_layoffs_share": 0.125,
+      "salience_hiring_share": 0.15625,
+      "salience_price_level_share": 0.15625,
+      "salience_disinflation_share": 0.0,
+      "salience_growth_share": 0.09375,
+      "salience_recession_risk_share": 0.0,
+      "frame_price_level_share": 0.15625,
+      "frame_inflation_rate_share": 0.0,
+      "frame_household_experience_share": 0.21875,
+      "frame_national_aggregate_share": 0.25,
+      "frame_current_share": 0.46875,
+      "frame_forecast_share": 0.03125,
+      "price_level_frame_share": 0.15625,
+      "recession_salience_share": 0.0,
+      "source_stratum": "local"
+    },
+    {
+      "month": "2026-10-01",
+      "available_on": "2026-10-14T10:19:48-04:00",
+      "aggregate_status": "independently_adjudicated",
+      "tone_negative_share": 0.444444,
+      "tone_positive_share": 0.148148,
+      "tone_mixed_share": 0.160494,
+      "factual_calibrated_share": 0.975309,
+      "factual_materially_incomplete_share": 0.0,
+      "factual_unverifiable_share": 0.024691,
+      "political_attribution_share": 0.135802,
+      "political_blame_share": 0.061728,
+      "political_credit_share": 0.012346,
+      "corpus_items": 81,
+      "eligible_items": 81,
+      "unresolved_items": 0,
+      "source_count": 8,
+      "missingness_rate": 0.0,
+      "notes": "Source-blinded, independently coded all-field validation aggregate; availability is the finalized-label build timestamp, not the publication date.",
+      "salience_layoffs_share": 0.08642,
+      "salience_hiring_share": 0.061728,
+      "salience_price_level_share": 0.320988,
+      "salience_disinflation_share": 0.037037,
+      "salience_growth_share": 0.197531,
+      "salience_recession_risk_share": 0.061728,
+      "frame_price_level_share": 0.17284,
+      "frame_inflation_rate_share": 0.135802,
+      "frame_household_experience_share": 0.185185,
+      "frame_national_aggregate_share": 0.555556,
+      "frame_current_share": 0.481481,
+      "frame_forecast_share": 0.296296,
+      "price_level_frame_share": 0.17284,
+      "recession_salience_share": 0.061728,
+      "source_stratum": "national"
+    },
+    {
+      "month": "2026-10-01",
+      "available_on": "2026-10-14T10:19:48-04:00",
+      "aggregate_status": "independently_adjudicated",
+      "tone_negative_share": 0.323529,
+      "tone_positive_share": 0.078431,
+      "tone_mixed_share": 0.009804,
+      "factual_calibrated_share": 0.705882,
+      "factual_materially_incomplete_share": 0.176471,
+      "factual_unverifiable_share": 0.117647,
+      "political_attribution_share": 0.166667,
+      "political_blame_share": 0.117647,
+      "political_credit_share": 0.0,
+      "corpus_items": 102,
+      "eligible_items": 102,
+      "unresolved_items": 0,
+      "source_count": 1,
+      "missingness_rate": 0.0,
+      "notes": "Source-blinded, independently coded all-field validation aggregate; availability is the finalized-label build timestamp, not the publication date.",
+      "salience_layoffs_share": 0.039216,
+      "salience_hiring_share": 0.107843,
+      "salience_price_level_share": 0.294118,
+      "salience_disinflation_share": 0.0,
+      "salience_growth_share": 0.029412,
+      "salience_recession_risk_share": 0.019608,
+      "frame_price_level_share": 0.127451,
+      "frame_inflation_rate_share": 0.088235,
+      "frame_household_experience_share": 0.176471,
+      "frame_national_aggregate_share": 0.215686,
+      "frame_current_share": 0.382353,
+      "frame_forecast_share": 0.058824,
+      "price_level_frame_share": 0.127451,
+      "recession_salience_share": 0.019608,
+      "source_stratum": "social"
+    }
+  ],
+  "source_benchmark": {
+    "ready": true,
+    "items": 312,
+    "matched_items": 171,
+    "matched_day_topic_cells": 25,
+    "comparisons": 21,
+    "method": "Pairs source strata within publication-day and pre-specified salience-topic cells; reports unweighted matched-cell contrasts.",
+    "scope": "Content supply only. This benchmark does not establish bias, represent audience exposure, or identify causal effects.",
+    "output": "data/processed/source_comparative_benchmark.csv"
+  },
+  "source_benchmark_rows": [
+    {
+      "measure": "household_experience_frame",
+      "source_a": "local",
+      "source_b": "national",
+      "matched_day_topic_cells": 18,
+      "source_a_mean": 0.166667,
+      "source_b_mean": 0.152778,
+      "difference_b_minus_a": -0.013889,
+      "difference_pp_b_minus_a": -1.39,
+      "normal_approx_ci_low_pp": -20.17,
+      "normal_approx_ci_high_pp": 17.39,
+      "interpretation": "Matched publication-day/topic content-supply contrast; not an exposure or causal estimate."
+    },
+    {
+      "measure": "materially_incomplete_calibration",
+      "source_a": "local",
+      "source_b": "national",
+      "matched_day_topic_cells": 18,
+      "source_a_mean": 0.0,
+      "source_b_mean": 0.0,
+      "difference_b_minus_a": 0.0,
+      "difference_pp_b_minus_a": 0.0,
+      "normal_approx_ci_low_pp": 0.0,
+      "normal_approx_ci_high_pp": 0.0,
+      "interpretation": "Matched publication-day/topic content-supply contrast; not an exposure or causal estimate."
+    },
+    {
+      "measure": "negative_tone",
+      "source_a": "local",
+      "source_b": "national",
+      "matched_day_topic_cells": 18,
+      "source_a_mean": 0.305556,
+      "source_b_mean": 0.518519,
+      "difference_b_minus_a": 0.212963,
+      "difference_pp_b_minus_a": 21.3,
+      "normal_approx_ci_low_pp": -1.24,
+      "normal_approx_ci_high_pp": 43.83,
+      "interpretation": "Matched publication-day/topic content-supply contrast; not an exposure or causal estimate."
+    },
+    {
+      "measure": "political_attribution",
+      "source_a": "local",
+      "source_b": "national",
+      "matched_day_topic_cells": 18,
+      "source_a_mean": 0.055556,
+      "source_b_mean": 0.166667,
+      "difference_b_minus_a": 0.111111,
+      "difference_pp_b_minus_a": 11.11,
+      "normal_approx_ci_low_pp": -9.17,
+      "normal_approx_ci_high_pp": 31.4,
+      "interpretation": "Matched publication-day/topic content-supply contrast; not an exposure or causal estimate."
+    },
+    {
+      "measure": "positive_tone",
+      "source_a": "local",
+      "source_b": "national",
+      "matched_day_topic_cells": 18,
+      "source_a_mean": 0.375,
+      "source_b_mean": 0.240741,
+      "difference_b_minus_a": -0.134259,
+      "difference_pp_b_minus_a": -13.43,
+      "normal_approx_ci_low_pp": -46.23,
+      "normal_approx_ci_high_pp": 19.38,
+      "interpretation": "Matched publication-day/topic content-supply contrast; not an exposure or causal estimate."
+    },
+    {
+      "measure": "price_level_frame",
+      "source_a": "local",
+      "source_b": "national",
+      "matched_day_topic_cells": 18,
+      "source_a_mean": 0.166667,
+      "source_b_mean": 0.111111,
+      "difference_b_minus_a": -0.055556,
+      "difference_pp_b_minus_a": -5.56,
+      "normal_approx_ci_low_pp": -16.44,
+      "normal_approx_ci_high_pp": 5.33,
+      "interpretation": "Matched publication-day/topic content-supply contrast; not an exposure or causal estimate."
+    }
+  ],
+  "subgroups": [
+    {
+      "month": "2010-01-31",
+      "subgroup_value": "18-34",
+      "index_value": 80.9,
+      "sample_size": "176",
+      "release_timestamp": "2010-01-29"
+    },
+    {
+      "month": "2010-01-31",
+      "subgroup_value": "35-54",
+      "index_value": 72.2,
+      "sample_size": "535",
+      "release_timestamp": "2010-01-29"
+    },
+    {
+      "month": "2010-01-31",
+      "subgroup_value": "55+",
+      "index_value": 67.7,
+      "sample_size": "797",
+      "release_timestamp": "2010-01-29"
+    },
+    {
+      "month": "2010-02-28",
+      "subgroup_value": "18-34",
+      "index_value": 88.7,
+      "sample_size": "191",
+      "release_timestamp": "2010-02-26"
+    },
+    {
+      "month": "2010-02-28",
+      "subgroup_value": "35-54",
+      "index_value": 72.6,
+      "sample_size": "514",
+      "release_timestamp": "2010-02-26"
+    },
+    {
+      "month": "2010-02-28",
+      "subgroup_value": "55+",
+      "index_value": 69.1,
+      "sample_size": "798",
+      "release_timestamp": "2010-02-26"
+    },
+    {
+      "month": "2010-03-31",
+      "subgroup_value": "18-34",
+      "index_value": 90.3,
+      "sample_size": "177",
+      "release_timestamp": "2010-03-26"
+    },
+    {
+      "month": "2010-03-31",
+      "subgroup_value": "35-54",
+      "index_value": 73.0,
+      "sample_size": "530",
+      "release_timestamp": "2010-03-26"
+    },
+    {
+      "month": "2010-03-31",
+      "subgroup_value": "55+",
+      "index_value": 70.0,
+      "sample_size": "796",
+      "release_timestamp": "2010-03-26"
+    },
+    {
+      "month": "2010-04-30",
+      "subgroup_value": "55+",
+      "index_value": 69.6,
+      "sample_size": "809",
+      "release_timestamp": "2010-04-30"
+    },
+    {
+      "month": "2010-04-30",
+      "subgroup_value": "18-34",
+      "index_value": 88.3,
+      "sample_size": "176",
+      "release_timestamp": "2010-04-30"
+    },
+    {
+      "month": "2010-04-30",
+      "subgroup_value": "35-54",
+      "index_value": 72.5,
+      "sample_size": "522",
+      "release_timestamp": "2010-04-30"
+    },
+    {
+      "month": "2010-05-31",
+      "subgroup_value": "18-34",
+      "index_value": 83.9,
+      "sample_size": "177",
+      "release_timestamp": "2010-05-28"
+    },
+    {
+      "month": "2010-05-31",
+      "subgroup_value": "35-54",
+      "index_value": 74.3,
+      "sample_size": "522",
+      "release_timestamp": "2010-05-28"
+    },
+    {
+      "month": "2010-05-31",
+      "subgroup_value": "55+",
+      "index_value": 69.5,
+      "sample_size": "817",
+      "release_timestamp": "2010-05-28"
+    },
+    {
+      "month": "2010-06-30",
+      "subgroup_value": "55+",
+      "index_value": 69.7,
+      "sample_size": "801",
+      "release_timestamp": "2010-06-25"
+    },
+    {
+      "month": "2010-06-30",
+      "subgroup_value": "18-34",
+      "index_value": 82.2,
+      "sample_size": "190",
+      "release_timestamp": "2010-06-25"
+    },
+    {
+      "month": "2010-06-30",
+      "subgroup_value": "35-54",
+      "index_value": 76.1,
+      "sample_size": "522",
+      "release_timestamp": "2010-06-25"
+    },
+    {
+      "month": "2010-07-31",
+      "subgroup_value": "55+",
+      "index_value": 67.5,
+      "sample_size": "796",
+      "release_timestamp": "2010-07-30"
+    },
+    {
+      "month": "2010-07-31",
+      "subgroup_value": "18-34",
+      "index_value": 84.4,
+      "sample_size": "179",
+      "release_timestamp": "2010-07-30"
+    },
+    {
+      "month": "2010-07-31",
+      "subgroup_value": "35-54",
+      "index_value": 74.9,
+      "sample_size": "532",
+      "release_timestamp": "2010-07-30"
+    },
+    {
+      "month": "2010-08-31",
+      "subgroup_value": "18-34",
+      "index_value": 84.6,
+      "sample_size": "177",
+      "release_timestamp": "2010-08-27"
+    },
+    {
+      "month": "2010-08-31",
+      "subgroup_value": "35-54",
+      "index_value": 74.3,
+      "sample_size": "531",
+      "release_timestamp": "2010-08-27"
+    },
+    {
+      "month": "2010-08-31",
+      "subgroup_value": "55+",
+      "index_value": 64.7,
+      "sample_size": "803",
+      "release_timestamp": "2010-08-27"
+    },
+    {
+      "month": "2010-09-30",
+      "subgroup_value": "18-34",
+      "index_value": 85.2,
+      "sample_size": "162",
+      "release_timestamp": "2010-10-01"
+    },
+    {
+      "month": "2010-09-30",
+      "subgroup_value": "35-54",
+      "index_value": 71.8,
+      "sample_size": "523",
+      "release_timestamp": "2010-10-01"
+    },
+    {
+      "month": "2010-09-30",
+      "subgroup_value": "55+",
+      "index_value": 61.2,
+      "sample_size": "826",
+      "release_timestamp": "2010-10-01"
+    },
+    {
+      "month": "2010-10-31",
+      "subgroup_value": "35-54",
+      "index_value": 72.0,
+      "sample_size": "527",
+      "release_timestamp": "2010-10-29"
+    },
+    {
+      "month": "2010-10-31",
+      "subgroup_value": "18-34",
+      "index_value": 82.4,
+      "sample_size": "173",
+      "release_timestamp": "2010-10-29"
+    },
+    {
+      "month": "2010-10-31",
+      "subgroup_value": "55+",
+      "index_value": 61.3,
+      "sample_size": "819",
+      "release_timestamp": "2010-10-29"
+    },
+    {
+      "month": "2010-11-30",
+      "subgroup_value": "18-34",
+      "index_value": 82.9,
+      "sample_size": "161",
+      "release_timestamp": "2010-11-24"
+    },
+    {
+      "month": "2010-11-30",
+      "subgroup_value": "35-54",
+      "index_value": 72.4,
+      "sample_size": "532",
+      "release_timestamp": "2010-11-24"
+    },
+    {
+      "month": "2010-11-30",
+      "subgroup_value": "55+",
+      "index_value": 63.0,
+      "sample_size": "821",
+      "release_timestamp": "2010-11-24"
+    },
+    {
+      "month": "2010-12-31",
+      "subgroup_value": "35-54",
+      "index_value": 74.1,
+      "sample_size": "537",
+      "release_timestamp": "2010-12-23"
+    },
+    {
+      "month": "2010-12-31",
+      "subgroup_value": "55+",
+      "index_value": 65.7,
+      "sample_size": "809",
+      "release_timestamp": "2010-12-23"
+    },
+    {
+      "month": "2010-12-31",
+      "subgroup_value": "18-34",
+      "index_value": 82.9,
+      "sample_size": "175",
+      "release_timestamp": "2010-12-23"
+    },
+    {
+      "month": "2011-01-31",
+      "subgroup_value": "55+",
+      "index_value": 68.2,
+      "sample_size": "826",
+      "release_timestamp": "2011-01-28"
+    },
+    {
+      "month": "2011-01-31",
+      "subgroup_value": "18-34",
+      "index_value": 87.1,
+      "sample_size": "170",
+      "release_timestamp": "2011-01-28"
+    },
+    {
+      "month": "2011-01-31",
+      "subgroup_value": "35-54",
+      "index_value": 75.5,
+      "sample_size": "520",
+      "release_timestamp": "2011-01-28"
+    },
+    {
+      "month": "2011-02-28",
+      "subgroup_value": "18-34",
+      "index_value": 86.5,
+      "sample_size": "164",
+      "release_timestamp": "2011-02-25"
+    },
+    {
+      "month": "2011-02-28",
+      "subgroup_value": "35-54",
+      "index_value": 77.5,
+      "sample_size": "505",
+      "release_timestamp": "2011-02-25"
+    },
+    {
+      "month": "2011-02-28",
+      "subgroup_value": "55+",
+      "index_value": 70.8,
+      "sample_size": "840",
+      "release_timestamp": "2011-02-25"
+    },
+    {
+      "month": "2011-03-31",
+      "subgroup_value": "18-34",
+      "index_value": 85.7,
+      "sample_size": "157",
+      "release_timestamp": "2011-03-25"
+    },
+    {
+      "month": "2011-03-31",
+      "subgroup_value": "35-54",
+      "index_value": 76.2,
+      "sample_size": "476",
+      "release_timestamp": "2011-03-25"
+    },
+    {
+      "month": "2011-03-31",
+      "subgroup_value": "55+",
+      "index_value": 67.7,
+      "sample_size": "874",
+      "release_timestamp": "2011-03-25"
+    },
+    {
+      "month": "2011-04-30",
+      "subgroup_value": "55+",
+      "index_value": 65.9,
+      "sample_size": "856",
+      "release_timestamp": "2011-04-29"
+    },
+    {
+      "month": "2011-04-30",
+      "subgroup_value": "35-54",
+      "index_value": 75.7,
+      "sample_size": "493",
+      "release_timestamp": "2011-04-29"
+    },
+    {
+      "month": "2011-04-30",
+      "subgroup_value": "18-34",
+      "index_value": 82.5,
+      "sample_size": "155",
+      "release_timestamp": "2011-04-29"
+    },
+    {
+      "month": "2011-05-31",
+      "subgroup_value": "18-34",
+      "index_value": 79.6,
+      "sample_size": "162",
+      "release_timestamp": "2011-05-27"
+    },
+    {
+      "month": "2011-05-31",
+      "subgroup_value": "35-54",
+      "index_value": 75.8,
+      "sample_size": "493",
+      "release_timestamp": "2011-05-27"
+    },
+    {
+      "month": "2011-05-31",
+      "subgroup_value": "55+",
+      "index_value": 64.5,
+      "sample_size": "850",
+      "release_timestamp": "2011-05-27"
+    },
+    {
+      "month": "2011-06-30",
+      "subgroup_value": "18-34",
+      "index_value": 79.9,
+      "sample_size": "171",
+      "release_timestamp": "2011-07-01"
+    },
+    {
+      "month": "2011-06-30",
+      "subgroup_value": "35-54",
+      "index_value": 76.4,
+      "sample_size": "505",
+      "release_timestamp": "2011-07-01"
+    },
+    {
+      "month": "2011-06-30",
+      "subgroup_value": "55+",
+      "index_value": 66.5,
+      "sample_size": "830",
+      "release_timestamp": "2011-07-01"
+    },
+    {
+      "month": "2011-07-31",
+      "subgroup_value": "55+",
+      "index_value": 64.9,
+      "sample_size": "835",
+      "release_timestamp": "2011-07-29"
+    },
+    {
+      "month": "2011-07-31",
+      "subgroup_value": "35-54",
+      "index_value": 74.3,
+      "sample_size": "478",
+      "release_timestamp": "2011-07-29"
+    },
+    {
+      "month": "2011-07-31",
+      "subgroup_value": "18-34",
+      "index_value": 75.9,
+      "sample_size": "169",
+      "release_timestamp": "2011-07-29"
+    },
+    {
+      "month": "2011-08-31",
+      "subgroup_value": "18-34",
+      "index_value": 77.5,
+      "sample_size": "160",
+      "release_timestamp": "2011-08-26"
+    },
+    {
+      "month": "2011-08-31",
+      "subgroup_value": "35-54",
+      "index_value": 66.4,
+      "sample_size": "482",
+      "release_timestamp": "2011-08-26"
+    },
+    {
+      "month": "2011-08-31",
+      "subgroup_value": "55+",
+      "index_value": 58.5,
+      "sample_size": "841",
+      "release_timestamp": "2011-08-26"
+    },
+    {
+      "month": "2011-09-30",
+      "subgroup_value": "18-34",
+      "index_value": 70.5,
+      "sample_size": "153",
+      "release_timestamp": "2011-09-30"
+    },
+    {
+      "month": "2011-09-30",
+      "subgroup_value": "35-54",
+      "index_value": 62.8,
+      "sample_size": "469",
+      "release_timestamp": "2011-09-30"
+    },
+    {
+      "month": "2011-09-30",
+      "subgroup_value": "55+",
+      "index_value": 54.9,
+      "sample_size": "860",
+      "release_timestamp": "2011-09-30"
+    },
+    {
+      "month": "2011-10-31",
+      "subgroup_value": "18-34",
+      "index_value": 74.9,
+      "sample_size": "156",
+      "release_timestamp": "2011-10-28"
+    },
+    {
+      "month": "2011-10-31",
+      "subgroup_value": "35-54",
+      "index_value": 61.7,
+      "sample_size": "489",
+      "release_timestamp": "2011-10-28"
+    },
+    {
+      "month": "2011-10-31",
+      "subgroup_value": "55+",
+      "index_value": 52.6,
+      "sample_size": "860",
+      "release_timestamp": "2011-10-28"
+    },
+    {
+      "month": "2011-11-30",
+      "subgroup_value": "55+",
+      "index_value": 56.6,
+      "sample_size": "881",
+      "release_timestamp": "2011-11-23"
+    },
+    {
+      "month": "2011-11-30",
+      "subgroup_value": "18-34",
+      "index_value": 72.1,
+      "sample_size": "156",
+      "release_timestamp": "2011-11-23"
+    },
+    {
+      "month": "2011-11-30",
+      "subgroup_value": "35-54",
+      "index_value": 64.4,
+      "sample_size": "465",
+      "release_timestamp": "2011-11-23"
+    },
+    {
+      "month": "2011-12-31",
+      "subgroup_value": "35-54",
+      "index_value": 67.2,
+      "sample_size": "456",
+      "release_timestamp": "2011-12-22"
+    },
+    {
+      "month": "2011-12-31",
+      "subgroup_value": "55+",
+      "index_value": 59.7,
+      "sample_size": "878",
+      "release_timestamp": "2011-12-22"
+    },
+    {
+      "month": "2011-12-31",
+      "subgroup_value": "18-34",
+      "index_value": 79.2,
+      "sample_size": "160",
+      "release_timestamp": "2011-12-22"
+    },
+    {
+      "month": "2012-01-31",
+      "subgroup_value": "55+",
+      "index_value": 66.0,
+      "sample_size": "901",
+      "release_timestamp": "2012-01-27"
+    },
+    {
+      "month": "2012-01-31",
+      "subgroup_value": "35-54",
+      "index_value": 72.0,
+      "sample_size": "438",
+      "release_timestamp": "2012-01-27"
+    },
+    {
+      "month": "2012-01-31",
+      "subgroup_value": "18-34",
+      "index_value": 78.2,
+      "sample_size": "155",
+      "release_timestamp": "2012-01-27"
+    },
+    {
+      "month": "2012-02-29",
+      "subgroup_value": "18-34",
+      "index_value": 84.5,
+      "sample_size": "162",
+      "release_timestamp": "2012-02-24"
+    },
+    {
+      "month": "2012-02-29",
+      "subgroup_value": "35-54",
+      "index_value": 76.8,
+      "sample_size": "468",
+      "release_timestamp": "2012-02-24"
+    },
+    {
+      "month": "2012-02-29",
+      "subgroup_value": "55+",
+      "index_value": 68.4,
+      "sample_size": "862",
+      "release_timestamp": "2012-02-24"
+    },
+    {
+      "month": "2012-03-31",
+      "subgroup_value": "18-34",
+      "index_value": 84.8,
+      "sample_size": "151",
+      "release_timestamp": "2012-03-30"
+    },
+    {
+      "month": "2012-03-31",
+      "subgroup_value": "35-54",
+      "index_value": 79.8,
+      "sample_size": "486",
+      "release_timestamp": "2012-03-30"
+    },
+    {
+      "month": "2012-03-31",
+      "subgroup_value": "55+",
+      "index_value": 70.3,
+      "sample_size": "864",
+      "release_timestamp": "2012-03-30"
+    },
+    {
+      "month": "2012-04-30",
+      "subgroup_value": "55+",
+      "index_value": 70.3,
+      "sample_size": "838",
+      "release_timestamp": "2012-04-27"
+    },
+    {
+      "month": "2012-04-30",
+      "subgroup_value": "35-54",
+      "index_value": 80.0,
+      "sample_size": "509",
+      "release_timestamp": "2012-04-27"
+    },
+    {
+      "month": "2012-04-30",
+      "subgroup_value": "18-34",
+      "index_value": 87.9,
+      "sample_size": "155",
+      "release_timestamp": "2012-04-27"
+    },
+    {
+      "month": "2012-05-31",
+      "subgroup_value": "18-34",
+      "index_value": 91.9,
+      "sample_size": "144",
+      "release_timestamp": "2012-05-25"
+    },
+    {
+      "month": "2012-05-31",
+      "subgroup_value": "35-54",
+      "index_value": 81.7,
+      "sample_size": "499",
+      "release_timestamp": "2012-05-25"
+    },
+    {
+      "month": "2012-05-31",
+      "subgroup_value": "55+",
+      "index_value": 71.2,
+      "sample_size": "862",
+      "release_timestamp": "2012-05-25"
+    },
+    {
+      "month": "2012-06-30",
+      "subgroup_value": "18-34",
+      "index_value": 89.9,
+      "sample_size": "133",
+      "release_timestamp": "2012-06-29"
+    },
+    {
+      "month": "2012-06-30",
+      "subgroup_value": "35-54",
+      "index_value": 80.5,
+      "sample_size": "495",
+      "release_timestamp": "2012-06-29"
+    },
+    {
+      "month": "2012-06-30",
+      "subgroup_value": "55+",
+      "index_value": 70.7,
+      "sample_size": "865",
+      "release_timestamp": "2012-06-29"
+    },
+    {
+      "month": "2012-07-31",
+      "subgroup_value": "55+",
+      "index_value": 69.3,
+      "sample_size": "897",
+      "release_timestamp": "2012-07-27"
+    },
+    {
+      "month": "2012-07-31",
+      "subgroup_value": "35-54",
+      "index_value": 79.9,
+      "sample_size": "480",
+      "release_timestamp": "2012-07-27"
+    },
+    {
+      "month": "2012-07-31",
+      "subgroup_value": "18-34",
+      "index_value": 88.6,
+      "sample_size": "125",
+      "release_timestamp": "2012-07-27"
+    },
+    {
+      "month": "2012-08-31",
+      "subgroup_value": "18-34",
+      "index_value": 85.1,
+      "sample_size": "143",
+      "release_timestamp": "2012-08-31"
+    },
+    {
+      "month": "2012-08-31",
+      "subgroup_value": "35-54",
+      "index_value": 77.2,
+      "sample_size": "478",
+      "release_timestamp": "2012-08-31"
+    },
+    {
+      "month": "2012-08-31",
+      "subgroup_value": "55+",
+      "index_value": 68.6,
+      "sample_size": "886",
+      "release_timestamp": "2012-08-31"
+    },
+    {
+      "month": "2012-09-30",
+      "subgroup_value": "18-34",
+      "index_value": 85.8,
+      "sample_size": "162",
+      "release_timestamp": "2012-09-28"
+    },
+    {
+      "month": "2012-09-30",
+      "subgroup_value": "35-54",
+      "index_value": 78.2,
+      "sample_size": "470",
+      "release_timestamp": "2012-09-28"
+    },
+    {
+      "month": "2012-09-30",
+      "subgroup_value": "55+",
+      "index_value": 70.9,
+      "sample_size": "891",
+      "release_timestamp": "2012-09-28"
+    },
+    {
+      "month": "2012-10-31",
+      "subgroup_value": "55+",
+      "index_value": 73.4,
+      "sample_size": "873",
+      "release_timestamp": "2012-10-26"
+    },
+    {
+      "month": "2012-10-31",
+      "subgroup_value": "35-54",
+      "index_value": 82.1,
+      "sample_size": "478",
+      "release_timestamp": "2012-10-26"
+    },
+    {
+      "month": "2012-10-31",
+      "subgroup_value": "18-34",
+      "index_value": 89.9,
+      "sample_size": "174",
+      "release_timestamp": "2012-10-26"
+    },
+    {
+      "month": "2012-11-30",
+      "subgroup_value": "18-34",
+      "index_value": 92.2,
+      "sample_size": "169",
+      "release_timestamp": "2012-11-21"
+    },
+    {
+      "month": "2012-11-30",
+      "subgroup_value": "35-54",
+      "index_value": 84.5,
+      "sample_size": "485",
+      "release_timestamp": "2012-11-21"
+    },
+    {
+      "month": "2012-11-30",
+      "subgroup_value": "55+",
+      "index_value": 76.7,
+      "sample_size": "864",
+      "release_timestamp": "2012-11-21"
+    },
+    {
+      "month": "2012-12-31",
+      "subgroup_value": "18-34",
+      "index_value": 95.2,
+      "sample_size": "168",
+      "release_timestamp": "2012-12-21"
+    },
+    {
+      "month": "2012-12-31",
+      "subgroup_value": "35-54",
+      "index_value": 82.7,
+      "sample_size": "474",
+      "release_timestamp": "2012-12-21"
+    },
+    {
+      "month": "2012-12-31",
+      "subgroup_value": "55+",
+      "index_value": 74.0,
+      "sample_size": "869",
+      "release_timestamp": "2012-12-21"
+    },
+    {
+      "month": "2013-01-31",
+      "subgroup_value": "35-54",
+      "index_value": 78.6,
+      "sample_size": "459",
+      "release_timestamp": "2013-02-01"
+    },
+    {
+      "month": "2013-01-31",
+      "subgroup_value": "55+",
+      "index_value": 72.0,
+      "sample_size": "874",
+      "release_timestamp": "2013-02-01"
+    },
+    {
+      "month": "2013-01-31",
+      "subgroup_value": "18-34",
+      "index_value": 92.1,
+      "sample_size": "166",
+      "release_timestamp": "2013-02-01"
+    },
+    {
+      "month": "2013-02-28",
+      "subgroup_value": "18-34",
+      "index_value": 88.9,
+      "sample_size": "181",
+      "release_timestamp": "2013-03-01"
+    },
+    {
+      "month": "2013-02-28",
+      "subgroup_value": "35-54",
+      "index_value": 76.2,
+      "sample_size": "451",
+      "release_timestamp": "2013-03-01"
+    },
+    {
+      "month": "2013-02-28",
+      "subgroup_value": "55+",
+      "index_value": 70.4,
+      "sample_size": "862",
+      "release_timestamp": "2013-03-01"
+    },
+    {
+      "month": "2013-03-31",
+      "subgroup_value": "18-34",
+      "index_value": 89.7,
+      "sample_size": "186",
+      "release_timestamp": "2013-03-29"
+    },
+    {
+      "month": "2013-03-31",
+      "subgroup_value": "35-54",
+      "index_value": 76.8,
+      "sample_size": "483",
+      "release_timestamp": "2013-03-29"
+    },
+    {
+      "month": "2013-03-31",
+      "subgroup_value": "55+",
+      "index_value": 72.9,
+      "sample_size": "822",
+      "release_timestamp": "2013-03-29"
+    },
+    {
+      "month": "2013-04-30",
+      "subgroup_value": "55+",
+      "index_value": 73.6,
+      "sample_size": "825",
+      "release_timestamp": "2013-04-26"
+    },
+    {
+      "month": "2013-04-30",
+      "subgroup_value": "35-54",
+      "index_value": 76.8,
+      "sample_size": "472",
+      "release_timestamp": "2013-04-26"
+    },
+    {
+      "month": "2013-04-30",
+      "subgroup_value": "18-34",
+      "index_value": 92.4,
+      "sample_size": "199",
+      "release_timestamp": "2013-04-26"
+    },
+    {
+      "month": "2013-05-31",
+      "subgroup_value": "18-34",
+      "index_value": 96.0,
+      "sample_size": "207",
+      "release_timestamp": "2013-05-31"
+    },
+    {
+      "month": "2013-05-31",
+      "subgroup_value": "35-54",
+      "index_value": 78.8,
+      "sample_size": "465",
+      "release_timestamp": "2013-05-31"
+    },
+    {
+      "month": "2013-05-31",
+      "subgroup_value": "55+",
+      "index_value": 75.6,
+      "sample_size": "831",
+      "release_timestamp": "2013-05-31"
+    },
+    {
+      "month": "2013-06-30",
+      "subgroup_value": "18-34",
+      "index_value": 97.1,
+      "sample_size": "214",
+      "release_timestamp": "2013-06-28"
+    },
+    {
+      "month": "2013-06-30",
+      "subgroup_value": "35-54",
+      "index_value": 83.1,
+      "sample_size": "440",
+      "release_timestamp": "2013-06-28"
+    },
+    {
+      "month": "2013-06-30",
+      "subgroup_value": "55+",
+      "index_value": 76.0,
+      "sample_size": "851",
+      "release_timestamp": "2013-06-28"
+    },
+    {
+      "month": "2013-07-31",
+      "subgroup_value": "55+",
+      "index_value": 78.1,
+      "sample_size": "819",
+      "release_timestamp": "2013-07-26"
+    },
+    {
+      "month": "2013-07-31",
+      "subgroup_value": "35-54",
+      "index_value": 86.8,
+      "sample_size": "470",
+      "release_timestamp": "2013-07-26"
+    },
+    {
+      "month": "2013-07-31",
+      "subgroup_value": "18-34",
+      "index_value": 99.9,
+      "sample_size": "213",
+      "release_timestamp": "2013-07-26"
+    },
+    {
+      "month": "2013-08-31",
+      "subgroup_value": "18-34",
+      "index_value": 97.8,
+      "sample_size": "216",
+      "release_timestamp": "2013-08-30"
+    },
+    {
+      "month": "2013-08-31",
+      "subgroup_value": "35-54",
+      "index_value": 88.2,
+      "sample_size": "471",
+      "release_timestamp": "2013-08-30"
+    },
+    {
+      "month": "2013-08-31",
+      "subgroup_value": "55+",
+      "index_value": 76.1,
+      "sample_size": "816",
+      "release_timestamp": "2013-08-30"
+    },
+    {
+      "month": "2013-09-30",
+      "subgroup_value": "18-34",
+      "index_value": 98.4,
+      "sample_size": "231",
+      "release_timestamp": "2013-09-27"
+    },
+    {
+      "month": "2013-09-30",
+      "subgroup_value": "35-54",
+      "index_value": 83.9,
+      "sample_size": "475",
+      "release_timestamp": "2013-09-27"
+    },
+    {
+      "month": "2013-09-30",
+      "subgroup_value": "55+",
+      "index_value": 73.8,
+      "sample_size": "794",
+      "release_timestamp": "2013-09-27"
+    },
+    {
+      "month": "2013-10-31",
+      "subgroup_value": "55+",
+      "index_value": 70.5,
+      "sample_size": "833",
+      "release_timestamp": "2013-10-25"
+    },
+    {
+      "month": "2013-10-31",
+      "subgroup_value": "35-54",
+      "index_value": 80.6,
+      "sample_size": "436",
+      "release_timestamp": "2013-10-25"
+    },
+    {
+      "month": "2013-10-31",
+      "subgroup_value": "18-34",
+      "index_value": 92.1,
+      "sample_size": "229",
+      "release_timestamp": "2013-10-25"
+    },
+    {
+      "month": "2013-11-30",
+      "subgroup_value": "18-34",
+      "index_value": 88.9,
+      "sample_size": "226",
+      "release_timestamp": "2013-11-27"
+    },
+    {
+      "month": "2013-11-30",
+      "subgroup_value": "35-54",
+      "index_value": 76.4,
+      "sample_size": "430",
+      "release_timestamp": "2013-11-27"
+    },
+    {
+      "month": "2013-11-30",
+      "subgroup_value": "55+",
+      "index_value": 69.8,
+      "sample_size": "839",
+      "release_timestamp": "2013-11-27"
+    },
+    {
+      "month": "2013-12-31",
+      "subgroup_value": "18-34",
+      "index_value": 88.6,
+      "sample_size": "210",
+      "release_timestamp": "2013-12-23"
+    },
+    {
+      "month": "2013-12-31",
+      "subgroup_value": "35-54",
+      "index_value": 79.9,
+      "sample_size": "421",
+      "release_timestamp": "2013-12-23"
+    },
+    {
+      "month": "2013-12-31",
+      "subgroup_value": "55+",
+      "index_value": 71.6,
+      "sample_size": "867",
+      "release_timestamp": "2013-12-23"
+    },
+    {
+      "month": "2014-01-31",
+      "subgroup_value": "35-54",
+      "index_value": 81.2,
+      "sample_size": "418",
+      "release_timestamp": "2014-01-31"
+    },
+    {
+      "month": "2014-01-31",
+      "subgroup_value": "55+",
+      "index_value": 74.6,
+      "sample_size": "862",
+      "release_timestamp": "2014-01-31"
+    },
+    {
+      "month": "2014-01-31",
+      "subgroup_value": "18-34",
+      "index_value": 92.4,
+      "sample_size": "219",
+      "release_timestamp": "2014-01-31"
+    },
+    {
+      "month": "2014-02-28",
+      "subgroup_value": "55+",
+      "index_value": 75.0,
+      "sample_size": "885",
+      "release_timestamp": "2014-02-28"
+    },
+    {
+      "month": "2014-02-28",
+      "subgroup_value": "35-54",
+      "index_value": 84.6,
+      "sample_size": "410",
+      "release_timestamp": "2014-02-28"
+    },
+    {
+      "month": "2014-02-28",
+      "subgroup_value": "18-34",
+      "index_value": 98.6,
+      "sample_size": "207",
+      "release_timestamp": "2014-02-28"
+    },
+    {
+      "month": "2014-03-31",
+      "subgroup_value": "18-34",
+      "index_value": 98.0,
+      "sample_size": "219",
+      "release_timestamp": "2014-03-30"
+    },
+    {
+      "month": "2014-03-31",
+      "subgroup_value": "35-54",
+      "index_value": 83.7,
+      "sample_size": "410",
+      "release_timestamp": "2014-03-30"
+    },
+    {
+      "month": "2014-03-31",
+      "subgroup_value": "55+",
+      "index_value": 73.4,
+      "sample_size": "875",
+      "release_timestamp": "2014-03-30"
+    },
+    {
+      "month": "2014-04-30",
+      "subgroup_value": "18-34",
+      "index_value": 99.8,
+      "sample_size": "231",
+      "release_timestamp": "2014-04-25"
+    },
+    {
+      "month": "2014-04-30",
+      "subgroup_value": "35-54",
+      "index_value": 83.6,
+      "sample_size": "414",
+      "release_timestamp": "2014-04-25"
+    },
+    {
+      "month": "2014-04-30",
+      "subgroup_value": "55+",
+      "index_value": 74.1,
+      "sample_size": "858",
+      "release_timestamp": "2014-04-25"
+    },
+    {
+      "month": "2014-05-31",
+      "subgroup_value": "55+",
+      "index_value": 75.7,
+      "sample_size": "845",
+      "release_timestamp": "2014-05-30"
+    },
+    {
+      "month": "2014-05-31",
+      "subgroup_value": "35-54",
+      "index_value": 81.9,
+      "sample_size": "417",
+      "release_timestamp": "2014-05-30"
+    },
+    {
+      "month": "2014-05-31",
+      "subgroup_value": "18-34",
+      "index_value": 97.3,
+      "sample_size": "239",
+      "release_timestamp": "2014-05-30"
+    },
+    {
+      "month": "2014-06-30",
+      "subgroup_value": "18-34",
+      "index_value": 96.8,
+      "sample_size": "230",
+      "release_timestamp": "2014-06-27"
+    },
+    {
+      "month": "2014-06-30",
+      "subgroup_value": "35-54",
+      "index_value": 83.5,
+      "sample_size": "415",
+      "release_timestamp": "2014-06-27"
+    },
+    {
+      "month": "2014-06-30",
+      "subgroup_value": "55+",
+      "index_value": 76.9,
+      "sample_size": "857",
+      "release_timestamp": "2014-06-27"
+    },
+    {
+      "month": "2014-07-31",
+      "subgroup_value": "18-34",
+      "index_value": 94.2,
+      "sample_size": "217",
+      "release_timestamp": "2014-08-01"
+    },
+    {
+      "month": "2014-07-31",
+      "subgroup_value": "35-54",
+      "index_value": 85.5,
+      "sample_size": "412",
+      "release_timestamp": "2014-08-01"
+    },
+    {
+      "month": "2014-07-31",
+      "subgroup_value": "55+",
+      "index_value": 75.5,
+      "sample_size": "872",
+      "release_timestamp": "2014-08-01"
+    },
+    {
+      "month": "2014-08-31",
+      "subgroup_value": "55+",
+      "index_value": 75.0,
+      "sample_size": "867",
+      "release_timestamp": "2014-08-29"
+    },
+    {
+      "month": "2014-08-31",
+      "subgroup_value": "35-54",
+      "index_value": 86.3,
+      "sample_size": "413",
+      "release_timestamp": "2014-08-29"
+    },
+    {
+      "month": "2014-08-31",
+      "subgroup_value": "18-34",
+      "index_value": 95.1,
+      "sample_size": "217",
+      "release_timestamp": "2014-08-29"
+    },
+    {
+      "month": "2014-09-30",
+      "subgroup_value": "18-34",
+      "index_value": 97.1,
+      "sample_size": "239",
+      "release_timestamp": "2014-09-26"
+    },
+    {
+      "month": "2014-09-30",
+      "subgroup_value": "35-54",
+      "index_value": 85.6,
+      "sample_size": "420",
+      "release_timestamp": "2014-09-26"
+    },
+    {
+      "month": "2014-09-30",
+      "subgroup_value": "55+",
+      "index_value": 75.4,
+      "sample_size": "838",
+      "release_timestamp": "2014-09-26"
+    },
+    {
+      "month": "2014-10-31",
+      "subgroup_value": "18-34",
+      "index_value": 99.1,
+      "sample_size": "262",
+      "release_timestamp": "2014-10-31"
+    },
+    {
+      "month": "2014-10-31",
+      "subgroup_value": "35-54",
+      "index_value": 85.6,
+      "sample_size": "434",
+      "release_timestamp": "2014-10-31"
+    },
+    {
+      "month": "2014-10-31",
+      "subgroup_value": "55+",
+      "index_value": 77.6,
+      "sample_size": "801",
+      "release_timestamp": "2014-10-31"
+    },
+    {
+      "month": "2014-11-30",
+      "subgroup_value": "55+",
+      "index_value": 78.9,
+      "sample_size": "783",
+      "release_timestamp": "2014-11-26"
+    },
+    {
+      "month": "2014-11-30",
+      "subgroup_value": "35-54",
+      "index_value": 87.9,
+      "sample_size": "433",
+      "release_timestamp": "2014-11-26"
+    },
+    {
+      "month": "2014-11-30",
+      "subgroup_value": "18-34",
+      "index_value": 101.8,
+      "sample_size": "281",
+      "release_timestamp": "2014-11-26"
+    },
+    {
+      "month": "2014-12-31",
+      "subgroup_value": "18-34",
+      "index_value": 105.1,
+      "sample_size": "281",
+      "release_timestamp": "2014-12-23"
+    },
+    {
+      "month": "2014-12-31",
+      "subgroup_value": "35-54",
+      "index_value": 91.4,
+      "sample_size": "425",
+      "release_timestamp": "2014-12-23"
+    },
+    {
+      "month": "2014-12-31",
+      "subgroup_value": "55+",
+      "index_value": 81.3,
+      "sample_size": "789",
+      "release_timestamp": "2014-12-23"
+    },
+    {
+      "month": "2015-01-31",
+      "subgroup_value": "18-34",
+      "index_value": 109.1,
+      "sample_size": "291",
+      "release_timestamp": "2015-01-30"
+    },
+    {
+      "month": "2015-01-31",
+      "subgroup_value": "35-54",
+      "index_value": 95.7,
+      "sample_size": "443",
+      "release_timestamp": "2015-01-30"
+    },
+    {
+      "month": "2015-01-31",
+      "subgroup_value": "55+",
+      "index_value": 84.1,
+      "sample_size": "765",
+      "release_timestamp": "2015-01-30"
+    },
+    {
+      "month": "2015-02-28",
+      "subgroup_value": "35-54",
+      "index_value": 99.2,
+      "sample_size": "456",
+      "release_timestamp": "2015-02-27"
+    },
+    {
+      "month": "2015-02-28",
+      "subgroup_value": "55+",
+      "index_value": 85.2,
+      "sample_size": "753",
+      "release_timestamp": "2015-02-27"
+    },
+    {
+      "month": "2015-02-28",
+      "subgroup_value": "18-34",
+      "index_value": 111.1,
+      "sample_size": "294",
+      "release_timestamp": "2015-02-27"
+    },
+    {
+      "month": "2015-03-31",
+      "subgroup_value": "18-34",
+      "index_value": 109.9,
+      "sample_size": "320",
+      "release_timestamp": "2015-03-27"
+    },
+    {
+      "month": "2015-03-31",
+      "subgroup_value": "35-54",
+      "index_value": 97.2,
+      "sample_size": "487",
+      "release_timestamp": "2015-03-27"
+    },
+    {
+      "month": "2015-03-31",
+      "subgroup_value": "55+",
+      "index_value": 86.1,
+      "sample_size": "697",
+      "release_timestamp": "2015-03-27"
+    },
+    {
+      "month": "2015-04-30",
+      "subgroup_value": "18-34",
+      "index_value": 108.7,
+      "sample_size": "325",
+      "release_timestamp": "2015-05-01"
+    },
+    {
+      "month": "2015-04-30",
+      "subgroup_value": "35-54",
+      "index_value": 97.6,
+      "sample_size": "484",
+      "release_timestamp": "2015-05-01"
+    },
+    {
+      "month": "2015-04-30",
+      "subgroup_value": "55+",
+      "index_value": 84.5,
+      "sample_size": "691",
+      "release_timestamp": "2015-05-01"
+    },
+    {
+      "month": "2015-05-31",
+      "subgroup_value": "55+",
+      "index_value": 83.6,
+      "sample_size": "655",
+      "release_timestamp": "2015-05-29"
+    },
+    {
+      "month": "2015-05-31",
+      "subgroup_value": "35-54",
+      "index_value": 95.6,
+      "sample_size": "486",
+      "release_timestamp": "2015-05-29"
+    },
+    {
+      "month": "2015-05-31",
+      "subgroup_value": "18-34",
+      "index_value": 106.1,
+      "sample_size": "358",
+      "release_timestamp": "2015-05-29"
+    },
+    {
+      "month": "2015-06-30",
+      "subgroup_value": "18-34",
+      "index_value": 107.6,
+      "sample_size": "347",
+      "release_timestamp": "2015-06-26"
+    },
+    {
+      "month": "2015-06-30",
+      "subgroup_value": "35-54",
+      "index_value": 97.5,
+      "sample_size": "467",
+      "release_timestamp": "2015-06-26"
+    },
+    {
+      "month": "2015-06-30",
+      "subgroup_value": "55+",
+      "index_value": 84.2,
+      "sample_size": "684",
+      "release_timestamp": "2015-06-26"
+    },
+    {
+      "month": "2015-07-31",
+      "subgroup_value": "18-34",
+      "index_value": 107.5,
+      "sample_size": "346",
+      "release_timestamp": "2015-07-31"
+    },
+    {
+      "month": "2015-07-31",
+      "subgroup_value": "35-54",
+      "index_value": 95.5,
+      "sample_size": "465",
+      "release_timestamp": "2015-07-31"
+    },
+    {
+      "month": "2015-07-31",
+      "subgroup_value": "55+",
+      "index_value": 83.8,
+      "sample_size": "687",
+      "release_timestamp": "2015-07-31"
+    },
+    {
+      "month": "2015-08-31",
+      "subgroup_value": "55+",
+      "index_value": 82.9,
+      "sample_size": "733",
+      "release_timestamp": "2015-08-28"
+    },
+    {
+      "month": "2015-08-31",
+      "subgroup_value": "35-54",
+      "index_value": 95.8,
+      "sample_size": "474",
+      "release_timestamp": "2015-08-28"
+    },
+    {
+      "month": "2015-08-31",
+      "subgroup_value": "18-34",
+      "index_value": 110.6,
+      "sample_size": "349",
+      "release_timestamp": "2015-08-28"
+    },
+    {
+      "month": "2015-09-30",
+      "subgroup_value": "18-34",
+      "index_value": 107.8,
+      "sample_size": "375",
+      "release_timestamp": "2015-09-25"
+    },
+    {
+      "month": "2015-09-30",
+      "subgroup_value": "35-54",
+      "index_value": 92.9,
+      "sample_size": "477",
+      "release_timestamp": "2015-09-25"
+    },
+    {
+      "month": "2015-09-30",
+      "subgroup_value": "55+",
+      "index_value": 79.1,
+      "sample_size": "699",
+      "release_timestamp": "2015-09-25"
+    },
+    {
+      "month": "2015-10-31",
+      "subgroup_value": "18-34",
+      "index_value": 106.6,
+      "sample_size": "382",
+      "release_timestamp": "2015-10-30"
+    },
+    {
+      "month": "2015-10-31",
+      "subgroup_value": "35-54",
+      "index_value": 93.0,
+      "sample_size": "484",
+      "release_timestamp": "2015-10-30"
+    },
+    {
+      "month": "2015-10-31",
+      "subgroup_value": "55+",
+      "index_value": 77.2,
+      "sample_size": "687",
+      "release_timestamp": "2015-10-30"
+    },
+    {
+      "month": "2015-11-30",
+      "subgroup_value": "55+",
+      "index_value": 77.2,
+      "sample_size": "648",
+      "release_timestamp": "2015-11-25"
+    },
+    {
+      "month": "2015-11-30",
+      "subgroup_value": "35-54",
+      "index_value": 93.0,
+      "sample_size": "488",
+      "release_timestamp": "2015-11-25"
+    },
+    {
+      "month": "2015-11-30",
+      "subgroup_value": "18-34",
+      "index_value": 105.1,
+      "sample_size": "366",
+      "release_timestamp": "2015-11-25"
+    },
+    {
+      "month": "2015-12-31",
+      "subgroup_value": "18-34",
+      "index_value": 106.1,
+      "sample_size": "338",
+      "release_timestamp": "2015-12-23"
+    },
+    {
+      "month": "2015-12-31",
+      "subgroup_value": "35-54",
+      "index_value": 94.7,
+      "sample_size": "516",
+      "release_timestamp": "2015-12-23"
+    },
+    {
+      "month": "2015-12-31",
+      "subgroup_value": "55+",
+      "index_value": 80.1,
+      "sample_size": "657",
+      "release_timestamp": "2015-12-23"
+    },
+    {
+      "month": "2016-01-31",
+      "subgroup_value": "18-34",
+      "index_value": 108.0,
+      "sample_size": "332",
+      "release_timestamp": "2016-01-29"
+    },
+    {
+      "month": "2016-01-31",
+      "subgroup_value": "35-54",
+      "index_value": 94.2,
+      "sample_size": "508",
+      "release_timestamp": "2016-01-29"
+    },
+    {
+      "month": "2016-01-31",
+      "subgroup_value": "55+",
+      "index_value": 81.2,
+      "sample_size": "671",
+      "release_timestamp": "2016-01-29"
+    },
+    {
+      "month": "2016-02-29",
+      "subgroup_value": "35-54",
+      "index_value": 95.0,
+      "sample_size": "499",
+      "release_timestamp": "2016-02-26"
+    },
+    {
+      "month": "2016-02-29",
+      "subgroup_value": "55+",
+      "index_value": 81.8,
+      "sample_size": "667",
+      "release_timestamp": "2016-02-26"
+    },
+    {
+      "month": "2016-02-29",
+      "subgroup_value": "18-34",
+      "index_value": 106.7,
+      "sample_size": "337",
+      "release_timestamp": "2016-02-26"
+    },
+    {
+      "month": "2016-03-31",
+      "subgroup_value": "55+",
+      "index_value": 80.7,
+      "sample_size": "701",
+      "release_timestamp": "2016-04-01"
+    },
+    {
+      "month": "2016-03-31",
+      "subgroup_value": "35-54",
+      "index_value": 95.1,
+      "sample_size": "485",
+      "release_timestamp": "2016-04-01"
+    },
+    {
+      "month": "2016-03-31",
+      "subgroup_value": "18-34",
+      "index_value": 105.8,
+      "sample_size": "353",
+      "release_timestamp": "2016-04-01"
+    },
+    {
+      "month": "2016-04-30",
+      "subgroup_value": "18-34",
+      "index_value": 102.9,
+      "sample_size": "360",
+      "release_timestamp": "2016-04-29"
+    },
+    {
+      "month": "2016-04-30",
+      "subgroup_value": "35-54",
+      "index_value": 95.3,
+      "sample_size": "486",
+      "release_timestamp": "2016-04-29"
+    },
+    {
+      "month": "2016-04-30",
+      "subgroup_value": "55+",
+      "index_value": 79.8,
+      "sample_size": "718",
+      "release_timestamp": "2016-04-29"
+    },
+    {
+      "month": "2016-05-31",
+      "subgroup_value": "18-34",
+      "index_value": 106.1,
+      "sample_size": "363",
+      "release_timestamp": "2016-05-27"
+    },
+    {
+      "month": "2016-05-31",
+      "subgroup_value": "35-54",
+      "index_value": 95.4,
+      "sample_size": "469",
+      "release_timestamp": "2016-05-27"
+    },
+    {
+      "month": "2016-05-31",
+      "subgroup_value": "55+",
+      "index_value": 80.7,
+      "sample_size": "776",
+      "release_timestamp": "2016-05-27"
+    },
+    {
+      "month": "2016-06-30",
+      "subgroup_value": "55+",
+      "index_value": 81.7,
+      "sample_size": "752",
+      "release_timestamp": "2016-06-24"
+    },
+    {
+      "month": "2016-06-30",
+      "subgroup_value": "35-54",
+      "index_value": 96.7,
+      "sample_size": "467",
+      "release_timestamp": "2016-06-24"
+    },
+    {
+      "month": "2016-06-30",
+      "subgroup_value": "18-34",
+      "index_value": 105.9,
+      "sample_size": "354",
+      "release_timestamp": "2016-06-24"
+    },
+    {
+      "month": "2016-07-31",
+      "subgroup_value": "18-34",
+      "index_value": 106.0,
+      "sample_size": "358",
+      "release_timestamp": "2016-07-29"
+    },
+    {
+      "month": "2016-07-31",
+      "subgroup_value": "35-54",
+      "index_value": 97.3,
+      "sample_size": "471",
+      "release_timestamp": "2016-07-29"
+    },
+    {
+      "month": "2016-07-31",
+      "subgroup_value": "55+",
+      "index_value": 81.9,
+      "sample_size": "754",
+      "release_timestamp": "2016-07-29"
+    },
+    {
+      "month": "2016-08-31",
+      "subgroup_value": "18-34",
+      "index_value": 99.9,
+      "sample_size": "348",
+      "release_timestamp": "2016-08-26"
+    },
+    {
+      "month": "2016-08-31",
+      "subgroup_value": "35-54",
+      "index_value": 96.3,
+      "sample_size": "511",
+      "release_timestamp": "2016-08-26"
+    },
+    {
+      "month": "2016-08-31",
+      "subgroup_value": "55+",
+      "index_value": 82.2,
+      "sample_size": "728",
+      "release_timestamp": "2016-08-26"
+    },
+    {
+      "month": "2016-09-30",
+      "subgroup_value": "55+",
+      "index_value": 82.4,
+      "sample_size": "767",
+      "release_timestamp": "2016-09-30"
+    },
+    {
+      "month": "2016-09-30",
+      "subgroup_value": "35-54",
+      "index_value": 93.8,
+      "sample_size": "533",
+      "release_timestamp": "2016-09-30"
+    },
+    {
+      "month": "2016-09-30",
+      "subgroup_value": "18-34",
+      "index_value": 100.0,
+      "sample_size": "356",
+      "release_timestamp": "2016-09-30"
+    },
+    {
+      "month": "2016-10-31",
+      "subgroup_value": "18-34",
+      "index_value": 97.1,
+      "sample_size": "366",
+      "release_timestamp": "2016-10-28"
+    },
+    {
+      "month": "2016-10-31",
+      "subgroup_value": "35-54",
+      "index_value": 92.7,
+      "sample_size": "538",
+      "release_timestamp": "2016-10-28"
+    },
+    {
+      "month": "2016-10-31",
+      "subgroup_value": "55+",
+      "index_value": 82.7,
+      "sample_size": "789",
+      "release_timestamp": "2016-10-28"
+    },
+    {
+      "month": "2016-11-30",
+      "subgroup_value": "18-34",
+      "index_value": 99.5,
+      "sample_size": "393",
+      "release_timestamp": "2016-11-23"
+    },
+    {
+      "month": "2016-11-30",
+      "subgroup_value": "35-54",
+      "index_value": 93.9,
+      "sample_size": "547",
+      "release_timestamp": "2016-11-23"
+    },
+    {
+      "month": "2016-11-30",
+      "subgroup_value": "55+",
+      "index_value": 83.6,
+      "sample_size": "808",
+      "release_timestamp": "2016-11-23"
+    },
+    {
+      "month": "2016-12-31",
+      "subgroup_value": "55+",
+      "index_value": 87.1,
+      "sample_size": "796",
+      "release_timestamp": "2016-12-23"
+    },
+    {
+      "month": "2016-12-31",
+      "subgroup_value": "35-54",
+      "index_value": 96.2,
+      "sample_size": "560",
+      "release_timestamp": "2016-12-23"
+    },
+    {
+      "month": "2016-12-31",
+      "subgroup_value": "18-34",
+      "index_value": 99.5,
+      "sample_size": "414",
+      "release_timestamp": "2016-12-23"
+    },
+    {
+      "month": "2017-01-31",
+      "subgroup_value": "18-34",
+      "index_value": 103.3,
+      "sample_size": "410",
+      "release_timestamp": "2017-01-27"
+    },
+    {
+      "month": "2017-01-31",
+      "subgroup_value": "35-54",
+      "index_value": 98.4,
+      "sample_size": "580",
+      "release_timestamp": "2017-01-27"
+    },
+    {
+      "month": "2017-01-31",
+      "subgroup_value": "55+",
+      "index_value": 92.0,
+      "sample_size": "807",
+      "release_timestamp": "2017-01-27"
+    },
+    {
+      "month": "2017-02-28",
+      "subgroup_value": "18-34",
+      "index_value": 101.9,
+      "sample_size": "405",
+      "release_timestamp": "2017-02-24"
+    },
+    {
+      "month": "2017-02-28",
+      "subgroup_value": "35-54",
+      "index_value": 98.4,
+      "sample_size": "575",
+      "release_timestamp": "2017-02-24"
+    },
+    {
+      "month": "2017-02-28",
+      "subgroup_value": "55+",
+      "index_value": 94.8,
+      "sample_size": "811",
+      "release_timestamp": "2017-02-24"
+    },
+    {
+      "month": "2017-03-31",
+      "subgroup_value": "35-54",
+      "index_value": 98.6,
+      "sample_size": "576",
+      "release_timestamp": "2017-03-31"
+    },
+    {
+      "month": "2017-03-31",
+      "subgroup_value": "55+",
+      "index_value": 95.0,
+      "sample_size": "824",
+      "release_timestamp": "2017-03-31"
+    },
+    {
+      "month": "2017-03-31",
+      "subgroup_value": "18-34",
+      "index_value": 99.8,
+      "sample_size": "390",
+      "release_timestamp": "2017-03-31"
+    },
+    {
+      "month": "2017-04-30",
+      "subgroup_value": "18-34",
+      "index_value": 97.7,
+      "sample_size": "383",
+      "release_timestamp": "2017-04-28"
+    },
+    {
+      "month": "2017-04-30",
+      "subgroup_value": "35-54",
+      "index_value": 98.7,
+      "sample_size": "572",
+      "release_timestamp": "2017-04-28"
+    },
+    {
+      "month": "2017-04-30",
+      "subgroup_value": "55+",
+      "index_value": 95.0,
+      "sample_size": "835",
+      "release_timestamp": "2017-04-28"
+    },
+    {
+      "month": "2017-05-31",
+      "subgroup_value": "18-34",
+      "index_value": 99.7,
+      "sample_size": "395",
+      "release_timestamp": "2017-05-26"
+    },
+    {
+      "month": "2017-05-31",
+      "subgroup_value": "35-54",
+      "index_value": 99.5,
+      "sample_size": "563",
+      "release_timestamp": "2017-05-26"
+    },
+    {
+      "month": "2017-05-31",
+      "subgroup_value": "55+",
+      "index_value": 93.8,
+      "sample_size": "841",
+      "release_timestamp": "2017-05-26"
+    },
+    {
+      "month": "2017-06-30",
+      "subgroup_value": "55+",
+      "index_value": 92.3,
+      "sample_size": "819",
+      "release_timestamp": "2017-06-30"
+    },
+    {
+      "month": "2017-06-30",
+      "subgroup_value": "35-54",
+      "index_value": 98.7,
+      "sample_size": "559",
+      "release_timestamp": "2017-06-30"
+    },
+    {
+      "month": "2017-06-30",
+      "subgroup_value": "18-34",
+      "index_value": 100.4,
+      "sample_size": "423",
+      "release_timestamp": "2017-06-30"
+    },
+    {
+      "month": "2017-07-31",
+      "subgroup_value": "18-34",
+      "index_value": 99.4,
+      "sample_size": "434",
+      "release_timestamp": "2017-07-28"
+    },
+    {
+      "month": "2017-07-31",
+      "subgroup_value": "35-54",
+      "index_value": 99.3,
+      "sample_size": "562",
+      "release_timestamp": "2017-07-28"
+    },
+    {
+      "month": "2017-07-31",
+      "subgroup_value": "55+",
+      "index_value": 89.8,
+      "sample_size": "804",
+      "release_timestamp": "2017-07-28"
+    },
+    {
+      "month": "2017-08-31",
+      "subgroup_value": "18-34",
+      "index_value": 98.4,
+      "sample_size": "419",
+      "release_timestamp": "2017-09-01"
+    },
+    {
+      "month": "2017-08-31",
+      "subgroup_value": "35-54",
+      "index_value": 97.4,
+      "sample_size": "572",
+      "release_timestamp": "2017-09-01"
+    },
+    {
+      "month": "2017-08-31",
+      "subgroup_value": "55+",
+      "index_value": 91.5,
+      "sample_size": "799",
+      "release_timestamp": "2017-09-01"
+    },
+    {
+      "month": "2017-09-30",
+      "subgroup_value": "55+",
+      "index_value": 92.5,
+      "sample_size": "818",
+      "release_timestamp": "2017-09-29"
+    },
+    {
+      "month": "2017-09-30",
+      "subgroup_value": "35-54",
+      "index_value": 96.4,
+      "sample_size": "592",
+      "release_timestamp": "2017-09-29"
+    },
+    {
+      "month": "2017-09-30",
+      "subgroup_value": "18-34",
+      "index_value": 98.7,
+      "sample_size": "386",
+      "release_timestamp": "2017-09-29"
+    },
+    {
+      "month": "2017-10-31",
+      "subgroup_value": "18-34",
+      "index_value": 101.7,
+      "sample_size": "373",
+      "release_timestamp": "2017-10-27"
+    },
+    {
+      "month": "2017-10-31",
+      "subgroup_value": "35-54",
+      "index_value": 96.6,
+      "sample_size": "588",
+      "release_timestamp": "2017-10-27"
+    },
+    {
+      "month": "2017-10-31",
+      "subgroup_value": "55+",
+      "index_value": 96.3,
+      "sample_size": "839",
+      "release_timestamp": "2017-10-27"
+    },
+    {
+      "month": "2017-11-30",
+      "subgroup_value": "18-34",
+      "index_value": 103.0,
+      "sample_size": "385",
+      "release_timestamp": "2017-11-22"
+    },
+    {
+      "month": "2017-11-30",
+      "subgroup_value": "35-54",
+      "index_value": 99.8,
+      "sample_size": "562",
+      "release_timestamp": "2017-11-22"
+    },
+    {
+      "month": "2017-11-30",
+      "subgroup_value": "55+",
+      "index_value": 94.5,
+      "sample_size": "860",
+      "release_timestamp": "2017-11-22"
+    },
+    {
+      "month": "2017-12-31",
+      "subgroup_value": "55+",
+      "index_value": 93.4,
+      "sample_size": "863",
+      "release_timestamp": "2017-12-22"
+    },
+    {
+      "month": "2017-12-31",
+      "subgroup_value": "35-54",
+      "index_value": 101.0,
+      "sample_size": "548",
+      "release_timestamp": "2017-12-22"
+    },
+    {
+      "month": "2017-12-31",
+      "subgroup_value": "18-34",
+      "index_value": 103.8,
+      "sample_size": "392",
+      "release_timestamp": "2017-12-22"
+    },
+    {
+      "month": "2018-01-31",
+      "subgroup_value": "18-34",
+      "index_value": 101.2,
+      "sample_size": "420",
+      "release_timestamp": "2018-02-02"
+    },
+    {
+      "month": "2018-01-31",
+      "subgroup_value": "35-54",
+      "index_value": 100.3,
+      "sample_size": "537",
+      "release_timestamp": "2018-02-02"
+    },
+    {
+      "month": "2018-01-31",
+      "subgroup_value": "55+",
+      "index_value": 91.7,
+      "sample_size": "863",
+      "release_timestamp": "2018-02-02"
+    },
+    {
+      "month": "2018-02-28",
+      "subgroup_value": "18-34",
+      "index_value": 98.6,
+      "sample_size": "403",
+      "release_timestamp": "2018-03-02"
+    },
+    {
+      "month": "2018-02-28",
+      "subgroup_value": "35-54",
+      "index_value": 99.4,
+      "sample_size": "552",
+      "release_timestamp": "2018-03-02"
+    },
+    {
+      "month": "2018-02-28",
+      "subgroup_value": "55+",
+      "index_value": 94.5,
+      "sample_size": "863",
+      "release_timestamp": "2018-03-02"
+    },
+    {
+      "month": "2018-03-31",
+      "subgroup_value": "35-54",
+      "index_value": 101.1,
+      "sample_size": "545",
+      "release_timestamp": "2018-03-29"
+    },
+    {
+      "month": "2018-03-31",
+      "subgroup_value": "55+",
+      "index_value": 97.3,
+      "sample_size": "886",
+      "release_timestamp": "2018-03-29"
+    },
+    {
+      "month": "2018-03-31",
+      "subgroup_value": "18-34",
+      "index_value": 99.1,
+      "sample_size": "397",
+      "release_timestamp": "2018-03-29"
+    },
+    {
+      "month": "2018-04-30",
+      "subgroup_value": "35-54",
+      "index_value": 102.2,
+      "sample_size": "553",
+      "release_timestamp": "2018-04-27"
+    },
+    {
+      "month": "2018-04-30",
+      "subgroup_value": "55+",
+      "index_value": 97.4,
+      "sample_size": "879",
+      "release_timestamp": "2018-04-27"
+    },
+    {
+      "month": "2018-04-30",
+      "subgroup_value": "18-34",
+      "index_value": 101.0,
+      "sample_size": "377",
+      "release_timestamp": "2018-04-27"
+    },
+    {
+      "month": "2018-05-31",
+      "subgroup_value": "18-34",
+      "index_value": 103.8,
+      "sample_size": "358",
+      "release_timestamp": "2018-05-25"
+    },
+    {
+      "month": "2018-05-31",
+      "subgroup_value": "35-54",
+      "index_value": 101.7,
+      "sample_size": "547",
+      "release_timestamp": "2018-05-25"
+    },
+    {
+      "month": "2018-05-31",
+      "subgroup_value": "55+",
+      "index_value": 95.2,
+      "sample_size": "897",
+      "release_timestamp": "2018-05-25"
+    },
+    {
+      "month": "2018-06-30",
+      "subgroup_value": "18-34",
+      "index_value": 101.8,
+      "sample_size": "361",
+      "release_timestamp": "2018-06-29"
+    },
+    {
+      "month": "2018-06-30",
+      "subgroup_value": "35-54",
+      "index_value": 102.3,
+      "sample_size": "554",
+      "release_timestamp": "2018-06-29"
+    },
+    {
+      "month": "2018-06-30",
+      "subgroup_value": "55+",
+      "index_value": 93.2,
+      "sample_size": "883",
+      "release_timestamp": "2018-06-29"
+    },
+    {
+      "month": "2018-07-31",
+      "subgroup_value": "55+",
+      "index_value": 93.6,
+      "sample_size": "876",
+      "release_timestamp": "2018-07-27"
+    },
+    {
+      "month": "2018-07-31",
+      "subgroup_value": "35-54",
+      "index_value": 101.8,
+      "sample_size": "565",
+      "release_timestamp": "2018-07-27"
+    },
+    {
+      "month": "2018-07-31",
+      "subgroup_value": "18-34",
+      "index_value": 101.1,
+      "sample_size": "352",
+      "release_timestamp": "2018-07-27"
+    },
+    {
+      "month": "2018-08-31",
+      "subgroup_value": "18-34",
+      "index_value": 98.5,
+      "sample_size": "385",
+      "release_timestamp": "2018-08-31"
+    },
+    {
+      "month": "2018-08-31",
+      "subgroup_value": "35-54",
+      "index_value": 101.9,
+      "sample_size": "562",
+      "release_timestamp": "2018-08-31"
+    },
+    {
+      "month": "2018-08-31",
+      "subgroup_value": "55+",
+      "index_value": 93.3,
+      "sample_size": "854",
+      "release_timestamp": "2018-08-31"
+    },
+    {
+      "month": "2018-09-30",
+      "subgroup_value": "18-34",
+      "index_value": 99.0,
+      "sample_size": "390",
+      "release_timestamp": "2018-09-28"
+    },
+    {
+      "month": "2018-09-30",
+      "subgroup_value": "35-54",
+      "index_value": 101.2,
+      "sample_size": "553",
+      "release_timestamp": "2018-09-28"
+    },
+    {
+      "month": "2018-09-30",
+      "subgroup_value": "55+",
+      "index_value": 95.3,
+      "sample_size": "861",
+      "release_timestamp": "2018-09-28"
+    },
+    {
+      "month": "2018-10-31",
+      "subgroup_value": "55+",
+      "index_value": 96.2,
+      "sample_size": "859",
+      "release_timestamp": "2018-10-26"
+    },
+    {
+      "month": "2018-10-31",
+      "subgroup_value": "35-54",
+      "index_value": 101.5,
+      "sample_size": "558",
+      "release_timestamp": "2018-10-26"
+    },
+    {
+      "month": "2018-10-31",
+      "subgroup_value": "18-34",
+      "index_value": 97.8,
+      "sample_size": "388",
+      "release_timestamp": "2018-10-26"
+    },
+    {
+      "month": "2018-11-30",
+      "subgroup_value": "18-34",
+      "index_value": 97.7,
+      "sample_size": "358",
+      "release_timestamp": "2018-11-21"
+    },
+    {
+      "month": "2018-11-30",
+      "subgroup_value": "35-54",
+      "index_value": 100.9,
+      "sample_size": "570",
+      "release_timestamp": "2018-11-21"
+    },
+    {
+      "month": "2018-11-30",
+      "subgroup_value": "55+",
+      "index_value": 98.0,
+      "sample_size": "877",
+      "release_timestamp": "2018-11-21"
+    },
+    {
+      "month": "2018-12-31",
+      "subgroup_value": "18-34",
+      "index_value": 97.5,
+      "sample_size": "367",
+      "release_timestamp": "2018-12-21"
+    },
+    {
+      "month": "2018-12-31",
+      "subgroup_value": "35-54",
+      "index_value": 100.2,
+      "sample_size": "572",
+      "release_timestamp": "2018-12-21"
+    },
+    {
+      "month": "2018-12-31",
+      "subgroup_value": "55+",
+      "index_value": 97.3,
+      "sample_size": "852",
+      "release_timestamp": "2018-12-21"
+    },
+    {
+      "month": "2019-01-31",
+      "subgroup_value": "55+",
+      "index_value": 94.0,
+      "sample_size": "854",
+      "release_timestamp": "2019-02-01"
+    },
+    {
+      "month": "2019-01-31",
+      "subgroup_value": "35-54",
+      "index_value": 96.1,
+      "sample_size": "568",
+      "release_timestamp": "2019-02-01"
+    },
+    {
+      "month": "2019-01-31",
+      "subgroup_value": "18-34",
+      "index_value": 98.7,
+      "sample_size": "368",
+      "release_timestamp": "2019-02-01"
+    },
+    {
+      "month": "2019-02-28",
+      "subgroup_value": "18-34",
+      "index_value": 99.8,
+      "sample_size": "377",
+      "release_timestamp": "2019-03-01"
+    },
+    {
+      "month": "2019-02-28",
+      "subgroup_value": "35-54",
+      "index_value": 95.2,
+      "sample_size": "572",
+      "release_timestamp": "2019-03-01"
+    },
+    {
+      "month": "2019-02-28",
+      "subgroup_value": "55+",
+      "index_value": 91.4,
+      "sample_size": "841",
+      "release_timestamp": "2019-03-01"
+    },
+    {
+      "month": "2019-03-31",
+      "subgroup_value": "18-34",
+      "index_value": 101.1,
+      "sample_size": "352",
+      "release_timestamp": "2019-03-29"
+    },
+    {
+      "month": "2019-03-31",
+      "subgroup_value": "35-54",
+      "index_value": 94.8,
+      "sample_size": "599",
+      "release_timestamp": "2019-03-29"
+    },
+    {
+      "month": "2019-03-31",
+      "subgroup_value": "55+",
+      "index_value": 91.4,
+      "sample_size": "838",
+      "release_timestamp": "2019-03-29"
+    },
+    {
+      "month": "2019-04-30",
+      "subgroup_value": "35-54",
+      "index_value": 98.0,
+      "sample_size": "602",
+      "release_timestamp": "2019-04-26"
+    },
+    {
+      "month": "2019-04-30",
+      "subgroup_value": "55+",
+      "index_value": 94.3,
+      "sample_size": "816",
+      "release_timestamp": "2019-04-26"
+    },
+    {
+      "month": "2019-04-30",
+      "subgroup_value": "18-34",
+      "index_value": 99.4,
+      "sample_size": "369",
+      "release_timestamp": "2019-04-26"
+    },
+    {
+      "month": "2019-05-31",
+      "subgroup_value": "18-34",
+      "index_value": 101.7,
+      "sample_size": "376",
+      "release_timestamp": "2019-05-31"
+    },
+    {
+      "month": "2019-05-31",
+      "subgroup_value": "35-54",
+      "index_value": 98.5,
+      "sample_size": "616",
+      "release_timestamp": "2019-05-31"
+    },
+    {
+      "month": "2019-05-31",
+      "subgroup_value": "55+",
+      "index_value": 97.4,
+      "sample_size": "794",
+      "release_timestamp": "2019-05-31"
+    },
+    {
+      "month": "2019-06-30",
+      "subgroup_value": "18-34",
+      "index_value": 102.5,
+      "sample_size": "382",
+      "release_timestamp": "2019-06-28"
+    },
+    {
+      "month": "2019-06-30",
+      "subgroup_value": "35-54",
+      "index_value": 98.2,
+      "sample_size": "574",
+      "release_timestamp": "2019-06-28"
+    },
+    {
+      "month": "2019-06-30",
+      "subgroup_value": "55+",
+      "index_value": 96.8,
+      "sample_size": "832",
+      "release_timestamp": "2019-06-28"
+    },
+    {
+      "month": "2019-07-31",
+      "subgroup_value": "55+",
+      "index_value": 96.9,
+      "sample_size": "863",
+      "release_timestamp": "2019-08-02"
+    },
+    {
+      "month": "2019-07-31",
+      "subgroup_value": "35-54",
+      "index_value": 99.3,
+      "sample_size": "570",
+      "release_timestamp": "2019-08-02"
+    },
+    {
+      "month": "2019-07-31",
+      "subgroup_value": "18-34",
+      "index_value": 103.1,
+      "sample_size": "359",
+      "release_timestamp": "2019-08-02"
+    },
+    {
+      "month": "2019-08-31",
+      "subgroup_value": "18-34",
+      "index_value": 100.3,
+      "sample_size": "349",
+      "release_timestamp": "2019-08-30"
+    },
+    {
+      "month": "2019-08-31",
+      "subgroup_value": "35-54",
+      "index_value": 96.6,
+      "sample_size": "578",
+      "release_timestamp": "2019-08-30"
+    },
+    {
+      "month": "2019-08-31",
+      "subgroup_value": "55+",
+      "index_value": 92.5,
+      "sample_size": "864",
+      "release_timestamp": "2019-08-30"
+    },
+    {
+      "month": "2019-09-30",
+      "subgroup_value": "18-34",
+      "index_value": 98.8,
+      "sample_size": "337",
+      "release_timestamp": "2019-09-27"
+    },
+    {
+      "month": "2019-09-30",
+      "subgroup_value": "35-54",
+      "index_value": 95.9,
+      "sample_size": "599",
+      "release_timestamp": "2019-09-27"
+    },
+    {
+      "month": "2019-09-30",
+      "subgroup_value": "55+",
+      "index_value": 89.9,
+      "sample_size": "855",
+      "release_timestamp": "2019-09-27"
+    },
+    {
+      "month": "2019-10-31",
+      "subgroup_value": "55+",
+      "index_value": 88.6,
+      "sample_size": "862",
+      "release_timestamp": "2019-10-25"
+    },
+    {
+      "month": "2019-10-31",
+      "subgroup_value": "35-54",
+      "index_value": 93.7,
+      "sample_size": "603",
+      "release_timestamp": "2019-10-25"
+    },
+    {
+      "month": "2019-10-31",
+      "subgroup_value": "18-34",
+      "index_value": 100.0,
+      "sample_size": "369",
+      "release_timestamp": "2019-10-25"
+    },
+    {
+      "month": "2019-11-30",
+      "subgroup_value": "18-34",
+      "index_value": 102.4,
+      "sample_size": "362",
+      "release_timestamp": "2019-11-22"
+    },
+    {
+      "month": "2019-11-30",
+      "subgroup_value": "35-54",
+      "index_value": 96.6,
+      "sample_size": "579",
+      "release_timestamp": "2019-11-22"
+    },
+    {
+      "month": "2019-11-30",
+      "subgroup_value": "55+",
+      "index_value": 91.0,
+      "sample_size": "921",
+      "release_timestamp": "2019-11-22"
+    },
+    {
+      "month": "2019-12-31",
+      "subgroup_value": "18-34",
+      "index_value": 102.2,
+      "sample_size": "374",
+      "release_timestamp": "2019-12-20"
+    },
+    {
+      "month": "2019-12-31",
+      "subgroup_value": "35-54",
+      "index_value": 97.9,
+      "sample_size": "565",
+      "release_timestamp": "2019-12-20"
+    },
+    {
+      "month": "2019-12-31",
+      "subgroup_value": "55+",
+      "index_value": 94.8,
+      "sample_size": "957",
+      "release_timestamp": "2019-12-20"
+    },
+    {
+      "month": "2020-01-31",
+      "subgroup_value": "55+",
+      "index_value": 97.0,
+      "sample_size": "974",
+      "release_timestamp": "2020-01-31"
+    },
+    {
+      "month": "2020-01-31",
+      "subgroup_value": "35-54",
+      "index_value": 99.1,
+      "sample_size": "553",
+      "release_timestamp": "2020-01-31"
+    },
+    {
+      "month": "2020-01-31",
+      "subgroup_value": "18-34",
+      "index_value": 102.7,
+      "sample_size": "348",
+      "release_timestamp": "2020-01-31"
+    },
+    {
+      "month": "2020-02-29",
+      "subgroup_value": "18-34",
+      "index_value": 100.6,
+      "sample_size": "350",
+      "release_timestamp": "2020-02-28"
+    },
+    {
+      "month": "2020-02-29",
+      "subgroup_value": "35-54",
+      "index_value": 102.3,
+      "sample_size": "577",
+      "release_timestamp": "2020-02-28"
+    },
+    {
+      "month": "2020-02-29",
+      "subgroup_value": "55+",
+      "index_value": 98.3,
+      "sample_size": "941",
+      "release_timestamp": "2020-02-28"
+    },
+    {
+      "month": "2020-03-31",
+      "subgroup_value": "18-34",
+      "index_value": 99.1,
+      "sample_size": "365",
+      "release_timestamp": "2020-03-27"
+    },
+    {
+      "month": "2020-03-31",
+      "subgroup_value": "35-54",
+      "index_value": 97.5,
+      "sample_size": "601",
+      "release_timestamp": "2020-03-27"
+    },
+    {
+      "month": "2020-03-31",
+      "subgroup_value": "55+",
+      "index_value": 94.9,
+      "sample_size": "959",
+      "release_timestamp": "2020-03-27"
+    },
+    {
+      "month": "2020-04-30",
+      "subgroup_value": "35-54",
+      "index_value": 86.4,
+      "sample_size": "591",
+      "release_timestamp": "2020-04-24"
+    },
+    {
+      "month": "2020-04-30",
+      "subgroup_value": "55+",
+      "index_value": 86.7,
+      "sample_size": "943",
+      "release_timestamp": "2020-04-24"
+    },
+    {
+      "month": "2020-04-30",
+      "subgroup_value": "18-34",
+      "index_value": 89.5,
+      "sample_size": "386",
+      "release_timestamp": "2020-04-24"
+    },
+    {
+      "month": "2020-05-31",
+      "subgroup_value": "55+",
+      "index_value": 78.5,
+      "sample_size": "939",
+      "release_timestamp": "2020-05-29"
+    },
+    {
+      "month": "2020-05-31",
+      "subgroup_value": "35-54",
+      "index_value": 74.3,
+      "sample_size": "586",
+      "release_timestamp": "2020-05-29"
+    },
+    {
+      "month": "2020-05-31",
+      "subgroup_value": "18-34",
+      "index_value": 81.2,
+      "sample_size": "416",
+      "release_timestamp": "2020-05-29"
+    },
+    {
+      "month": "2020-06-30",
+      "subgroup_value": "18-34",
+      "index_value": 74.4,
+      "sample_size": "397",
+      "release_timestamp": "2020-06-26"
+    },
+    {
+      "month": "2020-06-30",
+      "subgroup_value": "35-54",
+      "index_value": 72.0,
+      "sample_size": "565",
+      "release_timestamp": "2020-06-26"
+    },
+    {
+      "month": "2020-06-30",
+      "subgroup_value": "55+",
+      "index_value": 75.4,
+      "sample_size": "902",
+      "release_timestamp": "2020-06-26"
+    },
+    {
+      "month": "2020-07-31",
+      "subgroup_value": "18-34",
+      "index_value": 74.2,
+      "sample_size": "386",
+      "release_timestamp": "2020-07-31"
+    },
+    {
+      "month": "2020-07-31",
+      "subgroup_value": "35-54",
+      "index_value": 73.0,
+      "sample_size": "576",
+      "release_timestamp": "2020-07-31"
+    },
+    {
+      "month": "2020-07-31",
+      "subgroup_value": "55+",
+      "index_value": 75.3,
+      "sample_size": "889",
+      "release_timestamp": "2020-07-31"
+    },
+    {
+      "month": "2020-08-31",
+      "subgroup_value": "55+",
+      "index_value": 75.5,
+      "sample_size": "888",
+      "release_timestamp": "2020-08-28"
+    },
+    {
+      "month": "2020-08-31",
+      "subgroup_value": "35-54",
+      "index_value": 74.4,
+      "sample_size": "602",
+      "release_timestamp": "2020-08-28"
+    },
+    {
+      "month": "2020-08-31",
+      "subgroup_value": "18-34",
+      "index_value": 74.1,
+      "sample_size": "377",
+      "release_timestamp": "2020-08-28"
+    },
+    {
+      "month": "2020-09-30",
+      "subgroup_value": "18-34",
+      "index_value": 75.7,
+      "sample_size": "371",
+      "release_timestamp": "2020-10-02"
+    },
+    {
+      "month": "2020-09-30",
+      "subgroup_value": "35-54",
+      "index_value": 74.8,
+      "sample_size": "607",
+      "release_timestamp": "2020-10-02"
+    },
+    {
+      "month": "2020-09-30",
+      "subgroup_value": "55+",
+      "index_value": 76.2,
+      "sample_size": "874",
+      "release_timestamp": "2020-10-02"
+    },
+    {
+      "month": "2020-10-31",
+      "subgroup_value": "18-34",
+      "index_value": 80.2,
+      "sample_size": "371",
+      "release_timestamp": "2020-10-30"
+    },
+    {
+      "month": "2020-10-31",
+      "subgroup_value": "35-54",
+      "index_value": 79.1,
+      "sample_size": "596",
+      "release_timestamp": "2020-10-30"
+    },
+    {
+      "month": "2020-10-31",
+      "subgroup_value": "55+",
+      "index_value": 77.9,
+      "sample_size": "881",
+      "release_timestamp": "2020-10-30"
+    },
+    {
+      "month": "2020-11-30",
+      "subgroup_value": "55+",
+      "index_value": 78.1,
+      "sample_size": "868",
+      "release_timestamp": "2020-11-25"
+    },
+    {
+      "month": "2020-11-30",
+      "subgroup_value": "35-54",
+      "index_value": 80.3,
+      "sample_size": "564",
+      "release_timestamp": "2020-11-25"
+    },
+    {
+      "month": "2020-11-30",
+      "subgroup_value": "18-34",
+      "index_value": 82.3,
+      "sample_size": "363",
+      "release_timestamp": "2020-11-25"
+    },
+    {
+      "month": "2020-12-31",
+      "subgroup_value": "18-34",
+      "index_value": 85.2,
+      "sample_size": "385",
+      "release_timestamp": "2020-12-23"
+    },
+    {
+      "month": "2020-12-31",
+      "subgroup_value": "35-54",
+      "index_value": 79.7,
+      "sample_size": "545",
+      "release_timestamp": "2020-12-23"
+    },
+    {
+      "month": "2020-12-31",
+      "subgroup_value": "55+",
+      "index_value": 77.1,
+      "sample_size": "867",
+      "release_timestamp": "2020-12-23"
+    },
+    {
+      "month": "2021-01-31",
+      "subgroup_value": "18-34",
+      "index_value": 85.4,
+      "sample_size": "389",
+      "release_timestamp": "2021-01-29"
+    },
+    {
+      "month": "2021-01-31",
+      "subgroup_value": "35-54",
+      "index_value": 78.2,
+      "sample_size": "575",
+      "release_timestamp": "2021-01-29"
+    },
+    {
+      "month": "2021-01-31",
+      "subgroup_value": "55+",
+      "index_value": 75.9,
+      "sample_size": "838",
+      "release_timestamp": "2021-01-29"
+    },
+    {
+      "month": "2021-02-28",
+      "subgroup_value": "55+",
+      "index_value": 74.0,
+      "sample_size": "847",
+      "release_timestamp": "2021-02-26"
+    },
+    {
+      "month": "2021-02-28",
+      "subgroup_value": "35-54",
+      "index_value": 78.6,
+      "sample_size": "559",
+      "release_timestamp": "2021-02-26"
+    },
+    {
+      "month": "2021-02-28",
+      "subgroup_value": "18-34",
+      "index_value": 88.7,
+      "sample_size": "392",
+      "release_timestamp": "2021-02-26"
+    },
+    {
+      "month": "2021-03-31",
+      "subgroup_value": "18-34",
+      "index_value": 90.7,
+      "sample_size": "370",
+      "release_timestamp": "2021-03-26"
+    },
+    {
+      "month": "2021-03-31",
+      "subgroup_value": "35-54",
+      "index_value": 80.5,
+      "sample_size": "591",
+      "release_timestamp": "2021-03-26"
+    },
+    {
+      "month": "2021-03-31",
+      "subgroup_value": "55+",
+      "index_value": 75.1,
+      "sample_size": "838",
+      "release_timestamp": "2021-03-26"
+    },
+    {
+      "month": "2021-04-30",
+      "subgroup_value": "18-34",
+      "index_value": 93.3,
+      "sample_size": "365",
+      "release_timestamp": "2021-04-30"
+    },
+    {
+      "month": "2021-04-30",
+      "subgroup_value": "35-54",
+      "index_value": 84.2,
+      "sample_size": "580",
+      "release_timestamp": "2021-04-30"
+    },
+    {
+      "month": "2021-04-30",
+      "subgroup_value": "55+",
+      "index_value": 78.2,
+      "sample_size": "848",
+      "release_timestamp": "2021-04-30"
+    },
+    {
+      "month": "2021-05-31",
+      "subgroup_value": "35-54",
+      "index_value": 85.5,
+      "sample_size": "601",
+      "release_timestamp": "2021-05-28"
+    },
+    {
+      "month": "2021-05-31",
+      "subgroup_value": "55+",
+      "index_value": 81.3,
+      "sample_size": "831",
+      "release_timestamp": "2021-05-28"
+    },
+    {
+      "month": "2021-05-31",
+      "subgroup_value": "18-34",
+      "index_value": 93.8,
+      "sample_size": "365",
+      "release_timestamp": "2021-05-28"
+    },
+    {
+      "month": "2021-06-30",
+      "subgroup_value": "18-34",
+      "index_value": 93.3,
+      "sample_size": "395",
+      "release_timestamp": "2021-06-25"
+    },
+    {
+      "month": "2021-06-30",
+      "subgroup_value": "35-54",
+      "index_value": 86.6,
+      "sample_size": "573",
+      "release_timestamp": "2021-06-25"
+    },
+    {
+      "month": "2021-06-30",
+      "subgroup_value": "55+",
+      "index_value": 81.0,
+      "sample_size": "835",
+      "release_timestamp": "2021-06-25"
+    },
+    {
+      "month": "2021-07-31",
+      "subgroup_value": "18-34",
+      "index_value": 90.7,
+      "sample_size": "414",
+      "release_timestamp": "2021-07-30"
+    },
+    {
+      "month": "2021-07-31",
+      "subgroup_value": "35-54",
+      "index_value": 83.9,
+      "sample_size": "587",
+      "release_timestamp": "2021-07-30"
+    },
+    {
+      "month": "2021-07-31",
+      "subgroup_value": "55+",
+      "index_value": 79.0,
+      "sample_size": "802",
+      "release_timestamp": "2021-07-30"
+    },
+    {
+      "month": "2021-08-31",
+      "subgroup_value": "55+",
+      "index_value": 74.5,
+      "sample_size": "817",
+      "release_timestamp": "2021-08-27"
+    },
+    {
+      "month": "2021-08-31",
+      "subgroup_value": "35-54",
+      "index_value": 79.9,
+      "sample_size": "574",
+      "release_timestamp": "2021-08-27"
+    },
+    {
+      "month": "2021-08-31",
+      "subgroup_value": "18-34",
+      "index_value": 87.2,
+      "sample_size": "402",
+      "release_timestamp": "2021-08-27"
+    },
+    {
+      "month": "2021-09-30",
+      "subgroup_value": "18-34",
+      "index_value": 85.5,
+      "sample_size": "371",
+      "release_timestamp": "2021-10-01"
+    },
+    {
+      "month": "2021-09-30",
+      "subgroup_value": "35-54",
+      "index_value": 74.8,
+      "sample_size": "611",
+      "release_timestamp": "2021-10-01"
+    },
+    {
+      "month": "2021-09-30",
+      "subgroup_value": "55+",
+      "index_value": 69.8,
+      "sample_size": "814",
+      "release_timestamp": "2021-10-01"
+    },
+    {
+      "month": "2021-10-31",
+      "subgroup_value": "18-34",
+      "index_value": 85.4,
+      "sample_size": "351",
+      "release_timestamp": "2021-10-29"
+    },
+    {
+      "month": "2021-10-31",
+      "subgroup_value": "35-54",
+      "index_value": 71.9,
+      "sample_size": "613",
+      "release_timestamp": "2021-10-29"
+    },
+    {
+      "month": "2021-10-31",
+      "subgroup_value": "55+",
+      "index_value": 65.1,
+      "sample_size": "828",
+      "release_timestamp": "2021-10-29"
+    },
+    {
+      "month": "2021-11-30",
+      "subgroup_value": "55+",
+      "index_value": 64.3,
+      "sample_size": "830",
+      "release_timestamp": "2021-11-24"
+    },
+    {
+      "month": "2021-11-30",
+      "subgroup_value": "35-54",
+      "index_value": 70.9,
+      "sample_size": "616",
+      "release_timestamp": "2021-11-24"
+    },
+    {
+      "month": "2021-11-30",
+      "subgroup_value": "18-34",
+      "index_value": 83.6,
+      "sample_size": "349",
+      "release_timestamp": "2021-11-24"
+    },
+    {
+      "month": "2021-12-31",
+      "subgroup_value": "18-34",
+      "index_value": 81.4,
+      "sample_size": "376",
+      "release_timestamp": "2021-12-23"
+    },
+    {
+      "month": "2021-12-31",
+      "subgroup_value": "35-54",
+      "index_value": 69.8,
+      "sample_size": "563",
+      "release_timestamp": "2021-12-23"
+    },
+    {
+      "month": "2021-12-31",
+      "subgroup_value": "55+",
+      "index_value": 64.4,
+      "sample_size": "846",
+      "release_timestamp": "2021-12-23"
+    },
+    {
+      "month": "2022-01-31",
+      "subgroup_value": "18-34",
+      "index_value": 76.7,
+      "sample_size": "372",
+      "release_timestamp": "2022-01-28"
+    },
+    {
+      "month": "2022-01-31",
+      "subgroup_value": "35-54",
+      "index_value": 68.9,
+      "sample_size": "573",
+      "release_timestamp": "2022-01-28"
+    },
+    {
+      "month": "2022-01-31",
+      "subgroup_value": "55+",
+      "index_value": 64.1,
+      "sample_size": "846",
+      "release_timestamp": "2022-01-28"
+    },
+    {
+      "month": "2022-02-28",
+      "subgroup_value": "55+",
+      "index_value": 62.3,
+      "sample_size": "841",
+      "release_timestamp": "2022-02-25"
+    },
+    {
+      "month": "2022-02-28",
+      "subgroup_value": "35-54",
+      "index_value": 68.2,
+      "sample_size": "588",
+      "release_timestamp": "2022-02-25"
+    },
+    {
+      "month": "2022-02-28",
+      "subgroup_value": "18-34",
+      "index_value": 74.7,
+      "sample_size": "364",
+      "release_timestamp": "2022-02-25"
+    },
+    {
+      "month": "2022-03-31",
+      "subgroup_value": "18-34",
+      "index_value": 71.2,
+      "sample_size": "336",
+      "release_timestamp": "2022-03-25"
+    },
+    {
+      "month": "2022-03-31",
+      "subgroup_value": "35-54",
+      "index_value": 63.8,
+      "sample_size": "634",
+      "release_timestamp": "2022-03-25"
+    },
+    {
+      "month": "2022-03-31",
+      "subgroup_value": "55+",
+      "index_value": 59.1,
+      "sample_size": "824",
+      "release_timestamp": "2022-03-25"
+    },
+    {
+      "month": "2022-04-30",
+      "subgroup_value": "18-34",
+      "index_value": 72.3,
+      "sample_size": "340",
+      "release_timestamp": "2022-04-29"
+    },
+    {
+      "month": "2022-04-30",
+      "subgroup_value": "35-54",
+      "index_value": 63.0,
+      "sample_size": "594",
+      "release_timestamp": "2022-04-29"
+    },
+    {
+      "month": "2022-04-30",
+      "subgroup_value": "55+",
+      "index_value": 57.6,
+      "sample_size": "856",
+      "release_timestamp": "2022-04-29"
+    },
+    {
+      "month": "2022-05-31",
+      "subgroup_value": "35-54",
+      "index_value": 60.3,
+      "sample_size": "580",
+      "release_timestamp": "2022-05-27"
+    },
+    {
+      "month": "2022-05-31",
+      "subgroup_value": "55+",
+      "index_value": 56.5,
+      "sample_size": "852",
+      "release_timestamp": "2022-05-27"
+    },
+    {
+      "month": "2022-05-31",
+      "subgroup_value": "18-34",
+      "index_value": 71.9,
+      "sample_size": "357",
+      "release_timestamp": "2022-05-27"
+    },
+    {
+      "month": "2022-06-30",
+      "subgroup_value": "55+",
+      "index_value": 52.7,
+      "sample_size": "867",
+      "release_timestamp": "2022-06-24"
+    },
+    {
+      "month": "2022-06-30",
+      "subgroup_value": "18-34",
+      "index_value": 69.6,
+      "sample_size": "366",
+      "release_timestamp": "2022-06-24"
+    },
+    {
+      "month": "2022-06-30",
+      "subgroup_value": "35-54",
+      "index_value": 57.3,
+      "sample_size": "551",
+      "release_timestamp": "2022-06-24"
+    },
+    {
+      "month": "2022-07-31",
+      "subgroup_value": "18-34",
+      "index_value": 62.9,
+      "sample_size": "359",
+      "release_timestamp": "2022-07-29"
+    },
+    {
+      "month": "2022-07-31",
+      "subgroup_value": "35-54",
+      "index_value": 53.0,
+      "sample_size": "579",
+      "release_timestamp": "2022-07-29"
+    },
+    {
+      "month": "2022-07-31",
+      "subgroup_value": "55+",
+      "index_value": 48.7,
+      "sample_size": "850",
+      "release_timestamp": "2022-07-29"
+    },
+    {
+      "month": "2022-08-31",
+      "subgroup_value": "18-34",
+      "index_value": 61.3,
+      "sample_size": "332",
+      "release_timestamp": "2022-08-26"
+    },
+    {
+      "month": "2022-08-31",
+      "subgroup_value": "35-54",
+      "index_value": 53.6,
+      "sample_size": "594",
+      "release_timestamp": "2022-08-26"
+    },
+    {
+      "month": "2022-08-31",
+      "subgroup_value": "55+",
+      "index_value": 49.0,
+      "sample_size": "862",
+      "release_timestamp": "2022-08-26"
+    },
+    {
+      "month": "2022-09-30",
+      "subgroup_value": "55+",
+      "index_value": 52.4,
+      "sample_size": "848",
+      "release_timestamp": "2022-09-30"
+    },
+    {
+      "month": "2022-09-30",
+      "subgroup_value": "35-54",
+      "index_value": 57.7,
+      "sample_size": "607",
+      "release_timestamp": "2022-09-30"
+    },
+    {
+      "month": "2022-09-30",
+      "subgroup_value": "18-34",
+      "index_value": 61.5,
+      "sample_size": "339",
+      "release_timestamp": "2022-09-30"
+    },
+    {
+      "month": "2022-10-31",
+      "subgroup_value": "18-34",
+      "index_value": 65.6,
+      "sample_size": "359",
+      "release_timestamp": "2022-10-28"
+    },
+    {
+      "month": "2022-10-31",
+      "subgroup_value": "35-54",
+      "index_value": 59.7,
+      "sample_size": "575",
+      "release_timestamp": "2022-10-28"
+    },
+    {
+      "month": "2022-10-31",
+      "subgroup_value": "55+",
+      "index_value": 55.1,
+      "sample_size": "858",
+      "release_timestamp": "2022-10-28"
+    },
+    {
+      "month": "2022-11-30",
+      "subgroup_value": "18-34",
+      "index_value": 67.3,
+      "sample_size": "395",
+      "release_timestamp": "2022-11-23"
+    },
+    {
+      "month": "2022-11-30",
+      "subgroup_value": "35-54",
+      "index_value": 58.0,
+      "sample_size": "572",
+      "release_timestamp": "2022-11-23"
+    },
+    {
+      "month": "2022-11-30",
+      "subgroup_value": "55+",
+      "index_value": 54.0,
+      "sample_size": "826",
+      "release_timestamp": "2022-11-23"
+    },
+    {
+      "month": "2022-12-31",
+      "subgroup_value": "55+",
+      "index_value": 54.0,
+      "sample_size": "856",
+      "release_timestamp": "2022-12-23"
+    },
+    {
+      "month": "2022-12-31",
+      "subgroup_value": "35-54",
+      "index_value": 58.4,
+      "sample_size": "550",
+      "release_timestamp": "2022-12-23"
+    },
+    {
+      "month": "2022-12-31",
+      "subgroup_value": "18-34",
+      "index_value": 68.4,
+      "sample_size": "384",
+      "release_timestamp": "2022-12-23"
+    },
+    {
+      "month": "2023-01-31",
+      "subgroup_value": "18-34",
+      "index_value": 71.6,
+      "sample_size": "351",
+      "release_timestamp": "2023-01-27"
+    },
+    {
+      "month": "2023-01-31",
+      "subgroup_value": "35-54",
+      "index_value": 60.1,
+      "sample_size": "570",
+      "release_timestamp": "2023-01-27"
+    },
+    {
+      "month": "2023-01-31",
+      "subgroup_value": "55+",
+      "index_value": 55.4,
+      "sample_size": "864",
+      "release_timestamp": "2023-01-27"
+    },
+    {
+      "month": "2023-02-28",
+      "subgroup_value": "18-34",
+      "index_value": 75.3,
+      "sample_size": "322",
+      "release_timestamp": "2023-02-24"
+    },
+    {
+      "month": "2023-02-28",
+      "subgroup_value": "35-54",
+      "index_value": 62.3,
+      "sample_size": "550",
+      "release_timestamp": "2023-02-24"
+    },
+    {
+      "month": "2023-02-28",
+      "subgroup_value": "55+",
+      "index_value": 60.0,
+      "sample_size": "911",
+      "release_timestamp": "2023-02-24"
+    },
+    {
+      "month": "2023-03-31",
+      "subgroup_value": "55+",
+      "index_value": 61.7,
+      "sample_size": "881",
+      "release_timestamp": "2023-03-31"
+    },
+    {
+      "month": "2023-03-31",
+      "subgroup_value": "35-54",
+      "index_value": 62.1,
+      "sample_size": "580",
+      "release_timestamp": "2023-03-31"
+    },
+    {
+      "month": "2023-03-31",
+      "subgroup_value": "18-34",
+      "index_value": 75.2,
+      "sample_size": "323",
+      "release_timestamp": "2023-03-31"
+    },
+    {
+      "month": "2023-04-30",
+      "subgroup_value": "18-34",
+      "index_value": 74.0,
+      "sample_size": "336",
+      "release_timestamp": "2023-04-28"
+    },
+    {
+      "month": "2023-04-30",
+      "subgroup_value": "35-54",
+      "index_value": 61.0,
+      "sample_size": "566",
+      "release_timestamp": "2023-04-28"
+    },
+    {
+      "month": "2023-04-30",
+      "subgroup_value": "55+",
+      "index_value": 62.2,
+      "sample_size": "889",
+      "release_timestamp": "2023-04-28"
+    },
+    {
+      "month": "2023-05-31",
+      "subgroup_value": "18-34",
+      "index_value": 69.0,
+      "sample_size": "364",
+      "release_timestamp": "2023-05-26"
+    },
+    {
+      "month": "2023-05-31",
+      "subgroup_value": "35-54",
+      "index_value": 60.7,
+      "sample_size": "566",
+      "release_timestamp": "2023-05-26"
+    },
+    {
+      "month": "2023-05-31",
+      "subgroup_value": "55+",
+      "index_value": 58.7,
+      "sample_size": "866",
+      "release_timestamp": "2023-05-26"
+    },
+    {
+      "month": "2023-06-30",
+      "subgroup_value": "35-54",
+      "index_value": 63.1,
+      "sample_size": "553",
+      "release_timestamp": "2023-06-30"
+    },
+    {
+      "month": "2023-06-30",
+      "subgroup_value": "55+",
+      "index_value": 58.8,
+      "sample_size": "876",
+      "release_timestamp": "2023-06-30"
+    },
+    {
+      "month": "2023-06-30",
+      "subgroup_value": "18-34",
+      "index_value": 68.6,
+      "sample_size": "366",
+      "release_timestamp": "2023-06-30"
+    },
+    {
+      "month": "2023-07-31",
+      "subgroup_value": "18-34",
+      "index_value": 70.8,
+      "sample_size": "368",
+      "release_timestamp": "2023-07-28"
+    },
+    {
+      "month": "2023-07-31",
+      "subgroup_value": "35-54",
+      "index_value": 66.0,
+      "sample_size": "542",
+      "release_timestamp": "2023-07-28"
+    },
+    {
+      "month": "2023-07-31",
+      "subgroup_value": "55+",
+      "index_value": 61.2,
+      "sample_size": "884",
+      "release_timestamp": "2023-07-28"
+    },
+    {
+      "month": "2023-08-31",
+      "subgroup_value": "18-34",
+      "index_value": 74.1,
+      "sample_size": "348",
+      "release_timestamp": "2023-08-25"
+    },
+    {
+      "month": "2023-08-31",
+      "subgroup_value": "35-54",
+      "index_value": 67.9,
+      "sample_size": "526",
+      "release_timestamp": "2023-08-25"
+    },
+    {
+      "month": "2023-08-31",
+      "subgroup_value": "55+",
+      "index_value": 66.2,
+      "sample_size": "919",
+      "release_timestamp": "2023-08-25"
+    },
+    {
+      "month": "2023-09-30",
+      "subgroup_value": "55+",
+      "index_value": 68.5,
+      "sample_size": "911",
+      "release_timestamp": "2023-09-29"
+    },
+    {
+      "month": "2023-09-30",
+      "subgroup_value": "35-54",
+      "index_value": 68.2,
+      "sample_size": "549",
+      "release_timestamp": "2023-09-29"
+    },
+    {
+      "month": "2023-09-30",
+      "subgroup_value": "18-34",
+      "index_value": 74.3,
+      "sample_size": "336",
+      "release_timestamp": "2023-09-29"
+    },
+    {
+      "month": "2023-10-31",
+      "subgroup_value": "18-34",
+      "index_value": 71.6,
+      "sample_size": "342",
+      "release_timestamp": "2023-10-27"
+    },
+    {
+      "month": "2023-10-31",
+      "subgroup_value": "35-54",
+      "index_value": 66.6,
+      "sample_size": "542",
+      "release_timestamp": "2023-10-27"
+    },
+    {
+      "month": "2023-10-31",
+      "subgroup_value": "55+",
+      "index_value": 65.2,
+      "sample_size": "913",
+      "release_timestamp": "2023-10-27"
+    },
+    {
+      "month": "2023-11-30",
+      "subgroup_value": "18-34",
+      "index_value": 68.8,
+      "sample_size": "345",
+      "release_timestamp": "2023-11-22"
+    },
+    {
+      "month": "2023-11-30",
+      "subgroup_value": "35-54",
+      "index_value": 63.4,
+      "sample_size": "559",
+      "release_timestamp": "2023-11-22"
+    },
+    {
+      "month": "2023-11-30",
+      "subgroup_value": "55+",
+      "index_value": 62.7,
+      "sample_size": "889",
+      "release_timestamp": "2023-11-22"
+    },
+    {
+      "month": "2023-12-31",
+      "subgroup_value": "55+",
+      "index_value": 63.0,
+      "sample_size": "897",
+      "release_timestamp": "2023-12-22"
+    },
+    {
+      "month": "2023-12-31",
+      "subgroup_value": "35-54",
+      "index_value": 63.4,
+      "sample_size": "538",
+      "release_timestamp": "2023-12-22"
+    },
+    {
+      "month": "2023-12-31",
+      "subgroup_value": "18-34",
+      "index_value": 71.1,
+      "sample_size": "355",
+      "release_timestamp": "2023-12-22"
+    },
+    {
+      "month": "2024-01-31",
+      "subgroup_value": "18-34",
+      "index_value": 73.5,
+      "sample_size": "354",
+      "release_timestamp": "2024-02-02"
+    },
+    {
+      "month": "2024-01-31",
+      "subgroup_value": "35-54",
+      "index_value": 68.6,
+      "sample_size": "542",
+      "release_timestamp": "2024-02-02"
+    },
+    {
+      "month": "2024-01-31",
+      "subgroup_value": "55+",
+      "index_value": 69.4,
+      "sample_size": "894",
+      "release_timestamp": "2024-02-02"
+    },
+    {
+      "month": "2024-02-29",
+      "subgroup_value": "18-34",
+      "index_value": 78.1,
+      "sample_size": "356",
+      "release_timestamp": "2024-03-01"
+    },
+    {
+      "month": "2024-02-29",
+      "subgroup_value": "35-54",
+      "index_value": 74.8,
+      "sample_size": "529",
+      "release_timestamp": "2024-03-01"
+    },
+    {
+      "month": "2024-02-29",
+      "subgroup_value": "55+",
+      "index_value": 74.4,
+      "sample_size": "908",
+      "release_timestamp": "2024-03-01"
+    },
+    {
+      "month": "2024-03-31",
+      "subgroup_value": "55+",
+      "index_value": 78.3,
+      "sample_size": "918",
+      "release_timestamp": "2024-03-28"
+    },
+    {
+      "month": "2024-03-31",
+      "subgroup_value": "35-54",
+      "index_value": 78.8,
+      "sample_size": "528",
+      "release_timestamp": "2024-03-28"
+    },
+    {
+      "month": "2024-03-31",
+      "subgroup_value": "18-34",
+      "index_value": 78.4,
+      "sample_size": "348",
+      "release_timestamp": "2024-03-28"
+    },
+    {
+      "month": "2024-04-30",
+      "subgroup_value": "18-34",
+      "index_value": 78.8,
+      "sample_size": "367",
+      "release_timestamp": "2024-04-26"
+    },
+    {
+      "month": "2024-04-30",
+      "subgroup_value": "35-54",
+      "index_value": 77.6,
+      "sample_size": "586",
+      "release_timestamp": "2024-04-26"
+    },
+    {
+      "month": "2024-04-30",
+      "subgroup_value": "55+",
+      "index_value": 77.8,
+      "sample_size": "1011",
+      "release_timestamp": "2024-04-26"
+    },
+    {
+      "month": "2024-05-31",
+      "subgroup_value": "18-34",
+      "index_value": 77.4,
+      "sample_size": "410",
+      "release_timestamp": "2024-05-24"
+    },
+    {
+      "month": "2024-05-31",
+      "subgroup_value": "35-54",
+      "index_value": 75.2,
+      "sample_size": "694",
+      "release_timestamp": "2024-05-24"
+    },
+    {
+      "month": "2024-05-31",
+      "subgroup_value": "55+",
+      "index_value": 75.0,
+      "sample_size": "1185",
+      "release_timestamp": "2024-05-24"
+    },
+    {
+      "month": "2024-06-30",
+      "subgroup_value": "35-54",
+      "index_value": 71.2,
+      "sample_size": "768",
+      "release_timestamp": "2024-06-28"
+    },
+    {
+      "month": "2024-06-30",
+      "subgroup_value": "55+",
+      "index_value": 70.6,
+      "sample_size": "1363",
+      "release_timestamp": "2024-06-28"
+    },
+    {
+      "month": "2024-06-30",
+      "subgroup_value": "18-34",
+      "index_value": 76.1,
+      "sample_size": "414",
+      "release_timestamp": "2024-06-28"
+    },
+    {
+      "month": "2024-07-31",
+      "subgroup_value": "55+",
+      "index_value": 68.2,
+      "sample_size": "1460",
+      "release_timestamp": "2024-07-26"
+    },
+    {
+      "month": "2024-07-31",
+      "subgroup_value": "18-34",
+      "index_value": 72.5,
+      "sample_size": "340",
+      "release_timestamp": "2024-07-26"
+    },
+    {
+      "month": "2024-07-31",
+      "subgroup_value": "35-54",
+      "index_value": 66.7,
+      "sample_size": "737",
+      "release_timestamp": "2024-07-26"
+    },
+    {
+      "month": "2024-08-31",
+      "subgroup_value": "18-34",
+      "index_value": 70.2,
+      "sample_size": "276",
+      "release_timestamp": "2024-08-30"
+    },
+    {
+      "month": "2024-08-31",
+      "subgroup_value": "35-54",
+      "index_value": 66.2,
+      "sample_size": "730",
+      "release_timestamp": "2024-08-30"
+    },
+    {
+      "month": "2024-08-31",
+      "subgroup_value": "55+",
+      "index_value": 68.4,
+      "sample_size": "1602",
+      "release_timestamp": "2024-08-30"
+    },
+    {
+      "month": "2024-09-30",
+      "subgroup_value": "18-34",
+      "index_value": 71.5,
+      "sample_size": "244",
+      "release_timestamp": "2024-09-27"
+    },
+    {
+      "month": "2024-09-30",
+      "subgroup_value": "35-54",
+      "index_value": 66.7,
+      "sample_size": "686",
+      "release_timestamp": "2024-09-27"
+    },
+    {
+      "month": "2024-09-30",
+      "subgroup_value": "55+",
+      "index_value": 69.6,
+      "sample_size": "1645",
+      "release_timestamp": "2024-09-27"
+    },
+    {
+      "month": "2024-10-31",
+      "subgroup_value": "55+",
+      "index_value": 69.5,
+      "sample_size": "1662",
+      "release_timestamp": "2024-10-25"
+    },
+    {
+      "month": "2024-10-31",
+      "subgroup_value": "35-54",
+      "index_value": 69.4,
+      "sample_size": "705",
+      "release_timestamp": "2024-10-25"
+    },
+    {
+      "month": "2024-10-31",
+      "subgroup_value": "18-34",
+      "index_value": 75.5,
+      "sample_size": "250",
+      "release_timestamp": "2024-10-25"
+    },
+    {
+      "month": "2024-11-30",
+      "subgroup_value": "18-34",
+      "index_value": 76.0,
+      "sample_size": "228",
+      "release_timestamp": "2024-11-22"
+    },
+    {
+      "month": "2024-11-30",
+      "subgroup_value": "35-54",
+      "index_value": 70.5,
+      "sample_size": "611",
+      "release_timestamp": "2024-11-22"
+    },
+    {
+      "month": "2024-11-30",
+      "subgroup_value": "55+",
+      "index_value": 71.1,
+      "sample_size": "1481",
+      "release_timestamp": "2024-11-22"
+    },
+    {
+      "month": "2024-12-31",
+      "subgroup_value": "18-34",
+      "index_value": 75.0,
+      "sample_size": "208",
+      "release_timestamp": "2024-12-20"
+    },
+    {
+      "month": "2024-12-31",
+      "subgroup_value": "35-54",
+      "index_value": 71.7,
+      "sample_size": "585",
+      "release_timestamp": "2024-12-20"
+    },
+    {
+      "month": "2024-12-31",
+      "subgroup_value": "55+",
+      "index_value": 72.3,
+      "sample_size": "1438",
+      "release_timestamp": "2024-12-20"
+    },
+    {
+      "month": "2025-01-31",
+      "subgroup_value": "55+",
+      "index_value": 73.9,
+      "sample_size": "1516",
+      "release_timestamp": "2025-01-24"
+    },
+    {
+      "month": "2025-01-31",
+      "subgroup_value": "35-54",
+      "index_value": 71.6,
+      "sample_size": "604",
+      "release_timestamp": "2025-01-24"
+    },
+    {
+      "month": "2025-01-31",
+      "subgroup_value": "18-34",
+      "index_value": 71.2,
+      "sample_size": "219",
+      "release_timestamp": "2025-01-24"
+    },
+    {
+      "month": "2025-02-28",
+      "subgroup_value": "18-34",
+      "index_value": 69.0,
+      "sample_size": "223",
+      "release_timestamp": "2025-02-21"
+    },
+    {
+      "month": "2025-02-28",
+      "subgroup_value": "35-54",
+      "index_value": 69.3,
+      "sample_size": "630",
+      "release_timestamp": "2025-02-21"
+    },
+    {
+      "month": "2025-02-28",
+      "subgroup_value": "55+",
+      "index_value": 71.0,
+      "sample_size": "1622",
+      "release_timestamp": "2025-02-21"
+    },
+    {
+      "month": "2025-03-31",
+      "subgroup_value": "18-34",
+      "index_value": 64.2,
+      "sample_size": "265",
+      "release_timestamp": "2025-03-28"
+    },
+    {
+      "month": "2025-03-31",
+      "subgroup_value": "35-54",
+      "index_value": 63.7,
+      "sample_size": "794",
+      "release_timestamp": "2025-03-28"
+    },
+    {
+      "month": "2025-03-31",
+      "subgroup_value": "55+",
+      "index_value": 64.7,
+      "sample_size": "1977",
+      "release_timestamp": "2025-03-28"
+    },
+    {
+      "month": "2025-04-30",
+      "subgroup_value": "55+",
+      "index_value": 57.5,
+      "sample_size": "2009",
+      "release_timestamp": "2025-04-25"
+    },
+    {
+      "month": "2025-04-30",
+      "subgroup_value": "35-54",
+      "index_value": 57.0,
+      "sample_size": "828",
+      "release_timestamp": "2025-04-25"
+    },
+    {
+      "month": "2025-04-30",
+      "subgroup_value": "18-34",
+      "index_value": 56.7,
+      "sample_size": "279",
+      "release_timestamp": "2025-04-25"
+    },
+    {
+      "month": "2025-05-31",
+      "subgroup_value": "18-34",
+      "index_value": 52.0,
+      "sample_size": "278",
+      "release_timestamp": "2025-05-30"
+    },
+    {
+      "month": "2025-05-31",
+      "subgroup_value": "35-54",
+      "index_value": 52.9,
+      "sample_size": "903",
+      "release_timestamp": "2025-05-30"
+    },
+    {
+      "month": "2025-05-31",
+      "subgroup_value": "55+",
+      "index_value": 53.3,
+      "sample_size": "2115",
+      "release_timestamp": "2025-05-30"
+    },
+    {
+      "month": "2025-06-30",
+      "subgroup_value": "18-34",
+      "index_value": 52.0,
+      "sample_size": "268",
+      "release_timestamp": "2025-06-27"
+    },
+    {
+      "month": "2025-06-30",
+      "subgroup_value": "35-54",
+      "index_value": 54.1,
+      "sample_size": "810",
+      "release_timestamp": "2025-06-27"
+    },
+    {
+      "month": "2025-06-30",
+      "subgroup_value": "55+",
+      "index_value": 54.7,
+      "sample_size": "1903",
+      "release_timestamp": "2025-06-27"
+    },
+    {
+      "month": "2025-07-31",
+      "subgroup_value": "55+",
+      "index_value": 58.4,
+      "sample_size": "2023",
+      "release_timestamp": "2025-08-01"
+    },
+    {
+      "month": "2025-07-31",
+      "subgroup_value": "18-34",
+      "index_value": 56.5,
+      "sample_size": "262",
+      "release_timestamp": "2025-08-01"
+    },
+    {
+      "month": "2025-07-31",
+      "subgroup_value": "35-54",
+      "index_value": 56.2,
+      "sample_size": "848",
+      "release_timestamp": "2025-08-01"
+    },
+    {
+      "month": "2025-08-31",
+      "subgroup_value": "18-34",
+      "index_value": 58.5,
+      "sample_size": "269",
+      "release_timestamp": "2025-08-29"
+    },
+    {
+      "month": "2025-08-31",
+      "subgroup_value": "35-54",
+      "index_value": 57.6,
+      "sample_size": "804",
+      "release_timestamp": "2025-08-29"
+    },
+    {
+      "month": "2025-08-31",
+      "subgroup_value": "55+",
+      "index_value": 61.3,
+      "sample_size": "1974",
+      "release_timestamp": "2025-08-29"
+    },
+    {
+      "month": "2025-09-30",
+      "subgroup_value": "18-34",
+      "index_value": 57.0,
+      "sample_size": "253",
+      "release_timestamp": "2025-09-26"
+    },
+    {
+      "month": "2025-09-30",
+      "subgroup_value": "35-54",
+      "index_value": 55.2,
+      "sample_size": "834",
+      "release_timestamp": "2025-09-26"
+    },
+    {
+      "month": "2025-09-30",
+      "subgroup_value": "55+",
+      "index_value": 59.7,
+      "sample_size": "2068",
+      "release_timestamp": "2025-09-26"
+    },
+    {
+      "month": "2025-10-31",
+      "subgroup_value": "18-34",
+      "index_value": 55.7,
+      "sample_size": "252",
+      "release_timestamp": "2025-10-24"
+    },
+    {
+      "month": "2025-10-31",
+      "subgroup_value": "35-54",
+      "index_value": 52.3,
+      "sample_size": "810",
+      "release_timestamp": "2025-10-24"
+    },
+    {
+      "month": "2025-10-31",
+      "subgroup_value": "55+",
+      "index_value": 56.6,
+      "sample_size": "2003",
+      "release_timestamp": "2025-10-24"
+    },
+    {
+      "month": "2025-11-30",
+      "subgroup_value": "18-34",
+      "index_value": 51.7,
+      "sample_size": "239",
+      "release_timestamp": "2025-11-21"
+    },
+    {
+      "month": "2025-11-30",
+      "subgroup_value": "35-54",
+      "index_value": 49.9,
+      "sample_size": "840",
+      "release_timestamp": "2025-11-21"
+    },
+    {
+      "month": "2025-11-30",
+      "subgroup_value": "55+",
+      "index_value": 53.8,
+      "sample_size": "2067",
+      "release_timestamp": "2025-11-21"
+    },
+    {
+      "month": "2025-12-31",
+      "subgroup_value": "55+",
+      "index_value": 53.5,
+      "sample_size": "1967",
+      "release_timestamp": "2025-12-19"
+    },
+    {
+      "month": "2025-12-31",
+      "subgroup_value": "18-34",
+      "index_value": 49.6,
+      "sample_size": "234",
+      "release_timestamp": "2025-12-19"
+    },
+    {
+      "month": "2025-12-31",
+      "subgroup_value": "35-54",
+      "index_value": 49.6,
+      "sample_size": "802",
+      "release_timestamp": "2025-12-19"
+    },
+    {
+      "month": "2026-01-31",
+      "subgroup_value": "18-34",
+      "index_value": 48.8,
+      "sample_size": "239",
+      "release_timestamp": "2026-01-23"
+    },
+    {
+      "month": "2026-01-31",
+      "subgroup_value": "35-54",
+      "index_value": 48.6,
+      "sample_size": "817",
+      "release_timestamp": "2026-01-23"
+    },
+    {
+      "month": "2026-01-31",
+      "subgroup_value": "55+",
+      "index_value": 55.9,
+      "sample_size": "2040",
+      "release_timestamp": "2026-01-23"
+    },
+    {
+      "month": "2026-02-28",
+      "subgroup_value": "18-34",
+      "index_value": 53.6,
+      "sample_size": "253",
+      "release_timestamp": "2026-02-20"
+    },
+    {
+      "month": "2026-02-28",
+      "subgroup_value": "35-54",
+      "index_value": 50.9,
+      "sample_size": "822",
+      "release_timestamp": "2026-02-20"
+    },
+    {
+      "month": "2026-02-28",
+      "subgroup_value": "55+",
+      "index_value": 57.8,
+      "sample_size": "2141",
+      "release_timestamp": "2026-02-20"
+    },
+    {
+      "month": "2026-03-31",
+      "subgroup_value": "18-34",
+      "index_value": 54.4,
+      "sample_size": "272",
+      "release_timestamp": "2026-03-27"
+    },
+    {
+      "month": "2026-03-31",
+      "subgroup_value": "35-54",
+      "index_value": 51.8,
+      "sample_size": "912",
+      "release_timestamp": "2026-03-27"
+    },
+    {
+      "month": "2026-03-31",
+      "subgroup_value": "55+",
+      "index_value": 56.8,
+      "sample_size": "2394",
+      "release_timestamp": "2026-03-27"
+    },
+    {
+      "month": "2026-04-30",
+      "subgroup_value": "35-54",
+      "index_value": 51.7,
+      "sample_size": "866",
+      "release_timestamp": "2026-04-24"
+    },
+    {
+      "month": "2026-04-30",
+      "subgroup_value": "18-34",
+      "index_value": 51.6,
+      "sample_size": "247",
+      "release_timestamp": "2026-04-24"
+    },
+    {
+      "month": "2026-04-30",
+      "subgroup_value": "55+",
+      "index_value": 53.8,
+      "sample_size": "2398",
+      "release_timestamp": "2026-04-24"
+    },
+    {
+      "month": "2026-05-31",
+      "subgroup_value": "35-54",
+      "index_value": 47.7,
+      "sample_size": "841",
+      "release_timestamp": "2026-05-22"
+    },
+    {
+      "month": "2026-05-31",
+      "subgroup_value": "18-34",
+      "index_value": 47.1,
+      "sample_size": "228",
+      "release_timestamp": "2026-05-22"
+    },
+    {
+      "month": "2026-05-31",
+      "subgroup_value": "55+",
+      "index_value": 49.6,
+      "sample_size": "2320",
+      "release_timestamp": "2026-05-22"
+    },
+    {
+      "month": "2026-06-30",
+      "subgroup_value": "35-54",
+      "index_value": 45.0,
+      "sample_size": "794",
+      "release_timestamp": "2026-06-26"
+    },
+    {
+      "month": "2026-06-30",
+      "subgroup_value": "18-34",
+      "index_value": 45.9,
+      "sample_size": "241",
+      "release_timestamp": "2026-06-26"
+    },
+    {
+      "month": "2026-06-30",
+      "subgroup_value": "55+",
+      "index_value": 49.2,
+      "sample_size": "2258",
+      "release_timestamp": "2026-06-26"
+    },
+    {
+      "month": "2026-07-31",
+      "subgroup_value": "35-54",
+      "index_value": 45.8,
+      "sample_size": "846",
+      "release_timestamp": "2026-07-31"
+    },
+    {
+      "month": "2026-07-31",
+      "subgroup_value": "18-34",
+      "index_value": 47.8,
+      "sample_size": "248",
+      "release_timestamp": "2026-07-31"
+    },
+    {
+      "month": "2026-07-31",
+      "subgroup_value": "55+",
+      "index_value": 51.6,
+      "sample_size": "2268",
+      "release_timestamp": "2026-07-31"
+    },
+    {
+      "month": "2026-08-31",
+      "subgroup_value": "35-54",
+      "index_value": 48.4,
+      "sample_size": "810",
+      "release_timestamp": "2026-08-28"
+    },
+    {
+      "month": "2026-08-31",
+      "subgroup_value": "18-34",
+      "index_value": 50.3,
+      "sample_size": "264",
+      "release_timestamp": "2026-08-28"
+    },
+    {
+      "month": "2026-08-31",
+      "subgroup_value": "55+",
+      "index_value": 53.5,
+      "sample_size": "2220",
+      "release_timestamp": "2026-08-28"
     }
   ],
   "events": [
     {
-      "event_date": "1/23/26",
+      "event_date": "2023-09-29",
+      "event_type": "final_survey_release",
+      "series_or_topic": "Michigan Surveys of Consumers final release (9/30/23)",
+      "source_url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=74601",
+      "verified_release_timestamp": "true",
+      "notes": "Official Michigan final-result report; publication date only, no time of day supplied."
+    },
+    {
+      "event_date": "2023-10-27",
+      "event_type": "final_survey_release",
+      "series_or_topic": "Michigan Surveys of Consumers final release (10/31/2)",
+      "source_url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=74601",
+      "verified_release_timestamp": "true",
+      "notes": "Official Michigan final-result report; publication date only, no time of day supplied."
+    },
+    {
+      "event_date": "2023-11-22",
+      "event_type": "final_survey_release",
+      "series_or_topic": "Michigan Surveys of Consumers final release (11/30/2)",
+      "source_url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=74601",
+      "verified_release_timestamp": "true",
+      "notes": "Official Michigan final-result report; publication date only, no time of day supplied."
+    },
+    {
+      "event_date": "2023-12-22",
+      "event_type": "final_survey_release",
+      "series_or_topic": "Michigan Surveys of Consumers final release (12/31/2)",
+      "source_url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=74601",
+      "verified_release_timestamp": "true",
+      "notes": "Official Michigan final-result report; publication date only, no time of day supplied."
+    },
+    {
+      "event_date": "2024-02-02",
+      "event_type": "final_survey_release",
+      "series_or_topic": "Michigan Surveys of Consumers final release (1/31/24)",
+      "source_url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=77763",
+      "verified_release_timestamp": "true",
+      "notes": "Official Michigan final-result report; publication date only, no time of day supplied."
+    },
+    {
+      "event_date": "2024-03-01",
+      "event_type": "final_survey_release",
+      "series_or_topic": "Michigan Surveys of Consumers final release (2/29/24)",
+      "source_url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=77763",
+      "verified_release_timestamp": "true",
+      "notes": "Official Michigan final-result report; publication date only, no time of day supplied."
+    },
+    {
+      "event_date": "2024-03-28",
+      "event_type": "final_survey_release",
+      "series_or_topic": "Michigan Surveys of Consumers final release (3/31/24)",
+      "source_url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=77763",
+      "verified_release_timestamp": "true",
+      "notes": "Official Michigan final-result report; publication date only, no time of day supplied."
+    },
+    {
+      "event_date": "2024-04-26",
+      "event_type": "final_survey_release",
+      "series_or_topic": "Michigan Surveys of Consumers final release (4/30/24)",
+      "source_url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=77763",
+      "verified_release_timestamp": "true",
+      "notes": "Official Michigan final-result report; publication date only, no time of day supplied."
+    },
+    {
+      "event_date": "2024-05-24",
+      "event_type": "final_survey_release",
+      "series_or_topic": "Michigan Surveys of Consumers final release (5/31/24)",
+      "source_url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=77763",
+      "verified_release_timestamp": "true",
+      "notes": "Official Michigan final-result report; publication date only, no time of day supplied."
+    },
+    {
+      "event_date": "2024-06-28",
+      "event_type": "final_survey_release",
+      "series_or_topic": "Michigan Surveys of Consumers final release (6/30/24)",
+      "source_url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=77763",
+      "verified_release_timestamp": "true",
+      "notes": "Official Michigan final-result report; publication date only, no time of day supplied."
+    },
+    {
+      "event_date": "2024-07-26",
+      "event_type": "final_survey_release",
+      "series_or_topic": "Michigan Surveys of Consumers final release (7/31/24)",
+      "source_url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=77763",
+      "verified_release_timestamp": "true",
+      "notes": "Official Michigan final-result report; publication date only, no time of day supplied."
+    },
+    {
+      "event_date": "2024-08-30",
+      "event_type": "final_survey_release",
+      "series_or_topic": "Michigan Surveys of Consumers final release (8/31/24)",
+      "source_url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=77763",
+      "verified_release_timestamp": "true",
+      "notes": "Official Michigan final-result report; publication date only, no time of day supplied."
+    },
+    {
+      "event_date": "2024-09-27",
+      "event_type": "final_survey_release",
+      "series_or_topic": "Michigan Surveys of Consumers final release (9/30/24)",
+      "source_url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=77763",
+      "verified_release_timestamp": "true",
+      "notes": "Official Michigan final-result report; publication date only, no time of day supplied."
+    },
+    {
+      "event_date": "2024-10-25",
+      "event_type": "final_survey_release",
+      "series_or_topic": "Michigan Surveys of Consumers final release (10/31/2)",
+      "source_url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=77763",
+      "verified_release_timestamp": "true",
+      "notes": "Official Michigan final-result report; publication date only, no time of day supplied."
+    },
+    {
+      "event_date": "2024-11-22",
+      "event_type": "final_survey_release",
+      "series_or_topic": "Michigan Surveys of Consumers final release (11/30/2)",
+      "source_url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=77763",
+      "verified_release_timestamp": "true",
+      "notes": "Official Michigan final-result report; publication date only, no time of day supplied."
+    },
+    {
+      "event_date": "2024-12-20",
+      "event_type": "final_survey_release",
+      "series_or_topic": "Michigan Surveys of Consumers final release (12/31/2)",
+      "source_url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=77763",
+      "verified_release_timestamp": "true",
+      "notes": "Official Michigan final-result report; publication date only, no time of day supplied."
+    },
+    {
+      "event_date": "2025-01-24",
+      "event_type": "final_survey_release",
+      "series_or_topic": "Michigan Surveys of Consumers final release (1/31/25)",
+      "source_url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=80322",
+      "verified_release_timestamp": "true",
+      "notes": "Official Michigan final-result report; publication date only, no time of day supplied."
+    },
+    {
+      "event_date": "2025-02-21",
+      "event_type": "final_survey_release",
+      "series_or_topic": "Michigan Surveys of Consumers final release (2/28/25)",
+      "source_url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=80322",
+      "verified_release_timestamp": "true",
+      "notes": "Official Michigan final-result report; publication date only, no time of day supplied."
+    },
+    {
+      "event_date": "2025-03-28",
+      "event_type": "final_survey_release",
+      "series_or_topic": "Michigan Surveys of Consumers final release (3/31/25)",
+      "source_url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=80322",
+      "verified_release_timestamp": "true",
+      "notes": "Official Michigan final-result report; publication date only, no time of day supplied."
+    },
+    {
+      "event_date": "2025-04-25",
+      "event_type": "final_survey_release",
+      "series_or_topic": "Michigan Surveys of Consumers final release (4/30/25)",
+      "source_url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=80322",
+      "verified_release_timestamp": "true",
+      "notes": "Official Michigan final-result report; publication date only, no time of day supplied."
+    },
+    {
+      "event_date": "2025-05-30",
+      "event_type": "final_survey_release",
+      "series_or_topic": "Michigan Surveys of Consumers final release (5/31/25)",
+      "source_url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=80322",
+      "verified_release_timestamp": "true",
+      "notes": "Official Michigan final-result report; publication date only, no time of day supplied."
+    },
+    {
+      "event_date": "2025-06-27",
+      "event_type": "final_survey_release",
+      "series_or_topic": "Michigan Surveys of Consumers final release (6/30/25)",
+      "source_url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=80322",
+      "verified_release_timestamp": "true",
+      "notes": "Official Michigan final-result report; publication date only, no time of day supplied."
+    },
+    {
+      "event_date": "2025-08-01",
+      "event_type": "final_survey_release",
+      "series_or_topic": "Michigan Surveys of Consumers final release (7/31/25)",
+      "source_url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=80322",
+      "verified_release_timestamp": "true",
+      "notes": "Official Michigan final-result report; publication date only, no time of day supplied."
+    },
+    {
+      "event_date": "2025-08-29",
+      "event_type": "final_survey_release",
+      "series_or_topic": "Michigan Surveys of Consumers final release (8/31/25)",
+      "source_url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=80322",
+      "verified_release_timestamp": "true",
+      "notes": "Official Michigan final-result report; publication date only, no time of day supplied."
+    },
+    {
+      "event_date": "2025-09-26",
+      "event_type": "final_survey_release",
+      "series_or_topic": "Michigan Surveys of Consumers final release (9/30/25)",
+      "source_url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=80322",
+      "verified_release_timestamp": "true",
+      "notes": "Official Michigan final-result report; publication date only, no time of day supplied."
+    },
+    {
+      "event_date": "2025-10-24",
+      "event_type": "final_survey_release",
+      "series_or_topic": "Michigan Surveys of Consumers final release (10/31/2)",
+      "source_url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=80322",
+      "verified_release_timestamp": "true",
+      "notes": "Official Michigan final-result report; publication date only, no time of day supplied."
+    },
+    {
+      "event_date": "2025-11-21",
+      "event_type": "final_survey_release",
+      "series_or_topic": "Michigan Surveys of Consumers final release (11/30/2)",
+      "source_url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=80322",
+      "verified_release_timestamp": "true",
+      "notes": "Official Michigan final-result report; publication date only, no time of day supplied."
+    },
+    {
+      "event_date": "2025-12-19",
+      "event_type": "final_survey_release",
+      "series_or_topic": "Michigan Surveys of Consumers final release (12/31/2)",
+      "source_url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=80322",
+      "verified_release_timestamp": "true",
+      "notes": "Official Michigan final-result report; publication date only, no time of day supplied."
+    },
+    {
+      "event_date": "2026-01-23",
       "event_type": "final_survey_release",
       "series_or_topic": "Michigan Surveys of Consumers final release (1/31/26)",
       "source_url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=80499",
@@ -3031,7 +7963,7 @@
       "notes": "Official Michigan final-result report; publication date only, no time of day supplied."
     },
     {
-      "event_date": "2/20/26",
+      "event_date": "2026-02-20",
       "event_type": "final_survey_release",
       "series_or_topic": "Michigan Surveys of Consumers final release (2/28/26)",
       "source_url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=80677",
@@ -3039,223 +7971,7 @@
       "notes": "Official Michigan final-result report; publication date only, no time of day supplied."
     },
     {
-      "event_date": "2026-02-20",
-      "event_type": "scheduled_release",
-      "series_or_topic": "GDPC1 \u2014 BEA Gross Domestic Product estimate",
-      "source_url": "https://www.bea.gov/news/schedule/full",
-      "verified_release_timestamp": "true",
-      "notes": "Official BEA 2026 schedule; release time 2026-02-20T08:30:00-05:00."
-    },
-    {
-      "event_date": "2026-02-20",
-      "event_type": "scheduled_release",
-      "series_or_topic": "PCEPI \u2014 BEA Personal Income and Outlays",
-      "source_url": "https://www.bea.gov/news/schedule/full",
-      "verified_release_timestamp": "true",
-      "notes": "Official BEA 2026 schedule; release time 2026-02-20T08:30:00-05:00."
-    },
-    {
-      "event_date": "2026-03-13",
-      "event_type": "scheduled_release",
-      "series_or_topic": "GDPC1 \u2014 BEA Gross Domestic Product estimate",
-      "source_url": "https://www.bea.gov/news/schedule/full",
-      "verified_release_timestamp": "true",
-      "notes": "Official BEA 2026 schedule; release time 2026-03-13T08:30:00-04:00."
-    },
-    {
-      "event_date": "2026-03-13",
-      "event_type": "scheduled_release",
-      "series_or_topic": "PCEPI \u2014 BEA Personal Income and Outlays",
-      "source_url": "https://www.bea.gov/news/schedule/full",
-      "verified_release_timestamp": "true",
-      "notes": "Official BEA 2026 schedule; release time 2026-03-13T08:30:00-04:00."
-    },
-    {
-      "event_date": "2026-04-09",
-      "event_type": "scheduled_release",
-      "series_or_topic": "GDPC1 \u2014 BEA Gross Domestic Product estimate",
-      "source_url": "https://www.bea.gov/news/schedule/full",
-      "verified_release_timestamp": "true",
-      "notes": "Official BEA 2026 schedule; release time 2026-04-09T08:30:00-04:00."
-    },
-    {
-      "event_date": "2026-04-09",
-      "event_type": "scheduled_release",
-      "series_or_topic": "PCEPI \u2014 BEA Personal Income and Outlays",
-      "source_url": "https://www.bea.gov/news/schedule/full",
-      "verified_release_timestamp": "true",
-      "notes": "Official BEA 2026 schedule; release time 2026-04-09T08:30:00-04:00."
-    },
-    {
-      "event_date": "2026-04-30",
-      "event_type": "scheduled_release",
-      "series_or_topic": "GDPC1 \u2014 BEA Gross Domestic Product estimate",
-      "source_url": "https://www.bea.gov/news/schedule/full",
-      "verified_release_timestamp": "true",
-      "notes": "Official BEA 2026 schedule; release time 2026-04-30T08:30:00-04:00."
-    },
-    {
-      "event_date": "2026-04-30",
-      "event_type": "scheduled_release",
-      "series_or_topic": "PCEPI \u2014 BEA Personal Income and Outlays",
-      "source_url": "https://www.bea.gov/news/schedule/full",
-      "verified_release_timestamp": "true",
-      "notes": "Official BEA 2026 schedule; release time 2026-04-30T08:30:00-04:00."
-    },
-    {
-      "event_date": "2026-05-28",
-      "event_type": "scheduled_release",
-      "series_or_topic": "GDPC1 \u2014 BEA Gross Domestic Product estimate",
-      "source_url": "https://www.bea.gov/news/schedule/full",
-      "verified_release_timestamp": "true",
-      "notes": "Official BEA 2026 schedule; release time 2026-05-28T08:30:00-04:00."
-    },
-    {
-      "event_date": "2026-05-28",
-      "event_type": "scheduled_release",
-      "series_or_topic": "PCEPI \u2014 BEA Personal Income and Outlays",
-      "source_url": "https://www.bea.gov/news/schedule/full",
-      "verified_release_timestamp": "true",
-      "notes": "Official BEA 2026 schedule; release time 2026-05-28T08:30:00-04:00."
-    },
-    {
-      "event_date": "2026-06-25",
-      "event_type": "scheduled_release",
-      "series_or_topic": "GDPC1 \u2014 BEA Gross Domestic Product estimate",
-      "source_url": "https://www.bea.gov/news/schedule/full",
-      "verified_release_timestamp": "true",
-      "notes": "Official BEA 2026 schedule; release time 2026-06-25T08:30:00-04:00."
-    },
-    {
-      "event_date": "2026-06-25",
-      "event_type": "scheduled_release",
-      "series_or_topic": "PCEPI \u2014 BEA Personal Income and Outlays",
-      "source_url": "https://www.bea.gov/news/schedule/full",
-      "verified_release_timestamp": "true",
-      "notes": "Official BEA 2026 schedule; release time 2026-06-25T08:30:00-04:00."
-    },
-    {
-      "event_date": "2026-07-30",
-      "event_type": "scheduled_release",
-      "series_or_topic": "GDPC1 \u2014 BEA Gross Domestic Product estimate",
-      "source_url": "https://www.bea.gov/news/schedule/full",
-      "verified_release_timestamp": "true",
-      "notes": "Official BEA 2026 schedule; release time 2026-07-30T08:30:00-04:00."
-    },
-    {
-      "event_date": "2026-07-30",
-      "event_type": "scheduled_release",
-      "series_or_topic": "PCEPI \u2014 BEA Personal Income and Outlays",
-      "source_url": "https://www.bea.gov/news/schedule/full",
-      "verified_release_timestamp": "true",
-      "notes": "Official BEA 2026 schedule; release time 2026-07-30T08:30:00-04:00."
-    },
-    {
-      "event_date": "2026-08-26",
-      "event_type": "scheduled_release",
-      "series_or_topic": "GDPC1 \u2014 BEA Gross Domestic Product estimate",
-      "source_url": "https://www.bea.gov/news/schedule/full",
-      "verified_release_timestamp": "true",
-      "notes": "Official BEA 2026 schedule; release time 2026-08-26T08:30:00-04:00."
-    },
-    {
-      "event_date": "2026-08-26",
-      "event_type": "scheduled_release",
-      "series_or_topic": "PCEPI \u2014 BEA Personal Income and Outlays",
-      "source_url": "https://www.bea.gov/news/schedule/full",
-      "verified_release_timestamp": "true",
-      "notes": "Official BEA 2026 schedule; release time 2026-08-26T08:30:00-04:00."
-    },
-    {
-      "event_date": "2026-09-30",
-      "event_type": "scheduled_release",
-      "series_or_topic": "GDPC1 \u2014 BEA Gross Domestic Product estimate",
-      "source_url": "https://www.bea.gov/news/schedule/full",
-      "verified_release_timestamp": "true",
-      "notes": "Official BEA 2026 schedule; release time 2026-09-30T08:30:00-04:00."
-    },
-    {
-      "event_date": "2026-09-30",
-      "event_type": "scheduled_release",
-      "series_or_topic": "PCEPI \u2014 BEA Personal Income and Outlays",
-      "source_url": "https://www.bea.gov/news/schedule/full",
-      "verified_release_timestamp": "true",
-      "notes": "Official BEA 2026 schedule; release time 2026-09-30T08:30:00-04:00."
-    },
-    {
-      "event_date": "2026-10-29",
-      "event_type": "scheduled_release",
-      "series_or_topic": "GDPC1 \u2014 BEA Gross Domestic Product estimate",
-      "source_url": "https://www.bea.gov/news/schedule/full",
-      "verified_release_timestamp": "true",
-      "notes": "Official BEA 2026 schedule; release time 2026-10-29T08:30:00-04:00."
-    },
-    {
-      "event_date": "2026-10-29",
-      "event_type": "scheduled_release",
-      "series_or_topic": "PCEPI \u2014 BEA Personal Income and Outlays",
-      "source_url": "https://www.bea.gov/news/schedule/full",
-      "verified_release_timestamp": "true",
-      "notes": "Official BEA 2026 schedule; release time 2026-10-29T08:30:00-04:00."
-    },
-    {
-      "event_date": "2026-11-06",
-      "event_type": "scheduled_release",
-      "series_or_topic": "UNRATE \u2014 BLS Employment Situation (October 2026 reference month)",
-      "source_url": "https://www.bls.gov/schedule/news_release/empSit.htm",
-      "verified_release_timestamp": "true",
-      "notes": "Official BLS schedule; release time 2026-11-06T08:30:00-05:00."
-    },
-    {
-      "event_date": "2026-11-25",
-      "event_type": "scheduled_release",
-      "series_or_topic": "GDPC1 \u2014 BEA Gross Domestic Product estimate",
-      "source_url": "https://www.bea.gov/news/schedule/full",
-      "verified_release_timestamp": "true",
-      "notes": "Official BEA 2026 schedule; release time 2026-11-25T08:30:00-05:00."
-    },
-    {
-      "event_date": "2026-11-25",
-      "event_type": "scheduled_release",
-      "series_or_topic": "PCEPI \u2014 BEA Personal Income and Outlays",
-      "source_url": "https://www.bea.gov/news/schedule/full",
-      "verified_release_timestamp": "true",
-      "notes": "Official BEA 2026 schedule; release time 2026-11-25T08:30:00-05:00."
-    },
-    {
-      "event_date": "2026-12-04",
-      "event_type": "scheduled_release",
-      "series_or_topic": "UNRATE \u2014 BLS Employment Situation (November 2026 reference month)",
-      "source_url": "https://www.bls.gov/schedule/news_release/empSit.htm",
-      "verified_release_timestamp": "true",
-      "notes": "Official BLS schedule; release time 2026-12-04T08:30:00-05:00."
-    },
-    {
-      "event_date": "2026-12-23",
-      "event_type": "scheduled_release",
-      "series_or_topic": "GDPC1 \u2014 BEA Gross Domestic Product estimate",
-      "source_url": "https://www.bea.gov/news/schedule/full",
-      "verified_release_timestamp": "true",
-      "notes": "Official BEA 2026 schedule; release time 2026-12-23T08:30:00-05:00."
-    },
-    {
-      "event_date": "2026-12-23",
-      "event_type": "scheduled_release",
-      "series_or_topic": "PCEPI \u2014 BEA Personal Income and Outlays",
-      "source_url": "https://www.bea.gov/news/schedule/full",
-      "verified_release_timestamp": "true",
-      "notes": "Official BEA 2026 schedule; release time 2026-12-23T08:30:00-05:00."
-    },
-    {
-      "event_date": "2027-01-08",
-      "event_type": "scheduled_release",
-      "series_or_topic": "UNRATE \u2014 BLS Employment Situation (December 2026 reference month)",
-      "source_url": "https://www.bls.gov/schedule/news_release/empSit.htm",
-      "verified_release_timestamp": "true",
-      "notes": "Official BLS schedule; release time 2027-01-08T08:30:00-05:00."
-    },
-    {
-      "event_date": "3/27/26",
+      "event_date": "2026-03-27",
       "event_type": "final_survey_release",
       "series_or_topic": "Michigan Surveys of Consumers final release (3/31/26)",
       "source_url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=80881",
@@ -3263,7 +7979,7 @@
       "notes": "Official Michigan final-result report; publication date only, no time of day supplied."
     },
     {
-      "event_date": "4/24/26",
+      "event_date": "2026-04-24",
       "event_type": "final_survey_release",
       "series_or_topic": "Michigan Surveys of Consumers final release (4/30/26)",
       "source_url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=81060",
@@ -3271,7 +7987,7 @@
       "notes": "Official Michigan final-result report; publication date only, no time of day supplied."
     },
     {
-      "event_date": "5/22/26",
+      "event_date": "2026-05-22",
       "event_type": "final_survey_release",
       "series_or_topic": "Michigan Surveys of Consumers final release (5/31/26)",
       "source_url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=81238",
@@ -3279,7 +7995,7 @@
       "notes": "Official Michigan final-result report; publication date only, no time of day supplied."
     },
     {
-      "event_date": "6/26/26",
+      "event_date": "2026-06-26",
       "event_type": "final_survey_release",
       "series_or_topic": "Michigan Surveys of Consumers final release (6/30/26)",
       "source_url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=81440",
@@ -3287,7 +8003,7 @@
       "notes": "Official Michigan final-result report; publication date only, no time of day supplied."
     },
     {
-      "event_date": "7/31/26",
+      "event_date": "2026-07-31",
       "event_type": "final_survey_release",
       "series_or_topic": "Michigan Surveys of Consumers final release (7/31/26)",
       "source_url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=81618",
@@ -3295,7 +8011,7 @@
       "notes": "Official Michigan final-result report; publication date only, no time of day supplied."
     },
     {
-      "event_date": "8/28/26",
+      "event_date": "2026-08-28",
       "event_type": "final_survey_release",
       "series_or_topic": "Michigan Surveys of Consumers final release (8/31/26)",
       "source_url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=81854",

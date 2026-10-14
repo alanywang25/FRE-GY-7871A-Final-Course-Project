@@ -1,7 +1,8 @@
 {
-  "built_at": "2026-10-13T22:17:13-04:00",
+  "built_at": "2026-10-14T10:19:48-04:00",
   "items": 312,
   "months": 3,
   "status": "independently_adjudicated",
-  "output": "data/media_monthly.csv"
+  "output": "data/media_monthly.csv",
+  "source_output": "data/media_monthly_by_source.csv"
 }

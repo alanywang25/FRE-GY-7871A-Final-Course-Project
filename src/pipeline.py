@@ -24,6 +24,7 @@ HISTORICAL_MEDIA_STATUS = ROOT / "data" / "corpus" / "historical" / "processed" 
 MEDIA_MODEL_STATUS = ROOT / "data" / "processed" / "media_model_status.json"
 EVENT_LOG = ROOT / "data" / "templates" / "release_event_log.csv"
 SUBGROUP_TEMPLATE = ROOT / "data" / "templates" / "michigan_subgroups.csv"
+SUBGROUP_COMPONENT_STATUS = ROOT / "data" / "templates" / "michigan_component_subgroups_status.json"
 SUBINDEX_TEMPLATE = ROOT / "data" / "templates" / "michigan_subindices.csv"
 VINTAGE_TEMPLATE = ROOT / "data" / "templates" / "macro_vintage_observations.csv"
 DICTIONARY_VALIDATION = ROOT / "data" / "corpus" / "validation" / "dictionary_validation_summary.json"
@@ -32,6 +33,9 @@ FULL_FIELD_VALIDATION = ROOT / "data" / "corpus" / "validation" / "full_field_la
 FULL_FIELD_ADJUDICATION = ROOT / "data" / "corpus" / "full_field_validation" / "adjudication" / "full_field_adjudication_summary.json"
 FULL_FIELD_MODEL = ROOT / "data" / "corpus" / "validation" / "full_field_model_evaluation_summary.json"
 CAUSAL_ANALYSIS = ROOT / "data" / "processed" / "causal_analysis_status.json"
+SOURCE_BENCHMARK = ROOT / "data" / "processed" / "source_comparative_benchmark_status.json"
+SOURCE_BENCHMARK_RESULTS = ROOT / "data" / "processed" / "source_comparative_benchmark.csv"
+SOURCE_MONTHLY_MEDIA = ROOT / "data" / "media_monthly_by_source.csv"
 PROCESSED = ROOT / "data" / "processed"
 DASHBOARD_DATA = ROOT / "dashboard" / "data"
 CORPUS_MANIFEST = ROOT / "data" / "corpus" / "processed" / "collection_manifest.json"
@@ -302,12 +306,64 @@ def template_status(path: Path, required_values: list[str]) -> dict:
     return {"available": complete, "rows": int(len(usable)), "message": "Populated input available." if complete else "Template only; supply documented observations before use."}
 
 
+def subgroup_status() -> dict:
+    """Report the loaded ICS table separately from unvalidated ICC/ICE components."""
+    status = template_status(
+        SUBGROUP_TEMPLATE,
+        ["index_value", "sample_size", "release_timestamp", "vintage_id"],
+    )
+    component = _json_status(
+        SUBGROUP_COMPONENT_STATUS,
+        {"component_status": "not_loaded", "message": "No component-subgroup availability record found."},
+    )
+    status["component_status"] = component.get("component_status", "not_loaded")
+    status["component_cutoff"] = component.get("last_verified_component_month")
+    status["component_missing_months"] = component.get("missing_months", [])
+    status["message"] = component.get("message", status["message"])
+    return status
+
+
 def release_events() -> list[dict]:
     if not EVENT_LOG.exists():
         return []
     frame = pd.read_csv(EVENT_LOG, dtype=str).fillna("")
     frame = frame.loc[frame.get("verified_release_timestamp", "").str.casefold().eq("true")]
-    return frame.sort_values(["event_date", "series_or_topic"]).tail(36).to_dict(orient="records")
+    # The source log contains compact m/d/yy values. Sort parsed datetimes,
+    # rather than strings, so the dashboard genuinely shows the latest events.
+    frame["_event_datetime"] = pd.to_datetime(frame["event_date"], format="%m/%d/%y", errors="coerce")
+    frame = frame.dropna(subset=["_event_datetime"]).sort_values(["_event_datetime", "series_or_topic"]).tail(36).copy()
+    frame["event_date"] = frame["_event_datetime"].dt.strftime("%Y-%m-%d")
+    return frame.drop(columns="_event_datetime").to_dict(orient="records")
+
+
+def subgroup_records() -> list[dict]:
+    """Expose published age-group ICS values without inventing components."""
+    if not SUBGROUP_TEMPLATE.exists():
+        return []
+    frame = pd.read_csv(SUBGROUP_TEMPLATE, dtype=str).fillna("")
+    frame = frame.loc[(frame["subgroup_dimension"].eq("age")) & (frame["index_name"].eq("ICS"))]
+    if frame.empty:
+        return []
+    frame["month"] = pd.to_datetime(frame["month"], errors="coerce")
+    frame["index_value"] = pd.to_numeric(frame["index_value"], errors="coerce")
+    frame = frame.dropna(subset=["month", "index_value"]).sort_values("month")
+    return _records(frame, ["month", "subgroup_value", "index_value", "sample_size", "release_timestamp"], limit=600)
+
+
+def source_media_records() -> list[dict]:
+    if not SOURCE_MONTHLY_MEDIA.exists():
+        return []
+    frame = pd.read_csv(SOURCE_MONTHLY_MEDIA, parse_dates=["month"])
+    return _records(frame, list(frame.columns), limit=180)
+
+
+def source_benchmark_records() -> list[dict]:
+    if not SOURCE_BENCHMARK_RESULTS.exists():
+        return []
+    frame = pd.read_csv(SOURCE_BENCHMARK_RESULTS)
+    # Stable presentation order: most precisely matched contrasts first.
+    frame = frame.sort_values(["matched_day_topic_cells", "measure"], ascending=[False, True]).head(6)
+    return json.loads(frame.to_json(orient="records"))
 
 
 def _records(frame: pd.DataFrame, columns: list[str], limit: int = 180) -> list[dict]:
@@ -370,6 +426,7 @@ def build_outputs(raw_path: Path | str = DEFAULT_RAW) -> dict:
     full_field_adjudication = _json_status(FULL_FIELD_ADJUDICATION, {"gate_passed": False, "message": "Run all-field adjudication."})
     full_field_model = _json_status(FULL_FIELD_MODEL, {"ready": False, "message": "Train and evaluate the development-only all-field classifier."})
     causal_analysis = _json_status(CAUSAL_ANALYSIS, {"ready": False, "estimated": False, "claim": "not_causal", "message": "Run scripts/build_causal_association_analysis.py after historical media and subindices are available."})
+    source_benchmark = _json_status(SOURCE_BENCHMARK, {"ready": False, "message": "Run scripts/build_source_comparative_benchmark.py."})
     media_has_rows = media is not None and media.dropna(how="all", subset=[c for c in media.columns if c not in {"month", "available_on", "aggregate_status", "notes"}]).shape[0] > 0
     media_independently_adjudicated = bool(
         media_has_rows and "aggregate_status" in media
@@ -394,7 +451,11 @@ def build_outputs(raw_path: Path | str = DEFAULT_RAW) -> dict:
             **({"reason": "Run the public macro refresh and ensure adequate common history."} if external_extension is None else model_metrics(external_extension)),
         },
         {"name": "Economic + historical media", "status": "estimated" if media_model.get("estimated") else "blocked", **(media_model.get("models", {}).get("economic_plus_media", {}) if media_model.get("estimated") else {"reason": media_model.get("reason", "Historical media model has not run.")})},
-        {"name": "Economic + media + expanded controls", "status": "blocked", "reason": "Requires an aligned historical media panel, expanded controls with common history, and archived-vintage macro data."},
+        {
+            "name": "Economic + media + household controls (retrospective sensitivity)",
+            "status": "estimated" if media_model.get("third_model", {}).get("estimated") else "blocked",
+            **(media_model.get("models", {}).get("economic_media_household_controls_retrospective", {}) if media_model.get("third_model", {}).get("estimated") else {"reason": media_model.get("third_model", {}).get("message", "Requires common historical controls.")}),
+        },
     ]
     payload = {
         "metadata": {
@@ -414,9 +475,10 @@ def build_outputs(raw_path: Path | str = DEFAULT_RAW) -> dict:
             "full_field_adjudication": full_field_adjudication,
             "full_field_model": full_field_model,
             "causal_analysis": causal_analysis,
+            "source_benchmark": source_benchmark,
             "macro_refresh": refresh,
             "real_time_vintage_note": "The ALFRED model uses initial-release values available by calendar month-end. It is a genuine vintage check, but Michigan headline/subindex release dates must be supplied for exact survey-release as-of analysis.",
-            "input_contracts": {"michigan_subindices": template_status(SUBINDEX_TEMPLATE, ["current_conditions", "expectations", "release_timestamp", "vintage_id"]), "macro_vintages": template_status(VINTAGE_TEMPLATE, ["value", "release_timestamp", "vintage_id"]), "survey_subgroups": template_status(SUBGROUP_TEMPLATE, ["index_value", "sample_size", "release_timestamp", "vintage_id"])},
+            "input_contracts": {"michigan_subindices": template_status(SUBINDEX_TEMPLATE, ["current_conditions", "expectations", "release_timestamp", "vintage_id"]), "macro_vintages": template_status(VINTAGE_TEMPLATE, ["value", "release_timestamp", "vintage_id"]), "survey_subgroups": subgroup_status()},
         },
         "kpis": {
             "latest_sentiment": round(float(latest["sentiment"]), 1),
@@ -443,6 +505,10 @@ def build_outputs(raw_path: Path | str = DEFAULT_RAW) -> dict:
         "macro": _records(panel, ["month", "sentiment", "unemployment", "pce_yoy", "gdp_qoq_annualized"]),
         "forecast": _records(baseline.dropna(subset=["prediction"]), ["month", "sentiment", "prediction", "prediction_lower_95", "prediction_upper_95", "sentiment_gap"]),
         "media": [] if media is None else _records(media, list(media.columns)),
+        "media_by_source": source_media_records(),
+        "source_benchmark": source_benchmark,
+        "source_benchmark_rows": source_benchmark_records(),
+        "subgroups": subgroup_records(),
         "events": release_events(),
     }
     payload_text = json.dumps(payload, indent=2)

@@ -84,13 +84,14 @@
     },
     {
       "variable": "policy_uncertainty",
-      "fred_series": "USEPUINDXD",
-      "request_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=USEPUINDXD",
-      "raw_file": "data/external/raw/USEPUINDXD_2026-10-13.csv",
-      "sha256": "1dafa5dcd8e79889af0b1329b90d6b8d4304ac8a966fe6c13adec88489fe8158",
-      "observations": 15259,
-      "latest_observation": "2026-10-11",
-      "availability_lag_months": 1
+      "fred_series": "USEPUINDXM",
+      "request_url": "https://fred.stlouisfed.org/series/USEPUINDXM",
+      "raw_file": "data/external/raw/US_Policy_Uncertainty_Data_2026-10-14.csv",
+      "sha256": "1961c12ac1a0f025192256d738eefcf0abe7cb73e287081fa62c5a16c6113565",
+      "observations": 501,
+      "latest_observation": "2026-09-30",
+      "availability_lag_months": 1,
+      "definition": "Legacy three-component monthly U.S. economic policy uncertainty index."
     }
   ],
   "failures": [
@@ -102,5 +103,28 @@
       "variable": "sentiment_expectations",
       "error": "direct/licensed source required; no public FRED identifier registered"
     }
-  ]
+  ],
+  "supplemental_publisher_inputs": {
+    "imported_at_utc": "2026-10-14T15:34:41+00:00",
+    "current_vintage_only": true,
+    "policy_uncertainty": {
+      "source_url": "https://www.policyuncertainty.com/us_monthly.html",
+      "source_workbook": "US_Policy_Uncertainty_Data.xlsx",
+      "source_sha256": "f45d20713ef06f902588152137fcc4dd2ebbc8765cb199366f1a65788ba332bc",
+      "raw_file": "data/external/raw/US_Policy_Uncertainty_Data_2026-10-14.csv",
+      "observations": 501,
+      "latest_observation": "2026-09-30",
+      "series_id": "USEPUINDXM",
+      "definition": "Legacy three-component U.S. economic policy uncertainty index.",
+      "timing_note": "Current publisher history; historical point-in-time values are collected separately from ALFRED."
+    },
+    "housing_affordability": {
+      "source_url": "https://www.nar.realtor/sites/default/files/2026-10/hai-09-2026-housing-affordability-index-2026-10-13.pdf",
+      "raw_file": "data/external/raw/FIXHAI_2026-10-13_nar_release.csv",
+      "observations": 13,
+      "latest_observation": "2026-09-30",
+      "release_status": "September 2026 is preliminary; August 2026 is revised.",
+      "timing_note": "Values were transcribed from the dated 2026-10-13 release; they are not a historical release-vintage archive."
+    }
+  }
 }
