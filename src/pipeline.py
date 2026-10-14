@@ -9,6 +9,8 @@ from __future__ import annotations
 import json
 from pathlib import Path
 from typing import Iterable
+from datetime import datetime
+from zoneinfo import ZoneInfo
 
 import numpy as np
 import pandas as pd
@@ -23,6 +25,7 @@ ADJUDICATION_SUMMARY = ROOT / "data" / "corpus" / "adjudication" / "adjudication
 HISTORICAL_MEDIA_STATUS = ROOT / "data" / "corpus" / "historical" / "processed" / "historical_series_status.json"
 MEDIA_MODEL_STATUS = ROOT / "data" / "processed" / "media_model_status.json"
 EVENT_LOG = ROOT / "data" / "templates" / "release_event_log.csv"
+MAJOR_EVENTS = ROOT / "data" / "templates" / "major_events.csv"
 SUBGROUP_TEMPLATE = ROOT / "data" / "templates" / "michigan_subgroups.csv"
 SUBGROUP_COMPONENT_STATUS = ROOT / "data" / "templates" / "michigan_component_subgroups_status.json"
 SUBINDEX_TEMPLATE = ROOT / "data" / "templates" / "michigan_subindices.csv"
@@ -88,12 +91,11 @@ def load_macro_data(path: Path | str = DEFAULT_RAW) -> pd.DataFrame:
 
 
 def load_month_end_vintage_macro_panel(raw_path: Path | str = DEFAULT_RAW) -> pd.DataFrame | None:
-    """Construct a month-end as-of panel from ALFRED initial-release values.
+    """Construct an as-of-final-Michigan-release panel from ALFRED values.
 
     This is intentionally distinct from the baseline's conservative lag rules.
-    It only asks which initial-release values had appeared by each calendar
-    month-end; it does not claim exact intraday availability or exact Michigan
-    survey-release timing.
+    It uses documented Michigan final-release dates (date precision) and asks
+    which initial-release macro values had appeared by each date.
     """
     if not VINTAGE_TEMPLATE.exists():
         return None
@@ -104,9 +106,16 @@ def load_month_end_vintage_macro_panel(raw_path: Path | str = DEFAULT_RAW) -> pd
     observations["value"] = pd.to_numeric(observations["value"], errors="coerce")
     observations = observations.dropna(subset=["value"]).sort_values(["series_id", "observation_date", "release_timestamp"])
     targets = load_macro_data(raw_path)[["month", "sentiment"]].copy()
+    if not SUBINDEX_TEMPLATE.exists():
+        return None
+    releases = pd.read_csv(SUBINDEX_TEMPLATE, dtype=str)[["month", "release_timestamp"]].copy()
+    releases["month"] = pd.to_datetime(releases["month"], format="mixed", errors="coerce")
+    releases["release_timestamp"] = pd.to_datetime(releases["release_timestamp"], format="mixed", errors="coerce")
+    releases = releases.dropna()
+    targets = targets.merge(releases, on="month", how="inner").sort_values("month")
     rows = []
     for target in targets.itertuples(index=False):
-        cutoff = pd.Timestamp(target.month).normalize()
+        cutoff = pd.Timestamp(target.release_timestamp).normalize()
         available = observations.loc[(observations["release_timestamp"] <= cutoff) & (observations["observation_date"] <= cutoff)]
 
         def latest(series_id: str) -> pd.Series | None:
@@ -114,7 +123,7 @@ def load_month_end_vintage_macro_panel(raw_path: Path | str = DEFAULT_RAW) -> pd
             return None if series.empty else series.iloc[-1]
 
         unrate, pce, gdp = (latest(series) for series in ("UNRATE", "PCEPI", "GDPC1"))
-        row = {"month": target.month, "sentiment": target.sentiment, "as_of_date": cutoff.date().isoformat()}
+        row = {"month": target.month, "sentiment": target.sentiment, "as_of_date": cutoff.date().isoformat(), "sentiment_release_date": cutoff.date().isoformat()}
         if unrate is not None:
             row.update({"unemployment_vintage": unrate.value, "unemployment_observation_date": unrate.observation_date.date().isoformat(), "unemployment_release_date": unrate.release_timestamp.date().isoformat()})
         if pce is not None:
@@ -333,7 +342,16 @@ def release_events() -> list[dict]:
     frame["_event_datetime"] = pd.to_datetime(frame["event_date"], format="%m/%d/%y", errors="coerce")
     frame = frame.dropna(subset=["_event_datetime"]).sort_values(["_event_datetime", "series_or_topic"]).tail(36).copy()
     frame["event_date"] = frame["_event_datetime"].dt.strftime("%Y-%m-%d")
-    return frame.drop(columns="_event_datetime").to_dict(orient="records")
+    events = frame.drop(columns="_event_datetime")
+    if MAJOR_EVENTS.exists():
+        major = pd.read_csv(MAJOR_EVENTS, dtype=str).fillna("")
+        major = major.loc[major.get("verified", "").str.casefold().eq("true")]
+        if not major.empty:
+            major = major.rename(columns={"event_date": "event_date", "event_name": "series_or_topic", "source_url": "source_url", "notes": "notes"})
+            major["event_type"] = "major_event"
+            major["verified_release_timestamp"] = "true"
+            events = pd.concat([events, major[events.columns]], ignore_index=True)
+    return events.to_dict(orient="records")
 
 
 def subgroup_records() -> list[dict]:
@@ -344,10 +362,21 @@ def subgroup_records() -> list[dict]:
     frame = frame.loc[(frame["subgroup_dimension"].eq("age")) & (frame["index_name"].eq("ICS"))]
     if frame.empty:
         return []
-    frame["month"] = pd.to_datetime(frame["month"], errors="coerce")
+    frame["month"] = pd.to_datetime(frame["month"], format="mixed", errors="coerce")
     frame["index_value"] = pd.to_numeric(frame["index_value"], errors="coerce")
     frame = frame.dropna(subset=["month", "index_value"]).sort_values("month")
     return _records(frame, ["month", "subgroup_value", "index_value", "sample_size", "release_timestamp"], limit=600)
+
+
+def subindex_records() -> list[dict]:
+    if not SUBINDEX_TEMPLATE.exists():
+        return []
+    frame = pd.read_csv(SUBINDEX_TEMPLATE, dtype=str).fillna("")
+    for column in ("current_conditions", "expectations"):
+        frame[column] = pd.to_numeric(frame[column], errors="coerce")
+    frame["month"] = pd.to_datetime(frame["month"], format="mixed", errors="coerce")
+    frame = frame.dropna(subset=["month"])
+    return _records(frame, ["month", "current_conditions", "expectations", "release_timestamp"], limit=240)
 
 
 def source_media_records() -> list[dict]:
@@ -410,9 +439,20 @@ def build_outputs(raw_path: Path | str = DEFAULT_RAW) -> dict:
     if vintage_model is not None:
         vintage_model.to_csv(PROCESSED / "month_end_vintage_macro_oos.csv", index=False)
 
-    latest = panel.dropna(subset=["sentiment"]).sort_values("month").iloc[-1]
-    latest_result = baseline.dropna(subset=["prediction"]).sort_values("month").tail(1)
+    primary_model = vintage_model if vintage_model is not None else baseline
+    primary_panel = vintage_panel if vintage_panel is not None else panel
+    cutoff_day = pd.Timestamp(datetime.now(ZoneInfo("America/New_York")).date())
+    # Inputs acquired during the cutoff day are eligible; observations dated
+    # after that calendar day are not.
+    now = cutoff_day + pd.Timedelta(days=1) - pd.Timedelta(microseconds=1)
+    latest = panel.loc[panel["month"] <= cutoff_day].dropna(subset=["sentiment"]).sort_values("month").iloc[-1]
+    latest_result = primary_model.dropna(subset=["prediction"]).sort_values("month").tail(1)
     media = load_media_monthly()
+    if media is not None:
+        media["available_on"] = pd.to_datetime(media["available_on"], errors="coerce", utc=True).dt.tz_convert(None)
+        media = media.loc[media["available_on"] <= now].copy()
+        media["partial_period"] = pd.to_datetime(media["month"]).dt.normalize() > now
+        media.loc[media["partial_period"], "month"] = now
     corpus = corpus_status()
     validation = validation_status()
     independent_adjudication = _json_status(INDEPENDENT_ADJUDICATION, {"ready": False, "unresolved": None, "message": "Build the independent tone adjudication queue."})
@@ -442,9 +482,9 @@ def build_outputs(raw_path: Path | str = DEFAULT_RAW) -> dict:
         "message": corpus["message"] if not media_has_rows else ("Timestamped, independently adjudicated all-field media measures are loaded." if media_validated else "Media measures are present but the all-field independent-label/adjudication gate has not passed."),
     }
     model_comparison = [
-        {"name": "Economic-only", "status": "estimated", **model_metrics(baseline)},
+        {"name": "Economic-only, release-date ALFRED vintages", "status": "estimated" if vintage_model is not None else "blocked", **(model_metrics(vintage_model) if vintage_model is not None else {"reason": "Populate Michigan final-release dates and ALFRED macro observations."})},
+        {"name": "Economic-only, assumed-lag sensitivity", "status": "estimated", **model_metrics(baseline)},
         {"name": "Economic + lagged sentiment (autocorrelation sensitivity)", "status": "estimated", **model_metrics(dynamic)},
-        {"name": "Economic-only, month-end ALFRED initial vintages", "status": "blocked" if vintage_model is None else "estimated", **({"reason": "Populate UNRATE, PCEPI, and GDPC1 initial-release observations."} if vintage_model is None else model_metrics(vintage_model))},
         {"name": "Economic + household-stress proxy", "status": "estimated", **model_metrics(extension)},
         {
             "name": "Economic + expanded public controls", "status": "blocked" if external_extension is None else "estimated",
@@ -452,16 +492,17 @@ def build_outputs(raw_path: Path | str = DEFAULT_RAW) -> dict:
         },
         {"name": "Economic + historical media", "status": "estimated" if media_model.get("estimated") else "blocked", **(media_model.get("models", {}).get("economic_plus_media", {}) if media_model.get("estimated") else {"reason": media_model.get("reason", "Historical media model has not run.")})},
         {
-            "name": "Economic + media + household controls (retrospective sensitivity)",
+            "name": "Economic + media + archived household controls",
             "status": "estimated" if media_model.get("third_model", {}).get("estimated") else "blocked",
-            **(media_model.get("models", {}).get("economic_media_household_controls_retrospective", {}) if media_model.get("third_model", {}).get("estimated") else {"reason": media_model.get("third_model", {}).get("message", "Requires common historical controls.")}),
+            **(media_model.get("models", {}).get("economic_media_archived_controls", media_model.get("models", {}).get("economic_media_household_controls_retrospective", {})) if media_model.get("third_model", {}).get("estimated") else {"reason": media_model.get("third_model", {}).get("message", "Requires common historical controls.")}),
         },
     ]
     payload = {
         "metadata": {
-            "as_of": str(pd.Timestamp(latest["month"]).date()),
-            "model": "Rolling OLS, 120-month window; 95% residual intervals",
-            "availability_note": "The supplied-workbook baseline uses documented availability-lag assumptions. The optional public refresh is current-vintage data; neither substitutes for archived ALFRED/release-calendar vintages.",
+            "as_of": str(cutoff_day.date()),
+            "model": "Primary: release-date ALFRED-vintage rolling OLS; 120-month window; 95% residual intervals",
+            "availability_note": "The primary model joins documented Michigan final-release dates to ALFRED initial-release macro values available by that date. Dates are date-only; intraday ordering is not asserted. Assumed-lag and current-vintage models are sensitivities.",
+            "monitoring_cutoff": {"date": str(cutoff_day.date()), "partial_month_policy": "Observations dated after the cutoff are excluded; a current incomplete month is relabeled to the cutoff date and marked partial.", "next_update": "Refresh after each verified Michigan final release and major-event entry through election day; archive inputs, vintages, labels, and outputs on every run."},
             "media_status": media_status,
             "corpus": corpus,
             "label_validation": validation,
@@ -477,7 +518,7 @@ def build_outputs(raw_path: Path | str = DEFAULT_RAW) -> dict:
             "causal_analysis": causal_analysis,
             "source_benchmark": source_benchmark,
             "macro_refresh": refresh,
-            "real_time_vintage_note": "The ALFRED model uses initial-release values available by calendar month-end. It is a genuine vintage check, but Michigan headline/subindex release dates must be supplied for exact survey-release as-of analysis.",
+            "real_time_vintage_note": "The primary ALFRED model uses initial-release values available by each documented Michigan final-release date. Dates are reliable at day precision, not intraday ordering.",
             "input_contracts": {"michigan_subindices": template_status(SUBINDEX_TEMPLATE, ["current_conditions", "expectations", "release_timestamp", "vintage_id"]), "macro_vintages": template_status(VINTAGE_TEMPLATE, ["value", "release_timestamp", "vintage_id"]), "survey_subgroups": subgroup_status()},
         },
         "kpis": {
@@ -488,14 +529,14 @@ def build_outputs(raw_path: Path | str = DEFAULT_RAW) -> dict:
             "latest_gap": None if latest_result.empty else round(float(latest_result.iloc[0]["sentiment_gap"]), 2),
         },
         "metrics": {
-            "economic_only": model_metrics(baseline),
+            "economic_only": model_metrics(primary_model),
             "economic_lagged_sentiment": model_metrics(dynamic),
             "month_end_vintage_macro": None if vintage_model is None else model_metrics(vintage_model),
             "household_stress_proxy": model_metrics(extension),
             "expanded_controls": None if external_extension is None else model_metrics(external_extension),
         },
         "diagnostics": {
-            "economic_only": diagnostics(baseline),
+            "economic_only": diagnostics(primary_model),
             "economic_lagged_sentiment": diagnostics(dynamic),
             "month_end_vintage_macro": None if vintage_model is None else diagnostics(vintage_model),
             "household_stress_proxy": diagnostics(extension),
@@ -503,12 +544,13 @@ def build_outputs(raw_path: Path | str = DEFAULT_RAW) -> dict:
         },
         "model_comparison": model_comparison,
         "macro": _records(panel, ["month", "sentiment", "unemployment", "pce_yoy", "gdp_qoq_annualized"]),
-        "forecast": _records(baseline.dropna(subset=["prediction"]), ["month", "sentiment", "prediction", "prediction_lower_95", "prediction_upper_95", "sentiment_gap"]),
+        "forecast": _records(primary_model.dropna(subset=["prediction"]), ["month", "sentiment", "prediction", "prediction_lower_95", "prediction_upper_95", "sentiment_gap"]),
         "media": [] if media is None else _records(media, list(media.columns)),
         "media_by_source": source_media_records(),
         "source_benchmark": source_benchmark,
         "source_benchmark_rows": source_benchmark_records(),
         "subgroups": subgroup_records(),
+        "subindices": subindex_records(),
         "events": release_events(),
     }
     payload_text = json.dumps(payload, indent=2)
