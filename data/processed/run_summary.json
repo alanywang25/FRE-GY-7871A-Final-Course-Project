@@ -1,0 +1,76 @@
+{
+  "metrics": {
+    "economic_only": {
+      "n_oos": 142,
+      "mae": 7.665,
+      "rmse": 11.629,
+      "interval_coverage": 0.746
+    },
+    "household_stress_proxy": {
+      "n_oos": 142,
+      "mae": 8.178,
+      "rmse": 12.062,
+      "interval_coverage": 0.718
+    },
+    "expanded_controls": {
+      "n_oos": 142,
+      "mae": 4.687,
+      "rmse": 6.915,
+      "interval_coverage": 0.838
+    }
+  },
+  "diagnostics": {
+    "economic_only": {
+      "residual_lag1_autocorrelation": 0.781,
+      "durbin_watson": 0.349
+    },
+    "household_stress_proxy": {
+      "residual_lag1_autocorrelation": 0.623,
+      "durbin_watson": 0.567
+    },
+    "expanded_controls": {
+      "residual_lag1_autocorrelation": 0.501,
+      "durbin_watson": 0.985
+    }
+  },
+  "macro_refresh": {
+    "available": true,
+    "retrieved_at_utc": "2026-10-13T02:19:11+00:00",
+    "vintage_status": "current revised values only; not an ALFRED historical-vintage panel",
+    "series_downloaded": 9,
+    "failures": [
+      {
+        "variable": "sentiment_current_conditions",
+        "error": "direct/licensed source required; no public FRED identifier registered"
+      },
+      {
+        "variable": "sentiment_expectations",
+        "error": "direct/licensed source required; no public FRED identifier registered"
+      }
+    ],
+    "coverage_months_since_2010": {
+      "sentiment_headline": 202,
+      "unemployment_u3": 202,
+      "underemployment_u6": 202,
+      "pce_price_index": 202,
+      "real_disposable_income": 202,
+      "real_gdp": 202,
+      "debt_service_ratio": 202,
+      "housing_affordability": 14,
+      "policy_uncertainty": 202,
+      "pce_yoy_refreshed": 202,
+      "pce_cumulative_since_2010": 202,
+      "real_disposable_income_yoy": 202,
+      "real_gdp_qoq_annualized": 202
+    }
+  },
+  "label_validation": {
+    "eligible_human_a": 312,
+    "eligible_human_b": 312,
+    "paired_human_labels": 312,
+    "raw_tone_agreement": 0.593,
+    "cohen_kappa": 0.437,
+    "gate_passed": true,
+    "message": "Validation gate passed; adjudicate disagreements before constructing media measures."
+  }
+}

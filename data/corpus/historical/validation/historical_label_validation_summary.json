@@ -1,0 +1,8 @@
+{
+  "paired_human_labels": 80,
+  "raw_tone_agreement": 0.425,
+  "cohen_kappa": 0.237,
+  "minimum_paired_labels": 60,
+  "gate_passed": true,
+  "message": "Historical label-count gate passed; adjudicate tone disagreements before classifier validation."
+}

@@ -1,0 +1,17 @@
+{
+  "created_at": "2026-10-13T15:13:42-04:00",
+  "target_months": 72,
+  "start": "2020-01",
+  "end": "2025-12",
+  "enabled_sources": 16,
+  "enabled_by_stratum": {
+    "local": 8,
+    "national": 8,
+    "social": 0
+  },
+  "social_coverage": "Not collected: no lawful, configured public historical archive. Preserve this missingness rather than imputing zero.",
+  "source_panel": "/Users/alanwang/Downloads/FRE-GY-7871A-Final-Course-Project/data/corpus/historical/source_panel.csv",
+  "plan": "/Users/alanwang/Downloads/FRE-GY-7871A-Final-Course-Project/data/corpus/historical/collection_plan.csv",
+  "coded_item_template": "/Users/alanwang/Downloads/FRE-GY-7871A-Final-Course-Project/data/corpus/historical/raw/historical_items_template.csv",
+  "next_step": "Collect only records permitted by each source/archive, retain raw archive IDs and availability timestamps, code the records, then save reviewed rows as raw/historical_items.csv before aggregation."
+}

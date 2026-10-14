@@ -1,0 +1,11 @@
+{
+  "items_populated": 70,
+  "field_values_changed": 0,
+  "adjudicator_counts": {
+    "a": 21,
+    "b": 46,
+    "a+b": 3
+  },
+  "reference_rule": "factual_calibration selection when present; otherwise tone selection",
+  "changes": []
+}

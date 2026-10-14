@@ -1,0 +1,8 @@
+{
+  "records": 315,
+  "actor_changed_labels": 0,
+  "actor_changed_label_rate": 0.0,
+  "source_changed_labels": 0,
+  "source_changed_label_rate": 0.0,
+  "note": "Context-aware dictionary baseline v3. Actor and outlet masking are diagnostic checks, not a proof of fairness or invariance for a production model."
+}

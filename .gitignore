@@ -1,0 +1,21 @@
+# Local credentials (never commit values)
+.env
+.env.*
+secrets/
+
+# Python and operating-system state
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.DS_Store
+
+# Large, reproducible historical-collection intermediates.
+# Keep reviewed CSV deliverables under data/corpus/historical/ versioned.
+data/corpus/historical/cache/
+data/corpus/historical/downloads/
+data/corpus/historical/tmp/
+data/corpus/historical/raw_source_materials/
+data/corpus/historical/collection_runs/
+data/corpus/historical/validation_internal/
+data/corpus/validation_internal/

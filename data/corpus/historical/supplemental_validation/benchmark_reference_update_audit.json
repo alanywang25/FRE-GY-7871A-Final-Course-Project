@@ -1,0 +1,14 @@
+{
+  "packets": {
+    "annotator_a.csv": {
+      "input_encoding": "cp1252",
+      "rows_updated": 60,
+      "nonstandard_width_rows_preserved": 0
+    },
+    "annotator_b.csv": {
+      "input_encoding": "cp1252",
+      "rows_updated": 60,
+      "nonstandard_width_rows_preserved": 0
+    }
+  }
+}

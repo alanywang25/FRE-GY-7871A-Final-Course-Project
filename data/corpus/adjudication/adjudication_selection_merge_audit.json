@@ -1,0 +1,545 @@
+{
+  "selected_fields_applied": 76,
+  "items_touched": 70,
+  "selected_a": 24,
+  "selected_b": 52,
+  "fields": [
+    "factual_calibration",
+    "tone"
+  ],
+  "changes": [
+    {
+      "item_id": "004648feafccb21893e4",
+      "field": "tone",
+      "select": "a",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "00e96ae8255b50e03a4c",
+      "field": "factual_calibration",
+      "select": "b",
+      "old_value": "",
+      "new_value": "materially incomplete-or-misleading"
+    },
+    {
+      "item_id": "0b33525716488fd2b956",
+      "field": "tone",
+      "select": "b",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "0b33525716488fd2b956",
+      "field": "factual_calibration",
+      "select": "a",
+      "old_value": "",
+      "new_value": "unverifiable"
+    },
+    {
+      "item_id": "13d076309aa8f13f4118",
+      "field": "tone",
+      "select": "b",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "1b6171a6e83ed31b23d1",
+      "field": "tone",
+      "select": "b",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "220fd82df8c2164fd7e6",
+      "field": "factual_calibration",
+      "select": "a",
+      "old_value": "",
+      "new_value": "calibrated"
+    },
+    {
+      "item_id": "24bc4ce10afd32cf3c99",
+      "field": "tone",
+      "select": "b",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "26f5e6ea82def158bcd8",
+      "field": "tone",
+      "select": "a",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "2b62c2ff827c3aa8731e",
+      "field": "factual_calibration",
+      "select": "a",
+      "old_value": "",
+      "new_value": "materially incomplete-or-misleading"
+    },
+    {
+      "item_id": "2c06370cad19edf21eb2",
+      "field": "tone",
+      "select": "b",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "2e180bbc8637e760bf8e",
+      "field": "factual_calibration",
+      "select": "a",
+      "old_value": "",
+      "new_value": "materially incomplete-or-misleading"
+    },
+    {
+      "item_id": "2f3b76020b6b8dec13b5",
+      "field": "tone",
+      "select": "b",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "33883ccba79151b81cca",
+      "field": "tone",
+      "select": "b",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "3fe138613317217e1e3c",
+      "field": "factual_calibration",
+      "select": "a",
+      "old_value": "",
+      "new_value": "calibrated"
+    },
+    {
+      "item_id": "4008f2c0d45bdd9987e3",
+      "field": "tone",
+      "select": "b",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "42032789829c36e9ac93",
+      "field": "factual_calibration",
+      "select": "b",
+      "old_value": "",
+      "new_value": "materially incomplete-or-misleading"
+    },
+    {
+      "item_id": "49e9a1068d644e9759d3",
+      "field": "tone",
+      "select": "b",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "4b21b77285c52d1fc40f",
+      "field": "factual_calibration",
+      "select": "b",
+      "old_value": "",
+      "new_value": "calibrated"
+    },
+    {
+      "item_id": "4ba71d9a7999e5186667",
+      "field": "factual_calibration",
+      "select": "b",
+      "old_value": "",
+      "new_value": "calibrated"
+    },
+    {
+      "item_id": "4f24d75ebc2bf48a6d41",
+      "field": "factual_calibration",
+      "select": "b",
+      "old_value": "",
+      "new_value": "materially incomplete-or-misleading"
+    },
+    {
+      "item_id": "5757b2ed527ef29cc1d4",
+      "field": "tone",
+      "select": "b",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "5b1d70c4a1ab649190de",
+      "field": "tone",
+      "select": "b",
+      "old_value": "",
+      "new_value": "negative"
+    },
+    {
+      "item_id": "5c11d279979bbd60c219",
+      "field": "factual_calibration",
+      "select": "a",
+      "old_value": "",
+      "new_value": "calibrated"
+    },
+    {
+      "item_id": "5f26e91d980a48418f87",
+      "field": "tone",
+      "select": "a",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "683b3510619ff408b4ab",
+      "field": "tone",
+      "select": "b",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "6a01684b20e51c0ba706",
+      "field": "tone",
+      "select": "b",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "6db8aacb05330ac07d0c",
+      "field": "tone",
+      "select": "b",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "6ef3b24f0b0ce4cb4e94",
+      "field": "factual_calibration",
+      "select": "a",
+      "old_value": "",
+      "new_value": "calibrated"
+    },
+    {
+      "item_id": "6ff1369e0c2d8666107b",
+      "field": "factual_calibration",
+      "select": "a",
+      "old_value": "",
+      "new_value": "materially incomplete-or-misleading"
+    },
+    {
+      "item_id": "7bd21208f9cf9811ed15",
+      "field": "tone",
+      "select": "b",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "7e3b0962080266508974",
+      "field": "tone",
+      "select": "b",
+      "old_value": "",
+      "new_value": "negative"
+    },
+    {
+      "item_id": "7e3b0962080266508974",
+      "field": "factual_calibration",
+      "select": "a",
+      "old_value": "",
+      "new_value": "unverifiable"
+    },
+    {
+      "item_id": "7ebf3864dd03db3d3263",
+      "field": "factual_calibration",
+      "select": "b",
+      "old_value": "",
+      "new_value": "unverifiable"
+    },
+    {
+      "item_id": "82b63d96fce26cc0ace5",
+      "field": "factual_calibration",
+      "select": "b",
+      "old_value": "",
+      "new_value": "materially incomplete-or-misleading"
+    },
+    {
+      "item_id": "86e5697bd94be5019661",
+      "field": "factual_calibration",
+      "select": "b",
+      "old_value": "",
+      "new_value": "calibrated"
+    },
+    {
+      "item_id": "8ad25cebd789e1cdd0ef",
+      "field": "tone",
+      "select": "b",
+      "old_value": "",
+      "new_value": "negative"
+    },
+    {
+      "item_id": "8fbc36db5222b082298d",
+      "field": "factual_calibration",
+      "select": "a",
+      "old_value": "",
+      "new_value": "calibrated"
+    },
+    {
+      "item_id": "939238491c4d07dee655",
+      "field": "tone",
+      "select": "b",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "939238491c4d07dee655",
+      "field": "factual_calibration",
+      "select": "b",
+      "old_value": "",
+      "new_value": "unverifiable"
+    },
+    {
+      "item_id": "99eab4bbbf96359c3ce4",
+      "field": "tone",
+      "select": "a",
+      "old_value": "",
+      "new_value": "negative"
+    },
+    {
+      "item_id": "9cbea8b86cda10eefdeb",
+      "field": "factual_calibration",
+      "select": "b",
+      "old_value": "",
+      "new_value": "materially incomplete-or-misleading"
+    },
+    {
+      "item_id": "9e64a2eda9b3932f3edb",
+      "field": "factual_calibration",
+      "select": "b",
+      "old_value": "",
+      "new_value": "materially incomplete-or-misleading"
+    },
+    {
+      "item_id": "a0e290ea2ce71ebb12de",
+      "field": "tone",
+      "select": "b",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "a702c293234d32b3f52a",
+      "field": "factual_calibration",
+      "select": "b",
+      "old_value": "",
+      "new_value": "calibrated"
+    },
+    {
+      "item_id": "ac17b9df24a63ae06472",
+      "field": "factual_calibration",
+      "select": "a",
+      "old_value": "",
+      "new_value": "materially incomplete-or-misleading"
+    },
+    {
+      "item_id": "af82a41ed9460d020162",
+      "field": "tone",
+      "select": "a",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "af82a41ed9460d020162",
+      "field": "factual_calibration",
+      "select": "b",
+      "old_value": "",
+      "new_value": "calibrated"
+    },
+    {
+      "item_id": "b28db813ce9f125d94a5",
+      "field": "tone",
+      "select": "b",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "b7dfcfc62dd27d42f2e0",
+      "field": "factual_calibration",
+      "select": "b",
+      "old_value": "",
+      "new_value": "calibrated"
+    },
+    {
+      "item_id": "bd079463219eb8cab11b",
+      "field": "tone",
+      "select": "a",
+      "old_value": "",
+      "new_value": "positive"
+    },
+    {
+      "item_id": "c00616474e56190f3e63",
+      "field": "tone",
+      "select": "b",
+      "old_value": "",
+      "new_value": "negative"
+    },
+    {
+      "item_id": "c4a78c59ed1c9f845b8d",
+      "field": "tone",
+      "select": "b",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "c8cf100287ba7fcba62b",
+      "field": "tone",
+      "select": "b",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "c9b7f11a048ef56693fc",
+      "field": "tone",
+      "select": "b",
+      "old_value": "",
+      "new_value": "negative"
+    },
+    {
+      "item_id": "ce205d4c0a5f40b0717c",
+      "field": "factual_calibration",
+      "select": "a",
+      "old_value": "",
+      "new_value": "materially incomplete-or-misleading"
+    },
+    {
+      "item_id": "cf6b6787f77e88912b33",
+      "field": "tone",
+      "select": "b",
+      "old_value": "",
+      "new_value": "negative"
+    },
+    {
+      "item_id": "da67d6871e28728979db",
+      "field": "tone",
+      "select": "b",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "da67d6871e28728979db",
+      "field": "factual_calibration",
+      "select": "b",
+      "old_value": "",
+      "new_value": "unverifiable"
+    },
+    {
+      "item_id": "dcd0ecc5d22bc5c04708",
+      "field": "tone",
+      "select": "a",
+      "old_value": "",
+      "new_value": "positive"
+    },
+    {
+      "item_id": "de081c7635fe88b1d293",
+      "field": "tone",
+      "select": "b",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "e2c73b17781b9d8dc596",
+      "field": "tone",
+      "select": "a",
+      "old_value": "",
+      "new_value": "negative"
+    },
+    {
+      "item_id": "e723771c05dc4881e125",
+      "field": "factual_calibration",
+      "select": "a",
+      "old_value": "",
+      "new_value": "materially incomplete-or-misleading"
+    },
+    {
+      "item_id": "e79c02742bc8f18c4732",
+      "field": "tone",
+      "select": "b",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "e8d1c06bdb18425a1b89",
+      "field": "tone",
+      "select": "b",
+      "old_value": "",
+      "new_value": "negative"
+    },
+    {
+      "item_id": "e9a0c2fe4b4bcd79d81a",
+      "field": "tone",
+      "select": "a",
+      "old_value": "",
+      "new_value": "negative"
+    },
+    {
+      "item_id": "ed22a3f2fe7ac85c63fe",
+      "field": "tone",
+      "select": "b",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "ed2c697836e65f080d5c",
+      "field": "tone",
+      "select": "b",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "ee880db5d613aa1c3d88",
+      "field": "tone",
+      "select": "b",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "ee880db5d613aa1c3d88",
+      "field": "factual_calibration",
+      "select": "b",
+      "old_value": "",
+      "new_value": "materially incomplete-or-misleading"
+    },
+    {
+      "item_id": "efd535fd2c66e11dddfe",
+      "field": "factual_calibration",
+      "select": "b",
+      "old_value": "",
+      "new_value": "materially incomplete-or-misleading"
+    },
+    {
+      "item_id": "f125af7e275f2aa9e8b7",
+      "field": "tone",
+      "select": "b",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "f195e406f781a1cced28",
+      "field": "tone",
+      "select": "a",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "f5b2ff8ca708badce510",
+      "field": "tone",
+      "select": "b",
+      "old_value": "",
+      "new_value": "negative"
+    },
+    {
+      "item_id": "f6f157464bae56e821c4",
+      "field": "tone",
+      "select": "b",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "ffc5aa7a0a3c10cb1b6c",
+      "field": "tone",
+      "select": "a",
+      "old_value": "",
+      "new_value": "negative"
+    }
+  ],
+  "note": "Only the selected disputed field was replaced. Existing adjudicator, date, rationale, evidence, and non-disputed decision fields were preserved."
+}

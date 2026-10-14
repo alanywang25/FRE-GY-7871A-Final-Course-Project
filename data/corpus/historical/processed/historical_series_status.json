@@ -1,0 +1,18 @@
+{
+  "built_at": "2026-10-13T18:42:43-04:00",
+  "ready": true,
+  "input_exists": true,
+  "message": "Historical series is ready for downstream modeling; finalized-label classifier results remain a development-set diagnostic.",
+  "input_rows": 284,
+  "included_unique_items": 284,
+  "invalid_date_rows": 0,
+  "independent_validation_complete": true,
+  "independent_validation_message": "Independent-label validation and tone adjudication are complete for the original and supplemental historical samples.",
+  "monthly_rows": 90,
+  "minimum_history_months": 60,
+  "coverage": {
+    "first_month": "2014-01-31",
+    "last_month": "2021-06-30"
+  },
+  "output": "/Users/alanwang/Downloads/FRE-GY-7871A-Final-Course-Project/data/corpus/historical/processed/historical_media_monthly.csv"
+}

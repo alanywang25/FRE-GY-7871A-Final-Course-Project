@@ -1,0 +1,17 @@
+field,paired,agreement,cohen_kappa
+tone,312,1.0,1.0
+salience_layoffs,312,1.0,1.0
+salience_hiring,312,1.0,1.0
+salience_price_level,312,1.0,1.0
+salience_disinflation,312,1.0,1.0
+salience_growth,312,1.0,1.0
+salience_recession_risk,312,1.0,1.0
+frame_price_level,312,1.0,1.0
+frame_inflation_rate,312,1.0,1.0
+frame_household_experience,312,1.0,1.0
+frame_national_aggregate,312,1.0,1.0
+frame_current,312,1.0,1.0
+frame_forecast,312,1.0,1.0
+factual_calibration,312,1.0,1.0
+political_attribution_target,312,1.0,1.0
+political_valence,312,1.0,1.0

@@ -1,0 +1,106 @@
+{
+  "retrieved_at_utc": "2026-10-13T02:19:11+00:00",
+  "vintage_status": "current revised values only; not an ALFRED historical-vintage panel",
+  "series": [
+    {
+      "variable": "sentiment_headline",
+      "fred_series": "UMCSENT",
+      "request_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=UMCSENT",
+      "raw_file": "data/external/raw/UMCSENT_2026-10-13.csv",
+      "sha256": "27ce18aeda2ab875e799cf856913f95330bb6013fe75d8358c63a6f0c02a8e95",
+      "observations": 676,
+      "latest_observation": "2026-08-01",
+      "availability_lag_months": 1
+    },
+    {
+      "variable": "unemployment_u3",
+      "fred_series": "UNRATE",
+      "request_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=UNRATE",
+      "raw_file": "data/external/raw/UNRATE_2026-10-13.csv",
+      "sha256": "621ff6fadf50910cb7a21ee20ba610c247cb043b29b4e05c4c1a72fadca2a06c",
+      "observations": 944,
+      "latest_observation": "2026-09-01",
+      "availability_lag_months": 1
+    },
+    {
+      "variable": "underemployment_u6",
+      "fred_series": "U6RATE",
+      "request_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=U6RATE",
+      "raw_file": "data/external/raw/U6RATE_2026-10-13.csv",
+      "sha256": "4a5e4d273609f63e684ead6521fb1708832af5a0498460980e25db56f4b24c23",
+      "observations": 392,
+      "latest_observation": "2026-09-01",
+      "availability_lag_months": 1
+    },
+    {
+      "variable": "pce_price_index",
+      "fred_series": "PCEPI",
+      "request_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCEPI",
+      "raw_file": "data/external/raw/PCEPI_2026-10-13.csv",
+      "sha256": "0f416a343a73a3b723af3315679596eecd7300abb433e8999c6a161d46c22e4f",
+      "observations": 812,
+      "latest_observation": "2026-08-01",
+      "availability_lag_months": 1
+    },
+    {
+      "variable": "real_disposable_income",
+      "fred_series": "DSPIC96",
+      "request_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DSPIC96",
+      "raw_file": "data/external/raw/DSPIC96_2026-10-13.csv",
+      "sha256": "51e76318fb05ce9e09b3432c8c2f645a93a9263ed305500f8b8884273355d62f",
+      "observations": 812,
+      "latest_observation": "2026-08-01",
+      "availability_lag_months": 1
+    },
+    {
+      "variable": "real_gdp",
+      "fred_series": "GDPC1",
+      "request_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=GDPC1",
+      "raw_file": "data/external/raw/GDPC1_2026-10-13.csv",
+      "sha256": "5e235cef633b1033da0967311efa89a47845f42e9d6ad8d60b4babed32ae6f08",
+      "observations": 318,
+      "latest_observation": "2026-04-01",
+      "availability_lag_months": 3
+    },
+    {
+      "variable": "debt_service_ratio",
+      "fred_series": "TDSP",
+      "request_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=TDSP",
+      "raw_file": "data/external/raw/TDSP_2026-10-13.csv",
+      "sha256": "7c9538093b5b4c6245dc4245dcb810c0c3fcf5d380300dc75f4a172ac7f0eda8",
+      "observations": 86,
+      "latest_observation": "2026-04-01",
+      "availability_lag_months": 3
+    },
+    {
+      "variable": "housing_affordability",
+      "fred_series": "FIXHAI",
+      "request_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=FIXHAI",
+      "raw_file": "data/external/raw/FIXHAI_2026-10-13.csv",
+      "sha256": "11edc89ef3c8435dd6f1521990e228a299dba33e2d7e3e1fc84ffc655f75e112",
+      "observations": 12,
+      "latest_observation": "2026-08-01",
+      "availability_lag_months": 1
+    },
+    {
+      "variable": "policy_uncertainty",
+      "fred_series": "USEPUINDXD",
+      "request_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=USEPUINDXD",
+      "raw_file": "data/external/raw/USEPUINDXD_2026-10-13.csv",
+      "sha256": "1dafa5dcd8e79889af0b1329b90d6b8d4304ac8a966fe6c13adec88489fe8158",
+      "observations": 15259,
+      "latest_observation": "2026-10-11",
+      "availability_lag_months": 1
+    }
+  ],
+  "failures": [
+    {
+      "variable": "sentiment_current_conditions",
+      "error": "direct/licensed source required; no public FRED identifier registered"
+    },
+    {
+      "variable": "sentiment_expectations",
+      "error": "direct/licensed source required; no public FRED identifier registered"
+    }
+  ]
+}

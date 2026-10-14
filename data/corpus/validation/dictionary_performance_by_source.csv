@@ -1,0 +1,4 @@
+source_stratum,n,accuracy,macro_f1
+local,105,0.571,0.502
+national,105,0.476,0.445
+social,102,0.696,0.406

@@ -1,0 +1,19 @@
+{
+  "required_pairs": 300,
+  "expected_blinded_items": 312,
+  "paired_complete_all_fields": 312,
+  "by_annotator": {
+    "a": {
+      "completed": 312,
+      "invalid_values": 0,
+      "missing_factual_evidence": 0
+    },
+    "b": {
+      "completed": 312,
+      "invalid_values": 0,
+      "missing_factual_evidence": 0
+    }
+  },
+  "gate_passed": true,
+  "message": "All-field independent-label gate passed; adjudicate disagreements."
+}

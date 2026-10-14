@@ -1,0 +1,9 @@
+{
+  "expected_blinded_items": 312,
+  "paired_complete_all_fields": 312,
+  "items_with_any_disagreement": 0,
+  "unresolved_items": 0,
+  "adjudicated_or_consensus_items": 312,
+  "gate_passed": true,
+  "message": "All-field adjudication gate passed."
+}

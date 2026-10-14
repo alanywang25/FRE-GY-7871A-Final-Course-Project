@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Economic Perceptions Monitor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div><p class="eyebrow">Applications in Finance | 2026 midterm monitoring</p><h1>Economic perceptions monitor</h1><p class="lede">A chronology-aware macro baseline for consumer sentiment. A gap is unexplained prediction error, not evidence of media bias.</p></div>
+    <div class="stamp"><span>Data through</span><strong id="as-of">Loading</strong><small id="model-name"></small></div>
+  </header>
+  <main>
+    <section class="metrics" aria-label="Latest indicators">
+      <article><span>Consumer sentiment</span><strong id="sentiment">-</strong><small>Michigan headline index</small></article>
+      <article><span>Unemployment</span><strong id="unemployment">-</strong><small>U-3, percent</small></article>
+      <article><span>PCE inflation</span><strong id="pce">-</strong><small>Year over year, percent</small></article>
+      <article><span>Sentiment gap</span><strong id="gap">-</strong><small>Actual minus economic-only prediction</small></article>
+    </section>
+    <section class="panel">
+      <div class="section-head"><div><p class="eyebrow">Baseline model</p><h2>Sentiment and model prediction</h2></div><p id="interval-note">95% prediction interval</p></div>
+      <div id="forecast-chart" class="chart" aria-label="Sentiment and prediction time-series chart"></div>
+    </section>
+    <section class="two-col">
+      <section class="panel"><div class="section-head"><div><p class="eyebrow">Residual</p><h2>Sentiment gap</h2></div></div><div id="gap-chart" class="chart short" aria-label="Sentiment gap time-series chart"></div></section>
+      <section class="panel"><div class="section-head"><div><p class="eyebrow">Macro context</p><h2>Latest known inputs</h2></div></div><div id="macro-chart" class="chart short" aria-label="Macro context time-series chart"></div></section>
+    </section>
+    <section class="two-col">
+      <section class="panel"><p class="eyebrow">Holdout scorecard</p><h2>Out-of-sample performance</h2><div id="scorecard" class="scorecard"></div><p class="fine">Forecasts use rolling OLS with a 120-month training window. Performance is historical and not a causal estimate.</p></section>
+      <section class="panel"><p class="eyebrow">Corpus status</p><h2>Media measures</h2><div id="media-status" class="status"></div><p class="fine">Tone, framing, salience, and factual-calibration measures require retained item-level evidence and validation. Blank values are not treated as zero.</p></section>
+    </section>
+    <section class="panel"><p class="eyebrow">Corpus monitoring</p><h2>Collection and labeling readiness</h2><div id="corpus-summary" class="corpus-grid"></div><p id="corpus-note" class="fine"></p></section>
+    <section class="panel"><div class="section-head"><div><p class="eyebrow">Provisional media measures</p><h2>Consensus-only monthly coverage indicators</h2></div><p id="media-chart-note">Awaiting media aggregate</p></div><div id="media-chart" class="chart short" aria-label="Monthly provisional media measures chart"></div><div id="media-quality" class="scorecard"></div><p class="fine">These measures are descriptive only. Their availability date is the adjudication-build time, and unresolved items remain missing rather than zero.</p></section>
+    <section class="two-col">
+      <section class="panel"><p class="eyebrow">Model ladder</p><h2>What can be estimated now</h2><div id="model-ladder" class="status-list"></div><p class="fine">Media models remain locked until human agreement, adjudication, and timestamped monthly measures are available.</p></section>
+      <section class="panel"><p class="eyebrow">Refresh and validation</p><h2>Evidence readiness</h2><div id="evidence-readiness" class="status-list"></div><p class="fine">Current-vintage downloads are useful for monitoring; historical real-time tests require archived release vintages.</p></section>
+    </section>
+    <section class="panel"><p class="eyebrow">Release chronology</p><h2>Verified economic releases and events</h2><div id="event-log" class="status-list"></div><p class="fine">Only rows with a verified release timestamp are shown. Template rows are not evidence.</p></section>
+    <section class="panel caveat"><p class="eyebrow">Data quality and interpretation</p><h2>Use these outputs cautiously</h2><ul><li id="availability-note"></li><li>The supplied source contains headline sentiment only. It does not support subgroup or Michigan subindex analysis.</li><li>GDP remains quarterly; the pipeline does not interpolate it into artificial monthly observations.</li></ul></section>
+  </main>
+  <footer>Local monitoring dashboard. Refresh the pipeline before each update and archive the run inputs, release schedule, model version, and output.</footer>
+  <script src="app.js"></script>
+</body>
+</html>

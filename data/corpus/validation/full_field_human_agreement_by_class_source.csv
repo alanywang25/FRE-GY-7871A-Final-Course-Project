@@ -1,0 +1,135 @@
+field,class,source_stratum,support_a,agreement_count,agreement_rate_within_a_class
+tone,mixed,local,11,11,1.0
+tone,negative,local,29,29,1.0
+tone,neutral,local,38,38,1.0
+tone,positive,local,27,27,1.0
+tone,mixed,national,19,19,1.0
+tone,negative,national,44,44,1.0
+tone,neutral,national,25,25,1.0
+tone,positive,national,17,17,1.0
+tone,mixed,social,1,1,1.0
+tone,negative,social,33,33,1.0
+tone,neutral,social,60,60,1.0
+tone,positive,social,8,8,1.0
+salience_layoffs,0,local,98,98,1.0
+salience_layoffs,1,local,7,7,1.0
+salience_layoffs,0,national,98,98,1.0
+salience_layoffs,1,national,7,7,1.0
+salience_layoffs,0,social,98,98,1.0
+salience_layoffs,1,social,4,4,1.0
+salience_hiring,0,local,94,94,1.0
+salience_hiring,1,local,11,11,1.0
+salience_hiring,0,national,98,98,1.0
+salience_hiring,1,national,7,7,1.0
+salience_hiring,0,social,91,91,1.0
+salience_hiring,1,social,11,11,1.0
+salience_price_level,0,local,79,79,1.0
+salience_price_level,1,local,26,26,1.0
+salience_price_level,0,national,71,71,1.0
+salience_price_level,1,national,34,34,1.0
+salience_price_level,0,social,72,72,1.0
+salience_price_level,1,social,30,30,1.0
+salience_disinflation,0,local,105,105,1.0
+salience_disinflation,0,national,99,99,1.0
+salience_disinflation,1,national,6,6,1.0
+salience_disinflation,0,social,102,102,1.0
+salience_growth,0,local,90,90,1.0
+salience_growth,1,local,15,15,1.0
+salience_growth,0,national,78,78,1.0
+salience_growth,1,national,27,27,1.0
+salience_growth,0,social,99,99,1.0
+salience_growth,1,social,3,3,1.0
+salience_recession_risk,0,local,104,104,1.0
+salience_recession_risk,1,local,1,1,1.0
+salience_recession_risk,0,national,100,100,1.0
+salience_recession_risk,1,national,5,5,1.0
+salience_recession_risk,0,social,100,100,1.0
+salience_recession_risk,1,social,2,2,1.0
+frame_price_level,0,local,86,86,1.0
+frame_price_level,1,local,19,19,1.0
+frame_price_level,0,national,89,89,1.0
+frame_price_level,1,national,16,16,1.0
+frame_price_level,0,social,89,89,1.0
+frame_price_level,1,social,13,13,1.0
+frame_inflation_rate,0,local,100,100,1.0
+frame_inflation_rate,1,local,5,5,1.0
+frame_inflation_rate,0,national,87,87,1.0
+frame_inflation_rate,1,national,18,18,1.0
+frame_inflation_rate,0,social,93,93,1.0
+frame_inflation_rate,1,social,9,9,1.0
+frame_household_experience,0,local,80,80,1.0
+frame_household_experience,1,local,25,25,1.0
+frame_household_experience,0,national,85,85,1.0
+frame_household_experience,1,national,20,20,1.0
+frame_household_experience,0,social,84,84,1.0
+frame_household_experience,1,social,18,18,1.0
+frame_national_aggregate,0,local,70,70,1.0
+frame_national_aggregate,1,local,35,35,1.0
+frame_national_aggregate,0,national,42,42,1.0
+frame_national_aggregate,1,national,63,63,1.0
+frame_national_aggregate,0,social,80,80,1.0
+frame_national_aggregate,1,social,22,22,1.0
+frame_current,0,local,49,49,1.0
+frame_current,1,local,56,56,1.0
+frame_current,0,national,47,47,1.0
+frame_current,1,national,58,58,1.0
+frame_current,0,social,63,63,1.0
+frame_current,1,social,39,39,1.0
+frame_forecast,0,local,95,95,1.0
+frame_forecast,1,local,10,10,1.0
+frame_forecast,0,national,76,76,1.0
+frame_forecast,1,national,29,29,1.0
+frame_forecast,0,social,96,96,1.0
+frame_forecast,1,social,6,6,1.0
+factual_calibration,calibrated,local,104,104,1.0
+factual_calibration,materially incomplete-or-misleading,local,1,1,1.0
+factual_calibration,calibrated,national,103,103,1.0
+factual_calibration,unverifiable,national,2,2,1.0
+factual_calibration,calibrated,social,72,72,1.0
+factual_calibration,materially incomplete-or-misleading,social,18,18,1.0
+factual_calibration,unverifiable,social,12,12,1.0
+political_attribution_target,Candidates,local,1,1,1.0
+political_attribution_target,Federal Reserve,local,1,1,1.0
+political_attribution_target,Florida lawmakers,local,1,1,1.0
+political_attribution_target,Florida officials,local,1,1,1.0
+political_attribution_target,Florida state government,local,1,1,1.0
+political_attribution_target,Georgia officials,local,1,1,1.0
+political_attribution_target,Republican-led states,local,1,1,1.0
+political_attribution_target,Senate,local,1,1,1.0
+political_attribution_target,Shapiro; Garrity,local,1,1,1.0
+political_attribution_target,Texas Governor Abbott,local,1,1,1.0
+political_attribution_target,Texas Republicans,local,1,1,1.0
+political_attribution_target,Trump,local,8,8,1.0
+political_attribution_target,none,local,86,86,1.0
+political_attribution_target,Democrats,national,1,1,1.0
+political_attribution_target,Federal Reserve,national,4,4,1.0
+political_attribution_target,Prabowo government,national,1,1,1.0
+political_attribution_target,Tariffs,national,1,1,1.0
+political_attribution_target,Trump,national,7,7,1.0
+political_attribution_target,Trump administration (Bessent),national,1,1,1.0
+political_attribution_target,Trump policies,national,1,1,1.0
+political_attribution_target,Trump; Republicans,national,1,1,1.0
+political_attribution_target,none,national,88,88,1.0
+political_attribution_target,Corporations,social,1,1,1.0
+political_attribution_target,Federal Reserve,social,3,3,1.0
+political_attribution_target,Gas industry; Australian government,social,1,1,1.0
+political_attribution_target,PTI (opposition),social,1,1,1.0
+political_attribution_target,Tariff policy; retailers,social,1,1,1.0
+political_attribution_target,Tariffs; Iran war,social,1,1,1.0
+political_attribution_target,Trump,social,5,5,1.0
+political_attribution_target,Trump (hashtag); fossil-fuel dependence,social,1,1,1.0
+political_attribution_target,Trump (hashtags),social,1,1,1.0
+political_attribution_target,Trump administration (US government),social,1,1,1.0
+political_attribution_target,Trump administration (hashtags),social,1,1,1.0
+political_attribution_target,none,social,85,85,1.0
+political_valence,blame,local,8,8,1.0
+political_valence,credit,local,3,3,1.0
+political_valence,neutral,local,8,8,1.0
+political_valence,none,local,86,86,1.0
+political_valence,blame,national,7,7,1.0
+political_valence,credit,national,2,2,1.0
+political_valence,neutral,national,8,8,1.0
+political_valence,none,national,88,88,1.0
+political_valence,blame,social,12,12,1.0
+political_valence,neutral,social,5,5,1.0
+political_valence,none,social,85,85,1.0

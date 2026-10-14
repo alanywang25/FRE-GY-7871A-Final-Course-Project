@@ -1,0 +1,9 @@
+source_domain,archive_contributor,source_stratum,collection_enabled,collection_method,coverage_rationale
+cnn.com,CNNW,national,true,internet_archive_tvnews_captions,National cable-news captions with dated broadcast and archive records.
+foxnews.com,FOXNEWSW,national,true,internet_archive_tvnews_captions,National cable-news captions with dated broadcast and archive records.
+msnbc.com,MSNBCW,national,true,internet_archive_tvnews_captions,National cable-news captions with dated broadcast and archive records.
+cnbc.com,CNBC,national,true,internet_archive_tvnews_captions,National business-news captions with dated broadcast and archive records.
+ktvu.com,KTVU,local,true,internet_archive_tvnews_captions,San Francisco Bay Area local television-news captions.
+kpix.com,KPIX,local,true,internet_archive_tvnews_captions,San Francisco Bay Area local television-news captions.
+nbcbayarea.com,KNTV,local,true,internet_archive_tvnews_captions,San Francisco Bay Area local television-news captions.
+abc7news.com,KGO,local,true,internet_archive_tvnews_captions,San Francisco Bay Area local television-news captions.

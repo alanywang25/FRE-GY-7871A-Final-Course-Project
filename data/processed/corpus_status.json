@@ -1,0 +1,22 @@
+{
+  "available": true,
+  "label_ready": true,
+  "message": "Independent label packets are complete. Reconcile disagreements and validate the coding model before estimating media associations.",
+  "retrieved_at": "2026-10-13T01:48:55+00:00",
+  "records_collected": 539,
+  "balanced_sample_records": 315,
+  "balanced_sample_by_stratum": {
+    "national": 105,
+    "local": 105,
+    "social": 105
+  },
+  "annotation": {
+    "a_completed": 312,
+    "b_completed": 312,
+    "a_machine": 0,
+    "b_machine": 0,
+    "a_reviewed": 0,
+    "b_reviewed": 0,
+    "packet_size": 312
+  }
+}

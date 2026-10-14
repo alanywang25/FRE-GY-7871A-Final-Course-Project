@@ -1,0 +1,9 @@
+{
+  "built_at": "2026-10-13T17:56:47-04:00",
+  "unique_items": 312,
+  "consensus_items": 242,
+  "manual_adjudications": 70,
+  "needs_human_adjudication": 0,
+  "monthly_rows": 3,
+  "provenance": "Consensus between two human-reviewed, non-blinded packets. This is not an independent-annotator reliability result."
+}

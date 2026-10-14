@@ -1,0 +1,238 @@
+{
+  "rows_updated": 46,
+  "selected_a": 23,
+  "selected_b": 23,
+  "values_changed": 46,
+  "changes": [
+    {
+      "blind_id": "historical_validation_003",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "blind_id": "historical_validation_005",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "blind_id": "historical_validation_008",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "blind_id": "historical_validation_010",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "blind_id": "historical_validation_012",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "blind_id": "historical_validation_014",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "blind_id": "historical_validation_016",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "blind_id": "historical_validation_017",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "blind_id": "historical_validation_018",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "blind_id": "historical_validation_019",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "blind_id": "historical_validation_022",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "blind_id": "historical_validation_024",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "blind_id": "historical_validation_025",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "blind_id": "historical_validation_026",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "blind_id": "historical_validation_028",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "blind_id": "historical_validation_030",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "blind_id": "historical_validation_032",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "blind_id": "historical_validation_034",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "blind_id": "historical_validation_036",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "blind_id": "historical_validation_039",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "blind_id": "historical_validation_040",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "blind_id": "historical_validation_043",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "blind_id": "historical_validation_045",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "blind_id": "historical_validation_047",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "blind_id": "historical_validation_048",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "blind_id": "historical_validation_049",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "blind_id": "historical_validation_051",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "blind_id": "historical_validation_052",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "blind_id": "historical_validation_053",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "blind_id": "historical_validation_055",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "blind_id": "historical_validation_057",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "blind_id": "historical_validation_058",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "blind_id": "historical_validation_059",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "blind_id": "historical_validation_060",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "blind_id": "historical_validation_063",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "blind_id": "historical_validation_064",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "blind_id": "historical_validation_066",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "blind_id": "historical_validation_067",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "blind_id": "historical_validation_068",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "blind_id": "historical_validation_069",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "blind_id": "historical_validation_070",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "blind_id": "historical_validation_074",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "blind_id": "historical_validation_075",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "blind_id": "historical_validation_076",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "blind_id": "historical_validation_078",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "blind_id": "historical_validation_079",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "ready": true,
+  "gold_rows": 312,
+  "paired_rows": 312,
+  "scored_rows": 252,
+  "held_out_rows": 60,
+  "development_rows": 252,
+  "baseline_file": "data/corpus/model_assisted/dictionary_baseline_v1.csv",
+  "baseline_sha256": "20ee6ef9999818b391ccaf1f28d65985a402f8c225f5aed6014e171e0d42128c",
+  "held_out_released": false,
+  "final_performance_claim": "not authorized",
+  "next_step": "Revise only with development IDs, lock the model, then rerun with --release-held-out exactly once for the final held-out claim."
+}

@@ -1,0 +1,12 @@
+{
+  "model": "dictionary_baseline_v1",
+  "records": 315,
+  "tone_counts": {
+    "positive": 65,
+    "negative": 80,
+    "neutral": 155,
+    "mixed": 15
+  },
+  "factual_calibration": "Every record is unverifiable because the baseline did not inspect original publication context or official releases.",
+  "use": "Review aid and conventional classifier baseline only. Not an independent human annotation set."
+}

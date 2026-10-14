@@ -1,0 +1,17 @@
+{
+  "built_at_utc": "2026-10-13T22:51:35+00:00",
+  "method": "FRED series/observations output_type=4 (ALFRED initial release only)",
+  "coverage": {
+    "realtime_start": "2014-01-01",
+    "realtime_end": "2021-06-30"
+  },
+  "series": {
+    "UNRATE": 89,
+    "PCEPI": 89,
+    "GDPC1": 29,
+    "CPIAUCSL": 89,
+    "FEDFUNDS": 89
+  },
+  "release_timestamp_precision": "ALFRED vintage dates are date-only; exact time is not imputed.",
+  "api_key_written": false
+}

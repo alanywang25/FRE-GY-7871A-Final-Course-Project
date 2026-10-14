@@ -1,0 +1,17 @@
+source_name,domain,stratum,geography,market,selection_rationale
+Associated Press,apnews.com,national,national,,Wire service with broad national economic coverage
+Reuters,reuters.com,national,national,,International wire service with U.S. economic reporting
+NPR,npr.org,national,national,,Public-media national newsroom
+PBS NewsHour,pbs.org,national,national,,Public-media national newsroom
+CNBC,cnbc.com,national,national,,Business-focused national outlet
+The New York Times,nytimes.com,national,national,,General-interest national newspaper
+The Wall Street Journal,wsj.com,national,national,,Business-focused national newspaper
+Fox Business,foxbusiness.com,national,national,,Business-focused national outlet
+Atlanta Journal-Constitution,ajc.com,local,local,Atlanta,Local-market reporting in the Southeast
+Detroit Free Press,freep.com,local,local,Detroit,Local-market reporting in the Midwest auto region
+Arizona Republic,azcentral.com,local,local,Phoenix,Local-market reporting in the Southwest
+Houston Chronicle,houstonchronicle.com,local,local,Houston,Local-market reporting in the Gulf Coast energy region
+Tampa Bay Times,tampabay.com,local,local,Tampa Bay,Local-market reporting in Florida
+Star Tribune,startribune.com,local,local,Minneapolis-St. Paul,Local-market reporting in the Upper Midwest
+The Philadelphia Inquirer,inquirer.com,local,local,Philadelphia,Local-market reporting in the Mid-Atlantic
+Los Angeles Times,latimes.com,local,local,Los Angeles,Local-market reporting in Southern California

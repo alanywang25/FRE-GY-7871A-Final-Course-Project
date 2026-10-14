@@ -1,0 +1,3054 @@
+{
+  "items_synchronized": 127,
+  "field_values_synchronized": 508,
+  "changes": [
+    {
+      "item_id": "004648feafccb21893e4",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "004648feafccb21893e4",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "004648feafccb21893e4",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "004648feafccb21893e4",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "00e96ae8255b50e03a4c",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "00e96ae8255b50e03a4c",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "00e96ae8255b50e03a4c",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "00e96ae8255b50e03a4c",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "08b065b22ea646451dc5",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "08b065b22ea646451dc5",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "08b065b22ea646451dc5",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "08b065b22ea646451dc5",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "1352305c145ede7a0e2c",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "1352305c145ede7a0e2c",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "1352305c145ede7a0e2c",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "1352305c145ede7a0e2c",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "17a3cf0e6304981f3c36",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "positive"
+    },
+    {
+      "item_id": "17a3cf0e6304981f3c36",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "17a3cf0e6304981f3c36",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "17a3cf0e6304981f3c36",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "1b6171a6e83ed31b23d1",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "1b6171a6e83ed31b23d1",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "1b6171a6e83ed31b23d1",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "1b6171a6e83ed31b23d1",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "1be7c07572aa1e60b419",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "1be7c07572aa1e60b419",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "1be7c07572aa1e60b419",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "1be7c07572aa1e60b419",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "1be905fcd19c8b2e5734",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "1be905fcd19c8b2e5734",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "1be905fcd19c8b2e5734",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "1be905fcd19c8b2e5734",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "1e1946cbe5f9b2314207",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "1e1946cbe5f9b2314207",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "1e1946cbe5f9b2314207",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "1e1946cbe5f9b2314207",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "1f89ced5d8f31df44599",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "1f89ced5d8f31df44599",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "1f89ced5d8f31df44599",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "1f89ced5d8f31df44599",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "24900ce7887463e6001d",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "24900ce7887463e6001d",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "24900ce7887463e6001d",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "24900ce7887463e6001d",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "24bc4ce10afd32cf3c99",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "24bc4ce10afd32cf3c99",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "24bc4ce10afd32cf3c99",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "24bc4ce10afd32cf3c99",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "26f5e6ea82def158bcd8",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "26f5e6ea82def158bcd8",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "26f5e6ea82def158bcd8",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "26f5e6ea82def158bcd8",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "2998a849c4b40a77fe76",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "2998a849c4b40a77fe76",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "2998a849c4b40a77fe76",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "2998a849c4b40a77fe76",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "299e3d80e89badc67fa4",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "299e3d80e89badc67fa4",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "299e3d80e89badc67fa4",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "299e3d80e89badc67fa4",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "2aac6ebc17c03a7fd8cf",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "2aac6ebc17c03a7fd8cf",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "2aac6ebc17c03a7fd8cf",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "2aac6ebc17c03a7fd8cf",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "2bf63a3d79db1c4337f9",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "2bf63a3d79db1c4337f9",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "2bf63a3d79db1c4337f9",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "2bf63a3d79db1c4337f9",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "2d01c6dc9af011eac020",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "2d01c6dc9af011eac020",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "2d01c6dc9af011eac020",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "2d01c6dc9af011eac020",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "2ed0134bd71aabbf71d5",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "2ed0134bd71aabbf71d5",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "2ed0134bd71aabbf71d5",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "2ed0134bd71aabbf71d5",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "308b68d8605c1b967a02",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "308b68d8605c1b967a02",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "308b68d8605c1b967a02",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "308b68d8605c1b967a02",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "333111783db3d49d6f89",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "333111783db3d49d6f89",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "333111783db3d49d6f89",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "333111783db3d49d6f89",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "336fc9ebb30fcef27f2f",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "negative"
+    },
+    {
+      "item_id": "336fc9ebb30fcef27f2f",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "336fc9ebb30fcef27f2f",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "336fc9ebb30fcef27f2f",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "33883ccba79151b81cca",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "33883ccba79151b81cca",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "33883ccba79151b81cca",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "33883ccba79151b81cca",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "35b7a66052e9a74fcf3e",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "negative"
+    },
+    {
+      "item_id": "35b7a66052e9a74fcf3e",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "35b7a66052e9a74fcf3e",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "35b7a66052e9a74fcf3e",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "366c9d6ba841e612a07f",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "366c9d6ba841e612a07f",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "366c9d6ba841e612a07f",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "366c9d6ba841e612a07f",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "36722b7007e94eccec2b",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "positive"
+    },
+    {
+      "item_id": "36722b7007e94eccec2b",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "36722b7007e94eccec2b",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "36722b7007e94eccec2b",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "37ed6fdc4bf2f21e54aa",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "37ed6fdc4bf2f21e54aa",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "37ed6fdc4bf2f21e54aa",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "37ed6fdc4bf2f21e54aa",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "3a51b8a62a0614d02923",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "positive"
+    },
+    {
+      "item_id": "3a51b8a62a0614d02923",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "3a51b8a62a0614d02923",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "3a51b8a62a0614d02923",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "3fe138613317217e1e3c",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "3fe138613317217e1e3c",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "3fe138613317217e1e3c",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "3fe138613317217e1e3c",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "4008f2c0d45bdd9987e3",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "4008f2c0d45bdd9987e3",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "4008f2c0d45bdd9987e3",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "4008f2c0d45bdd9987e3",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "40eee40644ef0e5e26a2",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "40eee40644ef0e5e26a2",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "40eee40644ef0e5e26a2",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "40eee40644ef0e5e26a2",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "41514e2eb447856dec5a",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "41514e2eb447856dec5a",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "41514e2eb447856dec5a",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "41514e2eb447856dec5a",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "421b30c79999be4f2870",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "421b30c79999be4f2870",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "421b30c79999be4f2870",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "421b30c79999be4f2870",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "477c3e0eef64f43737b4",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "477c3e0eef64f43737b4",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "477c3e0eef64f43737b4",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "477c3e0eef64f43737b4",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "48222c7a279e6e53a4dd",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "negative"
+    },
+    {
+      "item_id": "48222c7a279e6e53a4dd",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "48222c7a279e6e53a4dd",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "48222c7a279e6e53a4dd",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "49e9a1068d644e9759d3",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "negative"
+    },
+    {
+      "item_id": "49e9a1068d644e9759d3",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "49e9a1068d644e9759d3",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "49e9a1068d644e9759d3",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "4b18abadfa7db4aed792",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "4b18abadfa7db4aed792",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "4b18abadfa7db4aed792",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "4b18abadfa7db4aed792",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "4b3f81797abfdd2e5791",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "positive"
+    },
+    {
+      "item_id": "4b3f81797abfdd2e5791",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "4b3f81797abfdd2e5791",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "4b3f81797abfdd2e5791",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "4f2d78063ed4e41191e1",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "4f2d78063ed4e41191e1",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "4f2d78063ed4e41191e1",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "4f2d78063ed4e41191e1",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "4f90b83b0e2753a551dd",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "4f90b83b0e2753a551dd",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "4f90b83b0e2753a551dd",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "4f90b83b0e2753a551dd",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "50f46594103d0be78575",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "50f46594103d0be78575",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "50f46594103d0be78575",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "50f46594103d0be78575",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "5313666ca97acbfe4a62",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "5313666ca97acbfe4a62",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "5313666ca97acbfe4a62",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "5313666ca97acbfe4a62",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "5757b2ed527ef29cc1d4",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "negative"
+    },
+    {
+      "item_id": "5757b2ed527ef29cc1d4",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "5757b2ed527ef29cc1d4",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "5757b2ed527ef29cc1d4",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "58fa3045906ffcff1807",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "negative"
+    },
+    {
+      "item_id": "58fa3045906ffcff1807",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "58fa3045906ffcff1807",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "58fa3045906ffcff1807",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "5b1d70c4a1ab649190de",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "negative"
+    },
+    {
+      "item_id": "5b1d70c4a1ab649190de",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "5b1d70c4a1ab649190de",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "5b1d70c4a1ab649190de",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "5b330756c208d0442cfa",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "positive"
+    },
+    {
+      "item_id": "5b330756c208d0442cfa",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "5b330756c208d0442cfa",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "5b330756c208d0442cfa",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "5b512d01890c8a65761b",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "positive"
+    },
+    {
+      "item_id": "5b512d01890c8a65761b",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "5b512d01890c8a65761b",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "5b512d01890c8a65761b",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "5c11d279979bbd60c219",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "5c11d279979bbd60c219",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "5c11d279979bbd60c219",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "5c11d279979bbd60c219",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "5ffddea6e7e0cb352394",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "5ffddea6e7e0cb352394",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "5ffddea6e7e0cb352394",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "5ffddea6e7e0cb352394",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "683b3510619ff408b4ab",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "683b3510619ff408b4ab",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "683b3510619ff408b4ab",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "683b3510619ff408b4ab",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "6ab6823ebeebef3ce5ca",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "positive"
+    },
+    {
+      "item_id": "6ab6823ebeebef3ce5ca",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "6ab6823ebeebef3ce5ca",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "6ab6823ebeebef3ce5ca",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "6ef3b24f0b0ce4cb4e94",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "negative"
+    },
+    {
+      "item_id": "6ef3b24f0b0ce4cb4e94",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "6ef3b24f0b0ce4cb4e94",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "6ef3b24f0b0ce4cb4e94",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "700d0c91f0d9c9a9d94d",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "negative"
+    },
+    {
+      "item_id": "700d0c91f0d9c9a9d94d",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "700d0c91f0d9c9a9d94d",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "700d0c91f0d9c9a9d94d",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "70fcb0e4c127214ae100",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "70fcb0e4c127214ae100",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "70fcb0e4c127214ae100",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "70fcb0e4c127214ae100",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "734af1afc63a4754369d",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "734af1afc63a4754369d",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "734af1afc63a4754369d",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "734af1afc63a4754369d",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "773735886522c3497055",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "negative"
+    },
+    {
+      "item_id": "773735886522c3497055",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "773735886522c3497055",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "773735886522c3497055",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "776faabc36b19d71b122",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "positive"
+    },
+    {
+      "item_id": "776faabc36b19d71b122",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "776faabc36b19d71b122",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "776faabc36b19d71b122",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "7858404b802aca37d521",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "7858404b802aca37d521",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "7858404b802aca37d521",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "7858404b802aca37d521",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "7de6d7aac5cc6f78a602",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "positive"
+    },
+    {
+      "item_id": "7de6d7aac5cc6f78a602",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "7de6d7aac5cc6f78a602",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "7de6d7aac5cc6f78a602",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "7efa733390e1f8bf9312",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "positive"
+    },
+    {
+      "item_id": "7efa733390e1f8bf9312",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "7efa733390e1f8bf9312",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "7efa733390e1f8bf9312",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "7fb5608db15c1caf7a3f",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "7fb5608db15c1caf7a3f",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "7fb5608db15c1caf7a3f",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "7fb5608db15c1caf7a3f",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "8037d6a68d6005e4c797",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "positive"
+    },
+    {
+      "item_id": "8037d6a68d6005e4c797",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "8037d6a68d6005e4c797",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "8037d6a68d6005e4c797",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "87262ed604d362fed58b",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "negative"
+    },
+    {
+      "item_id": "87262ed604d362fed58b",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "87262ed604d362fed58b",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "87262ed604d362fed58b",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "884215699607975fd5ed",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "negative"
+    },
+    {
+      "item_id": "884215699607975fd5ed",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "884215699607975fd5ed",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "884215699607975fd5ed",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "8ad25cebd789e1cdd0ef",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "8ad25cebd789e1cdd0ef",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "8ad25cebd789e1cdd0ef",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "8ad25cebd789e1cdd0ef",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "8fcc4baba13bb53bd120",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "negative"
+    },
+    {
+      "item_id": "8fcc4baba13bb53bd120",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "8fcc4baba13bb53bd120",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "8fcc4baba13bb53bd120",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "911ea891917cc80308f5",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "negative"
+    },
+    {
+      "item_id": "911ea891917cc80308f5",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "911ea891917cc80308f5",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "911ea891917cc80308f5",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "9659952026571952c496",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "9659952026571952c496",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "9659952026571952c496",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "9659952026571952c496",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "9674d42d793505276d65",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "9674d42d793505276d65",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "9674d42d793505276d65",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "9674d42d793505276d65",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "969c9442b1f2651a8161",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "positive"
+    },
+    {
+      "item_id": "969c9442b1f2651a8161",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "969c9442b1f2651a8161",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "969c9442b1f2651a8161",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "9928e347e6e8910f2eb9",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "positive"
+    },
+    {
+      "item_id": "9928e347e6e8910f2eb9",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "9928e347e6e8910f2eb9",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "9928e347e6e8910f2eb9",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "9985202654706daf0d4d",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "9985202654706daf0d4d",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "9985202654706daf0d4d",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "9985202654706daf0d4d",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "9c92b19e55cf27c2a8b4",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "9c92b19e55cf27c2a8b4",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "9c92b19e55cf27c2a8b4",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "9c92b19e55cf27c2a8b4",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "9e64a2eda9b3932f3edb",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "9e64a2eda9b3932f3edb",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "9e64a2eda9b3932f3edb",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "9e64a2eda9b3932f3edb",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "9fd3404d8f44bd57b18c",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "negative"
+    },
+    {
+      "item_id": "9fd3404d8f44bd57b18c",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "9fd3404d8f44bd57b18c",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "9fd3404d8f44bd57b18c",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "a0e290ea2ce71ebb12de",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "a0e290ea2ce71ebb12de",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "a0e290ea2ce71ebb12de",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "a0e290ea2ce71ebb12de",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "a0e60f0f326324eba7f3",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "a0e60f0f326324eba7f3",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "a0e60f0f326324eba7f3",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "a0e60f0f326324eba7f3",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "a0eef590f61015b4018c",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "a0eef590f61015b4018c",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "a0eef590f61015b4018c",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "a0eef590f61015b4018c",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "a66f9520e6f153670205",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "a66f9520e6f153670205",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "a66f9520e6f153670205",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "a66f9520e6f153670205",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "a72db4be2f3401425aa8",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "a72db4be2f3401425aa8",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "a72db4be2f3401425aa8",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "a72db4be2f3401425aa8",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "a7602c85373240c016f1",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "a7602c85373240c016f1",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "a7602c85373240c016f1",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "a7602c85373240c016f1",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "ab517d75ec44e4b4d98a",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "ab517d75ec44e4b4d98a",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "ab517d75ec44e4b4d98a",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "ab517d75ec44e4b4d98a",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "ad839f6180d82e9fa9cc",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "ad839f6180d82e9fa9cc",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "ad839f6180d82e9fa9cc",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "ad839f6180d82e9fa9cc",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "af45804cb5f152ca14cc",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "af45804cb5f152ca14cc",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "af45804cb5f152ca14cc",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "af45804cb5f152ca14cc",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "af82a41ed9460d020162",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "negative"
+    },
+    {
+      "item_id": "af82a41ed9460d020162",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "af82a41ed9460d020162",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "af82a41ed9460d020162",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "af843abe28e479b17800",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "af843abe28e479b17800",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "af843abe28e479b17800",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "af843abe28e479b17800",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "aff1da02b5ea03aa1dcc",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "aff1da02b5ea03aa1dcc",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "aff1da02b5ea03aa1dcc",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "aff1da02b5ea03aa1dcc",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "b245f288177415d5888e",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "b245f288177415d5888e",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "b245f288177415d5888e",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "b245f288177415d5888e",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "b3d68908bd0af16b6ee5",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "b3d68908bd0af16b6ee5",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "b3d68908bd0af16b6ee5",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "b3d68908bd0af16b6ee5",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "b45b08501d74898c952f",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "b45b08501d74898c952f",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "b45b08501d74898c952f",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "b45b08501d74898c952f",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "b59150ad78f37e2d4ebd",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "b59150ad78f37e2d4ebd",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "b59150ad78f37e2d4ebd",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "b59150ad78f37e2d4ebd",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "ba29c69afb2e1883eec4",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "ba29c69afb2e1883eec4",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "ba29c69afb2e1883eec4",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "ba29c69afb2e1883eec4",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "baa6b7574e6c5ab0d5ec",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "baa6b7574e6c5ab0d5ec",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "baa6b7574e6c5ab0d5ec",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "baa6b7574e6c5ab0d5ec",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "bb20c4a55a15cbd27d1e",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "negative"
+    },
+    {
+      "item_id": "bb20c4a55a15cbd27d1e",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "bb20c4a55a15cbd27d1e",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "bb20c4a55a15cbd27d1e",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "bd079463219eb8cab11b",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "positive"
+    },
+    {
+      "item_id": "bd079463219eb8cab11b",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "bd079463219eb8cab11b",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "bd079463219eb8cab11b",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "c09d0263c974e7a9417a",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "negative"
+    },
+    {
+      "item_id": "c09d0263c974e7a9417a",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "c09d0263c974e7a9417a",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "c09d0263c974e7a9417a",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "c6730c14d84870e83267",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "c6730c14d84870e83267",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "c6730c14d84870e83267",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "c6730c14d84870e83267",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "c8cf100287ba7fcba62b",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "c8cf100287ba7fcba62b",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "c8cf100287ba7fcba62b",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "c8cf100287ba7fcba62b",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "c8d5e730fcb712267953",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "c8d5e730fcb712267953",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "c8d5e730fcb712267953",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "c8d5e730fcb712267953",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "cdc56c3ee7657779b19a",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "cdc56c3ee7657779b19a",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "cdc56c3ee7657779b19a",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "cdc56c3ee7657779b19a",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "cf6b6787f77e88912b33",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "negative"
+    },
+    {
+      "item_id": "cf6b6787f77e88912b33",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "cf6b6787f77e88912b33",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "cf6b6787f77e88912b33",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "cfcdf8687fcdf1b63e9e",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "positive"
+    },
+    {
+      "item_id": "cfcdf8687fcdf1b63e9e",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "cfcdf8687fcdf1b63e9e",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "cfcdf8687fcdf1b63e9e",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "d15d37804d72ac9680f8",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "d15d37804d72ac9680f8",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "d15d37804d72ac9680f8",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "d15d37804d72ac9680f8",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "d68911528edb8beb0e4a",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "d68911528edb8beb0e4a",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "d68911528edb8beb0e4a",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "d68911528edb8beb0e4a",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "dbdb9f79225e68b1f040",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "dbdb9f79225e68b1f040",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "dbdb9f79225e68b1f040",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "dbdb9f79225e68b1f040",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "dcfad40c51815bb062d6",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "dcfad40c51815bb062d6",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "dcfad40c51815bb062d6",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "dcfad40c51815bb062d6",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "de081c7635fe88b1d293",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "negative"
+    },
+    {
+      "item_id": "de081c7635fe88b1d293",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "de081c7635fe88b1d293",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "de081c7635fe88b1d293",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "df351c409c9eab8a4cc8",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "positive"
+    },
+    {
+      "item_id": "df351c409c9eab8a4cc8",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "df351c409c9eab8a4cc8",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "df351c409c9eab8a4cc8",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "e1b782df9e97ca920531",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "negative"
+    },
+    {
+      "item_id": "e1b782df9e97ca920531",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "e1b782df9e97ca920531",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "e1b782df9e97ca920531",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "e20a1ad7388f21eaeddd",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "e20a1ad7388f21eaeddd",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "e20a1ad7388f21eaeddd",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "e20a1ad7388f21eaeddd",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "e2c73b17781b9d8dc596",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "e2c73b17781b9d8dc596",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "e2c73b17781b9d8dc596",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "e2c73b17781b9d8dc596",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "e3ba7e48c3a3b8f7b755",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "e3ba7e48c3a3b8f7b755",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "e3ba7e48c3a3b8f7b755",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "e3ba7e48c3a3b8f7b755",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "e444ffc4eb0f3bf70a13",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "e444ffc4eb0f3bf70a13",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "e444ffc4eb0f3bf70a13",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "e444ffc4eb0f3bf70a13",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "e46f7a5d5f4c0518d2dc",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "e46f7a5d5f4c0518d2dc",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "e46f7a5d5f4c0518d2dc",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "e46f7a5d5f4c0518d2dc",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "e723771c05dc4881e125",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "e723771c05dc4881e125",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "e723771c05dc4881e125",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "e723771c05dc4881e125",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "e79c02742bc8f18c4732",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "e79c02742bc8f18c4732",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "e79c02742bc8f18c4732",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "e79c02742bc8f18c4732",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "e8d1c06bdb18425a1b89",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "e8d1c06bdb18425a1b89",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "e8d1c06bdb18425a1b89",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "e8d1c06bdb18425a1b89",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "ea80bcc8a8d19116cbc7",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "negative"
+    },
+    {
+      "item_id": "ea80bcc8a8d19116cbc7",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "ea80bcc8a8d19116cbc7",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "ea80bcc8a8d19116cbc7",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "eaf150ce4935469950aa",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "positive"
+    },
+    {
+      "item_id": "eaf150ce4935469950aa",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "eaf150ce4935469950aa",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "eaf150ce4935469950aa",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "ee880db5d613aa1c3d88",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "ee880db5d613aa1c3d88",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "ee880db5d613aa1c3d88",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "ee880db5d613aa1c3d88",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "ef70d28e8de7c4053cab",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "neutral"
+    },
+    {
+      "item_id": "ef70d28e8de7c4053cab",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "ef70d28e8de7c4053cab",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "ef70d28e8de7c4053cab",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "efd535fd2c66e11dddfe",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "efd535fd2c66e11dddfe",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "b"
+    },
+    {
+      "item_id": "efd535fd2c66e11dddfe",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "efd535fd2c66e11dddfe",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "f125af7e275f2aa9e8b7",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "f125af7e275f2aa9e8b7",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "f125af7e275f2aa9e8b7",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "f125af7e275f2aa9e8b7",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "f195e406f781a1cced28",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "negative"
+    },
+    {
+      "item_id": "f195e406f781a1cced28",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "f195e406f781a1cced28",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "f195e406f781a1cced28",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "f34e19ff1ee7c82e014d",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "positive"
+    },
+    {
+      "item_id": "f34e19ff1ee7c82e014d",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "f34e19ff1ee7c82e014d",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "f34e19ff1ee7c82e014d",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "f6f157464bae56e821c4",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "mixed"
+    },
+    {
+      "item_id": "f6f157464bae56e821c4",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "f6f157464bae56e821c4",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "f6f157464bae56e821c4",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    },
+    {
+      "item_id": "ffc5aa7a0a3c10cb1b6c",
+      "field": "adjudicated_tone",
+      "old_value": "",
+      "new_value": "negative"
+    },
+    {
+      "item_id": "ffc5aa7a0a3c10cb1b6c",
+      "field": "adjudicator",
+      "old_value": "",
+      "new_value": "a"
+    },
+    {
+      "item_id": "ffc5aa7a0a3c10cb1b6c",
+      "field": "adjudication_date",
+      "old_value": "",
+      "new_value": "10/13/26"
+    },
+    {
+      "item_id": "ffc5aa7a0a3c10cb1b6c",
+      "field": "adjudication_rationale",
+      "old_value": "",
+      "new_value": "tone mismatch"
+    }
+  ]
+}

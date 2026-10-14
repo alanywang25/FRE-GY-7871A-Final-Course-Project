@@ -1,0 +1,18 @@
+source_domain,source_stratum,collection_enabled,collection_method,coverage_rationale
+apnews.com,national,true,common_crawl_url_index,Present in the current balanced national sample.
+cnbc.com,national,true,common_crawl_url_index,Present in the current balanced national sample.
+foxbusiness.com,national,true,common_crawl_url_index,Present in the current balanced national sample.
+npr.org,national,true,common_crawl_url_index,Present in the current balanced national sample.
+nytimes.com,national,true,common_crawl_url_index,Present in the current balanced national sample.
+pbs.org,national,true,common_crawl_url_index,Present in the current balanced national sample.
+reuters.com,national,true,common_crawl_url_index,Present in the current balanced national sample.
+wsj.com,national,true,common_crawl_url_index,Present in the current balanced national sample.
+ajc.com,local,true,common_crawl_url_index,Present in the current balanced local sample.
+azcentral.com,local,true,common_crawl_url_index,Present in the current balanced local sample.
+freep.com,local,true,common_crawl_url_index,Present in the current balanced local sample.
+houstonchronicle.com,local,true,common_crawl_url_index,Present in the current balanced local sample.
+inquirer.com,local,true,common_crawl_url_index,Present in the current balanced local sample.
+latimes.com,local,true,common_crawl_url_index,Present in the current balanced local sample.
+startribune.com,local,true,common_crawl_url_index,Present in the current balanced local sample.
+tampabay.com,local,true,common_crawl_url_index,Present in the current balanced local sample.
+mastodon.social,social,false,manual_lawful_archive_required,No approved historical public social archive is configured. Missing social coverage must remain explicit.

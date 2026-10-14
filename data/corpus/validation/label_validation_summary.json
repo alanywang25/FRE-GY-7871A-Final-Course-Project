@@ -1,0 +1,9 @@
+{
+  "eligible_human_a": 312,
+  "eligible_human_b": 312,
+  "paired_human_labels": 312,
+  "raw_tone_agreement": 0.593,
+  "cohen_kappa": 0.437,
+  "gate_passed": true,
+  "message": "Validation gate passed; adjudicate disagreements before constructing media measures."
+}

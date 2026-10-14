@@ -1,0 +1,313 @@
+item_id,tone,model_name,dictionary_evidence,fold
+004648feafccb21893e4,positive,weighted_dictionary_v2_oof,growth; to,0
+00e96ae8255b50e03a4c,mixed,weighted_dictionary_v2_oof,and; the; to; to; to,1
+04591a6b9cd9a3333406,positive,weighted_dictionary_v2_oof,says; could; target,2
+04faa9f03a7fe86bb52e,negative,weighted_dictionary_v2_oof,to; to; in; in; https,2
+08b065b22ea646451dc5,mixed,weighted_dictionary_v2_oof,inflation; growth; year; strategist; next,3
+08ca41542782a5bd2068,positive,weighted_dictionary_v2_oof,the; economic; for; global; strategic,4
+0b33525716488fd2b956,neutral,weighted_dictionary_v2_oof,inflation,0
+10ad901b92cd800a0f6a,neutral,weighted_dictionary_v2_oof,jobs; jobkey; jobkey; recruitment; jobsearch,1
+12f107114d4dc1d8dba0,mixed,weighted_dictionary_v2_oof,and; growth; rates; consumers; data,4
+1352305c145ede7a0e2c,neutral,weighted_dictionary_v2_oof,jobs; jobs; usa; usa,2
+13d076309aa8f13f4118,mixed,weighted_dictionary_v2_oof,inflation,3
+17a3cf0e6304981f3c36,positive,weighted_dictionary_v2_oof,the; economy; as; leading; world,0
+19549e66aa6e7776c6ba,negative,weighted_dictionary_v2_oof,the; and; job; more; florida,4
+1967858146b4ddf53a44,neutral,weighted_dictionary_v2_oof,jobs; https; com; on; is,0
+1a9c01e31dae3cacb2b6,positive,weighted_dictionary_v2_oof,for; job; ceo,1
+1b0a76db6b86d099bf7a,negative,weighted_dictionary_v2_oof,to; to; and; and; it,2
+1b6171a6e83ed31b23d1,mixed,weighted_dictionary_v2_oof,as; report; economic; california; california,3
+1be7c07572aa1e60b419,positive,weighted_dictionary_v2_oof,economy; in; us; second; us economy,1
+1be905fcd19c8b2e5734,mixed,weighted_dictionary_v2_oof,is; https; economy; com; but,4
+1ddda1857c8fa3c3f38f,mixed,weighted_dictionary_v2_oof,in; for; price; second,0
+1e1946cbe5f9b2314207,mixed,weighted_dictionary_v2_oof,the; and; and; and; inflation,2
+1ef7c18dbaa6a973d6df,mixed,weighted_dictionary_v2_oof,the; inflation; inflation; is; is,1
+1f4d8806e157b0e887e8,negative,weighted_dictionary_v2_oof,the; as; inflation; for; since,3
+1f89ced5d8f31df44599,mixed,weighted_dictionary_v2_oof,on; jobs; now; two; minnesota,2
+1fa961ff6d3a61054f8a,negative,weighted_dictionary_v2_oof,to; the; prices; for; war,4
+2180848443b62419e44a,mixed,weighted_dictionary_v2_oof,the; in; economic; even; the economic,0
+220fd82df8c2164fd7e6,mixed,weighted_dictionary_v2_oof,and; and; and; the; to,1
+24900ce7887463e6001d,positive,weighted_dictionary_v2_oof,growth; for; marketing,3
+24bc4ce10afd32cf3c99,positive,weighted_dictionary_v2_oof,growth; economic; economic growth; for; what,4
+26f5e6ea82def158bcd8,positive,weighted_dictionary_v2_oof,and; and; and; and; of,3
+28737b19ff22d6d42b75,positive,weighted_dictionary_v2_oof,growth; to; billion; than; sees,1
+2998a849c4b40a77fe76,negative,weighted_dictionary_v2_oof,the; economic; more; more; over,4
+299e3d80e89badc67fa4,positive,weighted_dictionary_v2_oof,the; the; in; in; in,0
+29aed261a907f1a10383,positive,weighted_dictionary_v2_oof,growth; economy; economic; of; us,2
+29cd332db79febbbc150,negative,weighted_dictionary_v2_oof,in; prices; are; high; prices are,2
+29f80a56846c84f7bcf0,negative,weighted_dictionary_v2_oof,of; economic; trump; win; warns of,3
+2aac6ebc17c03a7fd8cf,negative,weighted_dictionary_v2_oof,the; the; the; to; to,0
+2b62c2ff827c3aa8731e,mixed,weighted_dictionary_v2_oof,inflation; ai; https; com; this,1
+2bf63a3d79db1c4337f9,negative,weighted_dictionary_v2_oof,the; is; new; economy; florida,2
+2c06370cad19edf21eb2,negative,weighted_dictionary_v2_oof,inflation; as; month; up; slightly,1
+2c294ba130e974ecabff,negative,weighted_dictionary_v2_oof,of; prices; for; high; diesel,4
+2d01c6dc9af011eac020,positive,weighted_dictionary_v2_oof,growth; in; is; after; with,2
+2da9a0e0c851df812129,positive,weighted_dictionary_v2_oof,growth; in; leading; global; trade,3
+2e180bbc8637e760bf8e,neutral,weighted_dictionary_v2_oof,jobs; jobkey; jobkey; recruitment; recruitment,3
+2ed0134bd71aabbf71d5,positive,weighted_dictionary_v2_oof,growth; as; as; be,3
+2f3b76020b6b8dec13b5,negative,weighted_dictionary_v2_oof,in; in; inflation; with; their,4
+308b68d8605c1b967a02,mixed,weighted_dictionary_v2_oof,growth; not; for; some; sales,4
+3218b760fe63670e3eef,negative,weighted_dictionary_v2_oof,the; it; economy; how; but,0
+333111783db3d49d6f89,negative,weighted_dictionary_v2_oof,the; the; prices; and; is,0
+336fc9ebb30fcef27f2f,negative,weighted_dictionary_v2_oof,in; in; inflation; economy; us,0
+33883ccba79151b81cca,positive,weighted_dictionary_v2_oof,growth; to; up; target; growth target,1
+33ba15938eacca63d77f,positive,weighted_dictionary_v2_oof,of; jobs; by; out of; out,1
+33d795b325ddb801f45a,positive,weighted_dictionary_v2_oof,growth; and; technology; technology and,4
+35b7a66052e9a74fcf3e,negative,weighted_dictionary_v2_oof,in; high; year; unemployment; rate,2
+35ee9c68b9531ccb3068,neutral,weighted_dictionary_v2_oof,the; the; jobs; jobs; economy,2
+366c9d6ba841e612a07f,neutral,weighted_dictionary_v2_oof,for; inflation; in; data; week,3
+36722b7007e94eccec2b,positive,weighted_dictionary_v2_oof,growth; says; global; more,0
+37ed6fdc4bf2f21e54aa,negative,weighted_dictionary_v2_oof,to; prices; and; https; on,4
+3894934d95661d7c4653,mixed,weighted_dictionary_v2_oof,inflation; up; has; keeping,3
+3a342c6c2cf8bf7ed5ca,negative,weighted_dictionary_v2_oof,of; and; economic; war; iran,4
+3a51b8a62a0614d02923,positive,weighted_dictionary_v2_oof,growth; and; stock; stock and; on,1
+3a6f6bb44206e18e6bf3,negative,weighted_dictionary_v2_oof,of; inflation; and; new; world,1
+3c6c8df2fe1a5b7ae77e,neutral,weighted_dictionary_v2_oof,to; to; inflation; work; more,0
+3d7033745e55bd2074e3,negative,weighted_dictionary_v2_oof,to; in; tax; relief; wages,2
+3e0ebba475962738470b,positive,weighted_dictionary_v2_oof,growth; at; second; hiring; helps,3
+3ea3bb9a6086ea46f38a,negative,weighted_dictionary_v2_oof,the; to; is; economic; now,0
+3f403e2ce5dc7b998cf9,negative,weighted_dictionary_v2_oof,prices; high; diesel; pressure; diesel prices,1
+3fe138613317217e1e3c,mixed,weighted_dictionary_v2_oof,the; and; and; and; as,2
+4008f2c0d45bdd9987e3,mixed,weighted_dictionary_v2_oof,the; inflation; jobs; report; us,3
+40b4067ee5a04050e3aa,mixed,weighted_dictionary_v2_oof,as; stocks; higher; price; oil,4
+40dff437ac094ec82689,neutral,weighted_dictionary_v2_oof,and; economy; on; growth; with,1
+40eee40644ef0e5e26a2,positive,weighted_dictionary_v2_oof,growth; for; credit; bank,2
+41514e2eb447856dec5a,positive,weighted_dictionary_v2_oof,growth; the; of; for; markets,3
+42032789829c36e9ac93,neutral,weighted_dictionary_v2_oof,and; economy; finance; your; investing,4
+421b30c79999be4f2870,positive,weighted_dictionary_v2_oof,for; job; he; he,0
+440ab2ae5aaadd468528,neutral,weighted_dictionary_v2_oof,jobs; jobs; jobs; jobs; https,1
+444b65d89376d1c55d02,negative,weighted_dictionary_v2_oof,to; in; prices; on; diesel,2
+4521dc56d321a870da41,positive,weighted_dictionary_v2_oof,economy; https; job; ai,3
+4607884dfb3f376846b1,negative,weighted_dictionary_v2_oof,to; inflation; year; fed; this,2
+477c3e0eef64f43737b4,neutral,weighted_dictionary_v2_oof,the; economy; are; why; states,4
+4799361140392457a0d7,neutral,weighted_dictionary_v2_oof,economy; with; finance; investing; investing,0
+48222c7a279e6e53a4dd,positive,weighted_dictionary_v2_oof,growth; to; to; economic; says,3
+49be8ea40909ed541878,positive,weighted_dictionary_v2_oof,for; wages; opinion; on; georgia,1
+49e9a1068d644e9759d3,negative,weighted_dictionary_v2_oof,to; prices; us; high; diesel,4
+4b18abadfa7db4aed792,mixed,weighted_dictionary_v2_oof,and; and; inflation; the; the,0
+4b21b77285c52d1fc40f,neutral,weighted_dictionary_v2_oof,jobs; https; economy; com; news,2
+4b3f81797abfdd2e5791,positive,weighted_dictionary_v2_oof,growth; economy; japan,4
+4ba71d9a7999e5186667,negative,weighted_dictionary_v2_oof,for; with; not; job; price,3
+4c9a14524abd23c6454e,mixed,weighted_dictionary_v2_oof,as; for; economic; shock; inside,0
+4dbdf3550554e9bf6615,neutral,weighted_dictionary_v2_oof,economy; finance; your; with; investing,4
+4ebd39a8a9d336c4b038,positive,weighted_dictionary_v2_oof,the; top; finally,1
+4f24d75ebc2bf48a6d41,neutral,weighted_dictionary_v2_oof,jobs; https; com; ai; ai,0
+4f2d78063ed4e41191e1,neutral,weighted_dictionary_v2_oof,and; jobs; jobs; jobs; https,1
+4f90b83b0e2753a551dd,negative,weighted_dictionary_v2_oof,and; as; for; economic; their,2
+50f46594103d0be78575,mixed,weighted_dictionary_v2_oof,and; jobs; report; jobs report; stock,3
+52aeefa52275dfc3ab27,negative,weighted_dictionary_v2_oof,in; as; economy; war; iran,1
+5313666ca97acbfe4a62,mixed,weighted_dictionary_v2_oof,price; has; expensive; new,4
+53dcbbe18e67e3719085,neutral,weighted_dictionary_v2_oof,jobs; for; is; economic; trump,2
+5548c2658aabcd7ea6dc,negative,weighted_dictionary_v2_oof,as; prices; for; economic; new,2
+5757b2ed527ef29cc1d4,neutral,weighted_dictionary_v2_oof,to; to; jobs; in; plan,3
+58fa3045906ffcff1807,mixed,weighted_dictionary_v2_oof,the; the; the; the; the,4
+59498ec65c618a70165e,positive,weighted_dictionary_v2_oof,growth; for; japan,0
+5a450fc01011cd5dbe96,mixed,weighted_dictionary_v2_oof,inflation; to; on; was; tariffs,0
+5a4eeadf6955c61cfbbd,mixed,weighted_dictionary_v2_oof,the; the; the; the; as,1
+5b1d70c4a1ab649190de,negative,weighted_dictionary_v2_oof,of; as; prices; for; gas,2
+5b330756c208d0442cfa,positive,weighted_dictionary_v2_oof,growth; growth; brands; helps,1
+5b512d01890c8a65761b,negative,weighted_dictionary_v2_oof,the; to; in; of; of,2
+5b849a2a290c7d07073a,positive,weighted_dictionary_v2_oof,to; economic; business,0
+5c11d279979bbd60c219,mixed,weighted_dictionary_v2_oof,and; the; the; the; inflation,1
+5ca9043ff9d5505a720b,negative,weighted_dictionary_v2_oof,the; for; economy; more; not,2
+5dabc6b2c169ccf602ee,mixed,weighted_dictionary_v2_oof,the; in; economy; us; in the,3
+5ea4be48465b34d7f787,negative,weighted_dictionary_v2_oof,to; to; prices; on; from,3
+5f26e91d980a48418f87,negative,weighted_dictionary_v2_oof,inflation; prices; are; on; an,4
+5f87f518d3810720d173,negative,weighted_dictionary_v2_oof,the; the; to; of; and,3
+5ffddea6e7e0cb352394,mixed,weighted_dictionary_v2_oof,to; ai; growth; boom; from,3
+63de85be47cbfb4ac0c1,negative,weighted_dictionary_v2_oof,the; in; for; job; president,4
+640845621df2dfb7a88e,mixed,weighted_dictionary_v2_oof,jobs; adding,4
+64534298cc5637ed5451,positive,weighted_dictionary_v2_oof,growth; says; global; brings; investment,4
+683b3510619ff408b4ab,negative,weighted_dictionary_v2_oof,the; the; to; for; that,0
+688d68e4d1cd33d4093c,mixed,weighted_dictionary_v2_oof,in; economic; east; policies; east asia,0
+6a01684b20e51c0ba706,negative,weighted_dictionary_v2_oof,the; to; in; of; as,0
+6a7d00abdabb085ab379,positive,weighted_dictionary_v2_oof,,1
+6ab6823ebeebef3ce5ca,negative,weighted_dictionary_v2_oof,to; from; economic; are; trump,0
+6c9cf63a8175ac7fa9cf,negative,weighted_dictionary_v2_oof,in; layoffs; workers; workers in,1
+6cf58738d932958a939e,negative,weighted_dictionary_v2_oof,in; https; jobs; jobs; www,2
+6db8aacb05330ac07d0c,negative,weighted_dictionary_v2_oof,the; to; as; prices; gas,2
+6ef3b24f0b0ce4cb4e94,mixed,weighted_dictionary_v2_oof,the; the; and; and; and,3
+6ff1369e0c2d8666107b,neutral,weighted_dictionary_v2_oof,and; and; and; economy; your,3
+700d0c91f0d9c9a9d94d,negative,weighted_dictionary_v2_oof,to; to; to; the; the,4
+7076ac19e2e3fc4e6a13,positive,weighted_dictionary_v2_oof,growth; is,4
+70fcb0e4c127214ae100,positive,weighted_dictionary_v2_oof,growth; and; to; business; at,0
+714f934f8bcb8a2c2875,positive,weighted_dictionary_v2_oof,in; in; in; in; jobs,1
+71c0da7887caeb7da855,negative,weighted_dictionary_v2_oof,of; and; economic; war; iran,0
+72532fcbcd781bcd0e37,positive,weighted_dictionary_v2_oof,growth; profit,1
+725c7e1392f22428b0db,neutral,weighted_dictionary_v2_oof,the; jobs; https; https; on,1
+731c9b9af7dc111804b6,negative,weighted_dictionary_v2_oof,as; us; economy; consumer; record,2
+7334c3c3b52422a69f72,positive,weighted_dictionary_v2_oof,,3
+734af1afc63a4754369d,mixed,weighted_dictionary_v2_oof,the; growth; is; why; now,2
+75c185a0ed032132f237,mixed,weighted_dictionary_v2_oof,the; that; europe,3
+75c3dc5862a0fd236ac8,mixed,weighted_dictionary_v2_oof,the; the; and; to; growth,4
+773735886522c3497055,negative,weighted_dictionary_v2_oof,to; and; us; with; unemployment,4
+776faabc36b19d71b122,neutral,weighted_dictionary_v2_oof,the; and; oil; prices; markets,2
+7858404b802aca37d521,negative,weighted_dictionary_v2_oof,new; economic; years; nearly; imf,0
+79bdbdd8e96e7783be55,mixed,weighted_dictionary_v2_oof,the; the; the; and; and,3
+7a2e9b44614a5ac47440,negative,weighted_dictionary_v2_oof,the; in; and; us; price,1
+7a419d1477ea973eaa55,positive,weighted_dictionary_v2_oof,growth; as; partnership; co; by,4
+7bc1d59d5ebdc240f363,positive,weighted_dictionary_v2_oof,and; the; the; to; to,1
+7bd21208f9cf9811ed15,positive,weighted_dictionary_v2_oof,and; and; the; for; what,2
+7c5e054627969141f26b,positive,weighted_dictionary_v2_oof,growth; to; billion; profit; brands,0
+7de6d7aac5cc6f78a602,positive,weighted_dictionary_v2_oof,growth; quarter; hit; after,1
+7e2c6a318e18f84b864e,positive,weighted_dictionary_v2_oof,growth; and; the; economic; of,2
+7e3b0962080266508974,mixed,weighted_dictionary_v2_oof,the; and; inflation; on; are,3
+7e53e1f734c51db94717,neutral,weighted_dictionary_v2_oof,jobs; jobs; https; economy; com,4
+7ebf3864dd03db3d3263,negative,weighted_dictionary_v2_oof,in; are; job; you; market,0
+7efa733390e1f8bf9312,positive,weighted_dictionary_v2_oof,growth; and; to,3
+7f1e10efdf7ef62dcc4d,neutral,weighted_dictionary_v2_oof,the; inflation; price; the price; pay,1
+7f37eb27f813171b7ece,neutral,weighted_dictionary_v2_oof,inflation; economic; growth; trump; claims,2
+7fb5608db15c1caf7a3f,negative,weighted_dictionary_v2_oof,the; the; of; economy; about,0
+7fd1b00913498f581bc4,negative,weighted_dictionary_v2_oof,the; of; and; about; price,1
+8037d6a68d6005e4c797,negative,weighted_dictionary_v2_oof,to; the; prices; are; opinion,4
+815d5514b3c4383bff08,positive,weighted_dictionary_v2_oof,growth; and; and; to; opportunity,0
+82745222319befa83b09,negative,weighted_dictionary_v2_oof,the; of; jobs; with; one,2
+82b63d96fce26cc0ace5,negative,weighted_dictionary_v2_oof,the; the; the; the; to,2
+85720025324b0b18c5b9,neutral,weighted_dictionary_v2_oof,and; economy; https; https; news,1
+86d5ccaf8e51fa628892,negative,weighted_dictionary_v2_oof,the; the; the; the; in,3
+86e5697bd94be5019661,negative,weighted_dictionary_v2_oof,to; the; economy; https; are,4
+87262ed604d362fed58b,negative,weighted_dictionary_v2_oof,the; to; of; as; over,3
+884215699607975fd5ed,neutral,weighted_dictionary_v2_oof,economy; in; is; france; economy is,4
+88869915aa313d214b72,mixed,weighted_dictionary_v2_oof,and; inflation; inflation; inflation; in,0
+88ddc1c8f5afc20585a5,mixed,weighted_dictionary_v2_oof,as; jobs; of; ai; world,0
+89200d555da2103aa800,positive,weighted_dictionary_v2_oof,and; to; economic; technology; business,2
+8a64781057e8e1c05789,positive,weighted_dictionary_v2_oof,and; economic; japan; university; season,1
+8ad25cebd789e1cdd0ef,positive,weighted_dictionary_v2_oof,growth; businesses,3
+8d76b50f5bd3aea4115f,neutral,weighted_dictionary_v2_oof,to; jobs; https; com; ai,2
+8e872213cbef394807e2,mixed,weighted_dictionary_v2_oof,and; the; the; inflation; to,1
+8fbc36db5222b082298d,neutral,weighted_dictionary_v2_oof,the; jobs; jobs; and; and,3
+8fcc4baba13bb53bd120,negative,weighted_dictionary_v2_oof,as; unemployment; layoffs; slightly; remain,2
+8fe81c8bc19d507ec0b5,neutral,weighted_dictionary_v2_oof,jobs; for; for; news; why,4
+911ea891917cc80308f5,mixed,weighted_dictionary_v2_oof,costs; borrowing; borrowing costs,3
+91b3aaeb12f683dbfd8c,positive,weighted_dictionary_v2_oof,growth; of,3
+939238491c4d07dee655,mixed,weighted_dictionary_v2_oof,and; inflation; that; that; still,4
+9659952026571952c496,negative,weighted_dictionary_v2_oof,to; prices; trump; diesel; diesel prices,0
+9674d42d793505276d65,positive,weighted_dictionary_v2_oof,growth; and; to; to; marketing,1
+9697abd932eb4cde2891,negative,weighted_dictionary_v2_oof,the; the; in; in; of,0
+969c9442b1f2651a8161,positive,weighted_dictionary_v2_oof,and; to; economic; at,4
+96cecae93819857c9a67,neutral,weighted_dictionary_v2_oof,https; https; for; com; news,4
+96d70d4a8d01ab88f9a1,mixed,weighted_dictionary_v2_oof,inflation; as; on; us; keep,0
+971905816d893d0f195e,negative,weighted_dictionary_v2_oof,as; prices; us; record; hit,1
+9928e347e6e8910f2eb9,positive,weighted_dictionary_v2_oof,growth; and; the; of; growth and,0
+9985202654706daf0d4d,mixed,weighted_dictionary_v2_oof,inflation; to; energy; rates; quarter,2
+99eab4bbbf96359c3ce4,negative,weighted_dictionary_v2_oof,to; of; economy; since; level,2
+9a2648fbbec2414733b9,negative,weighted_dictionary_v2_oof,to; inflation; for; from; layoffs,3
+9c92b19e55cf27c2a8b4,negative,weighted_dictionary_v2_oof,to; for; economic; with; how,3
+9cbea8b86cda10eefdeb,mixed,weighted_dictionary_v2_oof,the; the; and; on; https,4
+9dbedcae20f453e71b0b,mixed,weighted_dictionary_v2_oof,to; growth; could; this; be,1
+9e2f62fd92afe9397afc,neutral,weighted_dictionary_v2_oof,the; and; and; economy; of,0
+9e64a2eda9b3932f3edb,mixed,weighted_dictionary_v2_oof,and; the; the; to; market,1
+9ea0a5f68c5e17981065,mixed,weighted_dictionary_v2_oof,and; inflation; that; at; by,1
+9fd3404d8f44bd57b18c,negative,weighted_dictionary_v2_oof,in; as; jobs; unemployment; up,4
+a018b62f01203fc3158c,mixed,weighted_dictionary_v2_oof,the; the; the; as; as,2
+a08319e974151469ad82,positive,weighted_dictionary_v2_oof,and; economic; as; trump; data,3
+a0e290ea2ce71ebb12de,positive,weighted_dictionary_v2_oof,growth; for; what; would,4
+a0e60f0f326324eba7f3,mixed,weighted_dictionary_v2_oof,and; jobs; report; jobs report; wall,2
+a0eef590f61015b4018c,negative,weighted_dictionary_v2_oof,to; and; for; is; https,0
+a14650841ff28330bec3,positive,weighted_dictionary_v2_oof,growth; as; since; adds,2
+a37c564e025610f9b1b3,negative,weighted_dictionary_v2_oof,the; the; the; as; prices,0
+a4dcc395be571388dea4,positive,weighted_dictionary_v2_oof,growth; economic; as; hit; forecasts,3
+a560df09ee03a41b1d12,neutral,weighted_dictionary_v2_oof,economic; why; future; here's; economic future,4
+a6608d8b94c70b210e24,negative,weighted_dictionary_v2_oof,in; as; us; jobs; jobs in,0
+a66f9520e6f153670205,positive,weighted_dictionary_v2_oof,and; to; economy; first; county,1
+a702c293234d32b3f52a,negative,weighted_dictionary_v2_oof,to; in; https; https; jobs,2
+a72db4be2f3401425aa8,mixed,weighted_dictionary_v2_oof,in; https; economy; at; com,3
+a734fa830f0512bde735,negative,weighted_dictionary_v2_oof,the; the; to; in; of,1
+a7602c85373240c016f1,mixed,weighted_dictionary_v2_oof,as; oil; prices; up; stocks,3
+a907b017b39cf295480f,neutral,weighted_dictionary_v2_oof,jobs; jobkey; jobkey; recruitment; jobsearch,4
+a9fe177d66b5eeb5ad27,neutral,weighted_dictionary_v2_oof,is; growth; opinion; good,1
+ab517d75ec44e4b4d98a,negative,weighted_dictionary_v2_oof,the; of; inflation; for; midterms,0
+ac17b9df24a63ae06472,neutral,weighted_dictionary_v2_oof,jobs; jobkey; jobkey; recruitment; recruitment,1
+ad839f6180d82e9fa9cc,neutral,weighted_dictionary_v2_oof,the; to; is; job; income,2
+af2d751f470ff402fad0,neutral,weighted_dictionary_v2_oof,https; economy; ai; finance; social,3
+af45804cb5f152ca14cc,mixed,weighted_dictionary_v2_oof,the; and; on; is; is,4
+af82a41ed9460d020162,positive,weighted_dictionary_v2_oof,growth; opinion; are; playbook,2
+af843abe28e479b17800,mixed,weighted_dictionary_v2_oof,the; the; and; and; and,4
+aff1da02b5ea03aa1dcc,negative,weighted_dictionary_v2_oof,to; in; as; prices; it,0
+b1bf4571d23774e3e52a,negative,weighted_dictionary_v2_oof,economy; iran; price; oil; uspol,1
+b245f288177415d5888e,mixed,weighted_dictionary_v2_oof,the; on; ai; are; is,2
+b28db813ce9f125d94a5,positive,weighted_dictionary_v2_oof,economy,3
+b2a4774f9b416330ffda,negative,weighted_dictionary_v2_oof,the; this; price; the price,3
+b3d68908bd0af16b6ee5,mixed,weighted_dictionary_v2_oof,and; on; oil; prices; oil prices,0
+b45b08501d74898c952f,positive,weighted_dictionary_v2_oof,to; of; economic; business; after,4
+b5446344378926109d57,mixed,weighted_dictionary_v2_oof,and; inflation; to; market; job,1
+b59150ad78f37e2d4ebd,neutral,weighted_dictionary_v2_oof,inflation; what; stock; next; market,2
+b6c300188b54c5531dbe,positive,weighted_dictionary_v2_oof,and; and; the; in; economy,0
+b7dfcfc62dd27d42f2e0,neutral,weighted_dictionary_v2_oof,the; the; jobs; jobs; https,1
+ba29c69afb2e1883eec4,positive,weighted_dictionary_v2_oof,growth; and; on; on; growth and,2
+baa6b7574e6c5ab0d5ec,negative,weighted_dictionary_v2_oof,the; the; the; to; to,3
+bb20c4a55a15cbd27d1e,negative,weighted_dictionary_v2_oof,the; in; inflation; as; on,4
+bcf9aaad5fdcd78ad43c,negative,weighted_dictionary_v2_oof,the; are; not; since; debt,0
+bd079463219eb8cab11b,positive,weighted_dictionary_v2_oof,growth; says; of; trump says; trump,2
+be26f76d7e834f5f3230,negative,weighted_dictionary_v2_oof,the; economy; on; on; war,1
+be3731d64e74148a9853,neutral,weighted_dictionary_v2_oof,and; to; economy; new; china,4
+c00616474e56190f3e63,negative,weighted_dictionary_v2_oof,prices; up; at; shortage; prices at,2
+c09d0263c974e7a9417a,negative,weighted_dictionary_v2_oof,the; the; to; in; for,3
+c0ebd62143edbd0b55a4,positive,weighted_dictionary_v2_oof,to; economic; innovation; innovation; for,0
+c224789366eb481e9e99,mixed,weighted_dictionary_v2_oof,the; in; economy; in the; second quarter,3
+c4a78c59ed1c9f845b8d,mixed,weighted_dictionary_v2_oof,and; inflation; inflation; are; of,1
+c6730c14d84870e83267,positive,weighted_dictionary_v2_oof,to; to; says; says; economy,2
+c878e08edc3590efd86e,mixed,weighted_dictionary_v2_oof,the; and; inflation; on; market,4
+c8cf100287ba7fcba62b,negative,weighted_dictionary_v2_oof,to; is; economic; china; its,3
+c8d5e730fcb712267953,negative,weighted_dictionary_v2_oof,to; over; wage; million; claims,4
+c9b7f11a048ef56693fc,mixed,weighted_dictionary_v2_oof,and; in; on; is; more,0
+c9d5cc7de8c2aaacd055,neutral,weighted_dictionary_v2_oof,and; economy; with; finance; finance,0
+cbe60ce519aa51be4231,neutral,weighted_dictionary_v2_oof,jobs; jobkey; jobkey; recruitment; recruitment,1
+cc6a94387b610a51ac21,neutral,weighted_dictionary_v2_oof,the; and; economy; of; ai,2
+cd333ecff03aa2f47c1d,negative,weighted_dictionary_v2_oof,new; economic; trump; with; poll,1
+cdc56c3ee7657779b19a,neutral,weighted_dictionary_v2_oof,to; jobs; that; their; opinion,3
+ce205d4c0a5f40b0717c,negative,weighted_dictionary_v2_oof,of; inflation; it; for; for,2
+cf1b5eda3fb0a2134eff,positive,weighted_dictionary_v2_oof,the; economy; https; business; from,3
+cf6b6787f77e88912b33,mixed,weighted_dictionary_v2_oof,as; for; oil; prices; weekly,3
+cfcdf8687fcdf1b63e9e,positive,weighted_dictionary_v2_oof,growth; to; since; global; trade,4
+d15d37804d72ac9680f8,mixed,weighted_dictionary_v2_oof,to; as; growth; ai; boom,4
+d193250760a3db22d494,negative,weighted_dictionary_v2_oof,the; in; of; new; trump,4
+d287b45687644cb0e9ac,positive,weighted_dictionary_v2_oof,growth; growth; for; brands,0
+d3f4569ca585196567a2,neutral,weighted_dictionary_v2_oof,jobs; https; com; on; is,4
+d64f72a768b01c93ff7a,positive,weighted_dictionary_v2_oof,economic; economic development; development; announces,0
+d68911528edb8beb0e4a,mixed,weighted_dictionary_v2_oof,and; to; at; prices; bargain,0
+d76f148aa63996e5f991,mixed,weighted_dictionary_v2_oof,for; oil; raises; price; costco,1
+d92b5eaa46db67a2ea16,negative,weighted_dictionary_v2_oof,the; inflation; and; as; it,2
+da67d6871e28728979db,neutral,weighted_dictionary_v2_oof,for; inflation; social; gy; bsky social,3
+dbdb9f79225e68b1f040,positive,weighted_dictionary_v2_oof,economy; in; second; second quarter; quarter,1
+dcd0ecc5d22bc5c04708,positive,weighted_dictionary_v2_oof,growth; and; the; of; in,1
+dcfad40c51815bb062d6,neutral,weighted_dictionary_v2_oof,the; for; inflation; the federal; federal,2
+de081c7635fe88b1d293,negative,weighted_dictionary_v2_oof,to; and; unemployment; with; before,0
+df351c409c9eab8a4cc8,positive,weighted_dictionary_v2_oof,economy; in; second; quarter; us,2
+e15614f27fed3328579b,neutral,weighted_dictionary_v2_oof,inflation; belly; belly inflation,4
+e1b782df9e97ca920531,mixed,weighted_dictionary_v2_oof,inflation; as; to; prices; from,1
+e1efb1dd20d4db75ae6c,negative,weighted_dictionary_v2_oof,to; inflation; says; fed; president,2
+e20a1ad7388f21eaeddd,mixed,weighted_dictionary_v2_oof,as; stocks; hit; higher; price,3
+e2b8d6b6fa08ef8725c9,negative,weighted_dictionary_v2_oof,the; the; in; for; jobs,0
+e2c73b17781b9d8dc596,mixed,weighted_dictionary_v2_oof,the; the; inflation; as; oil,1
+e2f3dae59c1e5b703925,neutral,weighted_dictionary_v2_oof,to; on; growth; will; have,2
+e31e4cbb5ac5ab4d78fc,neutral,weighted_dictionary_v2_oof,economy,3
+e3ba7e48c3a3b8f7b755,neutral,weighted_dictionary_v2_oof,the; the; the; the; and,4
+e444ffc4eb0f3bf70a13,mixed,weighted_dictionary_v2_oof,the; and; market; stocks; prices,4
+e46f7a5d5f4c0518d2dc,mixed,weighted_dictionary_v2_oof,and; inflation; inflation; the; the,0
+e723771c05dc4881e125,negative,weighted_dictionary_v2_oof,the; the; the; economy; economy,1
+e77887ba7e0d3b9f0b4c,mixed,weighted_dictionary_v2_oof,stocks; of; jobs; report; jobs report,2
+e79c02742bc8f18c4732,negative,weighted_dictionary_v2_oof,inflation; new; trump; iran; healthcare,0
+e7b7317b3be07a0f8500,negative,weighted_dictionary_v2_oof,to; in; inflation; september; india,3
+e8d1c06bdb18425a1b89,mixed,weighted_dictionary_v2_oof,the; the; the; the; inflation,1
+e953463eb5089975f992,neutral,weighted_dictionary_v2_oof,the; economy; in; is; business,2
+e9a0c2fe4b4bcd79d81a,negative,weighted_dictionary_v2_oof,to; to; to; the; the,4
+ea80bcc8a8d19116cbc7,negative,weighted_dictionary_v2_oof,to; to; to; in; debt,0
+eaf150ce4935469950aa,positive,weighted_dictionary_v2_oof,growth; says; trump says; trump; since,3
+ebe09abe2f50dda7633b,positive,weighted_dictionary_v2_oof,growth; for,4
+ed22a3f2fe7ac85c63fe,negative,weighted_dictionary_v2_oof,to; of; as; it; and,3
+ed2c697836e65f080d5c,neutral,weighted_dictionary_v2_oof,to; on; growth; will; have,3
+edc7a6c6c949312f6427,negative,weighted_dictionary_v2_oof,the; the; to; to; in,1
+ee880db5d613aa1c3d88,mixed,weighted_dictionary_v2_oof,the; and; and; and; to,4
+ef70d28e8de7c4053cab,mixed,weighted_dictionary_v2_oof,the; for; economy; is; https,0
+efd535fd2c66e11dddfe,mixed,weighted_dictionary_v2_oof,and; and; and; and; and,4
+f125af7e275f2aa9e8b7,negative,weighted_dictionary_v2_oof,as; prices; are; at; costs,0
+f195e406f781a1cced28,negative,weighted_dictionary_v2_oof,in; us; economy; jobs; september,2
+f224896712bbe0521d13,negative,weighted_dictionary_v2_oof,the; the; of; of; new,1
+f34e19ff1ee7c82e014d,negative,weighted_dictionary_v2_oof,the; to; as; and; economy,0
+f56c2fdb87f68d8c9a6f,positive,weighted_dictionary_v2_oof,and; to; to; the; economy,2
+f5b2ff8ca708badce510,positive,weighted_dictionary_v2_oof,economy; in; us; uk; state,3
+f6f157464bae56e821c4,mixed,weighted_dictionary_v2_oof,as; to; market; job; higher,1
+fc132d2a051fe43bfa20,negative,weighted_dictionary_v2_oof,as; prices; for; new; trump,4
+fcdaf36c72f04f1f406d,positive,weighted_dictionary_v2_oof,growth; and; the; to; economic,1
+fd3ab4e1c7c17e0f16e6,mixed,weighted_dictionary_v2_oof,inflation; up; it's; all,3
+ffc5aa7a0a3c10cb1b6c,negative,weighted_dictionary_v2_oof,the; the; the; to; to,0

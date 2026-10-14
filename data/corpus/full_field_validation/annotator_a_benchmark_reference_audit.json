@@ -1,0 +1,1569 @@
+{
+  "input_encoding": "utf-8-sig",
+  "rows_updated": 312,
+  "references_remaining_blank": 0,
+  "reference_context_source": "data/corpus/labeling/annotator_a.csv",
+  "note": "Only benchmark_reference was modified. The prefix uses the all-field packet's manually entered factual_calibration; transferred context is not an independent second-rater judgment.",
+  "changes": [
+    {
+      "blind_id": "full_field_093",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Los Angeles Times, 2026-10-07; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_088",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: EIA petroleum prices, https://www.eia.gov/petroleum/; item source: The Atlanta Journal-Constitution, 2026-10-05."
+    },
+    {
+      "blind_id": "full_field_238",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 unverifiable; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-10; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_146",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: CNBC, 2026-10-07; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_048",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: azcentral.com and The Arizona Republic, 2026-09-23; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_246",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-10; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_138",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Fox Business, 2026-10-05; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_214",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: Statistics Canada releases, https://www.statcan.gc.ca/; item source: Mastodon public hashtag timeline, 2026-10-09."
+    },
+    {
+      "blind_id": "full_field_046",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: Federal Reserve FOMC statements, https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm; item source: Houston Chronicle, 2026-09-20."
+    },
+    {
+      "blind_id": "full_field_044",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Tampa Bay Times, 2026-09-17; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_186",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Reuters, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_003",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Star Tribune, 2026-08-16; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_013",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Tampa Bay Times, 2026-08-24; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_047",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Detroit Free Press, 2026-09-22; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_305",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 materially incomplete-or-misleading; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_174",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: EIA petroleum prices, https://www.eia.gov/petroleum/; item source: Fox Business, 2026-10-09."
+    },
+    {
+      "blind_id": "full_field_125",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: PBS, 2026-09-29; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_020",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Inquirer.com, 2026-08-30; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_276",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 materially incomplete-or-misleading; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_049",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Houston Chronicle, 2026-09-23; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_139",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: World Bank data/releases, https://www.worldbank.org/; item source: CNBC, 2026-10-06."
+    },
+    {
+      "blind_id": "full_field_128",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: PBS, 2026-09-30; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_224",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-09; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_248",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 materially incomplete-or-misleading; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-11; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_076",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Houston Chronicle, 2026-10-01; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_177",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: University of Michigan Surveys of Consumers, https://data.sca.isr.umich.edu/; item source: Reuters, 2026-10-09."
+    },
+    {
+      "blind_id": "full_field_055",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: azcentral.com and The Arizona Republic, 2026-09-24; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_295",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BLS Employment Situation, https://www.bls.gov/news.release/empsit.htm; item source: Mastodon public hashtag timeline, 2026-10-12."
+    },
+    {
+      "blind_id": "full_field_243",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-10; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_060",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: azcentral.com and The Arizona Republic, 2026-09-25; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_255",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-11; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_075",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Detroit Free Press, 2026-10-01; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_078",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: azcentral.com and The Arizona Republic, 2026-10-01; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_244",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: EIA petroleum prices, https://www.eia.gov/petroleum/; item source: Mastodon public hashtag timeline, 2026-10-10."
+    },
+    {
+      "blind_id": "full_field_149",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: The New York Times, 2026-10-07; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_117",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: AP News, 2026-09-11; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_006",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: EIA petroleum prices, https://www.eia.gov/petroleum/; item source: Detroit Free Press, 2026-08-17."
+    },
+    {
+      "blind_id": "full_field_057",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Inquirer.com, 2026-09-24; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_108",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: AP News, 2026-08-16; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_126",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: AP News, 2026-09-30; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_173",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 unverifiable; Source context: headline/news-card; item source: PBS, 2026-10-09; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_032",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BLS Employment Situation, https://www.bls.gov/news.release/empsit.htm; item source: The Atlanta Journal-Constitution, 2026-09-07."
+    },
+    {
+      "blind_id": "full_field_179",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: NPR, 2026-10-10; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_056",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: azcentral.com and The Arizona Republic, 2026-09-24; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_092",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: azcentral.com and The Arizona Republic, 2026-10-07; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_121",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: EIA petroleum prices, https://www.eia.gov/petroleum/; item source: AP News, 2026-09-20."
+    },
+    {
+      "blind_id": "full_field_030",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Inquirer.com, 2026-09-06; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_176",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: EIA petroleum prices, https://www.eia.gov/petroleum/; item source: Reuters, 2026-10-09."
+    },
+    {
+      "blind_id": "full_field_281",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 materially incomplete-or-misleading; Candidate benchmark: BLS Employment Situation, https://www.bls.gov/news.release/empsit.htm; item source: Mastodon public hashtag timeline, 2026-10-12."
+    },
+    {
+      "blind_id": "full_field_299",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: EIA petroleum prices, https://www.eia.gov/petroleum/; item source: Mastodon public hashtag timeline, 2026-10-12."
+    },
+    {
+      "blind_id": "full_field_167",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Reuters, 2026-10-09; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_275",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 materially incomplete-or-misleading; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_249",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-11; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_268",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 materially incomplete-or-misleading; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_143",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: CNBC, 2026-10-07; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_004",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: The Atlanta Journal-Constitution, 2026-08-17; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_213",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-09; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_222",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-09; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_216",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-09; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_063",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Star Tribune, 2026-09-26; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_105",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Star Tribune, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_265",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-11; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_085",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BLS Employment Situation, https://www.bls.gov/news.release/empsit.htm; item source: Detroit Free Press, 2026-10-03."
+    },
+    {
+      "blind_id": "full_field_160",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: The New York Times, 2026-10-08; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_231",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: Federal Reserve FOMC statements, https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm; item source: Mastodon public hashtag timeline, 2026-10-09."
+    },
+    {
+      "blind_id": "full_field_227",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-09; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_082",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BLS Employment Situation, https://www.bls.gov/news.release/empsit.htm; item source: Houston Chronicle, 2026-10-02."
+    },
+    {
+      "blind_id": "full_field_229",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: Statistics Canada releases, https://www.statcan.gc.ca/; item source: Mastodon public hashtag timeline, 2026-10-09."
+    },
+    {
+      "blind_id": "full_field_081",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: azcentral.com and The Arizona Republic, 2026-10-01; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_183",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: The New York Times, 2026-10-11; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_272",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_294",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_266",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-11; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_200",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 unverifiable; Source context: headline/news-card; item source: PBS, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_198",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BEA release tables, https://www.bea.gov/news/; item source: Reuters, 2026-10-12."
+    },
+    {
+      "blind_id": "full_field_034",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Detroit Free Press, 2026-09-09; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_029",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Star Tribune, 2026-09-05; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_109",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: PBS, 2026-08-21; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_188",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Reuters, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_288",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_245",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-10; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_207",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: EIA petroleum prices, https://www.eia.gov/petroleum/; item source: WSJ, 2026-10-12."
+    },
+    {
+      "blind_id": "full_field_264",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BLS Employment Situation, https://www.bls.gov/news.release/empsit.htm; item source: Mastodon public hashtag timeline, 2026-10-11."
+    },
+    {
+      "blind_id": "full_field_236",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 unverifiable; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-10; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_225",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-09; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_066",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: EIA petroleum prices, https://www.eia.gov/petroleum/; item source: Houston Chronicle, 2026-09-28."
+    },
+    {
+      "blind_id": "full_field_256",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-11; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_240",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-10; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_206",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: PBS, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_141",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Fox Business, 2026-10-06; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_250",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 materially incomplete-or-misleading; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-11; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_028",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BLS Employment Situation, https://www.bls.gov/news.release/empsit.htm; item source: Detroit Free Press, 2026-09-05."
+    },
+    {
+      "blind_id": "full_field_211",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 materially incomplete-or-misleading; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-09; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_193",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Reuters, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_129",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Fox Business, 2026-09-30; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_274",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BLS Employment Situation, https://www.bls.gov/news.release/empsit.htm; item source: Mastodon public hashtag timeline, 2026-10-12."
+    },
+    {
+      "blind_id": "full_field_155",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: WSJ, 2026-10-08; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_079",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: azcentral.com and The Arizona Republic, 2026-10-01; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_008",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Detroit Free Press, 2026-08-19; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_061",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BLS Employment Situation, https://www.bls.gov/news.release/empsit.htm; item source: Inquirer.com, 2026-09-25."
+    },
+    {
+      "blind_id": "full_field_230",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: Federal Reserve FOMC statements, https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm; item source: Mastodon public hashtag timeline, 2026-10-09."
+    },
+    {
+      "blind_id": "full_field_304",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 materially incomplete-or-misleading; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_144",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: IMF data/releases, https://www.imf.org/; item source: WSJ, 2026-10-07."
+    },
+    {
+      "blind_id": "full_field_097",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BLS Employment Situation, https://www.bls.gov/news.release/empsit.htm; item source: Star Tribune, 2026-10-08."
+    },
+    {
+      "blind_id": "full_field_025",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: EIA petroleum prices, https://www.eia.gov/petroleum/; item source: Inquirer.com, 2026-09-04."
+    },
+    {
+      "blind_id": "full_field_241",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 unverifiable; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-10; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_271",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: Federal Reserve FOMC statements, https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm; item source: Mastodon public hashtag timeline, 2026-10-12."
+    },
+    {
+      "blind_id": "full_field_228",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-09; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_253",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-11; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_194",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: The New York Times, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_115",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BLS Employment Situation, https://www.bls.gov/news.release/empsit.htm; item source: PBS, 2026-09-07."
+    },
+    {
+      "blind_id": "full_field_287",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 materially incomplete-or-misleading; Candidate benchmark: BLS Employment Situation, https://www.bls.gov/news.release/empsit.htm; item source: Mastodon public hashtag timeline, 2026-10-12."
+    },
+    {
+      "blind_id": "full_field_067",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Star Tribune, 2026-09-28; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_283",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_101",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BLS Employment Situation, https://www.bls.gov/news.release/empsit.htm; item source: azcentral.com and The Arizona Republic, 2026-10-09."
+    },
+    {
+      "blind_id": "full_field_037",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Tampa Bay Times, 2026-09-11; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_190",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BLS Employment Situation, https://www.bls.gov/news.release/empsit.htm; item source: CNBC, 2026-10-12."
+    },
+    {
+      "blind_id": "full_field_017",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Star Tribune, 2026-08-27; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_303",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_247",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-11; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_161",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: AP News, 2026-10-08; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_263",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 unverifiable; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-11; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_289",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_102",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BLS Employment Situation, https://www.bls.gov/news.release/empsit.htm; item source: Los Angeles Times, 2026-10-09."
+    },
+    {
+      "blind_id": "full_field_016",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Houston Chronicle, 2026-08-26; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_038",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Houston Chronicle, 2026-09-14; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_123",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: Federal Reserve FOMC statements, https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm; item source: Fox Business, 2026-09-24."
+    },
+    {
+      "blind_id": "full_field_027",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BLS Employment Situation, https://www.bls.gov/news.release/empsit.htm; item source: Houston Chronicle, 2026-09-04."
+    },
+    {
+      "blind_id": "full_field_005",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Tampa Bay Times, 2026-08-17; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_083",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BLS Employment Situation, https://www.bls.gov/news.release/empsit.htm; item source: Houston Chronicle, 2026-10-02."
+    },
+    {
+      "blind_id": "full_field_165",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: EIA petroleum prices, https://www.eia.gov/petroleum/; item source: CNBC, 2026-10-09."
+    },
+    {
+      "blind_id": "full_field_279",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_084",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BLS Employment Situation, https://www.bls.gov/news.release/empsit.htm; item source: Inquirer.com, 2026-10-02."
+    },
+    {
+      "blind_id": "full_field_134",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Fox Business, 2026-10-02; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_122",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: PBS, 2026-09-21; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_237",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 materially incomplete-or-misleading; Candidate benchmark: EIA petroleum prices, https://www.eia.gov/petroleum/; item source: Mastodon public hashtag timeline, 2026-10-10."
+    },
+    {
+      "blind_id": "full_field_162",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: WSJ, 2026-10-08; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_154",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: WSJ, 2026-10-08; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_110",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: PBS, 2026-08-21; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_071",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Houston Chronicle, 2026-09-30; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_054",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: EIA petroleum prices, https://www.eia.gov/petroleum/; item source: Inquirer.com, 2026-09-24."
+    },
+    {
+      "blind_id": "full_field_068",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: azcentral.com and The Arizona Republic, 2026-09-29; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_175",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: WSJ, 2026-10-09; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_210",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: WSJ, 2026-10-13; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_077",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Inquirer.com, 2026-10-01; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_053",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: azcentral.com and The Arizona Republic, 2026-09-24; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_130",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BEA release tables, https://www.bea.gov/news/; item source: Fox Business, 2026-10-01."
+    },
+    {
+      "blind_id": "full_field_151",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: WSJ, 2026-10-08; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_285",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_180",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: NPR, 2026-10-10; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_292",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BLS Employment Situation, https://www.bls.gov/news.release/empsit.htm; item source: Mastodon public hashtag timeline, 2026-10-12."
+    },
+    {
+      "blind_id": "full_field_257",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 unverifiable; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-11; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_286",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_219",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 unverifiable; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-09; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_300",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: EIA petroleum prices, https://www.eia.gov/petroleum/; item source: Mastodon public hashtag timeline, 2026-10-12."
+    },
+    {
+      "blind_id": "full_field_310",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_012",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Houston Chronicle, 2026-08-24; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_090",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: azcentral.com and The Arizona Republic, 2026-10-07; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_258",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-11; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_145",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: WSJ, 2026-10-07; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_036",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: The Atlanta Journal-Constitution, 2026-09-10; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_137",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Fox Business, 2026-10-05; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_308",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_059",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: azcentral.com and The Arizona Republic, 2026-09-24; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_171",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BLS Employment Situation, https://www.bls.gov/news.release/empsit.htm; item source: Reuters, 2026-10-09."
+    },
+    {
+      "blind_id": "full_field_269",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_041",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Detroit Free Press, 2026-09-16; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_086",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BEA release tables, https://www.bea.gov/news/; item source: azcentral.com and The Arizona Republic, 2026-10-05."
+    },
+    {
+      "blind_id": "full_field_011",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Star Tribune, 2026-08-23; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_002",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Star Tribune, 2026-08-15; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_201",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Fox Business, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_152",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: WSJ, 2026-10-08; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_022",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Detroit Free Press, 2026-09-01; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_270",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 unverifiable; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_226",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-09; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_158",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BLS Employment Situation, https://www.bls.gov/news.release/empsit.htm; item source: AP News, 2026-10-08."
+    },
+    {
+      "blind_id": "full_field_114",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BLS Employment Situation, https://www.bls.gov/news.release/empsit.htm; item source: AP News, 2026-09-05."
+    },
+    {
+      "blind_id": "full_field_273",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 unverifiable; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_135",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BLS Employment Situation, https://www.bls.gov/news.release/empsit.htm; item source: AP News, 2026-10-03."
+    },
+    {
+      "blind_id": "full_field_234",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BLS Employment Situation, https://www.bls.gov/news.release/empsit.htm; item source: Mastodon public hashtag timeline, 2026-10-10."
+    },
+    {
+      "blind_id": "full_field_187",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: IMF data/releases, https://www.imf.org/; item source: Reuters, 2026-10-12."
+    },
+    {
+      "blind_id": "full_field_119",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: PBS, 2026-09-18; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_112",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: CNBC, 2026-08-31; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_168",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Reuters, 2026-10-09; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_203",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Reuters, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_015",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: EIA petroleum prices, https://www.eia.gov/petroleum/; item source: Houston Chronicle, 2026-08-25."
+    },
+    {
+      "blind_id": "full_field_052",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Detroit Free Press, 2026-09-24; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_091",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Tampa Bay Times, 2026-10-07; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_233",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 unverifiable; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-10; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_185",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: The New York Times, 2026-10-11; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_080",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: azcentral.com and The Arizona Republic, 2026-10-01; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_147",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Fox Business, 2026-10-07; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_217",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: University of Michigan Surveys of Consumers, https://data.sca.isr.umich.edu/; item source: Mastodon public hashtag timeline, 2026-10-09."
+    },
+    {
+      "blind_id": "full_field_191",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Fox Business, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_007",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Tampa Bay Times, 2026-08-19; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_026",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BLS Employment Situation, https://www.bls.gov/news.release/empsit.htm; item source: Detroit Free Press, 2026-09-04."
+    },
+    {
+      "blind_id": "full_field_199",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: CNBC, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_058",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: EIA petroleum prices, https://www.eia.gov/petroleum/; item source: Houston Chronicle, 2026-09-24."
+    },
+    {
+      "blind_id": "full_field_042",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 materially incomplete-or-misleading; Source context: headline/news-card; item source: Star Tribune, 2026-09-16; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_009",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Houston Chronicle, 2026-08-20; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_018",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Star Tribune, 2026-08-28; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_089",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: azcentral.com and The Arizona Republic, 2026-10-06; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_035",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BLS Employment Situation, https://www.bls.gov/news.release/empsit.htm; item source: Star Tribune, 2026-09-09."
+    },
+    {
+      "blind_id": "full_field_291",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_252",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: WTO statistics/releases, https://www.wto.org/; item source: Mastodon public hashtag timeline, 2026-10-11."
+    },
+    {
+      "blind_id": "full_field_087",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: azcentral.com and The Arizona Republic, 2026-10-05; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_261",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 unverifiable; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-11; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_235",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-10; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_181",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BLS Employment Situation, https://www.bls.gov/news.release/empsit.htm; item source: The New York Times, 2026-10-11."
+    },
+    {
+      "blind_id": "full_field_124",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BEA release tables, https://www.bea.gov/news/; item source: Fox Business, 2026-09-28."
+    },
+    {
+      "blind_id": "full_field_148",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: Federal Reserve FOMC statements, https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm; item source: AP News, 2026-10-07."
+    },
+    {
+      "blind_id": "full_field_166",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: IMF data/releases, https://www.imf.org/; item source: Reuters, 2026-10-09."
+    },
+    {
+      "blind_id": "full_field_290",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 materially incomplete-or-misleading; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_262",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-11; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_019",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Houston Chronicle, 2026-08-30; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_142",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Fox Business, 2026-10-06; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_072",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: The Atlanta Journal-Constitution, 2026-09-30; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_156",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: CNBC, 2026-10-08; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_284",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_220",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: EIA petroleum prices, https://www.eia.gov/petroleum/; item source: Mastodon public hashtag timeline, 2026-10-09."
+    },
+    {
+      "blind_id": "full_field_202",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: WSJ, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_297",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_307",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_050",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Houston Chronicle, 2026-09-23; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_014",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Star Tribune, 2026-08-24; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_021",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Inquirer.com, 2026-08-31; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_051",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Inquirer.com, 2026-09-23; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_164",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BLS Employment Situation, https://www.bls.gov/news.release/empsit.htm; item source: Fox Business, 2026-10-09."
+    },
+    {
+      "blind_id": "full_field_302",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_184",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: CNBC, 2026-10-11; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_267",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-11; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_282",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_062",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Tampa Bay Times, 2026-09-25; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_106",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: AP News, 2026-08-14; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_024",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Detroit Free Press, 2026-09-02; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_103",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Detroit Free Press, 2026-10-10; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_065",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Tampa Bay Times, 2026-09-27; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_182",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: AP News, 2026-10-11; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_107",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: AP News, 2026-08-15; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_208",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Reuters, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_242",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: EIA petroleum prices, https://www.eia.gov/petroleum/; item source: Mastodon public hashtag timeline, 2026-10-10."
+    },
+    {
+      "blind_id": "full_field_073",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Houston Chronicle, 2026-09-30; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_169",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: WSJ, 2026-10-09; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_116",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: Federal Reserve FOMC statements, https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm; item source: AP News, 2026-09-10."
+    },
+    {
+      "blind_id": "full_field_127",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: AP News, 2026-09-30; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_306",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 materially incomplete-or-misleading; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_172",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: CNBC, 2026-10-09; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_150",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: CNBC, 2026-10-07; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_001",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BLS Employment Situation, https://www.bls.gov/news.release/empsit.htm; item source: azcentral.com and The Arizona Republic, 2026-08-14."
+    },
+    {
+      "blind_id": "full_field_251",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 materially incomplete-or-misleading; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-11; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_278",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_096",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Detroit Free Press, 2026-10-07; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_159",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: WTO statistics/releases, https://www.wto.org/; item source: AP News, 2026-10-08."
+    },
+    {
+      "blind_id": "full_field_178",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: EIA petroleum prices, https://www.eia.gov/petroleum/; item source: NPR, 2026-10-09."
+    },
+    {
+      "blind_id": "full_field_204",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: EIA petroleum prices, https://www.eia.gov/petroleum/; item source: Reuters, 2026-10-12."
+    },
+    {
+      "blind_id": "full_field_031",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Tampa Bay Times, 2026-09-07; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_170",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: WSJ, 2026-10-09; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_298",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_074",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Detroit Free Press, 2026-10-01; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_157",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: WTO statistics/releases, https://www.wto.org/; item source: WSJ, 2026-10-08."
+    },
+    {
+      "blind_id": "full_field_120",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: PBS, 2026-09-18; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_280",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_189",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: WSJ, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_192",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: CNBC, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_100",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: azcentral.com and The Arizona Republic, 2026-10-09; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_098",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: The Atlanta Journal-Constitution, 2026-10-08; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_133",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BLS Employment Situation, https://www.bls.gov/news.release/empsit.htm; item source: PBS, 2026-10-02."
+    },
+    {
+      "blind_id": "full_field_163",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Reuters, 2026-10-08; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_311",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BLS CPI, https://www.bls.gov/cpi/; item source: Mastodon public hashtag timeline, 2026-10-13."
+    },
+    {
+      "blind_id": "full_field_239",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 unverifiable; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-10; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_254",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BEA release tables, https://www.bea.gov/news/; item source: Mastodon public hashtag timeline, 2026-10-11."
+    },
+    {
+      "blind_id": "full_field_259",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-11; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_293",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_039",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Star Tribune, 2026-09-15; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_033",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: EIA petroleum prices, https://www.eia.gov/petroleum/; item source: Houston Chronicle, 2026-09-08."
+    },
+    {
+      "blind_id": "full_field_195",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: PBS, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_312",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-13; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_215",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 materially incomplete-or-misleading; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-09; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_196",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: CNBC, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_223",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 unverifiable; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-09; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_095",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Tampa Bay Times, 2026-10-07; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_232",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-09; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_045",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Houston Chronicle, 2026-09-20; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_212",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-09; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_260",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 materially incomplete-or-misleading; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-11; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_205",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: The New York Times, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_218",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-09; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_153",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: CNBC, 2026-10-08; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_040",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Detroit Free Press, 2026-09-16; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_111",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: PBS, 2026-08-26; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_277",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 materially incomplete-or-misleading; Candidate benchmark: BLS Employment Situation, https://www.bls.gov/news.release/empsit.htm; item source: Mastodon public hashtag timeline, 2026-10-12."
+    },
+    {
+      "blind_id": "full_field_043",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Detroit Free Press, 2026-09-16; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_099",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Tampa Bay Times, 2026-10-09; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_140",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: CNBC, 2026-10-06; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_118",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: AP News, 2026-09-15; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_131",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Fox Business, 2026-10-02; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_094",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: azcentral.com and The Arizona Republic, 2026-10-07; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_197",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: EIA petroleum prices, https://www.eia.gov/petroleum/; item source: Reuters, 2026-10-12."
+    },
+    {
+      "blind_id": "full_field_104",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Inquirer.com, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_070",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: azcentral.com and The Arizona Republic, 2026-09-30; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_301",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_136",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BLS Employment Situation, https://www.bls.gov/news.release/empsit.htm; item source: CNBC, 2026-10-03."
+    },
+    {
+      "blind_id": "full_field_069",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: azcentral.com and The Arizona Republic, 2026-09-29; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_023",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Houston Chronicle, 2026-09-01; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_010",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Houston Chronicle, 2026-08-20; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_221",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 materially incomplete-or-misleading; Candidate benchmark: BLS Employment Situation, https://www.bls.gov/news.release/empsit.htm; item source: Mastodon public hashtag timeline, 2026-10-09."
+    },
+    {
+      "blind_id": "full_field_296",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: EIA petroleum prices, https://www.eia.gov/petroleum/; item source: Mastodon public hashtag timeline, 2026-10-12."
+    },
+    {
+      "blind_id": "full_field_132",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BLS Employment Situation, https://www.bls.gov/news.release/empsit.htm; item source: PBS, 2026-10-02."
+    },
+    {
+      "blind_id": "full_field_113",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Candidate benchmark: BLS Employment Situation, https://www.bls.gov/news.release/empsit.htm; item source: PBS, 2026-09-04."
+    },
+    {
+      "blind_id": "full_field_064",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Detroit Free Press, 2026-09-26; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_209",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: headline/news-card; item source: Fox Business, 2026-10-12; no release-time benchmark identified."
+    },
+    {
+      "blind_id": "full_field_309",
+      "old_reference": "",
+      "new_reference": "Independent all-field review \u2014 calibrated; Source context: post; item source: Mastodon public hashtag timeline, 2026-10-12; no release-time benchmark identified."
+    }
+  ]
+}

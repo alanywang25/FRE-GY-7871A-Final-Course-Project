@@ -1,0 +1,643 @@
+{
+  "rows_updated": 127,
+  "selected_a": 73,
+  "selected_b": 54,
+  "values_changed": 93,
+  "changes": [
+    {
+      "item_id": "004648feafccb21893e4",
+      "old_adjudicator": "b",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "00e96ae8255b50e03a4c",
+      "old_adjudicator": "b",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "08b065b22ea646451dc5",
+      "old_adjudicator": "a",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "1352305c145ede7a0e2c",
+      "old_adjudicator": "b",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "17a3cf0e6304981f3c36",
+      "old_adjudicator": "a",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "1b6171a6e83ed31b23d1",
+      "old_adjudicator": "b",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "1be7c07572aa1e60b419",
+      "old_adjudicator": "b",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "1be905fcd19c8b2e5734",
+      "old_adjudicator": "b",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "1e1946cbe5f9b2314207",
+      "old_adjudicator": "a",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "1f89ced5d8f31df44599",
+      "old_adjudicator": "b",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "24900ce7887463e6001d",
+      "old_adjudicator": "a",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "24bc4ce10afd32cf3c99",
+      "old_adjudicator": "b",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "26f5e6ea82def158bcd8",
+      "old_adjudicator": "a",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "2998a849c4b40a77fe76",
+      "old_adjudicator": "a",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "299e3d80e89badc67fa4",
+      "old_adjudicator": "b",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "2aac6ebc17c03a7fd8cf",
+      "old_adjudicator": "a",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "2bf63a3d79db1c4337f9",
+      "old_adjudicator": "b",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "2d01c6dc9af011eac020",
+      "old_adjudicator": "b",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "2ed0134bd71aabbf71d5",
+      "old_adjudicator": "a",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "308b68d8605c1b967a02",
+      "old_adjudicator": "a",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "333111783db3d49d6f89",
+      "old_adjudicator": "a",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "336fc9ebb30fcef27f2f",
+      "old_adjudicator": "a",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "33883ccba79151b81cca",
+      "old_adjudicator": "a",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "35b7a66052e9a74fcf3e",
+      "old_adjudicator": "a",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "366c9d6ba841e612a07f",
+      "old_adjudicator": "a",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "36722b7007e94eccec2b",
+      "old_adjudicator": "a",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "37ed6fdc4bf2f21e54aa",
+      "old_adjudicator": "b",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "3a51b8a62a0614d02923",
+      "old_adjudicator": "a",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "3fe138613317217e1e3c",
+      "old_adjudicator": "b",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "4008f2c0d45bdd9987e3",
+      "old_adjudicator": "b",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "40eee40644ef0e5e26a2",
+      "old_adjudicator": "a",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "41514e2eb447856dec5a",
+      "old_adjudicator": "a",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "421b30c79999be4f2870",
+      "old_adjudicator": "a",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "477c3e0eef64f43737b4",
+      "old_adjudicator": "b",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "48222c7a279e6e53a4dd",
+      "old_adjudicator": "a",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "49e9a1068d644e9759d3",
+      "old_adjudicator": "a",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "4b18abadfa7db4aed792",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "4b3f81797abfdd2e5791",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "4f2d78063ed4e41191e1",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "4f90b83b0e2753a551dd",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "50f46594103d0be78575",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "5313666ca97acbfe4a62",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "5757b2ed527ef29cc1d4",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "58fa3045906ffcff1807",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "5b1d70c4a1ab649190de",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "5b330756c208d0442cfa",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "5b512d01890c8a65761b",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "5c11d279979bbd60c219",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "5ffddea6e7e0cb352394",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "683b3510619ff408b4ab",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "6ab6823ebeebef3ce5ca",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "6ef3b24f0b0ce4cb4e94",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "700d0c91f0d9c9a9d94d",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "70fcb0e4c127214ae100",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "734af1afc63a4754369d",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "773735886522c3497055",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "776faabc36b19d71b122",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "7858404b802aca37d521",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "7de6d7aac5cc6f78a602",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "7efa733390e1f8bf9312",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "7fb5608db15c1caf7a3f",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "8037d6a68d6005e4c797",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "87262ed604d362fed58b",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "884215699607975fd5ed",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "8ad25cebd789e1cdd0ef",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "8fcc4baba13bb53bd120",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "911ea891917cc80308f5",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "9659952026571952c496",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "9674d42d793505276d65",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "969c9442b1f2651a8161",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "9928e347e6e8910f2eb9",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "9985202654706daf0d4d",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "9c92b19e55cf27c2a8b4",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "9e64a2eda9b3932f3edb",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "9fd3404d8f44bd57b18c",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "a0e290ea2ce71ebb12de",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "a0e60f0f326324eba7f3",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "a0eef590f61015b4018c",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "a66f9520e6f153670205",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "a72db4be2f3401425aa8",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "a7602c85373240c016f1",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "ab517d75ec44e4b4d98a",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "ad839f6180d82e9fa9cc",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "af45804cb5f152ca14cc",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "af82a41ed9460d020162",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "af843abe28e479b17800",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "aff1da02b5ea03aa1dcc",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "b245f288177415d5888e",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "b3d68908bd0af16b6ee5",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "b45b08501d74898c952f",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "b59150ad78f37e2d4ebd",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "ba29c69afb2e1883eec4",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "baa6b7574e6c5ab0d5ec",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "bb20c4a55a15cbd27d1e",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "bd079463219eb8cab11b",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "c09d0263c974e7a9417a",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "c6730c14d84870e83267",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "c8cf100287ba7fcba62b",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "c8d5e730fcb712267953",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "cdc56c3ee7657779b19a",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "cf6b6787f77e88912b33",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "cfcdf8687fcdf1b63e9e",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "d15d37804d72ac9680f8",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "d68911528edb8beb0e4a",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "dbdb9f79225e68b1f040",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "dcfad40c51815bb062d6",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "de081c7635fe88b1d293",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "df351c409c9eab8a4cc8",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "e1b782df9e97ca920531",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "e20a1ad7388f21eaeddd",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "e2c73b17781b9d8dc596",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "e3ba7e48c3a3b8f7b755",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "e444ffc4eb0f3bf70a13",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "e46f7a5d5f4c0518d2dc",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "e723771c05dc4881e125",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "e79c02742bc8f18c4732",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "e8d1c06bdb18425a1b89",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "ea80bcc8a8d19116cbc7",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "eaf150ce4935469950aa",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "ee880db5d613aa1c3d88",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "ef70d28e8de7c4053cab",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "efd535fd2c66e11dddfe",
+      "old_adjudicator": "",
+      "new_adjudicator": "b"
+    },
+    {
+      "item_id": "f125af7e275f2aa9e8b7",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "f195e406f781a1cced28",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "f34e19ff1ee7c82e014d",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "f6f157464bae56e821c4",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    },
+    {
+      "item_id": "ffc5aa7a0a3c10cb1b6c",
+      "old_adjudicator": "",
+      "new_adjudicator": "a"
+    }
+  ]
+}

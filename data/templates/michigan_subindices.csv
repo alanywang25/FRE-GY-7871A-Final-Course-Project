@@ -1,0 +1,9 @@
+month,current_conditions,expectations,source_url,release_timestamp,vintage_id,notes
+2026-01-31,55.4,57.0,https://data.sca.isr.umich.edu/fetchdoc.php?docid=80499,2026-01-23,2026-01-final,Final release; calendar publishes release date but not a time of day.
+2026-02-28,56.6,56.6,https://data.sca.isr.umich.edu/fetchdoc.php?docid=80677,2026-02-20,2026-02-final,Final release; calendar publishes release date but not a time of day.
+2026-03-31,55.8,51.7,https://data.sca.isr.umich.edu/fetchdoc.php?docid=80881,2026-03-27,2026-03-final,Final release; calendar publishes release date but not a time of day.
+2026-04-30,52.5,48.1,https://data.sca.isr.umich.edu/fetchdoc.php?docid=81060,2026-04-24,2026-04-final,Final release; calendar publishes release date but not a time of day.
+2026-05-31,45.8,44.1,https://data.sca.isr.umich.edu/fetchdoc.php?docid=81238,2026-05-22,2026-05-final,Final release; calendar publishes release date but not a time of day.
+2026-06-30,47.7,50.7,https://data.sca.isr.umich.edu/fetchdoc.php?docid=81440,2026-06-26,2026-06-final,Final release; calendar publishes release date but not a time of day.
+2026-07-31,54.8,55.4,https://data.sca.isr.umich.edu/fetchdoc.php?docid=81618,2026-07-31,2026-07-final,Final release; calendar publishes release date but not a time of day.
+2026-08-31,51.9,51.5,https://data.sca.isr.umich.edu/fetchdoc.php?docid=81854,2026-08-28,2026-08-final,Final release; calendar publishes release date but not a time of day.

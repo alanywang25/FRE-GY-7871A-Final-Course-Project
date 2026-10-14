@@ -1,0 +1,481 @@
+month,source_domain,archive_contributor,source_stratum,query_status,candidate_count,accepted_count,notes
+2020-01,cnn.com,CNNW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-01,foxnews.com,FOXNEWSW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-01,msnbc.com,MSNBCW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-01,cnbc.com,CNBC,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-01,ktvu.com,KTVU,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-01,kpix.com,KPIX,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-01,nbcbayarea.com,KNTV,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-01,abc7news.com,KGO,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-02,cnn.com,CNNW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-02,foxnews.com,FOXNEWSW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-02,msnbc.com,MSNBCW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-02,cnbc.com,CNBC,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-02,ktvu.com,KTVU,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-02,kpix.com,KPIX,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-02,nbcbayarea.com,KNTV,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-02,abc7news.com,KGO,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-03,cnn.com,CNNW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-03,foxnews.com,FOXNEWSW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-03,msnbc.com,MSNBCW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-03,cnbc.com,CNBC,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-03,ktvu.com,KTVU,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-03,kpix.com,KPIX,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-03,nbcbayarea.com,KNTV,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-03,abc7news.com,KGO,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-04,cnn.com,CNNW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-04,foxnews.com,FOXNEWSW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-04,msnbc.com,MSNBCW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-04,cnbc.com,CNBC,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-04,ktvu.com,KTVU,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-04,kpix.com,KPIX,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-04,nbcbayarea.com,KNTV,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-04,abc7news.com,KGO,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-05,cnn.com,CNNW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-05,foxnews.com,FOXNEWSW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-05,msnbc.com,MSNBCW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-05,cnbc.com,CNBC,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-05,ktvu.com,KTVU,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-05,kpix.com,KPIX,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-05,nbcbayarea.com,KNTV,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-05,abc7news.com,KGO,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-06,cnn.com,CNNW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-06,foxnews.com,FOXNEWSW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-06,msnbc.com,MSNBCW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-06,cnbc.com,CNBC,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-06,ktvu.com,KTVU,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-06,kpix.com,KPIX,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-06,nbcbayarea.com,KNTV,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-06,abc7news.com,KGO,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-07,cnn.com,CNNW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-07,foxnews.com,FOXNEWSW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-07,msnbc.com,MSNBCW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-07,cnbc.com,CNBC,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-07,ktvu.com,KTVU,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-07,kpix.com,KPIX,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-07,nbcbayarea.com,KNTV,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-07,abc7news.com,KGO,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-08,cnn.com,CNNW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-08,foxnews.com,FOXNEWSW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-08,msnbc.com,MSNBCW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-08,cnbc.com,CNBC,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-08,ktvu.com,KTVU,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-08,kpix.com,KPIX,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-08,nbcbayarea.com,KNTV,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-08,abc7news.com,KGO,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-09,cnn.com,CNNW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-09,foxnews.com,FOXNEWSW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-09,msnbc.com,MSNBCW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-09,cnbc.com,CNBC,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-09,ktvu.com,KTVU,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-09,kpix.com,KPIX,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-09,nbcbayarea.com,KNTV,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-09,abc7news.com,KGO,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-10,cnn.com,CNNW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-10,foxnews.com,FOXNEWSW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-10,msnbc.com,MSNBCW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-10,cnbc.com,CNBC,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-10,ktvu.com,KTVU,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-10,kpix.com,KPIX,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-10,nbcbayarea.com,KNTV,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-10,abc7news.com,KGO,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-11,cnn.com,CNNW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-11,foxnews.com,FOXNEWSW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-11,msnbc.com,MSNBCW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-11,cnbc.com,CNBC,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-11,ktvu.com,KTVU,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-11,kpix.com,KPIX,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-11,nbcbayarea.com,KNTV,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-11,abc7news.com,KGO,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-12,cnn.com,CNNW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-12,foxnews.com,FOXNEWSW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-12,msnbc.com,MSNBCW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-12,cnbc.com,CNBC,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-12,ktvu.com,KTVU,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-12,kpix.com,KPIX,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-12,nbcbayarea.com,KNTV,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2020-12,abc7news.com,KGO,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-01,cnn.com,CNNW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-01,foxnews.com,FOXNEWSW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-01,msnbc.com,MSNBCW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-01,cnbc.com,CNBC,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-01,ktvu.com,KTVU,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-01,kpix.com,KPIX,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-01,nbcbayarea.com,KNTV,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-01,abc7news.com,KGO,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-02,cnn.com,CNNW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-02,foxnews.com,FOXNEWSW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-02,msnbc.com,MSNBCW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-02,cnbc.com,CNBC,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-02,ktvu.com,KTVU,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-02,kpix.com,KPIX,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-02,nbcbayarea.com,KNTV,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-02,abc7news.com,KGO,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-03,cnn.com,CNNW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-03,foxnews.com,FOXNEWSW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-03,msnbc.com,MSNBCW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-03,cnbc.com,CNBC,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-03,ktvu.com,KTVU,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-03,kpix.com,KPIX,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-03,nbcbayarea.com,KNTV,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-03,abc7news.com,KGO,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-04,cnn.com,CNNW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-04,foxnews.com,FOXNEWSW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-04,msnbc.com,MSNBCW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-04,cnbc.com,CNBC,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-04,ktvu.com,KTVU,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-04,kpix.com,KPIX,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-04,nbcbayarea.com,KNTV,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-04,abc7news.com,KGO,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-05,cnn.com,CNNW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-05,foxnews.com,FOXNEWSW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-05,msnbc.com,MSNBCW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-05,cnbc.com,CNBC,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-05,ktvu.com,KTVU,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-05,kpix.com,KPIX,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-05,nbcbayarea.com,KNTV,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-05,abc7news.com,KGO,local,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-06,cnn.com,CNNW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-06,foxnews.com,FOXNEWSW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-06,msnbc.com,MSNBCW,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-06,cnbc.com,CNBC,national,complete,12,1,One topic-caption item retained when available; availability is Internet Archive publicdate.
+2021-06,ktvu.com,KTVU,local,not_started,,,
+2021-06,kpix.com,KPIX,local,not_started,,,
+2021-06,nbcbayarea.com,KNTV,local,not_started,,,
+2021-06,abc7news.com,KGO,local,not_started,,,
+2021-07,cnn.com,CNNW,national,not_started,,,
+2021-07,foxnews.com,FOXNEWSW,national,not_started,,,
+2021-07,msnbc.com,MSNBCW,national,not_started,,,
+2021-07,cnbc.com,CNBC,national,not_started,,,
+2021-07,ktvu.com,KTVU,local,not_started,,,
+2021-07,kpix.com,KPIX,local,not_started,,,
+2021-07,nbcbayarea.com,KNTV,local,not_started,,,
+2021-07,abc7news.com,KGO,local,not_started,,,
+2021-08,cnn.com,CNNW,national,not_started,,,
+2021-08,foxnews.com,FOXNEWSW,national,not_started,,,
+2021-08,msnbc.com,MSNBCW,national,not_started,,,
+2021-08,cnbc.com,CNBC,national,not_started,,,
+2021-08,ktvu.com,KTVU,local,not_started,,,
+2021-08,kpix.com,KPIX,local,not_started,,,
+2021-08,nbcbayarea.com,KNTV,local,not_started,,,
+2021-08,abc7news.com,KGO,local,not_started,,,
+2021-09,cnn.com,CNNW,national,not_started,,,
+2021-09,foxnews.com,FOXNEWSW,national,not_started,,,
+2021-09,msnbc.com,MSNBCW,national,not_started,,,
+2021-09,cnbc.com,CNBC,national,not_started,,,
+2021-09,ktvu.com,KTVU,local,not_started,,,
+2021-09,kpix.com,KPIX,local,not_started,,,
+2021-09,nbcbayarea.com,KNTV,local,not_started,,,
+2021-09,abc7news.com,KGO,local,not_started,,,
+2021-10,cnn.com,CNNW,national,not_started,,,
+2021-10,foxnews.com,FOXNEWSW,national,not_started,,,
+2021-10,msnbc.com,MSNBCW,national,not_started,,,
+2021-10,cnbc.com,CNBC,national,not_started,,,
+2021-10,ktvu.com,KTVU,local,not_started,,,
+2021-10,kpix.com,KPIX,local,not_started,,,
+2021-10,nbcbayarea.com,KNTV,local,not_started,,,
+2021-10,abc7news.com,KGO,local,not_started,,,
+2021-11,cnn.com,CNNW,national,not_started,,,
+2021-11,foxnews.com,FOXNEWSW,national,not_started,,,
+2021-11,msnbc.com,MSNBCW,national,not_started,,,
+2021-11,cnbc.com,CNBC,national,not_started,,,
+2021-11,ktvu.com,KTVU,local,not_started,,,
+2021-11,kpix.com,KPIX,local,not_started,,,
+2021-11,nbcbayarea.com,KNTV,local,not_started,,,
+2021-11,abc7news.com,KGO,local,not_started,,,
+2021-12,cnn.com,CNNW,national,not_started,,,
+2021-12,foxnews.com,FOXNEWSW,national,not_started,,,
+2021-12,msnbc.com,MSNBCW,national,not_started,,,
+2021-12,cnbc.com,CNBC,national,not_started,,,
+2021-12,ktvu.com,KTVU,local,not_started,,,
+2021-12,kpix.com,KPIX,local,not_started,,,
+2021-12,nbcbayarea.com,KNTV,local,not_started,,,
+2021-12,abc7news.com,KGO,local,not_started,,,
+2022-01,cnn.com,CNNW,national,not_started,,,
+2022-01,foxnews.com,FOXNEWSW,national,not_started,,,
+2022-01,msnbc.com,MSNBCW,national,not_started,,,
+2022-01,cnbc.com,CNBC,national,not_started,,,
+2022-01,ktvu.com,KTVU,local,not_started,,,
+2022-01,kpix.com,KPIX,local,not_started,,,
+2022-01,nbcbayarea.com,KNTV,local,not_started,,,
+2022-01,abc7news.com,KGO,local,not_started,,,
+2022-02,cnn.com,CNNW,national,not_started,,,
+2022-02,foxnews.com,FOXNEWSW,national,not_started,,,
+2022-02,msnbc.com,MSNBCW,national,not_started,,,
+2022-02,cnbc.com,CNBC,national,not_started,,,
+2022-02,ktvu.com,KTVU,local,not_started,,,
+2022-02,kpix.com,KPIX,local,not_started,,,
+2022-02,nbcbayarea.com,KNTV,local,not_started,,,
+2022-02,abc7news.com,KGO,local,not_started,,,
+2022-03,cnn.com,CNNW,national,not_started,,,
+2022-03,foxnews.com,FOXNEWSW,national,not_started,,,
+2022-03,msnbc.com,MSNBCW,national,not_started,,,
+2022-03,cnbc.com,CNBC,national,not_started,,,
+2022-03,ktvu.com,KTVU,local,not_started,,,
+2022-03,kpix.com,KPIX,local,not_started,,,
+2022-03,nbcbayarea.com,KNTV,local,not_started,,,
+2022-03,abc7news.com,KGO,local,not_started,,,
+2022-04,cnn.com,CNNW,national,not_started,,,
+2022-04,foxnews.com,FOXNEWSW,national,not_started,,,
+2022-04,msnbc.com,MSNBCW,national,not_started,,,
+2022-04,cnbc.com,CNBC,national,not_started,,,
+2022-04,ktvu.com,KTVU,local,not_started,,,
+2022-04,kpix.com,KPIX,local,not_started,,,
+2022-04,nbcbayarea.com,KNTV,local,not_started,,,
+2022-04,abc7news.com,KGO,local,not_started,,,
+2022-05,cnn.com,CNNW,national,not_started,,,
+2022-05,foxnews.com,FOXNEWSW,national,not_started,,,
+2022-05,msnbc.com,MSNBCW,national,not_started,,,
+2022-05,cnbc.com,CNBC,national,not_started,,,
+2022-05,ktvu.com,KTVU,local,not_started,,,
+2022-05,kpix.com,KPIX,local,not_started,,,
+2022-05,nbcbayarea.com,KNTV,local,not_started,,,
+2022-05,abc7news.com,KGO,local,not_started,,,
+2022-06,cnn.com,CNNW,national,not_started,,,
+2022-06,foxnews.com,FOXNEWSW,national,not_started,,,
+2022-06,msnbc.com,MSNBCW,national,not_started,,,
+2022-06,cnbc.com,CNBC,national,not_started,,,
+2022-06,ktvu.com,KTVU,local,not_started,,,
+2022-06,kpix.com,KPIX,local,not_started,,,
+2022-06,nbcbayarea.com,KNTV,local,not_started,,,
+2022-06,abc7news.com,KGO,local,not_started,,,
+2022-07,cnn.com,CNNW,national,not_started,,,
+2022-07,foxnews.com,FOXNEWSW,national,not_started,,,
+2022-07,msnbc.com,MSNBCW,national,not_started,,,
+2022-07,cnbc.com,CNBC,national,not_started,,,
+2022-07,ktvu.com,KTVU,local,not_started,,,
+2022-07,kpix.com,KPIX,local,not_started,,,
+2022-07,nbcbayarea.com,KNTV,local,not_started,,,
+2022-07,abc7news.com,KGO,local,not_started,,,
+2022-08,cnn.com,CNNW,national,not_started,,,
+2022-08,foxnews.com,FOXNEWSW,national,not_started,,,
+2022-08,msnbc.com,MSNBCW,national,not_started,,,
+2022-08,cnbc.com,CNBC,national,not_started,,,
+2022-08,ktvu.com,KTVU,local,not_started,,,
+2022-08,kpix.com,KPIX,local,not_started,,,
+2022-08,nbcbayarea.com,KNTV,local,not_started,,,
+2022-08,abc7news.com,KGO,local,not_started,,,
+2022-09,cnn.com,CNNW,national,not_started,,,
+2022-09,foxnews.com,FOXNEWSW,national,not_started,,,
+2022-09,msnbc.com,MSNBCW,national,not_started,,,
+2022-09,cnbc.com,CNBC,national,not_started,,,
+2022-09,ktvu.com,KTVU,local,not_started,,,
+2022-09,kpix.com,KPIX,local,not_started,,,
+2022-09,nbcbayarea.com,KNTV,local,not_started,,,
+2022-09,abc7news.com,KGO,local,not_started,,,
+2022-10,cnn.com,CNNW,national,not_started,,,
+2022-10,foxnews.com,FOXNEWSW,national,not_started,,,
+2022-10,msnbc.com,MSNBCW,national,not_started,,,
+2022-10,cnbc.com,CNBC,national,not_started,,,
+2022-10,ktvu.com,KTVU,local,not_started,,,
+2022-10,kpix.com,KPIX,local,not_started,,,
+2022-10,nbcbayarea.com,KNTV,local,not_started,,,
+2022-10,abc7news.com,KGO,local,not_started,,,
+2022-11,cnn.com,CNNW,national,not_started,,,
+2022-11,foxnews.com,FOXNEWSW,national,not_started,,,
+2022-11,msnbc.com,MSNBCW,national,not_started,,,
+2022-11,cnbc.com,CNBC,national,not_started,,,
+2022-11,ktvu.com,KTVU,local,not_started,,,
+2022-11,kpix.com,KPIX,local,not_started,,,
+2022-11,nbcbayarea.com,KNTV,local,not_started,,,
+2022-11,abc7news.com,KGO,local,not_started,,,
+2022-12,cnn.com,CNNW,national,not_started,,,
+2022-12,foxnews.com,FOXNEWSW,national,not_started,,,
+2022-12,msnbc.com,MSNBCW,national,not_started,,,
+2022-12,cnbc.com,CNBC,national,not_started,,,
+2022-12,ktvu.com,KTVU,local,not_started,,,
+2022-12,kpix.com,KPIX,local,not_started,,,
+2022-12,nbcbayarea.com,KNTV,local,not_started,,,
+2022-12,abc7news.com,KGO,local,not_started,,,
+2023-01,cnn.com,CNNW,national,not_started,,,
+2023-01,foxnews.com,FOXNEWSW,national,not_started,,,
+2023-01,msnbc.com,MSNBCW,national,not_started,,,
+2023-01,cnbc.com,CNBC,national,not_started,,,
+2023-01,ktvu.com,KTVU,local,not_started,,,
+2023-01,kpix.com,KPIX,local,not_started,,,
+2023-01,nbcbayarea.com,KNTV,local,not_started,,,
+2023-01,abc7news.com,KGO,local,not_started,,,
+2023-02,cnn.com,CNNW,national,not_started,,,
+2023-02,foxnews.com,FOXNEWSW,national,not_started,,,
+2023-02,msnbc.com,MSNBCW,national,not_started,,,
+2023-02,cnbc.com,CNBC,national,not_started,,,
+2023-02,ktvu.com,KTVU,local,not_started,,,
+2023-02,kpix.com,KPIX,local,not_started,,,
+2023-02,nbcbayarea.com,KNTV,local,not_started,,,
+2023-02,abc7news.com,KGO,local,not_started,,,
+2023-03,cnn.com,CNNW,national,not_started,,,
+2023-03,foxnews.com,FOXNEWSW,national,not_started,,,
+2023-03,msnbc.com,MSNBCW,national,not_started,,,
+2023-03,cnbc.com,CNBC,national,not_started,,,
+2023-03,ktvu.com,KTVU,local,not_started,,,
+2023-03,kpix.com,KPIX,local,not_started,,,
+2023-03,nbcbayarea.com,KNTV,local,not_started,,,
+2023-03,abc7news.com,KGO,local,not_started,,,
+2023-04,cnn.com,CNNW,national,not_started,,,
+2023-04,foxnews.com,FOXNEWSW,national,not_started,,,
+2023-04,msnbc.com,MSNBCW,national,not_started,,,
+2023-04,cnbc.com,CNBC,national,not_started,,,
+2023-04,ktvu.com,KTVU,local,not_started,,,
+2023-04,kpix.com,KPIX,local,not_started,,,
+2023-04,nbcbayarea.com,KNTV,local,not_started,,,
+2023-04,abc7news.com,KGO,local,not_started,,,
+2023-05,cnn.com,CNNW,national,not_started,,,
+2023-05,foxnews.com,FOXNEWSW,national,not_started,,,
+2023-05,msnbc.com,MSNBCW,national,not_started,,,
+2023-05,cnbc.com,CNBC,national,not_started,,,
+2023-05,ktvu.com,KTVU,local,not_started,,,
+2023-05,kpix.com,KPIX,local,not_started,,,
+2023-05,nbcbayarea.com,KNTV,local,not_started,,,
+2023-05,abc7news.com,KGO,local,not_started,,,
+2023-06,cnn.com,CNNW,national,not_started,,,
+2023-06,foxnews.com,FOXNEWSW,national,not_started,,,
+2023-06,msnbc.com,MSNBCW,national,not_started,,,
+2023-06,cnbc.com,CNBC,national,not_started,,,
+2023-06,ktvu.com,KTVU,local,not_started,,,
+2023-06,kpix.com,KPIX,local,not_started,,,
+2023-06,nbcbayarea.com,KNTV,local,not_started,,,
+2023-06,abc7news.com,KGO,local,not_started,,,
+2023-07,cnn.com,CNNW,national,not_started,,,
+2023-07,foxnews.com,FOXNEWSW,national,not_started,,,
+2023-07,msnbc.com,MSNBCW,national,not_started,,,
+2023-07,cnbc.com,CNBC,national,not_started,,,
+2023-07,ktvu.com,KTVU,local,not_started,,,
+2023-07,kpix.com,KPIX,local,not_started,,,
+2023-07,nbcbayarea.com,KNTV,local,not_started,,,
+2023-07,abc7news.com,KGO,local,not_started,,,
+2023-08,cnn.com,CNNW,national,not_started,,,
+2023-08,foxnews.com,FOXNEWSW,national,not_started,,,
+2023-08,msnbc.com,MSNBCW,national,not_started,,,
+2023-08,cnbc.com,CNBC,national,not_started,,,
+2023-08,ktvu.com,KTVU,local,not_started,,,
+2023-08,kpix.com,KPIX,local,not_started,,,
+2023-08,nbcbayarea.com,KNTV,local,not_started,,,
+2023-08,abc7news.com,KGO,local,not_started,,,
+2023-09,cnn.com,CNNW,national,not_started,,,
+2023-09,foxnews.com,FOXNEWSW,national,not_started,,,
+2023-09,msnbc.com,MSNBCW,national,not_started,,,
+2023-09,cnbc.com,CNBC,national,not_started,,,
+2023-09,ktvu.com,KTVU,local,not_started,,,
+2023-09,kpix.com,KPIX,local,not_started,,,
+2023-09,nbcbayarea.com,KNTV,local,not_started,,,
+2023-09,abc7news.com,KGO,local,not_started,,,
+2023-10,cnn.com,CNNW,national,not_started,,,
+2023-10,foxnews.com,FOXNEWSW,national,not_started,,,
+2023-10,msnbc.com,MSNBCW,national,not_started,,,
+2023-10,cnbc.com,CNBC,national,not_started,,,
+2023-10,ktvu.com,KTVU,local,not_started,,,
+2023-10,kpix.com,KPIX,local,not_started,,,
+2023-10,nbcbayarea.com,KNTV,local,not_started,,,
+2023-10,abc7news.com,KGO,local,not_started,,,
+2023-11,cnn.com,CNNW,national,not_started,,,
+2023-11,foxnews.com,FOXNEWSW,national,not_started,,,
+2023-11,msnbc.com,MSNBCW,national,not_started,,,
+2023-11,cnbc.com,CNBC,national,not_started,,,
+2023-11,ktvu.com,KTVU,local,not_started,,,
+2023-11,kpix.com,KPIX,local,not_started,,,
+2023-11,nbcbayarea.com,KNTV,local,not_started,,,
+2023-11,abc7news.com,KGO,local,not_started,,,
+2023-12,cnn.com,CNNW,national,not_started,,,
+2023-12,foxnews.com,FOXNEWSW,national,not_started,,,
+2023-12,msnbc.com,MSNBCW,national,not_started,,,
+2023-12,cnbc.com,CNBC,national,not_started,,,
+2023-12,ktvu.com,KTVU,local,not_started,,,
+2023-12,kpix.com,KPIX,local,not_started,,,
+2023-12,nbcbayarea.com,KNTV,local,not_started,,,
+2023-12,abc7news.com,KGO,local,not_started,,,
+2024-01,cnn.com,CNNW,national,not_started,,,
+2024-01,foxnews.com,FOXNEWSW,national,not_started,,,
+2024-01,msnbc.com,MSNBCW,national,not_started,,,
+2024-01,cnbc.com,CNBC,national,not_started,,,
+2024-01,ktvu.com,KTVU,local,not_started,,,
+2024-01,kpix.com,KPIX,local,not_started,,,
+2024-01,nbcbayarea.com,KNTV,local,not_started,,,
+2024-01,abc7news.com,KGO,local,not_started,,,
+2024-02,cnn.com,CNNW,national,not_started,,,
+2024-02,foxnews.com,FOXNEWSW,national,not_started,,,
+2024-02,msnbc.com,MSNBCW,national,not_started,,,
+2024-02,cnbc.com,CNBC,national,not_started,,,
+2024-02,ktvu.com,KTVU,local,not_started,,,
+2024-02,kpix.com,KPIX,local,not_started,,,
+2024-02,nbcbayarea.com,KNTV,local,not_started,,,
+2024-02,abc7news.com,KGO,local,not_started,,,
+2024-03,cnn.com,CNNW,national,not_started,,,
+2024-03,foxnews.com,FOXNEWSW,national,not_started,,,
+2024-03,msnbc.com,MSNBCW,national,not_started,,,
+2024-03,cnbc.com,CNBC,national,not_started,,,
+2024-03,ktvu.com,KTVU,local,not_started,,,
+2024-03,kpix.com,KPIX,local,not_started,,,
+2024-03,nbcbayarea.com,KNTV,local,not_started,,,
+2024-03,abc7news.com,KGO,local,not_started,,,
+2024-04,cnn.com,CNNW,national,not_started,,,
+2024-04,foxnews.com,FOXNEWSW,national,not_started,,,
+2024-04,msnbc.com,MSNBCW,national,not_started,,,
+2024-04,cnbc.com,CNBC,national,not_started,,,
+2024-04,ktvu.com,KTVU,local,not_started,,,
+2024-04,kpix.com,KPIX,local,not_started,,,
+2024-04,nbcbayarea.com,KNTV,local,not_started,,,
+2024-04,abc7news.com,KGO,local,not_started,,,
+2024-05,cnn.com,CNNW,national,not_started,,,
+2024-05,foxnews.com,FOXNEWSW,national,not_started,,,
+2024-05,msnbc.com,MSNBCW,national,not_started,,,
+2024-05,cnbc.com,CNBC,national,not_started,,,
+2024-05,ktvu.com,KTVU,local,not_started,,,
+2024-05,kpix.com,KPIX,local,not_started,,,
+2024-05,nbcbayarea.com,KNTV,local,not_started,,,
+2024-05,abc7news.com,KGO,local,not_started,,,
+2024-06,cnn.com,CNNW,national,not_started,,,
+2024-06,foxnews.com,FOXNEWSW,national,not_started,,,
+2024-06,msnbc.com,MSNBCW,national,not_started,,,
+2024-06,cnbc.com,CNBC,national,not_started,,,
+2024-06,ktvu.com,KTVU,local,not_started,,,
+2024-06,kpix.com,KPIX,local,not_started,,,
+2024-06,nbcbayarea.com,KNTV,local,not_started,,,
+2024-06,abc7news.com,KGO,local,not_started,,,
+2024-07,cnn.com,CNNW,national,not_started,,,
+2024-07,foxnews.com,FOXNEWSW,national,not_started,,,
+2024-07,msnbc.com,MSNBCW,national,not_started,,,
+2024-07,cnbc.com,CNBC,national,not_started,,,
+2024-07,ktvu.com,KTVU,local,not_started,,,
+2024-07,kpix.com,KPIX,local,not_started,,,
+2024-07,nbcbayarea.com,KNTV,local,not_started,,,
+2024-07,abc7news.com,KGO,local,not_started,,,
+2024-08,cnn.com,CNNW,national,not_started,,,
+2024-08,foxnews.com,FOXNEWSW,national,not_started,,,
+2024-08,msnbc.com,MSNBCW,national,not_started,,,
+2024-08,cnbc.com,CNBC,national,not_started,,,
+2024-08,ktvu.com,KTVU,local,not_started,,,
+2024-08,kpix.com,KPIX,local,not_started,,,
+2024-08,nbcbayarea.com,KNTV,local,not_started,,,
+2024-08,abc7news.com,KGO,local,not_started,,,
+2024-09,cnn.com,CNNW,national,not_started,,,
+2024-09,foxnews.com,FOXNEWSW,national,not_started,,,
+2024-09,msnbc.com,MSNBCW,national,not_started,,,
+2024-09,cnbc.com,CNBC,national,not_started,,,
+2024-09,ktvu.com,KTVU,local,not_started,,,
+2024-09,kpix.com,KPIX,local,not_started,,,
+2024-09,nbcbayarea.com,KNTV,local,not_started,,,
+2024-09,abc7news.com,KGO,local,not_started,,,
+2024-10,cnn.com,CNNW,national,not_started,,,
+2024-10,foxnews.com,FOXNEWSW,national,not_started,,,
+2024-10,msnbc.com,MSNBCW,national,not_started,,,
+2024-10,cnbc.com,CNBC,national,not_started,,,
+2024-10,ktvu.com,KTVU,local,not_started,,,
+2024-10,kpix.com,KPIX,local,not_started,,,
+2024-10,nbcbayarea.com,KNTV,local,not_started,,,
+2024-10,abc7news.com,KGO,local,not_started,,,
+2024-11,cnn.com,CNNW,national,not_started,,,
+2024-11,foxnews.com,FOXNEWSW,national,not_started,,,
+2024-11,msnbc.com,MSNBCW,national,not_started,,,
+2024-11,cnbc.com,CNBC,national,not_started,,,
+2024-11,ktvu.com,KTVU,local,not_started,,,
+2024-11,kpix.com,KPIX,local,not_started,,,
+2024-11,nbcbayarea.com,KNTV,local,not_started,,,
+2024-11,abc7news.com,KGO,local,not_started,,,
+2024-12,cnn.com,CNNW,national,not_started,,,
+2024-12,foxnews.com,FOXNEWSW,national,not_started,,,
+2024-12,msnbc.com,MSNBCW,national,not_started,,,
+2024-12,cnbc.com,CNBC,national,not_started,,,
+2024-12,ktvu.com,KTVU,local,not_started,,,
+2024-12,kpix.com,KPIX,local,not_started,,,
+2024-12,nbcbayarea.com,KNTV,local,not_started,,,
+2024-12,abc7news.com,KGO,local,not_started,,,

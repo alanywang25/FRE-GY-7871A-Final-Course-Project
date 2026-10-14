@@ -1,0 +1,6 @@
+{
+  "model": "weighted_dictionary_v2",
+  "records": 312,
+  "evaluation": "five-fold stratified out-of-fold predictions",
+  "interpretation": "Transparent multinomial weighted-token dictionary. The stored model contains every learned unigram/bigram count and class prior."
+}

@@ -1,0 +1,13 @@
+{
+  "paired_human_labels": 60,
+  "raw_tone_agreement": 1.0,
+  "cohen_kappa": 1.0,
+  "required_paired_labels": 60,
+  "invalid_tone_rows": 0,
+  "ignored_nonpacket_rows": {
+    "annotator_a": 0,
+    "annotator_b": 0
+  },
+  "gate_passed": true,
+  "message": "Extension label-count gate passed; adjudicate tone disagreements."
+}

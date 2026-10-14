@@ -1,0 +1,139 @@
+{
+  "retrieved_at": "2026-10-13T01:48:55+00:00",
+  "window_days": 60,
+  "headline_cap_per_news_source": 25,
+  "records_collected": 539,
+  "records_default_included": 458,
+  "included_by_stratum": {
+    "national": 126,
+    "local": 105,
+    "social": 227
+  },
+  "balanced_analysis_sample_records": 315,
+  "balanced_sample_by_stratum": {
+    "national": 105,
+    "local": 105,
+    "social": 105
+  },
+  "source_run_log": [
+    {
+      "kind": "news",
+      "source": "Associated Press",
+      "status": "ok",
+      "retained": 24
+    },
+    {
+      "kind": "news",
+      "source": "Reuters",
+      "status": "ok",
+      "retained": 25
+    },
+    {
+      "kind": "news",
+      "source": "NPR",
+      "status": "ok",
+      "retained": 3
+    },
+    {
+      "kind": "news",
+      "source": "PBS NewsHour",
+      "status": "ok",
+      "retained": 18
+    },
+    {
+      "kind": "news",
+      "source": "CNBC",
+      "status": "ok",
+      "retained": 17
+    },
+    {
+      "kind": "news",
+      "source": "The New York Times",
+      "status": "ok",
+      "retained": 7
+    },
+    {
+      "kind": "news",
+      "source": "The Wall Street Journal",
+      "status": "ok",
+      "retained": 17
+    },
+    {
+      "kind": "news",
+      "source": "Fox Business",
+      "status": "ok",
+      "retained": 25
+    },
+    {
+      "kind": "news",
+      "source": "Atlanta Journal-Constitution",
+      "status": "ok",
+      "retained": 6
+    },
+    {
+      "kind": "news",
+      "source": "Detroit Free Press",
+      "status": "ok",
+      "retained": 18
+    },
+    {
+      "kind": "news",
+      "source": "Arizona Republic",
+      "status": "ok",
+      "retained": 25
+    },
+    {
+      "kind": "news",
+      "source": "Houston Chronicle",
+      "status": "ok",
+      "retained": 25
+    },
+    {
+      "kind": "news",
+      "source": "Tampa Bay Times",
+      "status": "ok",
+      "retained": 11
+    },
+    {
+      "kind": "news",
+      "source": "Star Tribune",
+      "status": "ok",
+      "retained": 14
+    },
+    {
+      "kind": "news",
+      "source": "The Philadelphia Inquirer",
+      "status": "ok",
+      "retained": 11
+    },
+    {
+      "kind": "news",
+      "source": "Los Angeles Times",
+      "status": "ok",
+      "retained": 2
+    },
+    {
+      "kind": "social",
+      "source": "Mastodon #economy",
+      "status": "ok",
+      "retained": 103
+    },
+    {
+      "kind": "social",
+      "source": "Mastodon #inflation",
+      "status": "ok",
+      "retained": 84
+    },
+    {
+      "kind": "social",
+      "source": "Mastodon #jobs",
+      "status": "ok",
+      "retained": 104
+    }
+  ],
+  "notes": [
+    "News records are headline/news-card observations, not full articles.",
+    "Social records are public Mastodon tag results and are not representative of exposure.",
+    "Duplicate records are retained and flagged. Suspected automated posts are retained but excluded from the default and balanced samples. Do not infer exposure from engagement."
+  ]
+}

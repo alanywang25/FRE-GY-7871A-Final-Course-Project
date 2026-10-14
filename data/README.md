@@ -1,0 +1,7 @@
+# Data provenance and refresh contract
+
+`raw/Perceptual_Bias_Data.xlsx` is the supplied course data workbook. It contains four series with separate observation dates: unemployment, Michigan consumer sentiment, PCE inflation, and real GDP growth. The supplied workbook does not include Michigan subindices, macro vintages, release timestamps, article/post text, source identifiers, exposure, or human labels.
+
+The analysis treats the workbook as a retrospective macro baseline. For prospective monitoring, `src/pipeline.py` applies conservative, documented availability rules: unemployment is usable in the following month, PCE two month-ends later, and quarterly GDP one month-end later. These are explicit approximations, not a replacement for a release-calendar and vintage archive. Replace them with actual release datetimes and vintage values before making real-time claims.
+
+`media_monthly.csv` is a provisional consensus-only aggregate generated from the reviewed packets. It records its adjudication-build availability timestamp and unresolved-item missingness. It supports descriptive dashboard monitoring only; it is not eligible for a media-effect model until independent-label validation and final adjudication are complete. `templates/media_monthly_template.csv` remains the contract for a validated aggregate. Every row must be backed by retained item-level data with source, publication/availability time, text type, model version, prompt, coding evidence, and duplicate/automation flags. Empty media fields are intentionally not zero.

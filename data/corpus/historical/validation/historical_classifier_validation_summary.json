@@ -1,0 +1,6 @@
+{
+  "n": 80,
+  "accuracy": 0.463,
+  "status": "development-set diagnostic; not a held-out generalization estimate",
+  "message": "Historical classifier diagnostic built from finalized independent labels."
+}
