@@ -77,8 +77,8 @@ def hac_ols(frame: pd.DataFrame, outcome: str, exposure: str, controls: list[str
 
 def build_panel() -> pd.DataFrame:
     macro = load_macro_data().loc[lambda f: f["month"] >= "2010-01-31"].copy()
-    subindices = pd.read_csv(SUBINDICES, parse_dates=["month"])
-    subindices["month"] = subindices["month"].dt.to_period("M").dt.to_timestamp("M")
+    subindices = pd.read_csv(SUBINDICES)
+    subindices["month"] = pd.to_datetime(subindices["month"], format="mixed").dt.to_period("M").dt.to_timestamp("M")
     subindices["current_conditions"] = pd.to_numeric(subindices["current_conditions"], errors="coerce")
     subindices["expectations"] = pd.to_numeric(subindices["expectations"], errors="coerce")
     subindices["subindex_timing"] = np.where(

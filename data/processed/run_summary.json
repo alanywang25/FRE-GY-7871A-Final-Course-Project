@@ -6,6 +6,18 @@
       "rmse": 11.629,
       "interval_coverage": 0.746
     },
+    "economic_lagged_sentiment": {
+      "n_oos": 141,
+      "mae": 3.451,
+      "rmse": 4.585,
+      "interval_coverage": 0.901
+    },
+    "month_end_vintage_macro": {
+      "n_oos": 129,
+      "mae": 12.686,
+      "rmse": 16.505,
+      "interval_coverage": 0.752
+    },
     "household_stress_proxy": {
       "n_oos": 142,
       "mae": 8.178,
@@ -23,6 +35,14 @@
     "economic_only": {
       "residual_lag1_autocorrelation": 0.781,
       "durbin_watson": 0.349
+    },
+    "economic_lagged_sentiment": {
+      "residual_lag1_autocorrelation": 0.166,
+      "durbin_watson": 1.628
+    },
+    "month_end_vintage_macro": {
+      "residual_lag1_autocorrelation": 0.836,
+      "durbin_watson": 0.177
     },
     "household_stress_proxy": {
       "residual_lag1_autocorrelation": 0.623,

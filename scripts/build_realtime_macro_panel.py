@@ -23,6 +23,7 @@ ROOT = Path(__file__).resolve().parents[1]
 ENV = ROOT / ".env"
 OBSERVATIONS = ROOT / "data/templates/macro_vintage_observations.csv"
 EVENTS = ROOT / "data/templates/release_event_log.csv"
+MICHIGAN_SUBINDICES = ROOT / "data/templates/michigan_subindices.csv"
 MANIFEST = ROOT / "data/processed/realtime_macro_panel_manifest.json"
 API = "https://api.stlouisfed.org/fred/series/observations"
 SERIES = ("UNRATE", "PCEPI", "GDPC1", "CPIAUCSL", "FEDFUNDS")
@@ -87,13 +88,31 @@ def scheduled_events() -> list[dict[str, str]]:
         rows.append({"event_date": date, "event_type": "scheduled_release", "series_or_topic": "GDPC1 — BEA Gross Domestic Product estimate", "source_url": bea_url, "verified_release_timestamp": "true", "notes": f"Official BEA 2026 schedule; release time {eastern_timestamp(date)}."})
     for date, reference_month in (("2026-11-06", "October 2026"), ("2026-12-04", "November 2026"), ("2027-01-08", "December 2026")):
         rows.append({"event_date": date, "event_type": "scheduled_release", "series_or_topic": f"UNRATE — BLS Employment Situation ({reference_month} reference month)", "source_url": bls_url, "verified_release_timestamp": "true", "notes": f"Official BLS schedule; release time {eastern_timestamp(date)}."})
-    return rows
+    # Only use individually dated final releases. Annual historical reports are
+    # intentionally excluded because they do not establish original monthly
+    # availability dates.
+    if MICHIGAN_SUBINDICES.exists():
+        with MICHIGAN_SUBINDICES.open(encoding="utf-8", newline="") as stream:
+            for row in csv.DictReader(stream):
+                vintage_id = row.get("vintage_id", "")
+                release_date = row.get("release_timestamp", "")
+                if "annual-backfill" in vintage_id or not release_date:
+                    continue
+                rows.append({
+                    "event_date": release_date,
+                    "event_type": "final_survey_release",
+                    "series_or_topic": f"Michigan Surveys of Consumers final release ({row['month'][:7]})",
+                    "source_url": row.get("source_url", "https://data.sca.isr.umich.edu/data-calendar.php"),
+                    "verified_release_timestamp": "true",
+                    "notes": "Official Michigan final-result report; publication date only, no time of day supplied.",
+                })
+    return sorted(rows, key=lambda row: (row["event_date"], row["series_or_topic"]))
 
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--start", default="2014-01-01")
-    parser.add_argument("--end", default="2021-06-30")
+    parser.add_argument("--start", default="2010-01-01")
+    parser.add_argument("--end", default=datetime.now(ZoneInfo("America/New_York")).date().isoformat())
     args = parser.parse_args()
     key = api_key()
     rows = [row for series_id in SERIES for row in get_initial_vintages(series_id, args.start, args.end, key)]

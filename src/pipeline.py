@@ -83,6 +83,54 @@ def load_macro_data(path: Path | str = DEFAULT_RAW) -> pd.DataFrame:
     return panel.sort_values("month").reset_index(drop=True)
 
 
+def load_month_end_vintage_macro_panel(raw_path: Path | str = DEFAULT_RAW) -> pd.DataFrame | None:
+    """Construct a month-end as-of panel from ALFRED initial-release values.
+
+    This is intentionally distinct from the baseline's conservative lag rules.
+    It only asks which initial-release values had appeared by each calendar
+    month-end; it does not claim exact intraday availability or exact Michigan
+    survey-release timing.
+    """
+    if not VINTAGE_TEMPLATE.exists():
+        return None
+    observations = pd.read_csv(VINTAGE_TEMPLATE, parse_dates=["observation_date", "release_timestamp"])
+    required = {"UNRATE", "PCEPI", "GDPC1"}
+    if not required.issubset(set(observations["series_id"])):
+        return None
+    observations["value"] = pd.to_numeric(observations["value"], errors="coerce")
+    observations = observations.dropna(subset=["value"]).sort_values(["series_id", "observation_date", "release_timestamp"])
+    targets = load_macro_data(raw_path)[["month", "sentiment"]].copy()
+    rows = []
+    for target in targets.itertuples(index=False):
+        cutoff = pd.Timestamp(target.month).normalize()
+        available = observations.loc[(observations["release_timestamp"] <= cutoff) & (observations["observation_date"] <= cutoff)]
+
+        def latest(series_id: str) -> pd.Series | None:
+            series = available.loc[available["series_id"].eq(series_id)].sort_values(["observation_date", "release_timestamp"])
+            return None if series.empty else series.iloc[-1]
+
+        unrate, pce, gdp = (latest(series) for series in ("UNRATE", "PCEPI", "GDPC1"))
+        row = {"month": target.month, "sentiment": target.sentiment, "as_of_date": cutoff.date().isoformat()}
+        if unrate is not None:
+            row.update({"unemployment_vintage": unrate.value, "unemployment_observation_date": unrate.observation_date.date().isoformat(), "unemployment_release_date": unrate.release_timestamp.date().isoformat()})
+        if pce is not None:
+            prior_date = pce.observation_date - pd.DateOffset(months=12)
+            prior = available.loc[(available["series_id"].eq("PCEPI")) & (available["observation_date"].eq(prior_date))]
+            if not prior.empty:
+                prior_value = float(prior.sort_values("release_timestamp").iloc[-1].value)
+                row["pce_yoy_vintage"] = 100 * (float(pce.value) / prior_value - 1)
+            row.update({"pce_observation_date": pce.observation_date.date().isoformat(), "pce_release_date": pce.release_timestamp.date().isoformat()})
+        if gdp is not None:
+            prior_date = gdp.observation_date - pd.DateOffset(months=3)
+            prior = available.loc[(available["series_id"].eq("GDPC1")) & (available["observation_date"].eq(prior_date))]
+            if not prior.empty:
+                prior_value = float(prior.sort_values("release_timestamp").iloc[-1].value)
+                row["gdp_qoq_annualized_vintage"] = 100 * ((float(gdp.value) / prior_value) ** 4 - 1)
+            row.update({"gdp_observation_date": gdp.observation_date.date().isoformat(), "gdp_release_date": gdp.release_timestamp.date().isoformat()})
+        rows.append(row)
+    return pd.DataFrame(rows).sort_values("month").reset_index(drop=True)
+
+
 def rolling_ols_forecast(
     panel: pd.DataFrame,
     features: Iterable[str],
@@ -259,7 +307,7 @@ def release_events() -> list[dict]:
         return []
     frame = pd.read_csv(EVENT_LOG, dtype=str).fillna("")
     frame = frame.loc[frame.get("verified_release_timestamp", "").str.casefold().eq("true")]
-    return frame.to_dict(orient="records")[:24]
+    return frame.sort_values(["event_date", "series_or_topic"]).tail(36).to_dict(orient="records")
 
 
 def _records(frame: pd.DataFrame, columns: list[str], limit: int = 180) -> list[dict]:
@@ -277,6 +325,16 @@ def build_outputs(raw_path: Path | str = DEFAULT_RAW) -> dict:
     extension_features = baseline_features + ["unemployment_12m_change", "recession_signal"]
     baseline = rolling_ols_forecast(analysis_panel, baseline_features)
     extension = rolling_ols_forecast(analysis_panel, extension_features)
+    dynamic_panel = analysis_panel.copy()
+    dynamic_panel["sentiment_lag1"] = dynamic_panel["sentiment"].shift(1)
+    dynamic = rolling_ols_forecast(dynamic_panel, baseline_features + ["sentiment_lag1"])
+    vintage_panel = load_month_end_vintage_macro_panel(raw_path)
+    vintage_model = None
+    if vintage_panel is not None:
+        vintage_features = ["unemployment_vintage", "pce_yoy_vintage", "gdp_qoq_annualized_vintage"]
+        if all(feature in vintage_panel for feature in vintage_features):
+            vintage_model = rolling_ols_forecast(vintage_panel.loc[vintage_panel["month"] >= "2010-01-31"], vintage_features)
+            vintage_panel.to_csv(PROCESSED / "month_end_vintage_macro_panel.csv", index=False)
     controls = load_public_controls()
     external_extension = None
     if controls is not None:
@@ -292,6 +350,9 @@ def build_outputs(raw_path: Path | str = DEFAULT_RAW) -> dict:
     panel.to_csv(PROCESSED / "macro_panel.csv", index=False)
     baseline.to_csv(PROCESSED / "economic_only_oos.csv", index=False)
     extension.to_csv(PROCESSED / "household_stress_extension_oos.csv", index=False)
+    dynamic.to_csv(PROCESSED / "dynamic_economic_oos.csv", index=False)
+    if vintage_model is not None:
+        vintage_model.to_csv(PROCESSED / "month_end_vintage_macro_oos.csv", index=False)
 
     latest = panel.dropna(subset=["sentiment"]).sort_values("month").iloc[-1]
     latest_result = baseline.dropna(subset=["prediction"]).sort_values("month").tail(1)
@@ -325,6 +386,8 @@ def build_outputs(raw_path: Path | str = DEFAULT_RAW) -> dict:
     }
     model_comparison = [
         {"name": "Economic-only", "status": "estimated", **model_metrics(baseline)},
+        {"name": "Economic + lagged sentiment (autocorrelation sensitivity)", "status": "estimated", **model_metrics(dynamic)},
+        {"name": "Economic-only, month-end ALFRED initial vintages", "status": "blocked" if vintage_model is None else "estimated", **({"reason": "Populate UNRATE, PCEPI, and GDPC1 initial-release observations."} if vintage_model is None else model_metrics(vintage_model))},
         {"name": "Economic + household-stress proxy", "status": "estimated", **model_metrics(extension)},
         {
             "name": "Economic + expanded public controls", "status": "blocked" if external_extension is None else "estimated",
@@ -352,6 +415,7 @@ def build_outputs(raw_path: Path | str = DEFAULT_RAW) -> dict:
             "full_field_model": full_field_model,
             "causal_analysis": causal_analysis,
             "macro_refresh": refresh,
+            "real_time_vintage_note": "The ALFRED model uses initial-release values available by calendar month-end. It is a genuine vintage check, but Michigan headline/subindex release dates must be supplied for exact survey-release as-of analysis.",
             "input_contracts": {"michigan_subindices": template_status(SUBINDEX_TEMPLATE, ["current_conditions", "expectations", "release_timestamp", "vintage_id"]), "macro_vintages": template_status(VINTAGE_TEMPLATE, ["value", "release_timestamp", "vintage_id"]), "survey_subgroups": template_status(SUBGROUP_TEMPLATE, ["index_value", "sample_size", "release_timestamp", "vintage_id"])},
         },
         "kpis": {
@@ -363,11 +427,15 @@ def build_outputs(raw_path: Path | str = DEFAULT_RAW) -> dict:
         },
         "metrics": {
             "economic_only": model_metrics(baseline),
+            "economic_lagged_sentiment": model_metrics(dynamic),
+            "month_end_vintage_macro": None if vintage_model is None else model_metrics(vintage_model),
             "household_stress_proxy": model_metrics(extension),
             "expanded_controls": None if external_extension is None else model_metrics(external_extension),
         },
         "diagnostics": {
             "economic_only": diagnostics(baseline),
+            "economic_lagged_sentiment": diagnostics(dynamic),
+            "month_end_vintage_macro": None if vintage_model is None else diagnostics(vintage_model),
             "household_stress_proxy": diagnostics(extension),
             "expanded_controls": None if external_extension is None else diagnostics(external_extension),
         },

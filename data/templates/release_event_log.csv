@@ -1,28 +1,36 @@
 event_date,event_type,series_or_topic,source_url,verified_release_timestamp,notes
-2026-02-20,scheduled_release,PCEPI — BEA Personal Income and Outlays,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-02-20T08:30:00-05:00.
-2026-03-13,scheduled_release,PCEPI — BEA Personal Income and Outlays,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-03-13T08:30:00-04:00.
-2026-04-09,scheduled_release,PCEPI — BEA Personal Income and Outlays,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-04-09T08:30:00-04:00.
-2026-04-30,scheduled_release,PCEPI — BEA Personal Income and Outlays,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-04-30T08:30:00-04:00.
-2026-05-28,scheduled_release,PCEPI — BEA Personal Income and Outlays,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-05-28T08:30:00-04:00.
-2026-06-25,scheduled_release,PCEPI — BEA Personal Income and Outlays,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-06-25T08:30:00-04:00.
-2026-07-30,scheduled_release,PCEPI — BEA Personal Income and Outlays,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-07-30T08:30:00-04:00.
-2026-08-26,scheduled_release,PCEPI — BEA Personal Income and Outlays,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-08-26T08:30:00-04:00.
-2026-09-30,scheduled_release,PCEPI — BEA Personal Income and Outlays,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-09-30T08:30:00-04:00.
-2026-10-29,scheduled_release,PCEPI — BEA Personal Income and Outlays,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-10-29T08:30:00-04:00.
-2026-11-25,scheduled_release,PCEPI — BEA Personal Income and Outlays,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-11-25T08:30:00-05:00.
-2026-12-23,scheduled_release,PCEPI — BEA Personal Income and Outlays,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-12-23T08:30:00-05:00.
+1/23/26,final_survey_release,Michigan Surveys of Consumers final release (1/31/26),https://data.sca.isr.umich.edu/fetchdoc.php?docid=80499,true,"Official Michigan final-result report; publication date only, no time of day supplied."
+2/20/26,final_survey_release,Michigan Surveys of Consumers final release (2/28/26),https://data.sca.isr.umich.edu/fetchdoc.php?docid=80677,true,"Official Michigan final-result report; publication date only, no time of day supplied."
 2026-02-20,scheduled_release,GDPC1 — BEA Gross Domestic Product estimate,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-02-20T08:30:00-05:00.
+2026-02-20,scheduled_release,PCEPI — BEA Personal Income and Outlays,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-02-20T08:30:00-05:00.
 2026-03-13,scheduled_release,GDPC1 — BEA Gross Domestic Product estimate,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-03-13T08:30:00-04:00.
+2026-03-13,scheduled_release,PCEPI — BEA Personal Income and Outlays,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-03-13T08:30:00-04:00.
 2026-04-09,scheduled_release,GDPC1 — BEA Gross Domestic Product estimate,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-04-09T08:30:00-04:00.
+2026-04-09,scheduled_release,PCEPI — BEA Personal Income and Outlays,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-04-09T08:30:00-04:00.
 2026-04-30,scheduled_release,GDPC1 — BEA Gross Domestic Product estimate,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-04-30T08:30:00-04:00.
+2026-04-30,scheduled_release,PCEPI — BEA Personal Income and Outlays,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-04-30T08:30:00-04:00.
 2026-05-28,scheduled_release,GDPC1 — BEA Gross Domestic Product estimate,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-05-28T08:30:00-04:00.
+2026-05-28,scheduled_release,PCEPI — BEA Personal Income and Outlays,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-05-28T08:30:00-04:00.
 2026-06-25,scheduled_release,GDPC1 — BEA Gross Domestic Product estimate,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-06-25T08:30:00-04:00.
+2026-06-25,scheduled_release,PCEPI — BEA Personal Income and Outlays,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-06-25T08:30:00-04:00.
 2026-07-30,scheduled_release,GDPC1 — BEA Gross Domestic Product estimate,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-07-30T08:30:00-04:00.
+2026-07-30,scheduled_release,PCEPI — BEA Personal Income and Outlays,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-07-30T08:30:00-04:00.
 2026-08-26,scheduled_release,GDPC1 — BEA Gross Domestic Product estimate,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-08-26T08:30:00-04:00.
+2026-08-26,scheduled_release,PCEPI — BEA Personal Income and Outlays,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-08-26T08:30:00-04:00.
 2026-09-30,scheduled_release,GDPC1 — BEA Gross Domestic Product estimate,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-09-30T08:30:00-04:00.
+2026-09-30,scheduled_release,PCEPI — BEA Personal Income and Outlays,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-09-30T08:30:00-04:00.
 2026-10-29,scheduled_release,GDPC1 — BEA Gross Domestic Product estimate,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-10-29T08:30:00-04:00.
-2026-11-25,scheduled_release,GDPC1 — BEA Gross Domestic Product estimate,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-11-25T08:30:00-05:00.
-2026-12-23,scheduled_release,GDPC1 — BEA Gross Domestic Product estimate,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-12-23T08:30:00-05:00.
+2026-10-29,scheduled_release,PCEPI — BEA Personal Income and Outlays,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-10-29T08:30:00-04:00.
 2026-11-06,scheduled_release,UNRATE — BLS Employment Situation (October 2026 reference month),https://www.bls.gov/schedule/news_release/empSit.htm,true,Official BLS schedule; release time 2026-11-06T08:30:00-05:00.
+2026-11-25,scheduled_release,GDPC1 — BEA Gross Domestic Product estimate,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-11-25T08:30:00-05:00.
+2026-11-25,scheduled_release,PCEPI — BEA Personal Income and Outlays,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-11-25T08:30:00-05:00.
 2026-12-04,scheduled_release,UNRATE — BLS Employment Situation (November 2026 reference month),https://www.bls.gov/schedule/news_release/empSit.htm,true,Official BLS schedule; release time 2026-12-04T08:30:00-05:00.
+2026-12-23,scheduled_release,GDPC1 — BEA Gross Domestic Product estimate,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-12-23T08:30:00-05:00.
+2026-12-23,scheduled_release,PCEPI — BEA Personal Income and Outlays,https://www.bea.gov/news/schedule/full,true,Official BEA 2026 schedule; release time 2026-12-23T08:30:00-05:00.
 2027-01-08,scheduled_release,UNRATE — BLS Employment Situation (December 2026 reference month),https://www.bls.gov/schedule/news_release/empSit.htm,true,Official BLS schedule; release time 2027-01-08T08:30:00-05:00.
+3/27/26,final_survey_release,Michigan Surveys of Consumers final release (3/31/26),https://data.sca.isr.umich.edu/fetchdoc.php?docid=80881,true,"Official Michigan final-result report; publication date only, no time of day supplied."
+4/24/26,final_survey_release,Michigan Surveys of Consumers final release (4/30/26),https://data.sca.isr.umich.edu/fetchdoc.php?docid=81060,true,"Official Michigan final-result report; publication date only, no time of day supplied."
+5/22/26,final_survey_release,Michigan Surveys of Consumers final release (5/31/26),https://data.sca.isr.umich.edu/fetchdoc.php?docid=81238,true,"Official Michigan final-result report; publication date only, no time of day supplied."
+6/26/26,final_survey_release,Michigan Surveys of Consumers final release (6/30/26),https://data.sca.isr.umich.edu/fetchdoc.php?docid=81440,true,"Official Michigan final-result report; publication date only, no time of day supplied."
+7/31/26,final_survey_release,Michigan Surveys of Consumers final release (7/31/26),https://data.sca.isr.umich.edu/fetchdoc.php?docid=81618,true,"Official Michigan final-result report; publication date only, no time of day supplied."
+8/28/26,final_survey_release,Michigan Surveys of Consumers final release (8/31/26),https://data.sca.isr.umich.edu/fetchdoc.php?docid=81854,true,"Official Michigan final-result report; publication date only, no time of day supplied."
