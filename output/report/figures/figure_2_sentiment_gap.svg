@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 520" role="img" aria-label="Sentiment gap: observed minus economic-only prediction">
+<style>text{font-family:Arial,sans-serif;fill:#263648}.title{font-size:22px;font-weight:700}.label{font-size:13px;fill:#526477}.legend{font-size:13px}.note{font-size:12px;fill:#526477}</style>
+<rect width="100%" height="100%" fill="white"/>
+<text x="70" y="31" class="title">Sentiment gap: observed minus economic-only prediction</text>
+<line x1="70" x2="1022" y1="58.0" y2="58.0" stroke="#dbe4ee"/>
+<text x="61" y="62.0" text-anchor="end" class="label">41</text>
+<line x1="70" x2="1022" y1="154.0" y2="154.0" stroke="#dbe4ee"/>
+<text x="61" y="158.0" text-anchor="end" class="label">20</text>
+<line x1="70" x2="1022" y1="250.0" y2="250.0" stroke="#dbe4ee"/>
+<text x="61" y="254.0" text-anchor="end" class="label">-2</text>
+<line x1="70" x2="1022" y1="346.0" y2="346.0" stroke="#dbe4ee"/>
+<text x="61" y="350.0" text-anchor="end" class="label">-23</text>
+<line x1="70" x2="1022" y1="442.0" y2="442.0" stroke="#dbe4ee"/>
+<text x="61" y="446.0" text-anchor="end" class="label">-45</text>
+<line x1="70" x2="1022" y1="241.7" y2="241.7" stroke="#334155" stroke-width="1.2"/>
+<path d="M 70.0 258.6 L 77.5 266.5 L 85.3 239.4 L 92.8 253.9 L 100.5 262.9 L 108.3 262.3 L 115.8 255.1 L 123.5 269.7 L 131.1 242.0 L 138.8 230.6 L 146.6 227.0 L 153.6 235.0 L 161.3 235.8 L 168.8 241.1 L 176.6 243.1 L 184.1 254.9 L 191.8 259.0 L 199.6 243.0 L 207.1 250.6 L 214.9 230.5 L 222.4 243.7 L 230.1 255.4 L 237.9 255.6 L 244.9 237.1 L 252.6 229.7 L 260.1 241.8 L 267.9 251.0 L 275.4 252.7 L 283.2 249.9 L 290.9 255.0 L 298.4 236.5 L 306.2 248.2 L 313.7 252.5 L 321.5 248.2 L 329.2 271.6 L 336.2 258.2 L 344.0 241.6 L 351.5 247.0 L 359.2 239.6 L 366.7 247.8 L 374.5 250.9 L 382.2 289.2 L 389.8 272.5 L 397.5 266.5 L 405.0 257.2 L 412.8 248.2 L 420.5 245.9 L 427.8 238.0 L 435.5 294.0 L 443.0 347.6 L 450.8 90.0 L 458.3 124.0 L 466.1 211.3 L 473.8 225.9 L 481.3 243.7 L 489.1 219.5 L 496.6 262.6 L 504.4 247.8 L 512.1 263.3 L 519.1 280.6 L 526.9 245.8 L 534.4 233.8 L 542.1 256.4 L 549.6 250.0 L 557.4 267.5 L 565.1 325.7 L 572.6 316.8 L 580.4 328.7 L 587.9 349.0 L 595.7 337.3 L 603.4 351.6 L 610.4 364.4 L 618.2 377.2 L 625.7 350.6 L 633.4 377.9 L 640.9 410.0 L 648.7 394.2 L 656.5 362.4 L 664.0 353.3 L 671.7 340.8 L 679.2 349.1 L 687.0 337.9 L 694.8 320.3 L 701.8 307.8 L 709.5 328.8 L 717.0 328.0 L 724.8 347.2 L 732.3 323.5 L 740.0 295.7 L 747.8 305.2 L 755.3 358.7 L 763.0 355.6 L 770.6 368.3 L 778.3 320.6 L 786.1 313.2 L 793.3 328.2 L 801.1 316.3 L 808.6 326.0 L 816.3 362.7 L 823.8 369.6 L 831.6 377.1 L 839.4 366.7 L 846.9 295.5 L 854.6 293.3 L 862.1 283.6 L 869.9 267.8 L 877.6 277.6 L 884.7 312.1 L 892.4 345.4 L 899.9 365.4 L 907.7 370.3 L 915.2 328.7 L 922.9 318.3 L 930.7 332.1 L 938.2 342.9 L 945.9 348.4 L 953.5 358.6 L 961.2 347.7 L 969.0 329.0 L 976.0 327.9 L 983.7 342.3 L 991.2 356.3 L 999.0 370.1 L 1006.5 339.2 L 1014.2 317.3 L 1022.0 331.4" fill="none" stroke="#b23a48" stroke-width="2.8"/>
+<line x1="70" x2="92" y1="40" y2="40" stroke="#b23a48" stroke-width="3"/>
+<text x="98" y="45" class="legend">Sentiment gap</text>
+<text x="70.0" y="470" text-anchor="middle" class="label">2016</text>
+<text x="549.6" y="470" text-anchor="middle" class="label">2021</text>
+<text x="1022.0" y="470" text-anchor="middle" class="label">2026</text>
+<text x="70" y="502" class="note">Negative values are unexplained pessimism under this model, not proof of media bias.</text>
+<text x="20" y="260.0" transform="rotate(-90 20 260.0)" class="label">Index points</text>
+</svg>

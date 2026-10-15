@@ -19,3 +19,10 @@ data/corpus/historical/raw_source_materials/
 data/corpus/historical/collection_runs/
 data/corpus/historical/validation_internal/
 data/corpus/validation_internal/
+
+# Local artifact-tool scratch data and report-rendering previews.
+# Keep build scripts and final deliverables versionable.
+.chart-data-*/
+.codex-finalizer/
+build/node_modules/
+build/report_render*/

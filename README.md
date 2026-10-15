@@ -1,6 +1,16 @@
 # AI, Economic Perceptions, and Consumer Sentiment
 
-This project implements the technical deliverables for the final project (the research report and summary presentation are intentionally excluded): a reproducible analysis, data/corpus/annotation infrastructure, a validation and causal-design package, and an updateable monitoring dashboard. It does **not** claim that media bias explains sentiment: forecast improvement is associational, and the project has no respondent-level exposure evidence.
+This project implements the complete final-project package: a reproducible analysis, data/corpus/annotation infrastructure, a validation and causal-design package, an updateable monitoring dashboard, a written report, and an eight-slide presentation with a speaker script. It does **not** claim that media bias explains sentiment: forecast improvement is associational, and the project has no respondent-level exposure evidence.
+
+## Final deliverables
+
+The completed report, presentation, and presentation script are available in the output folders:
+
+- [Written report in Markdown](output/report/AI_Economic_Perceptions_Consumer_Sentiment_Report.md) and [PDF](output/report/AI_Economic_Perceptions_Consumer_Sentiment_Report.pdf). The report answers the project research questions, separates hypotheses from findings, includes the reproducible-analysis and dashboard evidence, and provides a consolidated works cited section.
+- [Eight-slide presentation](output/presentation/AI_Economic_Perceptions_Consumer_Sentiment_Presentation_v16.pptx). The deck presents one practical implication for financial forecasting: treat a sentiment gap as a model-risk signal that starts a documented review rather than an automatic forecast adjustment.
+- [Presentation speaker script](output/presentation/Presentation_Speaker_Script.md), designed for a six- to eight-minute delivery.
+
+The notebook at [notebooks/perceptual_bias_analysis.ipynb](notebooks/perceptual_bias_analysis.ipynb) remains the reproducible source for the supplementary analysis. The dashboard, report, and presentation distinguish forecasting evidence from causal claims throughout.
 
 ## Quick start
 
@@ -36,6 +46,7 @@ Open `http://localhost:8000` for the dashboard. Re-run the pipeline after replac
 - A source-comparative content-supply benchmark that pairs retained items within publication-day and pre-specified topic cells; it reports contrasts without calling them exposure, ideological bias, or causal effects.
 - A balanced, documented 315-item coding sample drawn from a 539-record headline/news-card and public-social corpus. See [corpus documentation](data/corpus/README.md).
 - A retrospective, explicitly non-causal association analysis with a future-media placebo, a pre-registration-ready factual-framing protocol, and documented Michigan survey-method comparability.
+- A completed written report and an eight-slide presentation that synthesize the notebook, dashboard, forecast comparisons, measurement validation, and causal-design limits for a financial-forecasting audience.
 
 ## Important limitations
 
