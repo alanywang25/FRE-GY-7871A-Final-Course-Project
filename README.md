@@ -1,14 +1,13 @@
 # AI, Economic Perceptions, and Consumer Sentiment
 
-This project implements the complete final-project package: a reproducible analysis, data/corpus/annotation infrastructure, a validation and causal-design package, an updateable monitoring dashboard, a written report, and an eight-slide presentation with a speaker script. It does **not** claim that media bias explains sentiment: forecast improvement is associational, and the project has no respondent-level exposure evidence.
+This project implements the complete final-project package: a reproducible analysis, data/corpus/annotation infrastructure, a validation and causal-design package, an updateable monitoring dashboard, a written report, and an eight-slide presentation. It does **not** claim that media bias explains sentiment: forecast improvement is associational, and the project has no respondent-level exposure evidence.
 
 ## Final deliverables
 
-The completed report, presentation, and presentation script are available in the output folders:
+The completed report and presentation are available in the output folders:
 
 - [Written report in Markdown](output/report/AI_Economic_Perceptions_Consumer_Sentiment_Report.md) and [PDF](output/report/AI_Economic_Perceptions_Consumer_Sentiment_Report.pdf). The report answers the project research questions, separates hypotheses from findings, includes the reproducible-analysis and dashboard evidence, and provides a consolidated works cited section.
-- [Nine-slide presentation](output/presentation/AI_Economic_Perceptions_Consumer_Sentiment_Presentation_v18.pptx). The deck presents one practical implication for financial forecasting: treat a sentiment gap as a model-risk signal that starts a documented review rather than an automatic forecast adjustment.
-- [Presentation speaker script](output/presentation/Presentation_Speaker_Script.md), designed for a six- to eight-minute delivery.
+- [Nine-slide presentation](output/presentation/AI_Economic_Perceptions_Consumer_Sentiment_Presentation.pptx). The deck presents one practical implication for financial forecasting: treat a sentiment gap as a model-risk signal that starts a documented review rather than an automatic forecast adjustment.
 
 The notebook at [notebooks/perceptual_bias_analysis.ipynb](notebooks/perceptual_bias_analysis.ipynb) remains the reproducible source for the supplementary analysis. The dashboard, report, and presentation distinguish forecasting evidence from causal claims throughout.
 
