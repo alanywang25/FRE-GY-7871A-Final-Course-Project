@@ -38,3 +38,16 @@ scripts/*.py
 !scripts/build_causal_association_analysis.py
 !scripts/collect_media_corpus.py
 !scripts/build_annotation_packets.py
+!scripts/validate_full_field_labels.py
+!scripts/build_full_field_adjudication.py
+!scripts/evaluate_full_field_model.py
+!scripts/build_historical_media_monthly.py
+!scripts/create_historical_collection_plan.py
+!scripts/validate_historical_extension_labels.py
+!scripts/build_historical_extension_tone_adjudication.py
+!scripts/validate_historical_media_labels.py
+!scripts/build_historical_tone_adjudication.py
+!scripts/validate_historical_classifier_against_adjudication.py
+!scripts/build_independent_tone_adjudication.py
+!scripts/build_adjudicated_media_data.py
+!scripts/import_current_epu_nar_controls.py
