@@ -6,17 +6,17 @@ portable payload for the local monitoring dashboard.
 """
 from __future__ import annotations
 
+import argparse
 import json
 from pathlib import Path
 from typing import Iterable
-from datetime import datetime
-from zoneinfo import ZoneInfo
 
 import numpy as np
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_RAW = ROOT / "data" / "raw" / "Perceptual_Bias_Data.xlsx"
+DEFAULT_MONITORING_CUTOFF = "2026-10-14"
 DEFAULT_MEDIA = ROOT / "data" / "media_monthly.csv"
 DEFAULT_CONTROLS = ROOT / "data" / "external" / "processed" / "public_macro_controls.csv"
 CONTROL_MANIFEST = ROOT / "data" / "external" / "processed" / "refresh_manifest.json"
@@ -402,7 +402,15 @@ def _records(frame: pd.DataFrame, columns: list[str], limit: int = 180) -> list[
     return json.loads(clean.to_json(orient="records", date_format="iso"))
 
 
-def build_outputs(raw_path: Path | str = DEFAULT_RAW) -> dict:
+def build_outputs(
+    raw_path: Path | str = DEFAULT_RAW,
+    monitoring_cutoff: str | pd.Timestamp = DEFAULT_MONITORING_CUTOFF,
+) -> dict:
+    """Build deterministic analysis and dashboard artifacts for a dated snapshot.
+
+    ``monitoring_cutoff`` is deliberately explicit rather than inferred from the
+    wall clock.  A refresh must choose and archive its own cutoff date.
+    """
     PROCESSED.mkdir(parents=True, exist_ok=True)
     panel = load_macro_data(raw_path)
     analysis_panel = panel.loc[panel["month"] >= "2010-01-31"].copy()
@@ -441,7 +449,7 @@ def build_outputs(raw_path: Path | str = DEFAULT_RAW) -> dict:
 
     primary_model = vintage_model if vintage_model is not None else baseline
     primary_panel = vintage_panel if vintage_panel is not None else panel
-    cutoff_day = pd.Timestamp(datetime.now(ZoneInfo("America/New_York")).date())
+    cutoff_day = pd.Timestamp(monitoring_cutoff).normalize()
     # Inputs acquired during the cutoff day are eligible; observations dated
     # after that calendar day are not.
     now = cutoff_day + pd.Timedelta(days=1) - pd.Timedelta(microseconds=1)
@@ -564,5 +572,12 @@ def build_outputs(raw_path: Path | str = DEFAULT_RAW) -> dict:
 
 
 if __name__ == "__main__":
-    payload = build_outputs()
+    parser = argparse.ArgumentParser(description="Build the dated analysis and dashboard snapshot.")
+    parser.add_argument(
+        "--cutoff",
+        default=DEFAULT_MONITORING_CUTOFF,
+        help=f"Snapshot cutoff date in YYYY-MM-DD form (default: {DEFAULT_MONITORING_CUTOFF}).",
+    )
+    args = parser.parse_args()
+    payload = build_outputs(monitoring_cutoff=args.cutoff)
     print(json.dumps({"as_of": payload["metadata"]["as_of"], "metrics": payload["metrics"]}, indent=2))

@@ -26,3 +26,4 @@ data/corpus/validation_internal/
 .codex-finalizer/
 build/node_modules/
 build/report_render*/
+scripts/

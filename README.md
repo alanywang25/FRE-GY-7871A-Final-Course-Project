@@ -7,7 +7,7 @@ This project implements the complete final-project package: a reproducible analy
 The completed report, presentation, and presentation script are available in the output folders:
 
 - [Written report in Markdown](output/report/AI_Economic_Perceptions_Consumer_Sentiment_Report.md) and [PDF](output/report/AI_Economic_Perceptions_Consumer_Sentiment_Report.pdf). The report answers the project research questions, separates hypotheses from findings, includes the reproducible-analysis and dashboard evidence, and provides a consolidated works cited section.
-- [Eight-slide presentation](output/presentation/AI_Economic_Perceptions_Consumer_Sentiment_Presentation_v16.pptx). The deck presents one practical implication for financial forecasting: treat a sentiment gap as a model-risk signal that starts a documented review rather than an automatic forecast adjustment.
+- [Nine-slide presentation](output/presentation/AI_Economic_Perceptions_Consumer_Sentiment_Presentation_v18.pptx). The deck presents one practical implication for financial forecasting: treat a sentiment gap as a model-risk signal that starts a documented review rather than an automatic forecast adjustment.
 - [Presentation speaker script](output/presentation/Presentation_Speaker_Script.md), designed for a six- to eight-minute delivery.
 
 The notebook at [notebooks/perceptual_bias_analysis.ipynb](notebooks/perceptual_bias_analysis.ipynb) remains the reproducible source for the supplementary analysis. The dashboard, report, and presentation distinguish forecasting evidence from causal claims throughout.
@@ -24,7 +24,7 @@ python scripts/validate_media_labels.py
 python scripts/build_media_model_analysis.py
 python scripts/build_source_comparative_benchmark.py
 python scripts/build_causal_association_analysis.py
-python src/pipeline.py
+python src/pipeline.py --cutoff 2026-10-14
 python scripts/collect_media_corpus.py
 python scripts/build_annotation_packets.py
 jupyter lab notebooks/perceptual_bias_analysis.ipynb
@@ -32,6 +32,8 @@ python -m http.server 8000 --directory dashboard
 ```
 
 Open `http://localhost:8000` for the dashboard. Re-run the pipeline after replacing `data/raw/Perceptual_Bias_Data.xlsx`, refreshing public controls, or adding a validated `data/media_monthly.csv`.
+
+`src/pipeline.py` defaults to the documented October 14, 2026 snapshot so an unchanged repository reproduces the submitted dashboard exactly. For a new, archived monitoring refresh, pass an explicit `--cutoff YYYY-MM-DD` after preserving the corresponding dated inputs.
 
 ## What is implemented
 
@@ -46,7 +48,7 @@ Open `http://localhost:8000` for the dashboard. Re-run the pipeline after replac
 - A source-comparative content-supply benchmark that pairs retained items within publication-day and pre-specified topic cells; it reports contrasts without calling them exposure, ideological bias, or causal effects.
 - A balanced, documented 315-item coding sample drawn from a 539-record headline/news-card and public-social corpus. See [corpus documentation](data/corpus/README.md).
 - A retrospective, explicitly non-causal association analysis with a future-media placebo, a pre-registration-ready factual-framing protocol, and documented Michigan survey-method comparability.
-- A completed written report and an eight-slide presentation that synthesize the notebook, dashboard, forecast comparisons, measurement validation, and causal-design limits for a financial-forecasting audience.
+- A completed written report and a nine-slide presentation that synthesize the notebook, dashboard, forecast comparisons, measurement validation, causal-design limits, and references for a financial-forecasting audience.
 
 ## Important limitations
 
