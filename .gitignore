@@ -25,4 +25,16 @@ data/corpus/validation_internal/
 .chart-data-*/
 .codex-finalizer/
 build/
-scripts/
+# Local Python utilities referenced in the main README.
+scripts/*.py
+
+# Version the documented pipeline utilities.
+!scripts/refresh_public_macro.py
+!scripts/build_control_vintage_archive.py
+!scripts/build_realtime_macro_panel.py
+!scripts/validate_media_labels.py
+!scripts/build_media_model_analysis.py
+!scripts/build_source_comparative_benchmark.py
+!scripts/build_causal_association_analysis.py
+!scripts/collect_media_corpus.py
+!scripts/build_annotation_packets.py
