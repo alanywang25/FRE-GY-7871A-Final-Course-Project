@@ -24,6 +24,5 @@ data/corpus/validation_internal/
 # Keep build scripts and final deliverables versionable.
 .chart-data-*/
 .codex-finalizer/
-build/node_modules/
-build/report_render*/
+build/
 scripts/
